@@ -1,7 +1,7 @@
 # Projeto-LI2
 Laboratórios de Informática II - PL5 - Grupo 5 - David Alexandre Ferreira Duarte A93253; Carlos Manuel Cerqueira de Oliveira A82884; Rodrigo Jorge Pinto Guimarães A93236
 
-| -- 13/03/2020 -- ||13:44|  
+| -- 13/03/2020 -- |  |13:44|  
   A Pasta "Projeto e Regras" contem os pdf referentes ao projeto, como ele deve ser constituido assim como a sua data de entrega, e as regras e forma de jogar.
   A pasta "Rastros" contem os ficheiros do jogo, ou sejan , o ficheiro main, os ficheiros do cmake e pastas com os varios modulos do jogo.
   Uma das pastas chama-se "Camada de Interface" que contem os ficheiros de interface e interpretador. O ficheiro de interface tem uma funcao que imprime o tabuleiro. O ficheiro de interpretador contem funcoes que recebem comandos para jogar.
