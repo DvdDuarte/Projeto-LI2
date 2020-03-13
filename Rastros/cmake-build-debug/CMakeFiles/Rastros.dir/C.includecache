@@ -1,0 +1,96 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.c
+Interpretador.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+../Lógica do programa/jogar.h
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+interface.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c
+interface.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c
+estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c
+modificaEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
+estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
+estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c
+jogar.h
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+Camadas de dados/modificaEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
+Camada de interface/Interpretador.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h
+

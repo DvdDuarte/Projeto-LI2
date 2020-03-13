@@ -123,140 +123,140 @@ Rastros/fast:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/build
 .PHONY : Rastros/fast
 
-Intrepretador.o: Intrepretador.c.o
+Camada_de_interface/Interpretador.o: Camada_de_interface/Interpretador.c.o
 
-.PHONY : Intrepretador.o
-
-# target to build an object file
-Intrepretador.c.o:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Intrepretador.c.o
-.PHONY : Intrepretador.c.o
-
-Intrepretador.i: Intrepretador.c.i
-
-.PHONY : Intrepretador.i
-
-# target to preprocess a source file
-Intrepretador.c.i:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Intrepretador.c.i
-.PHONY : Intrepretador.c.i
-
-Intrepretador.s: Intrepretador.c.s
-
-.PHONY : Intrepretador.s
-
-# target to generate assembly for a file
-Intrepretador.c.s:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Intrepretador.c.s
-.PHONY : Intrepretador.c.s
-
-estruturasDados.o: estruturasDados.c.o
-
-.PHONY : estruturasDados.o
+.PHONY : Camada_de_interface/Interpretador.o
 
 # target to build an object file
-estruturasDados.c.o:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/estruturasDados.c.o
-.PHONY : estruturasDados.c.o
+Camada_de_interface/Interpretador.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o
+.PHONY : Camada_de_interface/Interpretador.c.o
 
-estruturasDados.i: estruturasDados.c.i
+Camada_de_interface/Interpretador.i: Camada_de_interface/Interpretador.c.i
 
-.PHONY : estruturasDados.i
+.PHONY : Camada_de_interface/Interpretador.i
 
 # target to preprocess a source file
-estruturasDados.c.i:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/estruturasDados.c.i
-.PHONY : estruturasDados.c.i
+Camada_de_interface/Interpretador.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.i
+.PHONY : Camada_de_interface/Interpretador.c.i
 
-estruturasDados.s: estruturasDados.c.s
+Camada_de_interface/Interpretador.s: Camada_de_interface/Interpretador.c.s
 
-.PHONY : estruturasDados.s
+.PHONY : Camada_de_interface/Interpretador.s
 
 # target to generate assembly for a file
-estruturasDados.c.s:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/estruturasDados.c.s
-.PHONY : estruturasDados.c.s
+Camada_de_interface/Interpretador.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.s
+.PHONY : Camada_de_interface/Interpretador.c.s
 
-inicializador.o: inicializador.c.o
+Camada_de_interface/interface.o: Camada_de_interface/interface.c.o
 
-.PHONY : inicializador.o
+.PHONY : Camada_de_interface/interface.o
 
 # target to build an object file
-inicializador.c.o:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/inicializador.c.o
-.PHONY : inicializador.c.o
+Camada_de_interface/interface.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o
+.PHONY : Camada_de_interface/interface.c.o
 
-inicializador.i: inicializador.c.i
+Camada_de_interface/interface.i: Camada_de_interface/interface.c.i
 
-.PHONY : inicializador.i
+.PHONY : Camada_de_interface/interface.i
 
 # target to preprocess a source file
-inicializador.c.i:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/inicializador.c.i
-.PHONY : inicializador.c.i
+Camada_de_interface/interface.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.i
+.PHONY : Camada_de_interface/interface.c.i
 
-inicializador.s: inicializador.c.s
+Camada_de_interface/interface.s: Camada_de_interface/interface.c.s
 
-.PHONY : inicializador.s
+.PHONY : Camada_de_interface/interface.s
 
 # target to generate assembly for a file
-inicializador.c.s:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/inicializador.c.s
-.PHONY : inicializador.c.s
+Camada_de_interface/interface.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s
+.PHONY : Camada_de_interface/interface.c.s
 
-interface.o: interface.c.o
+Camadas_de_dados/estruturasDados.o: Camadas_de_dados/estruturasDados.c.o
 
-.PHONY : interface.o
+.PHONY : Camadas_de_dados/estruturasDados.o
 
 # target to build an object file
-interface.c.o:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.o
-.PHONY : interface.c.o
+Camadas_de_dados/estruturasDados.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o
+.PHONY : Camadas_de_dados/estruturasDados.c.o
 
-interface.i: interface.c.i
+Camadas_de_dados/estruturasDados.i: Camadas_de_dados/estruturasDados.c.i
 
-.PHONY : interface.i
+.PHONY : Camadas_de_dados/estruturasDados.i
 
 # target to preprocess a source file
-interface.c.i:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.i
-.PHONY : interface.c.i
+Camadas_de_dados/estruturasDados.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.i
+.PHONY : Camadas_de_dados/estruturasDados.c.i
 
-interface.s: interface.c.s
+Camadas_de_dados/estruturasDados.s: Camadas_de_dados/estruturasDados.c.s
 
-.PHONY : interface.s
+.PHONY : Camadas_de_dados/estruturasDados.s
 
 # target to generate assembly for a file
-interface.c.s:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.s
-.PHONY : interface.c.s
+Camadas_de_dados/estruturasDados.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s
+.PHONY : Camadas_de_dados/estruturasDados.c.s
 
-jogar.o: jogar.c.o
+Camadas_de_dados/modificaEstado.o: Camadas_de_dados/modificaEstado.c.o
 
-.PHONY : jogar.o
+.PHONY : Camadas_de_dados/modificaEstado.o
 
 # target to build an object file
-jogar.c.o:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/jogar.c.o
-.PHONY : jogar.c.o
+Camadas_de_dados/modificaEstado.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o
+.PHONY : Camadas_de_dados/modificaEstado.c.o
 
-jogar.i: jogar.c.i
+Camadas_de_dados/modificaEstado.i: Camadas_de_dados/modificaEstado.c.i
 
-.PHONY : jogar.i
+.PHONY : Camadas_de_dados/modificaEstado.i
 
 # target to preprocess a source file
-jogar.c.i:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/jogar.c.i
-.PHONY : jogar.c.i
+Camadas_de_dados/modificaEstado.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.i
+.PHONY : Camadas_de_dados/modificaEstado.c.i
 
-jogar.s: jogar.c.s
+Camadas_de_dados/modificaEstado.s: Camadas_de_dados/modificaEstado.c.s
 
-.PHONY : jogar.s
+.PHONY : Camadas_de_dados/modificaEstado.s
 
 # target to generate assembly for a file
-jogar.c.s:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/jogar.c.s
-.PHONY : jogar.c.s
+Camadas_de_dados/modificaEstado.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.s
+.PHONY : Camadas_de_dados/modificaEstado.c.s
+
+Lógica_do_programa/jogar.o: Lógica_do_programa/jogar.c.o
+
+.PHONY : Lógica_do_programa/jogar.o
+
+# target to build an object file
+Lógica_do_programa/jogar.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o
+.PHONY : Lógica_do_programa/jogar.c.o
+
+Lógica_do_programa/jogar.i: Lógica_do_programa/jogar.c.i
+
+.PHONY : Lógica_do_programa/jogar.i
+
+# target to preprocess a source file
+Lógica_do_programa/jogar.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.i
+.PHONY : Lógica_do_programa/jogar.c.i
+
+Lógica_do_programa/jogar.s: Lógica_do_programa/jogar.c.s
+
+.PHONY : Lógica_do_programa/jogar.s
+
+# target to generate assembly for a file
+Lógica_do_programa/jogar.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s
+.PHONY : Lógica_do_programa/jogar.c.s
 
 main.o: main.c.o
 
@@ -294,21 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Rastros"
 	@echo "... edit_cache"
-	@echo "... Intrepretador.o"
-	@echo "... Intrepretador.i"
-	@echo "... Intrepretador.s"
-	@echo "... estruturasDados.o"
-	@echo "... estruturasDados.i"
-	@echo "... estruturasDados.s"
-	@echo "... inicializador.o"
-	@echo "... inicializador.i"
-	@echo "... inicializador.s"
-	@echo "... interface.o"
-	@echo "... interface.i"
-	@echo "... interface.s"
-	@echo "... jogar.o"
-	@echo "... jogar.i"
-	@echo "... jogar.s"
+	@echo "... Camada_de_interface/Interpretador.o"
+	@echo "... Camada_de_interface/Interpretador.i"
+	@echo "... Camada_de_interface/Interpretador.s"
+	@echo "... Camada_de_interface/interface.o"
+	@echo "... Camada_de_interface/interface.i"
+	@echo "... Camada_de_interface/interface.s"
+	@echo "... Camadas_de_dados/estruturasDados.o"
+	@echo "... Camadas_de_dados/estruturasDados.i"
+	@echo "... Camadas_de_dados/estruturasDados.s"
+	@echo "... Camadas_de_dados/modificaEstado.o"
+	@echo "... Camadas_de_dados/modificaEstado.i"
+	@echo "... Camadas_de_dados/modificaEstado.s"
+	@echo "... Lógica_do_programa/jogar.o"
+	@echo "... Lógica_do_programa/jogar.i"
+	@echo "... Lógica_do_programa/jogar.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -78,34 +78,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Intrepretador.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Intrepretador.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/estruturasDados.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/estruturasDados.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/inicializador.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/inicializador.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/interface.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/interface.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/jogar.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/jogar.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h">
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/main.c">
