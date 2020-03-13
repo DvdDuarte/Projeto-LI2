@@ -1,0 +1,8 @@
+//
+// Created by david on 12/03/20.
+//
+
+#ifndef RASTROS_ESTRUTURASDADOS_H
+#define RASTROS_ESTRUTURASDADOS_H
+
+#endif //RASTROS_ESTRUTURASDADOS_H

@@ -4,7 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/david/CLionProjects/Rastros/main.c" "/home/david/CLionProjects/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o"
+  "/home/david/Projeto-LI2/Rastros/Intrepretador.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Intrepretador.c.o"
+  "/home/david/Projeto-LI2/Rastros/estruturasDados.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/estruturasDados.c.o"
+  "/home/david/Projeto-LI2/Rastros/inicializador.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/inicializador.c.o"
+  "/home/david/Projeto-LI2/Rastros/interface.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/interface.c.o"
+  "/home/david/Projeto-LI2/Rastros/jogar.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/jogar.c.o"
+  "/home/david/Projeto-LI2/Rastros/main.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -48,10 +48,10 @@ RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david/CLionProjects/Rastros
+CMAKE_SOURCE_DIR = /home/david/Projeto-LI2/Rastros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david/CLionProjects/Rastros/cmake-build-debug
+CMAKE_BINARY_DIR = /home/david/Projeto-LI2/Rastros/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/CLionProjects/Rastros/cmake-build-debug/CMakeFiles /home/david/CLionProjects/Rastros/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles /home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/CLionProjects/Rastros/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,141 @@ Rastros/fast:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/build
 .PHONY : Rastros/fast
 
+Intrepretador.o: Intrepretador.c.o
+
+.PHONY : Intrepretador.o
+
+# target to build an object file
+Intrepretador.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Intrepretador.c.o
+.PHONY : Intrepretador.c.o
+
+Intrepretador.i: Intrepretador.c.i
+
+.PHONY : Intrepretador.i
+
+# target to preprocess a source file
+Intrepretador.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Intrepretador.c.i
+.PHONY : Intrepretador.c.i
+
+Intrepretador.s: Intrepretador.c.s
+
+.PHONY : Intrepretador.s
+
+# target to generate assembly for a file
+Intrepretador.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Intrepretador.c.s
+.PHONY : Intrepretador.c.s
+
+estruturasDados.o: estruturasDados.c.o
+
+.PHONY : estruturasDados.o
+
+# target to build an object file
+estruturasDados.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/estruturasDados.c.o
+.PHONY : estruturasDados.c.o
+
+estruturasDados.i: estruturasDados.c.i
+
+.PHONY : estruturasDados.i
+
+# target to preprocess a source file
+estruturasDados.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/estruturasDados.c.i
+.PHONY : estruturasDados.c.i
+
+estruturasDados.s: estruturasDados.c.s
+
+.PHONY : estruturasDados.s
+
+# target to generate assembly for a file
+estruturasDados.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/estruturasDados.c.s
+.PHONY : estruturasDados.c.s
+
+inicializador.o: inicializador.c.o
+
+.PHONY : inicializador.o
+
+# target to build an object file
+inicializador.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/inicializador.c.o
+.PHONY : inicializador.c.o
+
+inicializador.i: inicializador.c.i
+
+.PHONY : inicializador.i
+
+# target to preprocess a source file
+inicializador.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/inicializador.c.i
+.PHONY : inicializador.c.i
+
+inicializador.s: inicializador.c.s
+
+.PHONY : inicializador.s
+
+# target to generate assembly for a file
+inicializador.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/inicializador.c.s
+.PHONY : inicializador.c.s
+
+interface.o: interface.c.o
+
+.PHONY : interface.o
+
+# target to build an object file
+interface.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.o
+.PHONY : interface.c.o
+
+interface.i: interface.c.i
+
+.PHONY : interface.i
+
+# target to preprocess a source file
+interface.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.i
+.PHONY : interface.c.i
+
+interface.s: interface.c.s
+
+.PHONY : interface.s
+
+# target to generate assembly for a file
+interface.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.s
+.PHONY : interface.c.s
+
+jogar.o: jogar.c.o
+
+.PHONY : jogar.o
+
+# target to build an object file
+jogar.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/jogar.c.o
+.PHONY : jogar.c.o
+
+jogar.i: jogar.c.i
+
+.PHONY : jogar.i
+
+# target to preprocess a source file
+jogar.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/jogar.c.i
+.PHONY : jogar.c.i
+
+jogar.s: jogar.c.s
+
+.PHONY : jogar.s
+
+# target to generate assembly for a file
+jogar.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/jogar.c.s
+.PHONY : jogar.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Rastros"
 	@echo "... edit_cache"
+	@echo "... Intrepretador.o"
+	@echo "... Intrepretador.i"
+	@echo "... Intrepretador.s"
+	@echo "... estruturasDados.o"
+	@echo "... estruturasDados.i"
+	@echo "... estruturasDados.s"
+	@echo "... inicializador.o"
+	@echo "... inicializador.i"
+	@echo "... inicializador.s"
+	@echo "... interface.o"
+	@echo "... interface.i"
+	@echo "... interface.s"
+	@echo "... jogar.o"
+	@echo "... jogar.i"
+	@echo "... jogar.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

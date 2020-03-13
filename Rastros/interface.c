@@ -1,0 +1,8 @@
+//
+// Created by david on 12/03/20.
+//
+
+#include "interface.h"
+
+// Funcao que deve ser completada e colocada na camada de interface
+void mostrar_tabuleiro(ESTADO *e) {}
