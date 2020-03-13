@@ -3,6 +3,10 @@
 //
 
 #include "inicializador.h"
+#include "estruturasDados.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 // Funcao que deve ser completada e colocada na camada de dados
 ESTADO *inicializar_estado() {

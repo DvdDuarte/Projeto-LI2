@@ -3,4 +3,4 @@ project(Rastros C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Rastros main.c Intrepretador.c Intrepretador.h estruturasDados.c estruturasDados.h jogar.c jogar.h inicializador.c inicializador.h interface.c interface.h)
+add_executable(Rastros main.c "Camada de interface/Interpretador.c" "Camada de interface/Interpretador.h" "Camadas de dados/estruturasDados.c" "Camadas de dados/estruturasDados.h" "Lógica do programa/jogar.c" "Lógica do programa/jogar.h" "Camadas de dados/inicializador.c" "Camadas de dados/inicializador.h" "Camada de interface/interface.c" "Camada de interface/interface.h")

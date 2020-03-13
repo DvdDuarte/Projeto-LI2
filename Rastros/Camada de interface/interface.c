@@ -3,6 +3,10 @@
 //
 
 #include "interface.h"
+#include "../Camadas de dados/estruturasDados.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 // Funcao que deve ser completada e colocada na camada de interface
 void mostrar_tabuleiro(ESTADO *e) {}
