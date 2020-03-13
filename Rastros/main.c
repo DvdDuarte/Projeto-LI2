@@ -8,7 +8,8 @@
 int main() {
 
     ESTADO *e = inicializar_estado();
-    interpretador(e);
+    jogar(e, 5,4);
+    //interpretador(e);
     return 0;
 
 }
