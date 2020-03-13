@@ -25,5 +25,6 @@ CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o: ../Lógica\ do\ programa/j
 CMakeFiles/Rastros.dir/main.c.o: ../Camada\ de\ interface/Interpretador.h
 CMakeFiles/Rastros.dir/main.c.o: ../Camadas\ de\ dados/estruturasDados.h
 CMakeFiles/Rastros.dir/main.c.o: ../Camadas\ de\ dados/modificaEstado.h
+CMakeFiles/Rastros.dir/main.c.o: ../Lógica\ do\ programa/jogar.h
 CMakeFiles/Rastros.dir/main.c.o: ../main.c
 
