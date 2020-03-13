@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Camadas de dados/estruturasDados.h"
-#include "Camadas de dados/inicializador.h"
+#include "Camadas de dados/modificaEstado.h"
 #include "Camada de interface/Interpretador.h"
 
 int main() {

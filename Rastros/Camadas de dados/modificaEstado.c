@@ -2,7 +2,7 @@
 // Created by david on 12/03/20.
 //
 
-#include "inicializador.h"
+#include "modificaEstado.h"
 #include "estruturasDados.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,4 +15,15 @@ ESTADO *inicializar_estado() {
     e -> num_jogadas = 0;
     //Falta o resto da inicializacao
     return e;
+}
+int obter_jogador_atual(ESTADO *estado){
+
+}
+
+int obter_numero_de_jogadas(ESTADO *estado){
+
+}
+
+CASA obter_estado_casa(ESTADO *e, COORDENADA c){
+
 }
