@@ -7,3 +7,7 @@ Laboratórios de Informática II - PL5 - Grupo 5 - David Alexandre Ferreira Duar
   Uma das pastas chama-se "Camada de Interface" que contem os ficheiros de interface e interpretador. O ficheiro de interface tem uma funcao que imprime o tabuleiro. O ficheiro de interpretador contem funcoes que recebem comandos para jogar.
   A pasta de "Camada de dados" contem os ficheiros estruturasDados e modificaEstado. O ficheito estruturas de dados contem todos os tipos de dados utilizados para fazer o jogo desde estado em que esta uma peca ate ao tabuleiro e jogadas. O ficheiro modificaEstado contem funcoes que vao modificar o estado, tal como a funcao que inicializa o estado sempre que se comeca um  jogo novo.
   A pasta da "Logica do Programa contem o ficheiro para jogar. Este ficheiro chamado jogar contem a funcao que devera receber o estado atual e uma coordenada e modificar o estado ao jogar na casa correta se a jogada for válida e devolve verdadeir(valor diferente de zero) se for possivel e falso(zero) caso nao seja 
+
+| -- 13/03/2020 -- |  |14:45|
+Foram alterados os ficheiros jogar.c e jogar.h, onde foi colocada uma função auxiliar que ,dadas as coordenadas nas quais se pretende jogar, esta coloca a peça branca nessas mesmas coordenadas (função void coloca_peça).
+Foi também invocada esta função auxiliar na função principal (int jogar).
