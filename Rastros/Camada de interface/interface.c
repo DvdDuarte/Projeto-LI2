@@ -9,4 +9,7 @@
 #include <string.h>
 
 // Funcao que deve ser completada e colocada na camada de interface
-void mostrar_tabuleiro(ESTADO *e) {}
+// Funcao que devera imprimir o tabuleiro
+void mostrar_tabuleiro(ESTADO *e) {
+
+}
