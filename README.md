@@ -14,3 +14,6 @@ Foi também invocada esta função auxiliar na função principal (int jogar).  
 
 | -- 13/03/2020 -- |  |16:10|
 Foi alterado o ficheiro interface, onde foi feita a funcao mostrar mapa que imprime o mapa dado um determinado estado. Foram criados os ficheiros imprimeCasa.c e imprimeCasa.h. O ficheiro imprimeCasa.c contem uma funcao que dada o estado o numero da linha e a coluna, ve qual e o tipo de peca que se encontra nessa casa (VAZIA, BRANCA e PRETA) e imprime a peca de acordo com o mesmo. Esta funcao e utilizada como uma funcao auxiliar na funcao mostrar_tabuleiro para imprimir o tabuleiro sempre que se faz uma jogada.
+
+| -- 16/03/2020 -- |  |21:30|
+Foi alterado o ficheiro jogar.c, no qual foi colocado um "if" que testa se a jogada é ou não válida, ou seja, se a casa onde se pretende jogar está vazia e se é vizinha da casa onde se encontra a peça branca.
