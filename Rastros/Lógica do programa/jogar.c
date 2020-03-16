@@ -15,10 +15,12 @@
 // Esta funcao devera receber o estado atual e uma coordenada e modificar o estado ao jogar na casa correta se a jogada for válida.
 // A função devolve verdadeiro(valor diferente de zero) se for possível jogar e falso(zero) caso não seja possível.
 int jogar(ESTADO *e, COORDENADA c) {
+    // testa as condições nas quais a jogada é valida ,retornando 0 se não for valida
+    if ( !(e -> tab[c.linha][c.coluna] == VAZIO && (e -> ultima_jogada.coluna + 1 == c.coluna || e -> ultima_jogada.coluna - 1 == c.coluna) && (e -> ultima_jogada.linha + 1 == c.linha || e -> ultima_jogada.linha - 1 == c.linha)))
+        return 0;
 
     coloca_peca (e, c.coluna, c.linha);
     printf("jogar %d %d\n", c.coluna, c.linha);
-
 
 
     return 1;
