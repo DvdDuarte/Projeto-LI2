@@ -15,24 +15,39 @@
 // Esta funcao devera receber o estado atual e uma coordenada e modificar o estado ao jogar na casa correta se a jogada for válida.
 // A função devolve verdadeiro(valor diferente de zero) se for possível jogar e falso(zero) caso não seja possível.
 int jogar(ESTADO *e, COORDENADA c) {
-    // testa as condições nas quais a jogada é valida ,retornando 0 se não for valida
-    if ( !(e -> tab[c.linha][c.coluna] == VAZIO && (e -> ultima_jogada.coluna + 1 == c.coluna || e -> ultima_jogada.coluna - 1 == c.coluna) && (e -> ultima_jogada.linha + 1 == c.linha || e -> ultima_jogada.linha - 1 == c.linha)))
-        return 0;
 
-    coloca_peca (e, c.coluna, c.linha);
-    printf("jogar %d %d\n", c.coluna, c.linha);
+    int flag;
 
+    flag = 0;
+
+
+    if (c.coluna == 7 && c.linha == 0) {
+        printf("O Jogador 2 ganhou");
+        flag = 0;
+    } else if (c.coluna == 0 && c.linha == 7) {
+        printf("O Jogador 1 ganhou");
+        flag = 0;
+    } else if (flag == 1 && !(e->tab[c.linha][c.coluna] == VAZIO &&
+                              (e->ultima_jogada.coluna + 1 == c.coluna || e->ultima_jogada.coluna - 1 == c.coluna) &&
+                              (e->ultima_jogada.linha + 1 == c.linha || e->ultima_jogada.linha - 1 == c.linha))) {
+        coloca_peca(e, c.coluna, c.linha);
+        printf("jogar %d %d\n", c.coluna, c.linha);
+        flag = 1;
+    } else flag = 0;
+
+
+    if (flag == 0) printf("O Jogo Acabou");
 
     return 1;
 
 }
+
 // Função auxiliar que coloca a peça branca na coordenada onde se pretende jogar.
-void coloca_peca (ESTADO *e , int coluna, int linha){
+void coloca_peca(ESTADO *e, int coluna, int linha) {
 
     // Esta funcao vai transformar a posicao da peca branca numa peca preta
-    transformaBrancaPreta(e);
+    e = transformaBrancaPreta(e);
 
-    e -> tab[linha][coluna] = BRANCA;
+    e->tab[linha][coluna] = BRANCA;
 
-    mostrar_tabuleiro(e);
 }

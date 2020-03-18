@@ -150,6 +150,33 @@ Camada_de_interface/Interpretador.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.s
 .PHONY : Camada_de_interface/Interpretador.c.s
 
+Camada_de_interface/imprimeCasa.o: Camada_de_interface/imprimeCasa.c.o
+
+.PHONY : Camada_de_interface/imprimeCasa.o
+
+# target to build an object file
+Camada_de_interface/imprimeCasa.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o
+.PHONY : Camada_de_interface/imprimeCasa.c.o
+
+Camada_de_interface/imprimeCasa.i: Camada_de_interface/imprimeCasa.c.i
+
+.PHONY : Camada_de_interface/imprimeCasa.i
+
+# target to preprocess a source file
+Camada_de_interface/imprimeCasa.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.i
+.PHONY : Camada_de_interface/imprimeCasa.c.i
+
+Camada_de_interface/imprimeCasa.s: Camada_de_interface/imprimeCasa.c.s
+
+.PHONY : Camada_de_interface/imprimeCasa.s
+
+# target to generate assembly for a file
+Camada_de_interface/imprimeCasa.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.s
+.PHONY : Camada_de_interface/imprimeCasa.c.s
+
 Camada_de_interface/interface.o: Camada_de_interface/interface.c.o
 
 .PHONY : Camada_de_interface/interface.o
@@ -258,6 +285,33 @@ Lógica_do_programa/jogar.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s
 .PHONY : Lógica_do_programa/jogar.c.s
 
+Lógica_do_programa/transformaBranca.o: Lógica_do_programa/transformaBranca.c.o
+
+.PHONY : Lógica_do_programa/transformaBranca.o
+
+# target to build an object file
+Lógica_do_programa/transformaBranca.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o
+.PHONY : Lógica_do_programa/transformaBranca.c.o
+
+Lógica_do_programa/transformaBranca.i: Lógica_do_programa/transformaBranca.c.i
+
+.PHONY : Lógica_do_programa/transformaBranca.i
+
+# target to preprocess a source file
+Lógica_do_programa/transformaBranca.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.i
+.PHONY : Lógica_do_programa/transformaBranca.c.i
+
+Lógica_do_programa/transformaBranca.s: Lógica_do_programa/transformaBranca.c.s
+
+.PHONY : Lógica_do_programa/transformaBranca.s
+
+# target to generate assembly for a file
+Lógica_do_programa/transformaBranca.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.s
+.PHONY : Lógica_do_programa/transformaBranca.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -297,6 +351,9 @@ help:
 	@echo "... Camada_de_interface/Interpretador.o"
 	@echo "... Camada_de_interface/Interpretador.i"
 	@echo "... Camada_de_interface/Interpretador.s"
+	@echo "... Camada_de_interface/imprimeCasa.o"
+	@echo "... Camada_de_interface/imprimeCasa.i"
+	@echo "... Camada_de_interface/imprimeCasa.s"
 	@echo "... Camada_de_interface/interface.o"
 	@echo "... Camada_de_interface/interface.i"
 	@echo "... Camada_de_interface/interface.s"
@@ -309,6 +366,9 @@ help:
 	@echo "... Lógica_do_programa/jogar.o"
 	@echo "... Lógica_do_programa/jogar.i"
 	@echo "... Lógica_do_programa/jogar.s"
+	@echo "... Lógica_do_programa/transformaBranca.o"
+	@echo "... Lógica_do_programa/transformaBranca.i"
+	@echo "... Lógica_do_programa/transformaBranca.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

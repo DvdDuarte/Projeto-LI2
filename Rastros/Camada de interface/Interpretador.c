@@ -14,6 +14,8 @@
 
 int interpretador(ESTADO *e) {
 
+    int BUF_SIZE = 1024;
+
     char linha[BUF_SIZE];
     char col[2], lin[2];
     if (fgets(linha, BUF_SIZE, stdin) == NULL)

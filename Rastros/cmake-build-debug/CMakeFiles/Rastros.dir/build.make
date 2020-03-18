@@ -135,6 +135,32 @@ CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c" -o CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s
 
+CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o: ../Lógica\ do\ programa/transformaBranca.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o   -c "/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.c"
+
+CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.c" > CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.i
+
+CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.c" -o CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.s
+
+CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o: ../Camada\ de\ interface/imprimeCasa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o   -c "/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c"
+
+CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c" > CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.i
+
+CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c" -o CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.s
+
 # Object files for target Rastros
 Rastros_OBJECTS = \
 "CMakeFiles/Rastros.dir/main.c.o" \
@@ -142,7 +168,9 @@ Rastros_OBJECTS = \
 "CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o" \
 "CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o" \
 "CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o" \
-"CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o"
+"CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o" \
+"CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o" \
+"CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o"
 
 # External object files for target Rastros
 Rastros_EXTERNAL_OBJECTS =
@@ -153,9 +181,11 @@ Rastros: CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o
 Rastros: CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o
 Rastros: CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o
 Rastros: CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o
+Rastros: CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o
+Rastros: CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o
 Rastros: CMakeFiles/Rastros.dir/build.make
 Rastros: CMakeFiles/Rastros.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Rastros"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Rastros"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Rastros.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

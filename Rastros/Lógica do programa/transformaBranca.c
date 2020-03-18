@@ -11,12 +11,13 @@ ESTADO *transformaBrancaPreta (ESTADO *e) {
 
     for (i = 0; i < 8; i++) {
         for (j = 0; j < 8; j++) {
-            peca = e -> tab[i][j];
+            peca = e -> tab[j][i];
 
             switch (peca)
             {
                 case BRANCA:
                     peca = PRETA;
+                    break;
 
                 default:
                     peca = peca;
@@ -24,7 +25,7 @@ ESTADO *transformaBrancaPreta (ESTADO *e) {
         }
     }
 
-    e -> tab[i][j] = peca;
+    e -> tab[j][i] = peca;
 
     return e;
 }

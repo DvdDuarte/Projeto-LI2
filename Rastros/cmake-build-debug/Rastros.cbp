@@ -84,6 +84,12 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h">
 			<Option target="Rastros"/>
 		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h">
+			<Option target="Rastros"/>
+		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c">
 			<Option target="Rastros"/>
 		</Unit>
@@ -106,6 +112,12 @@
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.h">
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/main.c">

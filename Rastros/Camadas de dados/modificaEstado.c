@@ -26,7 +26,7 @@ ESTADO *inicializar_estado() {
     e -> ultima_jogada.linha = 3;
 
     //Inicializar o tabuleiro
-    for (i= 0; i < 8, i++) {
+    for (i= 0; i < 8; i++) {
         for (j = 0; j < 8; j++) e -> tab[i][j] = VAZIO;
     }
     e -> tab[4][3] = BRANCA;

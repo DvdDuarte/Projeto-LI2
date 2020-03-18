@@ -13,13 +13,13 @@
 // Funcao que devera imprimir o tabuleiro
 void mostrar_tabuleiro(ESTADO *e) {
 
-    int i, j;
+    int linha, coluna;
 
-    for (i = 0; i < 8; i++) {
-        for (j = 0; j < 8; j++) {
-            if (i == 0 && j == 7) putchar ('2');
-            else if (i == 7 && j == 0) putchar ('1');
-            else imprimeCasa (e, i, j);
+    for (linha = 0; linha < 8; linha++) {
+        for (coluna = 0; coluna < 8; coluna++) {
+            if (linha == 0 && coluna == 7) putchar ('2');
+            else if (linha == 7 && coluna == 0) putchar ('1');
+            else imprimeCasa (e, linha, coluna);
         }
         putchar ('\n');
     }
