@@ -20,4 +20,4 @@ Foi alterado o ficheiro jogar.c, no qual foi colocado um "if" que testa se a jog
 
 
 | -- 18/03/2020 -- |  |11.35|
-Alteração na função jogar, para validar as jogadas, ainda se encontra incompleto dado ao facto de não verificar se as coordenadas dadas existem.
+Alteração na função jogar, para validar as jogadas, ainda se encontra incompleto dado ao facto de não verificar se as coordenadas dadas existem. Foi feita também validação do fim de jogo.
