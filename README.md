@@ -17,3 +17,7 @@ Foi alterado o ficheiro interface, onde foi feita a funcao mostrar mapa que impr
 
 | -- 16/03/2020 -- |  |21:30|
 Foi alterado o ficheiro jogar.c, no qual foi colocado um "if" que testa se a jogada é ou não válida, ou seja, se a casa onde se pretende jogar está vazia e se é vizinha da casa onde se encontra a peça branca.
+
+
+| -- 18/03/2020 -- |  |11.35|
+Alteração na função jogar, para validar as jogadas, ainda se encontra incompleto dado ao facto de não verificar se as coordenadas dadas existem.
