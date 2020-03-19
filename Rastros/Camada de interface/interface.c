@@ -27,8 +27,10 @@ void mostrar_tabuleiro(ESTADO *e) {
 }
 
 void mostrar_prompt(ESTADO *e){
-    int i;
-    for(i = 0; e -> jogadas[i] != NULL; i++);
+    int i,j,soma;
+    for(i = 0; e -> jogadas[i].jogador1.coluna != 0; i++);
+    for(j = 0; e -> jogadas[j].jogador2.coluna != 0; i++);
 
-    printf("# %d PL%d (%d)" ,i,e -> jogador_atual, e -> num_jogadas );
+    soma = i + j + 1;
+    printf("# %d PL%d (%d)" ,soma,e -> jogador_atual, e -> num_jogadas );
 }
