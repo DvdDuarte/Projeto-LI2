@@ -16,6 +16,10 @@ int interpretador(ESTADO *e) {
 
     int BUF_SIZE = 1024;
 
+    FILE *jogo;
+
+    jogo = fopen ("jogo.txt","w+");
+
     char linha[BUF_SIZE];
     char col[2], lin[2];
     if (fgets(linha, BUF_SIZE, stdin) == NULL)
@@ -23,7 +27,7 @@ int interpretador(ESTADO *e) {
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
         jogar(e, coord);
-        mostrar_prompt(e);
+        mostrar_prompt(e, jogo);
     }
     return 1;
 
@@ -39,4 +43,4 @@ int interpretador(ESTADO *e) {
 
 //pos "numero da jogada" o programa devera permitir visualizar uma posicao anterior atraves do seu numero
 
-//Q o programa termina
+//Q o programa termina, usar o fclose nessa funcao

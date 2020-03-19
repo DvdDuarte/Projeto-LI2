@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c
-stdio.h
--
-imprimeCasa.h
-/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h
-
 /home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h
 ../Camadas de dados/estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
@@ -35,54 +25,10 @@ string.h
 -
 
 /home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
+bits/types/FILE.h
+-
 ../Camadas de dados/estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
-estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c
-jogar.h
-/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-../Camada de interface/interface.h
-/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
-transformaBranca.h
-/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.h
-stdio.h
--
-stdlib.h
--
-string.h
--
-
-/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/main.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-Camadas de dados/modificaEstado.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
-Camada de interface/Interpretador.h
-/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h
-Lógica do programa/jogar.h
-/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
-Camada de interface/interface.h
-/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
 
