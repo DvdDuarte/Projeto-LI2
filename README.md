@@ -21,3 +21,6 @@ Foi alterado o ficheiro jogar.c, no qual foi colocado um "if" que testa se a jog
 
 | -- 18/03/2020 -- |  |11.35|
 Alteração na função jogar, para validar as jogadas, ainda se encontra incompleto dado ao facto de não verificar se as coordenadas dadas existem. Foi feita também validação do fim de jogo.
+
+| -- 19/03/2020 -- |  |15:52|
+Foram alterados os ficheiros interface.c, interface.h e interpretador.c, nos quais foi adicionado o prompt a através da função mostrar_prompt que deverá imprimir um texto idêntico ao do exemplo presente no Guião 6.
