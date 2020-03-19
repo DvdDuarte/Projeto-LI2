@@ -25,3 +25,10 @@ void mostrar_tabuleiro(ESTADO *e) {
     }
 
 }
+
+void mostrar_prompt(ESTADO *e){
+    int i;
+    for(i = 0; e -> jogadas[i] != NULL; i++);
+
+    printf("# %d PL%d (%d)" ,i,e -> jogador_atual, e -> num_jogadas );
+}
