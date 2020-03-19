@@ -20,11 +20,12 @@ int jogar(ESTADO *e, COORDENADA c) {
 
     flag = 0;
 
+    if (c.coluna - 1 > 104 || c.coluna - 1 < 97 || c.linha - 1 > 7 || c.linha - 1 < 0) {
 
-    if (c.coluna == 7 && c.linha == 0) {
+    }else if (c.coluna - 1 == 104 && c.linha - 1 == 0) {
         printf("O Jogador 2 ganhou");
         flag = 0;
-    } else if (c.coluna == 0 && c.linha == 7) {
+    } else if (c.coluna - 1 == 97 && c.linha - 1 == 7) {
         printf("O Jogador 1 ganhou");
         flag = 0;
     } else if (flag == 1 && !(e->tab[c.linha][c.coluna] == VAZIO &&

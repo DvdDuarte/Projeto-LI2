@@ -32,7 +32,7 @@ void mostrar_tabuleiro(ESTADO *e) {
                     putchar('1');
                     putchar(' ');
                 } else {
-                    imprimeCasa(e, 9-coluna, 8-linha);
+                    imprimeCasa(e, coluna - 96, 8-linha);
                 }
             }
             putchar('\n');
@@ -65,6 +65,10 @@ void mostrar_tabuleiro(ESTADO *e) {
 
 void mostrar_prompt(ESTADO *e) {
     int i, j, soma;
+
+    mostrar_tabuleiro(e);
+    putchar ('\n');
+
     for (i = 0; e->jogadas[i].jogador1.coluna != 0; i++);
     for (j = 0; e->jogadas[j].jogador2.coluna != 0; i++);
 

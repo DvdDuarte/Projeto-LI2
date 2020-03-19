@@ -9,6 +9,7 @@ void imprimeCasa (ESTADO *e, int coluna, int linha) {
 
     CASA peca;
 
+
     peca = e -> tab[coluna][linha];
 
     switch (peca)
