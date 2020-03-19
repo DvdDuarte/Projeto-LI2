@@ -34,6 +34,7 @@ CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o: ../Lógica\ do\
 CMakeFiles/Rastros.dir/Lógica_do_programa/transformaBranca.c.o: ../Lógica\ do\ programa/transformaBranca.h
 
 CMakeFiles/Rastros.dir/main.c.o: ../Camada\ de\ interface/Interpretador.h
+CMakeFiles/Rastros.dir/main.c.o: ../Camada\ de\ interface/interface.h
 CMakeFiles/Rastros.dir/main.c.o: ../Camadas\ de\ dados/estruturasDados.h
 CMakeFiles/Rastros.dir/main.c.o: ../Camadas\ de\ dados/modificaEstado.h
 CMakeFiles/Rastros.dir/main.c.o: ../Lógica\ do\ programa/jogar.h

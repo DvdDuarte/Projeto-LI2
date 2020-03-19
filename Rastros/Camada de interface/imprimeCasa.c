@@ -15,13 +15,16 @@ void imprimeCasa (ESTADO *e, int i, int j) {
     {
     case BRANCA:
         putchar ('*');
+        putchar (' ');
     break;
 
     case PRETA:
         putchar ('#');
+        putchar (' ');
     break;
 
     default:
         putchar ('.');
+        putchar (' ');
     }
 }

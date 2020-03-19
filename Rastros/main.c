@@ -5,6 +5,7 @@
 #include "Camadas de dados/modificaEstado.h"
 #include "Camada de interface/Interpretador.h"
 #include "Lógica do programa/jogar.h"
+#include "Camada de interface/interface.h"
 
 int main() {
 

@@ -13,24 +13,72 @@
 // Funcao que devera imprimir o tabuleiro
 void mostrar_tabuleiro(ESTADO *e) {
 
-    int linha, coluna;
+    int linha, coluna, contalinhas;
 
-    for (linha = 0; linha < 8; linha++) {
-        for (coluna = 0; coluna < 8; coluna++) {
-            if (linha == 0 && coluna == 7) putchar ('2');
-            else if (linha == 7 && coluna == 0) putchar ('1');
-            else imprimeCasa (e, linha, coluna);
+    contalinhas = 8;
+
+    for (linha = 0; contalinhas >= 0; linha++, contalinhas--) {
+
+        if (linha < 8 && contalinhas > 0) {
+
+            putchar(48 + contalinhas);
+            putchar('|');
+            putchar(' ');
+
+            for (coluna = 0; coluna < 8; coluna++) {
+
+                if (linha == 0 && coluna == 7) putchar('2');
+                else if (linha == 7 && coluna == 0) {
+                    putchar('1');
+                    putchar(' ');
+                } else {
+                    imprimeCasa(e, linha, coluna);
+                }
+            }
+            putchar('\n');
+
+        } else {
+            for (int col = 3; col > 0; col--) {
+
+                if (col > 2) {
+
+                    for (int i = 0; i < 18; i++) {
+
+                        if (i < 3) putchar(' ');
+                        else putchar('-');
+
+                    }
+
+                    putchar('\n');
+
+                } else if (col > 1) {
+
+                    for (int i = 0; i < 3; i++) {
+
+                        putchar(' ');
+
+                    }
+                    for (int j = 0; j < 8; j++) {
+
+                        putchar('a' + j);
+                        putchar(' ');
+
+                    }
+                }
+            }
         }
-        putchar ('\n');
     }
-
 }
 
-void mostrar_prompt(ESTADO *e){
-    int i,j,soma;
-    for(i = 0; e -> jogadas[i].jogador1.coluna != 0; i++);
-    for(j = 0; e -> jogadas[j].jogador2.coluna != 0; i++);
+
+
+
+
+void mostrar_prompt(ESTADO *e) {
+    int i, j, soma;
+    for (i = 0; e->jogadas[i].jogador1.coluna != 0; i++);
+    for (j = 0; e->jogadas[j].jogador2.coluna != 0; i++);
 
     soma = i + j + 1;
-    printf("# %d PL%d (%d)" ,soma,e -> jogador_atual, e -> num_jogadas );
+    printf("# %d PL%d (%d)", soma, e->jogador_atual, e->num_jogadas);
 }

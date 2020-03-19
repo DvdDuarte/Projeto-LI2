@@ -6,13 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c
-stdio.h
--
+/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c
+interface.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 imprimeCasa.h
 /home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
 
-/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
 ../Camadas de dados/estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
