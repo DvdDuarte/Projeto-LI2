@@ -29,7 +29,7 @@ ESTADO *inicializar_estado() {
     for (i= 0; i < 8; i++) {
         for (j = 0; j < 8; j++) e -> tab[i][j] = VAZIO;
     }
-    e -> tab[4][3] = BRANCA;
+    e -> tab[5][5] = BRANCA;
 
     //Inicializar as jogadas
     for (i = 0; i < 32 ; i++) {
@@ -38,7 +38,6 @@ ESTADO *inicializar_estado() {
         e->jogadas[i].jogador2.coluna = 0;
         e->jogadas[i].jogador2.linha = 0;
     }
-
 
     return e;
 }

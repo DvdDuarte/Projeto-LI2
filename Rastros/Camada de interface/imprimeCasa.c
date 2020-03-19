@@ -5,11 +5,11 @@
 #include <stdio.h>
 #include "imprimeCasa.h"
 
-void imprimeCasa (ESTADO *e, int i, int j) {
+void imprimeCasa (ESTADO *e, int coluna, int linha) {
 
     CASA peca;
 
-    peca = e -> tab[i][j];
+    peca = e -> tab[coluna][linha];
 
     switch (peca)
     {

@@ -32,37 +32,26 @@ void mostrar_tabuleiro(ESTADO *e) {
                     putchar('1');
                     putchar(' ');
                 } else {
-                    imprimeCasa(e, linha, coluna);
+                    imprimeCasa(e, 9-coluna, 8-linha);
                 }
             }
             putchar('\n');
 
         } else {
             for (int col = 3; col > 0; col--) {
-
                 if (col > 2) {
-
                     for (int i = 0; i < 18; i++) {
-
                         if (i < 3) putchar(' ');
                         else putchar('-');
-
                     }
-
                     putchar('\n');
-
                 } else if (col > 1) {
-
                     for (int i = 0; i < 3; i++) {
-
                         putchar(' ');
-
                     }
                     for (int j = 0; j < 8; j++) {
-
                         putchar('a' + j);
                         putchar(' ');
-
                     }
                 }
             }
