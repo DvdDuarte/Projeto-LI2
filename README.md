@@ -24,3 +24,6 @@ Alteração na função jogar, para validar as jogadas, ainda se encontra incomp
 
 | -- 19/03/2020 -- |  |15:52|
 Foram alterados os ficheiros interface.c, interface.h e interpretador.c, nos quais foi adicionado o prompt a através da função mostrar_prompt que deverá imprimir um texto idêntico ao do exemplo presente no Guião 6.
+
+| -- 19/03/2020 -- |  |19:36|
+Implementacao correta das coordenadas do tabuleiro, tanto visualmente como internamente para as contas, troca de todas as funcoes de printf e putchar pelas suas respetivas para escrever num ficheiro.
