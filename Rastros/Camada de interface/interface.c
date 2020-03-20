@@ -32,7 +32,7 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
                     fputc('1', ficheiro);
                     fputc(' ', ficheiro);
                 } else {
-                    imprimeCasa(e, coluna - 96, 8-linha, ficheiro);
+                    imprimeCasa(e, coluna - 96, 8-linha);
                 }
             }
             fputc('\n', ficheiro);
