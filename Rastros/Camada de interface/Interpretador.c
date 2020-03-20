@@ -4,6 +4,7 @@
 
 #include "Interpretador.h"
 #include "../Camadas de dados/estruturasDados.h"
+#include "../Camadas de dados/grava.h"
 #include "../Lógica do programa/jogar.h"
 #include "interface.h"
 #include <stdio.h>
