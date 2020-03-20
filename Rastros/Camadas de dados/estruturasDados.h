@@ -4,7 +4,7 @@
 
 #ifndef RASTROS_ESTRUTURASDADOS_H
 #define RASTROS_ESTRUTURASDADOS_H
-typedef enum {VAZIO, BRANCA, PRETA} CASA;//, UM, DOIS} CASA;
+typedef enum {VAZIO, BRANCA, PRETA, UM, DOIS} CASA;
 typedef struct {
     int coluna;
     int linha;

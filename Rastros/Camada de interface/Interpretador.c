@@ -20,17 +20,21 @@ int interpretador(ESTADO *e) {
 
     jogo = fopen ("jogo.txt","w+");
 
+    mostrar_prompt(e, jogo);
+
     char linha[BUF_SIZE];
     char col[2], lin[2];
-    if (fgets(linha, BUF_SIZE, stdin) == NULL)
+    if (fgets(linha, BUF_SIZE, stdin) == NULL) {
         return 0;
+    }
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
         jogar(e, coord, jogo);
-        mostrar_prompt(e, jogo);
     }
-    return 1;
+    if (strcmp(linha,"Q\n")==0) return 0;
 
+
+    return 1;
 }
 
 //gr "nome do ficheiro" -> serve para gravar o estado do tabuleiro num ficheiro com o nome dado

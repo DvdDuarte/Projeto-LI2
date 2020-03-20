@@ -23,7 +23,7 @@ void imprimeCasa (ESTADO *e, int coluna, int linha, FILE *jogo) {
         fputc ('#', jogo);
         fputc (' ', jogo);
     break;
-    /*
+
     case UM:
         fputc ('1', jogo);
         fputc (' ', jogo);
@@ -32,7 +32,7 @@ void imprimeCasa (ESTADO *e, int coluna, int linha, FILE *jogo) {
         fputc ('2', jogo);
         fputc (' ', jogo);
         break;
-        */
+
 
 
     default:
