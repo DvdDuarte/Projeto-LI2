@@ -73,5 +73,5 @@ void mostrar_prompt(ESTADO *e, FILE *ficheiro) {
     for (j = 0; e->jogadas[j].jogador2.coluna != 0; i++);
 
     soma = i + j + 1;
-    fprintf(ficheiro,"# %d PL%d (%d)", soma, e->jogador_atual, e->num_jogadas);
+    fprintf(ficheiro,"# %d PL%d (%d) > ", soma, e->jogador_atual, e->num_jogadas);
 }
