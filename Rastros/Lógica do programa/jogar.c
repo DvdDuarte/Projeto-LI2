@@ -7,6 +7,7 @@
 #include "../Camadas de dados/VerificaJogada.h"
 #include "../Camada de interface/interface.h"
 #include "transformaBranca.h"
+#include "tipoErros.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

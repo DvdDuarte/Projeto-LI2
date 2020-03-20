@@ -34,15 +34,16 @@ int jogadavalida (ESTADO *e, COORDENADA c) {
     else if (e -> tab[coluna][linha] == VAZIO) {
 
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
-        if (abs(distancia(e, coluna, linha)) <= 1)//o valor abs da distancia entre as novas coordenadas e ass da peca branca for <= 1 entao )
+        if (abs(distancia(e, coluna, linha)) <= 1)
+            //o valor abs da distancia entre as novas coordenadas e ass da peca branca for <= 1 entao )
             flag = 1;
         else return flag;
 
         if (flag == 1) {
 
             //4- se for jogado na casa 1 ou 2 o jogo acaba
-            if (coluna == 7 && linha == 0) return 2;
-            else if (coluna == 0 && linha == 7) return 1;
+            if (coluna == 7 && linha == 0) return JOGADOR_2;
+            else if (coluna == 0 && linha == 7) return JOGADOR_1;
         }
 
         return TUDO_OK ;
