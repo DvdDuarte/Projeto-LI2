@@ -231,6 +231,33 @@ Camadas_de_dados/estruturasDados.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s
 .PHONY : Camadas_de_dados/estruturasDados.c.s
 
+Camadas_de_dados/grava.o: Camadas_de_dados/grava.c.o
+
+.PHONY : Camadas_de_dados/grava.o
+
+# target to build an object file
+Camadas_de_dados/grava.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o
+.PHONY : Camadas_de_dados/grava.c.o
+
+Camadas_de_dados/grava.i: Camadas_de_dados/grava.c.i
+
+.PHONY : Camadas_de_dados/grava.i
+
+# target to preprocess a source file
+Camadas_de_dados/grava.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.i
+.PHONY : Camadas_de_dados/grava.c.i
+
+Camadas_de_dados/grava.s: Camadas_de_dados/grava.c.s
+
+.PHONY : Camadas_de_dados/grava.s
+
+# target to generate assembly for a file
+Camadas_de_dados/grava.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.s
+.PHONY : Camadas_de_dados/grava.c.s
+
 Camadas_de_dados/modificaEstado.o: Camadas_de_dados/modificaEstado.c.o
 
 .PHONY : Camadas_de_dados/modificaEstado.o
@@ -360,6 +387,9 @@ help:
 	@echo "... Camadas_de_dados/estruturasDados.o"
 	@echo "... Camadas_de_dados/estruturasDados.i"
 	@echo "... Camadas_de_dados/estruturasDados.s"
+	@echo "... Camadas_de_dados/grava.o"
+	@echo "... Camadas_de_dados/grava.i"
+	@echo "... Camadas_de_dados/grava.s"
 	@echo "... Camadas_de_dados/modificaEstado.o"
 	@echo "... Camadas_de_dados/modificaEstado.i"
 	@echo "... Camadas_de_dados/modificaEstado.s"

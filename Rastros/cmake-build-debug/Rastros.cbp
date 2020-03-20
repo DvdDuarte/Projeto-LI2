@@ -102,6 +102,12 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h">
 			<Option target="Rastros"/>
 		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.h">
+			<Option target="Rastros"/>
+		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c">
 			<Option target="Rastros"/>
 		</Unit>

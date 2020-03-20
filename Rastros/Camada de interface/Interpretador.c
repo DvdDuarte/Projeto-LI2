@@ -15,7 +15,7 @@
 int interpretador(ESTADO *e) {
 
     int BUF_SIZE = 1024;
-
+    char *filename;
     FILE *jogo;
 
     jogo = fopen ("jogo.txt","w+");
@@ -31,7 +31,12 @@ int interpretador(ESTADO *e) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
         jogar(e, coord, jogo);
     }
+
     if (strcmp(linha,"Q\n")==0) return 0;
+
+    if(sscanf(linha, "gr %s", filename) == 1) {
+        gravar(e,filename);
+    }
 
 
     return 1;

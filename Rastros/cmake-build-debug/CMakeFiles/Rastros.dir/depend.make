@@ -19,6 +19,11 @@ CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camadas\ de\ dados/
 CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o: ../Camadas\ de\ dados/estruturasDados.c
 CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o: ../Camadas\ de\ dados/estruturasDados.h
 
+CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camada\ de\ interface/interface.h
+CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camadas\ de\ dados/estruturasDados.h
+CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camadas\ de\ dados/grava.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camadas\ de\ dados/grava.h
+
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas\ de\ dados/estruturasDados.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas\ de\ dados/modificaEstado.c
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas\ de\ dados/modificaEstado.h

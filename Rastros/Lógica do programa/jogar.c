@@ -56,6 +56,10 @@ void coloca_peca(ESTADO *e, int coluna, int linha) {
     // Esta funcao vai transformar a posicao da peca branca numa peca preta
     e = transformaBrancaPreta(e);
 
-    e->tab[linha][coluna] = BRANCA;
+    e->tab[coluna][linha] = BRANCA;
 
 }
+
+
+
+// ao receber a coordenada da coluna, quando for para gravar a nova informacao, colocar isto - 'a' + 1
