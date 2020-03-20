@@ -23,6 +23,17 @@ void imprimeCasa (ESTADO *e, int coluna, int linha) {
         putchar ('#');
         putchar (' ');
     break;
+    /*
+    case UM:
+        putchar ('1');
+        putchar (' ');
+        break;
+    case DOIS:
+        putchar ('2');
+        putchar (' ');
+        break;
+        */
+
 
     default:
         putchar ('.');

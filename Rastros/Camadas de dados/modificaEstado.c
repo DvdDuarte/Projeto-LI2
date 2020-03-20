@@ -30,6 +30,8 @@ ESTADO *inicializar_estado() {
         for (j = 0; j < 8; j++) e -> tab[i][j] = VAZIO;
     }
     e -> tab[5][5] = BRANCA;
+    //e -> tab[0][7] = UM;
+    //e -> tab[7][0] = DOIS;
 
     //Inicializar as jogadas
     for (i = 0; i < 32 ; i++) {
