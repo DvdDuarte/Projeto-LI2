@@ -1,0 +1,14 @@
+//
+// Created by david on 20/03/20.
+//
+
+#ifndef RASTROS_TIPOERROS_H
+#define RASTROS_TIPOERROS_H
+typedef enum {
+    TUDO_OK,
+    COORDENADA_INVALIDA,
+    JOGADA_INVALIDA,
+    ERRO_LER_TAB,
+    ERRO_ABRIR_FICHEIRO,
+} ERROS;
+#endif //RASTROS_TIPOERROS_H

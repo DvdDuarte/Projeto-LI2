@@ -312,6 +312,33 @@ Camadas_de_dados/modificaEstado.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.s
 .PHONY : Camadas_de_dados/modificaEstado.c.s
 
+Camadas_de_dados/tipoErros.o: Camadas_de_dados/tipoErros.c.o
+
+.PHONY : Camadas_de_dados/tipoErros.o
+
+# target to build an object file
+Camadas_de_dados/tipoErros.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o
+.PHONY : Camadas_de_dados/tipoErros.c.o
+
+Camadas_de_dados/tipoErros.i: Camadas_de_dados/tipoErros.c.i
+
+.PHONY : Camadas_de_dados/tipoErros.i
+
+# target to preprocess a source file
+Camadas_de_dados/tipoErros.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.i
+.PHONY : Camadas_de_dados/tipoErros.c.i
+
+Camadas_de_dados/tipoErros.s: Camadas_de_dados/tipoErros.c.s
+
+.PHONY : Camadas_de_dados/tipoErros.s
+
+# target to generate assembly for a file
+Camadas_de_dados/tipoErros.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.s
+.PHONY : Camadas_de_dados/tipoErros.c.s
+
 Lógica_do_programa/jogar.o: Lógica_do_programa/jogar.c.o
 
 .PHONY : Lógica_do_programa/jogar.o
@@ -423,6 +450,9 @@ help:
 	@echo "... Camadas_de_dados/modificaEstado.o"
 	@echo "... Camadas_de_dados/modificaEstado.i"
 	@echo "... Camadas_de_dados/modificaEstado.s"
+	@echo "... Camadas_de_dados/tipoErros.o"
+	@echo "... Camadas_de_dados/tipoErros.i"
+	@echo "... Camadas_de_dados/tipoErros.s"
 	@echo "... Lógica_do_programa/jogar.o"
 	@echo "... Lógica_do_programa/jogar.i"
 	@echo "... Lógica_do_programa/jogar.s"

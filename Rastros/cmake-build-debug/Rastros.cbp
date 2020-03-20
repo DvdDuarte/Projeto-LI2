@@ -120,6 +120,12 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h">
 			<Option target="Rastros"/>
 		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h">
+			<Option target="Rastros"/>
+		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c">
 			<Option target="Rastros"/>
 		</Unit>

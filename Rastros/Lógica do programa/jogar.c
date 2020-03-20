@@ -4,6 +4,7 @@
 
 #include "jogar.h"
 #include "../Camadas de dados/estruturasDados.h"
+#include "../Camadas de dados/VerificaJogada.h"
 #include "../Camada de interface/interface.h"
 #include "transformaBranca.h"
 #include <stdio.h>
@@ -20,11 +21,11 @@ int jogar(ESTADO *e, COORDENADA c, FILE *jogo) {
 
     flag = 0;
 
-    if (c.coluna - 1 == 104 && c.linha - 1 == 0) {
+    if (c.coluna - 1 == 'h' && c.linha - 1 == 0) {
         fprintf(jogo,"O Jogador 2 ganhou");
 
         flag = 0;
-    } else if (c.coluna - 1 == 97 && c.linha - 1 == 7) {
+    } else if (c.coluna - 1 == 'a' && c.linha - 1 == 7) {
         fprintf(jogo,"O Jogador 1 ganhou");
         flag = 0;
     } else if (flag == 1 && !(e->tab[c.linha][c.coluna] == VAZIO &&
