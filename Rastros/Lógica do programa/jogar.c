@@ -50,15 +50,7 @@ int jogar(ESTADO *e, COORDENADA c, FILE *jogo) {
 
 }
 
-// Função auxiliar que coloca a peça branca na coordenada onde se pretende jogar.
-void coloca_peca(ESTADO *e, int coluna, int linha) {
 
-    // Esta funcao vai transformar a posicao da peca branca numa peca preta
-    e = transformaBrancaPreta(e);
-
-    e->tab[coluna][linha] = BRANCA;
-
-}
 
 
 

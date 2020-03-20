@@ -96,6 +96,12 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h">
 			<Option target="Rastros"/>
 		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h">
+			<Option target="Rastros"/>
+		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c">
 			<Option target="Rastros"/>
 		</Unit>

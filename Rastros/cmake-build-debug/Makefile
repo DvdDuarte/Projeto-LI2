@@ -204,6 +204,33 @@ Camada_de_interface/interface.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s
 .PHONY : Camada_de_interface/interface.c.s
 
+Camadas_de_dados/VerificaJogada.o: Camadas_de_dados/VerificaJogada.c.o
+
+.PHONY : Camadas_de_dados/VerificaJogada.o
+
+# target to build an object file
+Camadas_de_dados/VerificaJogada.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o
+.PHONY : Camadas_de_dados/VerificaJogada.c.o
+
+Camadas_de_dados/VerificaJogada.i: Camadas_de_dados/VerificaJogada.c.i
+
+.PHONY : Camadas_de_dados/VerificaJogada.i
+
+# target to preprocess a source file
+Camadas_de_dados/VerificaJogada.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.i
+.PHONY : Camadas_de_dados/VerificaJogada.c.i
+
+Camadas_de_dados/VerificaJogada.s: Camadas_de_dados/VerificaJogada.c.s
+
+.PHONY : Camadas_de_dados/VerificaJogada.s
+
+# target to generate assembly for a file
+Camadas_de_dados/VerificaJogada.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.s
+.PHONY : Camadas_de_dados/VerificaJogada.c.s
+
 Camadas_de_dados/estruturasDados.o: Camadas_de_dados/estruturasDados.c.o
 
 .PHONY : Camadas_de_dados/estruturasDados.o
@@ -384,6 +411,9 @@ help:
 	@echo "... Camada_de_interface/interface.o"
 	@echo "... Camada_de_interface/interface.i"
 	@echo "... Camada_de_interface/interface.s"
+	@echo "... Camadas_de_dados/VerificaJogada.o"
+	@echo "... Camadas_de_dados/VerificaJogada.i"
+	@echo "... Camadas_de_dados/VerificaJogada.s"
 	@echo "... Camadas_de_dados/estruturasDados.o"
 	@echo "... Camadas_de_dados/estruturasDados.i"
 	@echo "... Camadas_de_dados/estruturasDados.s"
