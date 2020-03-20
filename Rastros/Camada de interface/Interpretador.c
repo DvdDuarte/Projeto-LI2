@@ -26,7 +26,7 @@ int interpretador(ESTADO *e) {
         return 0;
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
-        jogar(e, coord);
+        jogar(e, coord, jogo);
         mostrar_prompt(e, jogo);
     }
     return 1;

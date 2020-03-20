@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include "imprimeCasa.h"
 
-void imprimeCasa (ESTADO *e, int coluna, int linha) {
+void imprimeCasa (ESTADO *e, int coluna, int linha, FILE *jogo) {
 
     CASA peca;
 
@@ -15,28 +15,28 @@ void imprimeCasa (ESTADO *e, int coluna, int linha) {
     switch (peca)
     {
     case BRANCA:
-        putchar ('*');
-        putchar (' ');
+        fputc ('*', jogo);
+        fputc (' ', jogo);
     break;
 
     case PRETA:
-        putchar ('#');
-        putchar (' ');
+        fputc ('#', jogo);
+        fputc (' ', jogo);
     break;
     /*
     case UM:
-        putchar ('1');
-        putchar (' ');
+        fputc ('1', jogo);
+        fputc (' ', jogo);
         break;
     case DOIS:
-        putchar ('2');
-        putchar (' ');
+        fputc ('2', jogo);
+        fputc (' ', jogo);
         break;
         */
 
 
     default:
-        putchar ('.');
-        putchar (' ');
+        fputc ('.', jogo);
+        fputc (' ', jogo);
     }
 }

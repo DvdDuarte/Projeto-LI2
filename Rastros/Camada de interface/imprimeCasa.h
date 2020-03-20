@@ -6,5 +6,5 @@
 
 #ifndef RASTROS_IMPRIMECASA_H
 #define RASTROS_IMPRIMECASA_H
-void imprimeCasa (ESTADO *e, int i, int j);
+void imprimeCasa (ESTADO *e, int i, int j, FILE *jogo);
 #endif //RASTROS_IMPRIMECASA_H
