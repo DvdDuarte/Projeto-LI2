@@ -5,9 +5,9 @@
 #include "jogar.h"
 #include "../Camadas de dados/estruturasDados.h"
 #include "../Camadas de dados/VerificaJogada.h"
+#include "../Camadas de dados/tipoErros.h"
 #include "../Camada de interface/interface.h"
 #include "transformaBranca.h"
-#include "tipoErros.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

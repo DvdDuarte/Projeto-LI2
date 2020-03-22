@@ -4,10 +4,11 @@
 //
 
 #include "estruturasDados.h"
+#include "tipoErros.h"
 
 #ifndef RASTROS_VERIFICAJOGADA_H
 #define RASTROS_VERIFICAJOGADA_H
-int jogadavalida (ESTADO *e, COORDENADA c);
+VALIDACOES jogadavalida (ESTADO *e, COORDENADA c);
 void coloca_peca(ESTADO *e, int coluna, int linha);
 float distancia(ESTADO *e, int coluna, int linha);
 #endif //RASTROS_VERIFICAJOGADA_H

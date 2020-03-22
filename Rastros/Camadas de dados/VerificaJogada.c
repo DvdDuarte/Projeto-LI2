@@ -9,7 +9,7 @@
 #include <math.h>
 
 
-int jogadavalida (ESTADO *e, COORDENADA c) {
+VALIDACOES jogadavalida (ESTADO *e, COORDENADA c) {
 
     // fazer aqui as verificacoes das jogadas
     //return 1 se o jogador 1 ganhar, 2 se o jogador 2 ganhar, 0 se a jogada for valida e (-1) se a jogada for invalida e 3 se o

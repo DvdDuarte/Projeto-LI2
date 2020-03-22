@@ -6,25 +6,47 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c
-VerificaJogada.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h
-../Lógica do programa/transformaBranca.h
-/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.h
-tipoErros.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
-stdlib.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
+bits/types/FILE.h
 -
-math.h
--
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h
 estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+tipoErros.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
+
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c
+jogar.h
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+../Camadas de dados/VerificaJogada.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h
+../Camadas de dados/tipoErros.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
+../Camada de interface/interface.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
+transformaBranca.h
+/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+bits/types/FILE.h
+-
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
 /home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.h
 ../Camadas de dados/estruturasDados.h
