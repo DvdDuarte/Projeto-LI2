@@ -39,6 +39,10 @@ int interpretador(ESTADO *e) {
         gravar(e,filename);
     }
 
+    if(sscanf(linha, "ler %s",filename) == 1) {
+        ler(filename);
+    }
+
 
     return 1;
 }

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o"
+  "/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o"
   "/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o"
