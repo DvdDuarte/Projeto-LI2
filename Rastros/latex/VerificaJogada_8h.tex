@@ -1,0 +1,82 @@
+\hypertarget{VerificaJogada_8h}{}\section{Camadas de dados/\+Verifica\+Jogada.h File Reference}
+\label{VerificaJogada_8h}\index{Camadas de dados/\+Verifica\+Jogada.\+h@{Camadas de dados/\+Verifica\+Jogada.\+h}}
+{\ttfamily \#include \char`\"{}estruturas\+Dados.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tipo\+Erros.\+h\char`\"{}}\newline
+Include dependency graph for Verifica\+Jogada.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipoErros_8h_adb1ce27db49af4588e155676189ad598}{V\+A\+L\+I\+D\+A\+C\+O\+ES} \hyperlink{VerificaJogada_8h_ae6d5cd06a47da1ffc46fac5c4d14696f}{jogadavalida} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
+\begin{DoxyCompactList}\small\item\em Valida uma jogada. \end{DoxyCompactList}\item 
+void \hyperlink{VerificaJogada_8h_a01529731c7a69df8e5a115fe1df06226}{coloca\+\_\+peca} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int coluna, int linha)
+\begin{DoxyCompactList}\small\item\em Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava. \end{DoxyCompactList}\item 
+float \hyperlink{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}{distancia} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int coluna, int linha)
+\begin{DoxyCompactList}\small\item\em Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definicao das funoes que validam uma jogada e a concretiza, se for possivel 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{VerificaJogada_8h_a01529731c7a69df8e5a115fe1df06226}\label{VerificaJogada_8h_a01529731c7a69df8e5a115fe1df06226}} 
+\index{Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}!coloca\+\_\+peca@{coloca\+\_\+peca}}
+\index{coloca\+\_\+peca@{coloca\+\_\+peca}!Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}}
+\subsubsection{\texorpdfstring{coloca\+\_\+peca()}{coloca\_peca()}}
+{\footnotesize\ttfamily void coloca\+\_\+peca (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{coluna,  }\item[{int}]{linha }\end{DoxyParamCaption})}
+
+
+
+Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em coluna} & A coluna da casa nova \\
+\hline
+{\em linha} & A linha da casa nova \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}\label{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}} 
+\index{Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}!distancia@{distancia}}
+\index{distancia@{distancia}!Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}}
+\subsubsection{\texorpdfstring{distancia()}{distancia()}}
+{\footnotesize\ttfamily float distancia (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{coluna,  }\item[{int}]{linha }\end{DoxyParamCaption})}
+
+
+
+Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em coluna} & A coluna da casa nova \\
+\hline
+{\em linha} & A linha da casa nova \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A distancia para a funcao que valida a jogada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VerificaJogada_8h_ae6d5cd06a47da1ffc46fac5c4d14696f}\label{VerificaJogada_8h_ae6d5cd06a47da1ffc46fac5c4d14696f}} 
+\index{Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}!jogadavalida@{jogadavalida}}
+\index{jogadavalida@{jogadavalida}!Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}}
+\subsubsection{\texorpdfstring{jogadavalida()}{jogadavalida()}}
+{\footnotesize\ttfamily \hyperlink{tipoErros_8h_adb1ce27db49af4588e155676189ad598}{V\+A\+L\+I\+D\+A\+C\+O\+ES} jogadavalida (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}]{c }\end{DoxyParamCaption})}
+
+
+
+Valida uma jogada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em c} & A coordenada a verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A validacao da jogada 
+\end{DoxyReturn}

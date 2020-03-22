@@ -1,0 +1,24 @@
+digraph "Camadas de dados/estruturasDados.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Camadas de dados/estruturas\lDados.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Camada de interface\l/imprimeCasa.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$imprimeCasa_8h.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Camada de interface\l/interface.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_8h.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Camada de interface\l/Interpretador.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Interpretador_8h_source.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Camadas de dados/grava.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$grava_8h.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Lógica do programa\l/jogar.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$jogar_8h.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Camadas de dados/lerEstado.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lerEstado_8h.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Camadas de dados/modifica\lEstado.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modificaEstado_8h.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Camadas de dados/Verifica\lJogada.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$VerificaJogada_8h.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Lógica do programa\l/transformaBranca.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$transformaBranca_8h.html"];
+}

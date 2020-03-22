@@ -7,6 +7,7 @@
 #include "../Camadas de dados/grava.h"
 #include "../Lógica do programa/jogar.h"
 #include "interface.h"
+#include "../Camadas de dados/lerEstado.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,9 +18,9 @@ int interpretador(ESTADO *e) {
 
     int BUF_SIZE = 1024;
     char *filename;
-    FILE *jogo;
 
-    jogo = fopen ("jogo.txt","w+");
+
+
 
     mostrar_prompt(e, jogo);
 
@@ -30,7 +31,7 @@ int interpretador(ESTADO *e) {
     }
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
-        jogar(e, coord, jogo);
+        jogar(e, coord);
     }
 
     if (strcmp(linha,"Q\n")==0) return 0;

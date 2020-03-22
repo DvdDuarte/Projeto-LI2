@@ -1,0 +1,53 @@
+\hypertarget{interface_8h}{}\section{Camada de interface/interface.h File Reference}
+\label{interface_8h}\index{Camada de interface/interface.\+h@{Camada de interface/interface.\+h}}
+{\ttfamily \#include $<$bits/types/\+F\+I\+L\+E.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Camadas de dados/estruturas\+Dados.\+h\char`\"{}}\newline
+Include dependency graph for interface.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_8h_ae01b0ed404ed74367f2c3d279d94a32e}{mostrar\+\_\+tabuleiro} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, F\+I\+LE $\ast$ficheiro)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que imprime o tabuleiro de acordo com o estado e as coordenadas lateralmente para ajudar os jogadores. \end{DoxyCompactList}\item 
+void \hyperlink{interface_8h_a3d8df62a196f60a42b923004ecf03e12}{mostrar\+\_\+prompt} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, F\+I\+LE $\ast$ficheiro)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que cria a prompt, com o numero do jogador atual, da jogada e o numero dos movimentos feitos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definicao das funcoes principais que vao criar a interface do jogo 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{interface_8h_a3d8df62a196f60a42b923004ecf03e12}\label{interface_8h_a3d8df62a196f60a42b923004ecf03e12}} 
+\index{interface.\+h@{interface.\+h}!mostrar\+\_\+prompt@{mostrar\+\_\+prompt}}
+\index{mostrar\+\_\+prompt@{mostrar\+\_\+prompt}!interface.\+h@{interface.\+h}}
+\subsubsection{\texorpdfstring{mostrar\+\_\+prompt()}{mostrar\_prompt()}}
+{\footnotesize\ttfamily void mostrar\+\_\+prompt (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{F\+I\+LE $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que cria a prompt, com o numero do jogador atual, da jogada e o numero dos movimentos feitos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador do estado \\
+\hline
+{\em ficheiro} & Nome do ficheiro no qual se pretende mostrar a prompt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_ae01b0ed404ed74367f2c3d279d94a32e}\label{interface_8h_ae01b0ed404ed74367f2c3d279d94a32e}} 
+\index{interface.\+h@{interface.\+h}!mostrar\+\_\+tabuleiro@{mostrar\+\_\+tabuleiro}}
+\index{mostrar\+\_\+tabuleiro@{mostrar\+\_\+tabuleiro}!interface.\+h@{interface.\+h}}
+\subsubsection{\texorpdfstring{mostrar\+\_\+tabuleiro()}{mostrar\_tabuleiro()}}
+{\footnotesize\ttfamily void mostrar\+\_\+tabuleiro (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{F\+I\+LE $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que imprime o tabuleiro de acordo com o estado e as coordenadas lateralmente para ajudar os jogadores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador do estado \\
+\hline
+{\em ficheiro} & Nome do ficheiro para qual se imprime o tabuleiro \\
+\hline
+\end{DoxyParams}

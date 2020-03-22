@@ -1,0 +1,37 @@
+\hypertarget{imprimeCasa_8h}{}\section{Camada de interface/imprime\+Casa.h File Reference}
+\label{imprimeCasa_8h}\index{Camada de interface/imprime\+Casa.\+h@{Camada de interface/imprime\+Casa.\+h}}
+{\ttfamily \#include \char`\"{}../\+Camadas de dados/estruturas\+Dados.\+h\char`\"{}}\newline
+Include dependency graph for imprime\+Casa.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{imprimeCasa_8h_a6ded6029322fc81d15fa2475a8bb5e24}{imprime\+Casa} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int i, int j, F\+I\+LE $\ast$jogo)
+\begin{DoxyCompactList}\small\item\em Definicap da funcao que dado um estado a coordenada imprime a casa do tabuleiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definicao da funcao que imprime a casa com uma determinada coordenada 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{imprimeCasa_8h_a6ded6029322fc81d15fa2475a8bb5e24}\label{imprimeCasa_8h_a6ded6029322fc81d15fa2475a8bb5e24}} 
+\index{imprime\+Casa.\+h@{imprime\+Casa.\+h}!imprime\+Casa@{imprime\+Casa}}
+\index{imprime\+Casa@{imprime\+Casa}!imprime\+Casa.\+h@{imprime\+Casa.\+h}}
+\subsubsection{\texorpdfstring{imprime\+Casa()}{imprimeCasa()}}
+{\footnotesize\ttfamily void imprime\+Casa (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{F\+I\+LE $\ast$}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Definicap da funcao que dado um estado a coordenada imprime a casa do tabuleiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador do estado \\
+\hline
+{\em i} & Numero da coluna da casa \\
+\hline
+{\em j} & Numero da linha da casa \\
+\hline
+{\em jogo} & Nome do ficheiro no qual se pretende imprimir a casa \\
+\hline
+\end{DoxyParams}

@@ -51,6 +51,7 @@ VALIDACOES jogadavalida (ESTADO *e, COORDENADA c) {
     } else return JOGADA_INVALIDA;
 
     //5- se o outro jogador nao conseguir jogar mais o jogo acaba
+
 }
 
 // Função auxiliar que coloca a peça branca na coordenada onde se pretende jogar.
