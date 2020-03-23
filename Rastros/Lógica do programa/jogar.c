@@ -16,38 +16,37 @@
 
 // Esta funcao devera receber o estado atual e uma coordenada e modificar o estado ao jogar na casa correta se a jogada for válida.
 // A função devolve verdadeiro(valor diferente de zero) se for possível jogar e falso(zero) caso não seja possível.
-int jogar(ESTADO *e, COORDENADA c) {
+int jogar(ESTADO *e, COORDENADA c, FILE *jogo) {
 
-    int flag;
+    VALIDACOES flag;
+    flag = jogadavalida(e, c);
 
-    flag = 0;
+    switch (flag) {
+        case TUDO_OK :
+            coloca_peca(e, c.coluna, c.linha);
+            break;
 
-    if (c.coluna - 1 == 'h' && c.linha - 1 == 0) {
-        fprintf(stdout,"O Jogador 2 ganhou");
+        case JOGADOR_1 :
+            fprintf(jogo, "O Jogador 1 ganhou");
+            fprintf(jogo, "O Jogo Acabou");
+            fclose(jogo);
+            break;
 
-        flag = 0;
-    } else if (c.coluna - 1 == 'a' && c.linha - 1 == 7) {
-        fprintf(stdout,"O Jogador 1 ganhou");
-        flag = 0;
-    } else if (flag == 1 && !(e->tab[c.linha][c.coluna] == VAZIO &&
-                              (e->ultima_jogada.coluna + 1 == c.coluna || e->ultima_jogada.coluna - 1 == c.coluna) &&
-                              (e->ultima_jogada.linha + 1 == c.linha || e->ultima_jogada.linha - 1 == c.linha))) {
-        if (c.coluna - 1 > 104 || c.coluna - 1 < 97 || c.linha - 1 > 7 || c.linha - 1 < 0) {
-            fprintf (stdout,"A jogada nao e valida");
+        case JOGADOR_2 :
+            fprintf(jogo, "O Jogador 2 ganhou");
+            fprintf(jogo, "O Jogo Acabou");
+            fclose(jogo);
+            break;
 
-        } else {
-        coloca_peca(e, c.coluna, c.linha);
-        fprintf(stdout,"jogar %d %d\n", c.coluna, c.linha);
-        flag = 1;
-        }
-    } else flag = 0;
+        case COORDENADA_INVALIDA :
+            fprintf (jogo,"A jogada nao e valida");
+            break;
 
-
-    if (flag == 0) {
-        fprintf(stdout, "O Jogo Acabou");
-        fclose(stdout);
+        case JOGADA_INVALIDA :
+            fprintf (jogo,"A jogada nao e valida");
+            break;
     }
-
+    
     return 1;
 
 }
