@@ -89,6 +89,7 @@ void mostrar_movimentos (ESTADO *e, FILE ficheiro){
 
     for (i = 0; i < tamanhomovs; i++) {
         //completar a impressao da lista de movimentos que se encontra no array jogadas
+        putchar('\n');
     }
 
 }
