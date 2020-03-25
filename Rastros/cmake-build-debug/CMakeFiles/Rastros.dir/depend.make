@@ -6,6 +6,7 @@ CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camada\ de\ int
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camada\ de\ interface/interface.h
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camadas\ de\ dados/estruturasDados.h
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camadas\ de\ dados/grava.h
+CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camadas\ de\ dados/lerEstado.h
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Lógica\ do\ programa/jogar.h
 
 CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o: ../Camada\ de\ interface/imprimeCasa.c
@@ -30,6 +31,10 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camada\ de\ interface/inte
 CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camadas\ de\ dados/estruturasDados.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camadas\ de\ dados/grava.c
 CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camadas\ de\ dados/grava.h
+
+CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o: ../Camadas\ de\ dados/estruturasDados.h
+CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o: ../Camadas\ de\ dados/lerEstado.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o: ../Camadas\ de\ dados/lerEstado.h
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas\ de\ dados/estruturasDados.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas\ de\ dados/modificaEstado.c

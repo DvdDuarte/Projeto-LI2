@@ -15,7 +15,7 @@
 /**
  \brief Definicao da funcao que imprime o tabuleiro de acordo com o estado e as coordenadas lateralmente para ajudar os jogadores
  * @param e Apontador do estado
- * @param ficheiro Nome do ficheiro para qual se imprime o tabuleiro
+ * @param ficheiro Nome do ficheiro para o qual se imprime o tabuleiro
  */
 void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro);
 
@@ -25,4 +25,12 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro);
  * @param ficheiro Nome do ficheiro no qual se pretende mostrar a prompt
  */
 void mostrar_prompt(ESTADO *e, FILE *ficheiro);
+
+/**
+ \brief Definicao da funcao que imprime a lista de movimentos do jogo de acordo com o estado
+ * @param e Apontador do estado
+ * @param ficheiro Nome do ficheiro para o qual se imprime a lista
+ */
+void mostrar_movimentos (ESTADO *e, FILE ficheiro);
+
 #endif //RASTROS_INTERFACE_H

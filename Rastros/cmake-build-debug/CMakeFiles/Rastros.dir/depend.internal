@@ -7,6 +7,7 @@ CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o
  /home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/grava.h
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
  /home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
 CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o
  /home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c
@@ -31,6 +32,10 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o
  /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/grava.c
  /home/david/Projeto-LI2/Rastros/Camadas de dados/grava.h
+CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o
  /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c

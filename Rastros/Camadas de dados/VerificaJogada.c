@@ -58,9 +58,16 @@ VALIDACOES jogadavalida (ESTADO *e, COORDENADA c) {
 void coloca_peca(ESTADO *e, int coluna, int linha) {
 
     // Esta funcao vai transformar a posicao da peca branca numa peca preta
-    e = transformaBrancaPreta(e);
 
-    e->tab[coluna][linha] = BRANCA;
+    int lastplayer;
+
+    lastplayer = e -> jogador_atual;
+
+        e = transformaBrancaPreta(e);
+        e->tab[coluna][linha] = BRANCA;
+
+        if (lastplayer == 1) e -> jogador_atual = 2;
+        else e -> jogador_atual = 1;
 
 }
 

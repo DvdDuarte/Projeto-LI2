@@ -16,7 +16,7 @@
 
 // Esta funcao devera receber o estado atual e uma coordenada e modificar o estado ao jogar na casa correta se a jogada for válida.
 // A função devolve verdadeiro(valor diferente de zero) se for possível jogar e falso(zero) caso não seja possível.
-int jogar(ESTADO *e, COORDENADA c, FILE *jogo) {
+int jogar(ESTADO *e, COORDENADA c) {
 
     VALIDACOES flag;
     flag = jogadavalida(e, c);
@@ -24,31 +24,22 @@ int jogar(ESTADO *e, COORDENADA c, FILE *jogo) {
     switch (flag) {
         case TUDO_OK :
             coloca_peca(e, c.coluna, c.linha);
-            break;
+            return 0;
 
         case JOGADOR_1 :
-            fprintf(jogo, "O Jogador 1 ganhou");
-            fprintf(jogo, "O Jogo Acabou");
-            fclose(jogo);
-            break;
+            printf("O Jogador 1 ganhou");
+            printf( "O Jogo Acabou");
+            return 1;
 
         case JOGADOR_2 :
-            fprintf(jogo, "O Jogador 2 ganhou");
-            fprintf(jogo, "O Jogo Acabou");
-            fclose(jogo);
-            break;
+            printf("O Jogador 2 ganhou");
+            printf("O Jogo Acabou");
+            return 1;
 
-        case COORDENADA_INVALIDA :
-            fprintf (jogo,"A jogada nao e valida");
-            break;
+        default:
+            return 0;
 
-        case JOGADA_INVALIDA :
-            fprintf (jogo,"A jogada nao e valida");
-            break;
     }
-    
-    return 1;
-
 }
 
 

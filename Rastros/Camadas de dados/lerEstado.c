@@ -17,7 +17,7 @@ ESTADO ler (FILE *jogo){
 
         fscanf(ficheiro, "%s\n", linha);
 
-        for (int j = 0, j < 8; j++) {
+        for (int j = 0; j < 8; j++) {
 
             if (j == 0)
                 tabuleiro[i][j] = linha[j];
@@ -32,5 +32,5 @@ ESTADO ler (FILE *jogo){
 
 
 
-    return e;
+    return *e;
 }

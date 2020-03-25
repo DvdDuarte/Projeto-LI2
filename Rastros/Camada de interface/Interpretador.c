@@ -20,9 +20,7 @@ int interpretador(ESTADO *e) {
     char *filename;
 
 
-
-
-    mostrar_prompt(e, jogo);
+    mostrar_prompt(e, stdout);
 
     char linha[BUF_SIZE];
     char col[2], lin[2];
@@ -30,8 +28,11 @@ int interpretador(ESTADO *e) {
         return 0;
     }
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
+
         COORDENADA coord = {*col - 'a', *lin - '1'};
+
         jogar(e, coord);
+
     }
 
     if (strcmp(linha,"Q\n")==0) return 0;

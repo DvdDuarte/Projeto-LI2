@@ -21,17 +21,17 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
 
     if (ficheiro == NULL) ficheiro = stdout;
 
-    for (linha = 0; contalinhas >= 0; linha++, contalinhas--) {
+    for (coluna = 8; contalinhas >= 0; coluna--, contalinhas--) {
 
-        if (linha < 8 && contalinhas > 0) {
+        if (coluna > 0 && contalinhas > 0) {
 
             fputc(48 + contalinhas, ficheiro);
             fputc('|', ficheiro);
             fputc(' ', ficheiro);
 
-            for (coluna = 0; coluna < 8; coluna++) {
+            for (linha = 0; linha < 8; linha++) {
 
-                imprimeCasa(e, coluna, 8 - linha, ficheiro);
+                imprimeCasa(e, linha, coluna, ficheiro);
 
             }
             fputc('\n', ficheiro);
@@ -58,6 +58,9 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
 
         }
     }
+
+    mostrar_movimentos (e, *ficheiro);
+
 }
 
 
@@ -72,4 +75,20 @@ void mostrar_prompt(ESTADO *e, FILE *ficheiro) {
 
     soma = i + j + 1;
     fprintf(ficheiro, "# %d PL%d (%d) > ", soma, e->jogador_atual, e->num_jogadas);
+}
+
+void mostrar_movimentos (ESTADO *e, FILE ficheiro){
+
+
+    int tamanhomovs, i;
+    JOGADA *movimentos;
+
+    movimentos = e -> jogadas;
+
+    tamanhomovs = sizeof(movimentos)/ sizeof(movimentos[0]);
+
+    for (i = 0; i < tamanhomovs; i++) {
+        //completar a impressao da lista de movimentos que se encontra no array jogadas
+    }
+
 }
