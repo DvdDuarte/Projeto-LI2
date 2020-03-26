@@ -4,33 +4,61 @@
 
 #include <stdio.h>
 #include "lerEstado.h"
+#include "modificaEstado.h"
 
-ESTADO ler (FILE *jogo){
+ESTADO ler(FILE *jogo) {
 
     FILE *ficheiro;
     ESTADO *e;
-    char tabuleiro[8][8], linha[16];
+    char letter;
+    int linha, coluna;
 
-    ficheiro = fopen(jogo,"r");
+    e = inicializar_estado(e);
 
-    for (int i = 0; i < 8; i++) {
+    ficheiro = fopen("file.txt", "r");
 
-        fscanf(ficheiro, "%s\n", linha);
+    for (coluna = 8; !(feof(ficheiro)); coluna--) {
 
-        for (int j = 0; j < 8; j++) {
+        for (linha = 0; linha < 8; linha++) {
 
-            if (j == 0)
-                tabuleiro[i][j] = linha[j];
-            else
-                tabuleiro[i][j] = linha[j + 1];
+            letter = fgetc(ficheiro);
 
+            troca_tipo(e, letter, coluna, linha);
 
         }
 
     }
 
-
-
+    fclose(ficheiro);
 
     return *e;
+}
+
+ESTADO troca_tipo (ESTADO *e, char letter, int coluna, int linha) {
+
+    switch (letter) {
+
+        case '1':
+            e -> tab[coluna][linha] = UM;
+            break;
+
+        case '2':
+            e -> tab[coluna][linha] = DOIS;
+            break;
+
+        case '*':
+            e -> tab[coluna][linha] = PRETA;
+            break;
+
+        case '#':
+            e -> tab[coluna][linha] = BRANCA;
+            break;
+
+        default:
+            e -> tab[coluna][linha] = VAZIO;
+
+    }
+
+    return *e;
+
 }

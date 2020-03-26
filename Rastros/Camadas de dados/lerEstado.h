@@ -19,4 +19,15 @@
  * @return O estado que estava no ficheiro
  */
 ESTADO ler (FILE *jogo);
+
+/**
+ \brief Definicao da funcao que ao receber um char de um casa vai decidir qual o tipo de peca que esta nessa casa
+ * @param e Apontador do estado
+ * @param letter caracter que esta a ser lido
+ * @param coluna Coluna da casa
+ * @param linha Linha da casa
+ * @return O o estado com a casa no tabuleiro atualizada
+ */
+ESTADO troca_tipo (ESTADO *e, char letter, int coluna, int linha);
+
 #endif //RASTROS_LERESTADO_H
