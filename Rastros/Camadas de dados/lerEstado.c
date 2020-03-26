@@ -17,21 +17,28 @@ ESTADO ler(FILE *jogo) {
 
     ficheiro = fopen("file.txt", "r");
 
-    for (coluna = 8; !(feof(ficheiro)); coluna--) {
+    for (coluna = 7; !(feof(ficheiro)); coluna--) {
 
-        for (linha = 0; linha < 8; linha++) {
+        if (coluna >= 0) {
 
-            letter = fgetc(ficheiro);
+            for (linha = 0; linha < 8; linha++) {
 
-            troca_tipo(e, letter, coluna, linha);
+                letter = fgetc(ficheiro);
+
+                troca_tipo(e, letter, coluna, linha);
+
+            }
 
         }
+
+        letter = fgetc(ficheiro);
+        //Adicionar a informacao dos movimentos (jogadas) ao estado
 
     }
 
     fclose(ficheiro);
 
-    return *e;
+    return e;
 }
 
 ESTADO troca_tipo (ESTADO *e, char letter, int coluna, int linha) {

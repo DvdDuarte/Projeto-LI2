@@ -31,6 +31,6 @@ void mostrar_prompt(ESTADO *e, FILE *ficheiro);
  * @param e Apontador do estado
  * @param ficheiro Nome do ficheiro para o qual se imprime a lista
  */
-void mostrar_movimentos (ESTADO *e, FILE ficheiro);
+void mostrar_movimentos (ESTADO *e, FILE *ficheiro);
 
 #endif //RASTROS_INTERFACE_H

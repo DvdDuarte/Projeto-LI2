@@ -17,6 +17,7 @@ CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camada\ de\ interfa
 CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camada\ de\ interface/interface.c
 CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camada\ de\ interface/interface.h
 CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camadas\ de\ dados/estruturasDados.h
+CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camadas\ de\ dados/modificaEstado.h
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dados/VerificaJogada.c
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dados/VerificaJogada.h

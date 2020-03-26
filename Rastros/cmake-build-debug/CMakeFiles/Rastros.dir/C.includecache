@@ -6,20 +6,32 @@
 
 #IncludeRegexTransform: 
 
+/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h
+../Camadas de dados/estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
-/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c
+interface.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+imprimeCasa.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h
+../Camadas de dados/modificaEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
 stdio.h
 -
-lerEstado.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
-modificaEstado.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
+stdlib.h
+-
+string.h
+-
 
-/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
+/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
 bits/types/FILE.h
 -
-estruturasDados.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h

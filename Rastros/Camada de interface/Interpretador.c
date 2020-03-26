@@ -37,12 +37,17 @@ int interpretador(ESTADO *e) {
 
     if (strcmp(linha,"Q\n")==0) return 0;
 
-    if(sscanf(linha, "gr %s", filename) == 1) {
+    if (strcmp(linha,"movs\n")==0) {
+        mostrar_movimentos(e,stdout);
+    }
+
+    if(sscanf(linha, "gr %s\n", filename) == 1) {
         gravar(e,filename);
     }
 
-    if(sscanf(linha, "ler %s",filename) == 1) {
-        ler(filename);
+    if(sscanf(linha, "ler %s\n",filename) == 1) {
+        e = ler(filename);
+        mostrar_prompt(e, stdout);
     }
 
 

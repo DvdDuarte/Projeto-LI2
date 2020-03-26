@@ -18,6 +18,8 @@ int gravar (ESTADO *e, char *filename) {
     if (jogo == NULL) return 0;
 
     mostrar_tabuleiro(e,jogo);
+    fputc('\n',jogo);
+    mostrar_movimentos(e,jogo);
 
     return 1;
 
