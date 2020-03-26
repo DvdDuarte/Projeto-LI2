@@ -15,7 +15,7 @@ ESTADO ler(FILE *jogo) {
 
     e = inicializar_estado(e);
 
-    ficheiro = fopen("file.txt", "r");
+    ficheiro = fopen(jogo, "r");
 
     for (coluna = 7; !(feof(ficheiro)); coluna--) {
 
