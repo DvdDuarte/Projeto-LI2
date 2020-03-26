@@ -54,11 +54,11 @@ ESTADO troca_tipo (ESTADO *e, char letter, int coluna, int linha) {
             break;
 
         case '*':
-            e -> tab[coluna][linha] = PRETA;
+            e -> tab[coluna][linha] = BRANCA;
             break;
 
         case '#':
-            e -> tab[coluna][linha] = BRANCA;
+            e -> tab[coluna][linha] = PRETA;
             break;
 
         default:
