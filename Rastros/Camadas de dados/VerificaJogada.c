@@ -20,7 +20,8 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
     coluna = c.coluna;
     linha = c.linha;
     flag = -1;
-
+    CASA casa;
+    casa = e->tab[coluna][linha];
 
 //1- ver se nao sai dos limites do tabuleiro
 
@@ -28,7 +29,7 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
 
 
 //2- se nao tiver fora do tab, ver se a casa recebida esta livre
-    else if (e->tab[coluna][linha] == VAZIO) {
+    else if (casa == VAZIO || casa == UM || casa == DOIS) {
 
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
         if (abs(distancia(e, coluna, linha)) <= 1) {

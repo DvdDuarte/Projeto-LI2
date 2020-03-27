@@ -29,13 +29,11 @@ int jogar(ESTADO *e, COORDENADA c) {
             return 0;
 
         case JOGADOR_1 :
-            printf("O Jogador 1 ganhou");
-            printf( "O Jogo Acabou");
+            printf("O Jogador 1 ganhou\n O Jogo Acabou\n");
             return 1;
 
         case JOGADOR_2 :
-            printf("O Jogador 2 ganhou");
-            printf("O Jogo Acabou");
+            printf("O Jogador 2 ganhou\n O Jogo Acabou\n");
             return 1;
 
         default:

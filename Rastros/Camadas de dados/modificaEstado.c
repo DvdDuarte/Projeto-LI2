@@ -46,16 +46,16 @@ ESTADO *inicializar_estado() {
 
 // Esta funcao permite obter o numero do jogador atual
 int obter_jogador_atual(ESTADO *estado){
-
+return estado -> jogador_atual;
 }
 
 
 // Esta funcao permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de 2 jogadores)
 int obter_numero_de_jogadas(ESTADO *estado){
-
+return estado -> num_jogadas;
 }
 
 // Esta funcao permite obter o estado atual da casa
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
-
+return e -> tab[c.coluna][c.linha]; 
 }
