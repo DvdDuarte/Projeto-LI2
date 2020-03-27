@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define BUF_SIZE 1024
+
 
 // Funcao que deve ser completada e colocada na camada de interface
 

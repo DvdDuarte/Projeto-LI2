@@ -10,6 +10,8 @@
 #ifndef RASTROS_ESTRUTURASDADOS_H
 #define RASTROS_ESTRUTURASDADOS_H
 
+#define BUF_SIZE 1024
+
 /**
  \brief Tipo de dados para as casas do tabuleiro
  */

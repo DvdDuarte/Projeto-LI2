@@ -34,8 +34,6 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
         if (abs(distancia(e, coluna, linha)) <= 1) {
             //o valor abs da distancia entre as novas coordenadas e ass da peca branca for <= 1 entao )
-            e->ultima_jogada.coluna = coluna;
-            e->ultima_jogada.linha = linha;
             flag = 1;
         } else return flag;
 
@@ -67,6 +65,9 @@ void coloca_peca(ESTADO *e, int coluna, int linha) {
 
     e->tab[colunanterior][linhanterior] = PRETA;
     e->tab[coluna][linha] = BRANCA;
+
+    e->ultima_jogada.coluna = coluna;
+    e->ultima_jogada.linha = linha;
 
     if (lastplayer == 1) e->jogador_atual = 2;
     else e->jogador_atual = 1;

@@ -30,4 +30,10 @@ ESTADO *ler (char *jogo);
  */
 ESTADO *troca_tipo (ESTADO *e, char letter, int coluna, int linha);
 
+
+void ler_tabuleiro (char *jogo, ESTADO *e);
+
+
+void ler_movimentos (char *jogo, ESTADO *e);
+
 #endif //RASTROS_LERESTADO_H

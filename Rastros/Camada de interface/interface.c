@@ -26,9 +26,11 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
 
         if (coluna < 8 && contalinhas > 0) {
 
-            fputc(48 + contalinhas, ficheiro);
-            fputc('|', ficheiro);
-            fputc(' ', ficheiro);
+            if (ficheiro == stdout) {
+                fputc(48 + contalinhas, ficheiro);
+                fputc('|', ficheiro);
+                fputc(' ', ficheiro);
+            }
 
             for (linha = 0; linha <= 7; linha++) {
 
@@ -37,7 +39,7 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
             }
             fputc('\n', ficheiro);
 
-        } else {
+        } else if (ficheiro == stdout){
 
             for (int col = 3; col > 1; col--) {
                 if (col > 2) {
@@ -60,9 +62,10 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
         }
     }
 
-    if (ficheiro != stdout) {
-        mostrar_movimentos (e, ficheiro);
-    }
+//    if (ficheiro != stdout) {
+  //      fprintf('\n);
+  //      mostrar_movimentos (e, ficheiro);
+    //}
 
 }
 
