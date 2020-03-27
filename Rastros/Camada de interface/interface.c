@@ -22,15 +22,15 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
 
     if (ficheiro == NULL) ficheiro = stdout;
 
-    for (coluna = 8; contalinhas >= 0; coluna--, contalinhas--) {
+    for (coluna = 0; contalinhas >= 0; coluna++, contalinhas--) {
 
-        if (coluna > 0 && contalinhas > 0) {
+        if (coluna < 8 && contalinhas > 0) {
 
             fputc(48 + contalinhas, ficheiro);
             fputc('|', ficheiro);
             fputc(' ', ficheiro);
 
-            for (linha = 0; linha < 8; linha++) {
+            for (linha = 0; linha <= 7; linha++) {
 
                 imprimeCasa(e, linha, coluna, ficheiro);
 
@@ -39,7 +39,7 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
 
         } else {
 
-            for (int col = 3; col > 0; col--) {
+            for (int col = 3; col > 1; col--) {
                 if (col > 2) {
                     for (int i = 0; i < 18; i++) {
                         if (i < 3) fputc(' ', ficheiro);
@@ -60,7 +60,9 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
         }
     }
 
-    mostrar_movimentos (e, ficheiro);
+    if (ficheiro != stdout) {
+        mostrar_movimentos (e, ficheiro);
+    }
 
 }
 

@@ -11,43 +11,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define BUF_SIZE 1024
 
 // Funcao que deve ser completada e colocada na camada de interface
 
 int interpretador(ESTADO *e) {
 
-    int BUF_SIZE = 1024;
-    char *filename;
-
+    //int BUF_SIZE = 1024;
+    char filename[BUF_SIZE];
+    char linha[BUF_SIZE];
+    char col[2], lin[2];
 
     mostrar_prompt(e, stdout);
 
-    char linha[BUF_SIZE];
-    char col[2], lin[2];
     if (fgets(linha, BUF_SIZE, stdin) == NULL) {
         return 0;
     }
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
 
-        COORDENADA coord = {*col - 'a', *lin - '1'};
-
-        jogar(e, coord);
+            COORDENADA coord = {*col - 'a', '8' - *lin};
+            jogar(e, coord);
 
     }
 
     if (strcmp(linha,"Q\n")==0) return 0;
 
     if (strcmp(linha,"movs\n")==0) {
+
         mostrar_movimentos(e,stdout);
+
     }
 
     if(sscanf(linha, "gr %s\n", filename) == 1) {
+
         gravar(e,filename);
+
     }
 
     if(sscanf(linha, "ler %s\n",filename) == 1) {
+
         e = ler(filename);
         mostrar_prompt(e, stdout);
+
     }
 
 

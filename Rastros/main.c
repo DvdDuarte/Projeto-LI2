@@ -10,7 +10,8 @@
 int main() {
 
     ESTADO *e = inicializar_estado();
-    interpretador(e);
+
+    while (interpretador(e));
 
     return 0;
 

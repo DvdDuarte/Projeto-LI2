@@ -6,7 +6,7 @@
 #include "lerEstado.h"
 #include "modificaEstado.h"
 
-ESTADO ler(FILE *jogo) {
+ESTADO *ler(char *jogo) {
 
     FILE *ficheiro;
     ESTADO *e;
@@ -41,7 +41,7 @@ ESTADO ler(FILE *jogo) {
     return e;
 }
 
-ESTADO troca_tipo (ESTADO *e, char letter, int coluna, int linha) {
+ESTADO *troca_tipo (ESTADO *e, char letter, int coluna, int linha) {
 
     switch (letter) {
 
@@ -66,6 +66,6 @@ ESTADO troca_tipo (ESTADO *e, char letter, int coluna, int linha) {
 
     }
 
-    return *e;
+    return e;
 
 }

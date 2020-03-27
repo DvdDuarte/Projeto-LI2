@@ -13,7 +13,13 @@
 /**
  \brief Tipo de dados para as casas do tabuleiro
  */
-typedef enum {VAZIO, BRANCA, PRETA, UM, DOIS} CASA;
+typedef enum {
+    UM = '1',
+    DOIS = '2',
+    VAZIO = '.',
+    BRANCA = '*',
+    PRETA = '#'
+} CASA;
 
 /**
  \brief Tipo de dados que constituem uma coordenada (constituida pela coluna e linha)

@@ -138,12 +138,6 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.c">
-			<Option target="Rastros"/>
-		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/transformaBranca.h">
-			<Option target="Rastros"/>
-		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/main.c">
 			<Option target="Rastros"/>
 		</Unit>

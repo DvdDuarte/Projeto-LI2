@@ -3,41 +3,40 @@
 //
 
 #include "VerificaJogada.h"
-#include "../Lógica do programa/transformaBranca.h"
 #include "tipoErros.h"
 #include <stdlib.h>
 #include <math.h>
 
 
-VALIDACOES jogadavalida (ESTADO *e, COORDENADA c) {
+VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
 
     // fazer aqui as verificacoes das jogadas
     //return 1 se o jogador 1 ganhar, 2 se o jogador 2 ganhar, 0 se a jogada for valida e (-1) se a jogada for invalida e 3 se o
     //jogador seguinte nao conseguir jogar mais
     //se a jogada for invalida, na funcao jogar deve se voltar a pedir ao mesmo jogador para voltar a jogar
 
-    int coluna, linha, colunapecabranca, linhapecabranca, flag;
+    int coluna, linha, flag;
 
     coluna = c.coluna;
     linha = c.linha;
-    colunapecabranca = e->ultima_jogada.coluna;
-    linhapecabranca = e->ultima_jogada.linha;
     flag = -1;
 
 
 //1- ver se nao sai dos limites do tabuleiro
 
-    if (coluna > 8 || coluna < 1 || linha > 8 || linha < 1) return COORDENADA_INVALIDA;
+    if (coluna > 8 || coluna < 0 || linha > 8 || linha < 0) return COORDENADA_INVALIDA;
 
 
 //2- se nao tiver fora do tab, ver se a casa recebida esta livre
-    else if (e -> tab[coluna][linha] == VAZIO) {
+    else if (e->tab[coluna][linha] == VAZIO) {
 
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
-        if (abs(distancia(e, coluna, linha)) <= 1)
+        if (abs(distancia(e, coluna, linha)) <= 1) {
             //o valor abs da distancia entre as novas coordenadas e ass da peca branca for <= 1 entao )
+            e->ultima_jogada.coluna = coluna;
+            e->ultima_jogada.linha = linha;
             flag = 1;
-        else return flag;
+        } else return flag;
 
         if (flag == 1) {
 
@@ -46,7 +45,7 @@ VALIDACOES jogadavalida (ESTADO *e, COORDENADA c) {
             else if (coluna == 0 && linha == 7) return JOGADOR_1;
         }
 
-        return TUDO_OK ;
+        return TUDO_OK;
 
     } else return JOGADA_INVALIDA;
 
@@ -59,27 +58,29 @@ void coloca_peca(ESTADO *e, int coluna, int linha) {
 
     // Esta funcao vai transformar a posicao da peca branca numa peca preta
 
-    int lastplayer;
+    int lastplayer, colunanterior, linhanterior;
 
-    lastplayer = e -> jogador_atual;
+    colunanterior = e->ultima_jogada.coluna;
+    linhanterior = e->ultima_jogada.linha;
+    lastplayer = e->jogador_atual;
 
-        e = transformaBrancaPreta(e);
-        e->tab[coluna][linha] = BRANCA;
+    e->tab[colunanterior][linhanterior] = PRETA;
+    e->tab[coluna][linha] = BRANCA;
 
-        if (lastplayer == 1) e -> jogador_atual = 2;
-        else e -> jogador_atual = 1;
+    if (lastplayer == 1) e->jogador_atual = 2;
+    else e->jogador_atual = 1;
 
 }
 
 float distancia(ESTADO *e, int coluna, int linha) {
 
-    int xo, yo;
+    int l, c;
     float dist;
 
-    xo = e->ultima_jogada.linha;
-    yo = e->ultima_jogada.coluna;
+    l = e->ultima_jogada.linha;
+    c = e->ultima_jogada.coluna;
 
-    dist = sqrt(pow((linha - xo), 2) + pow((coluna - yo),2));
+    dist = sqrt(pow((linha - l), 2) + pow((coluna - c), 2));
 
     return dist;
 }

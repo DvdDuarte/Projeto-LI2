@@ -7,7 +7,6 @@
 #include "../Camadas de dados/VerificaJogada.h"
 #include "../Camadas de dados/tipoErros.h"
 #include "../Camada de interface/interface.h"
-#include "transformaBranca.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,9 +15,12 @@
 
 // Esta funcao devera receber o estado atual e uma coordenada e modificar o estado ao jogar na casa correta se a jogada for válida.
 // A função devolve verdadeiro(valor diferente de zero) se for possível jogar e falso(zero) caso não seja possível.
+
 int jogar(ESTADO *e, COORDENADA c) {
 
     VALIDACOES flag;
+
+    printf ("%d %d\n",c.coluna, c.linha);
     flag = jogadavalida(e, c);
 
     switch (flag) {

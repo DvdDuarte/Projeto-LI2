@@ -12,31 +12,8 @@ void imprimeCasa (ESTADO *e, int coluna, int linha, FILE *jogo) {
 
     peca = e -> tab[coluna][linha];
 
-    switch (peca)
-    {
-    case BRANCA:
-        fputc ('*', jogo);
-        fputc (' ', jogo);
-    break;
+    fputc (peca, jogo);
 
-    case PRETA:
-        fputc ('#', jogo);
-        fputc (' ', jogo);
-    break;
+    if (jogo == stdout) fputc (' ', jogo);
 
-    case UM:
-        fputc ('1', jogo);
-        fputc (' ', jogo);
-        break;
-    case DOIS:
-        fputc ('2', jogo);
-        fputc (' ', jogo);
-        break;
-
-
-
-    default:
-        fputc ('.', jogo);
-        fputc (' ', jogo);
-    }
 }
