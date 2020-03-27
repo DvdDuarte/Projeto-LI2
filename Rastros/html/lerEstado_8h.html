@@ -82,23 +82,26 @@ Include dependency graph for lerEstado.h:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aebeefc1665194576367b3f7226b99a34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structESTADO.html">ESTADO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lerEstado_8h.html#aebeefc1665194576367b3f7226b99a34">ler</a> (FILE *jogo)</td></tr>
-<tr class="memdesc:aebeefc1665194576367b3f7226b99a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao principal para ler o estado atreves de um ficheiro.  <a href="#aebeefc1665194576367b3f7226b99a34">More...</a><br /></td></tr>
-<tr class="separator:aebeefc1665194576367b3f7226b99a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8511d69d5e120a84efa6d1bbba5488ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lerEstado_8h.html#a8511d69d5e120a84efa6d1bbba5488ec">ler</a> (char *jogo)</td></tr>
+<tr class="memdesc:a8511d69d5e120a84efa6d1bbba5488ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao principal para ler o estado atreves de um ficheiro.  <a href="#a8511d69d5e120a84efa6d1bbba5488ec">More...</a><br /></td></tr>
+<tr class="separator:a8511d69d5e120a84efa6d1bbba5488ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438794af5f3ab5e34a2027543889ac58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lerEstado_8h.html#a438794af5f3ab5e34a2027543889ac58">troca_tipo</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, char letter, int coluna, int linha)</td></tr>
+<tr class="memdesc:a438794af5f3ab5e34a2027543889ac58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicao da funcao que ao receber um char de um casa vai decidir qual o tipo de peca que esta nessa casa.  <a href="#a438794af5f3ab5e34a2027543889ac58">More...</a><br /></td></tr>
+<tr class="separator:a438794af5f3ab5e34a2027543889ac58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definicao da/s funcao/os que le/m um ficheiro e imprime/m o estado </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aebeefc1665194576367b3f7226b99a34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebeefc1665194576367b3f7226b99a34">&#9670;&nbsp;</a></span>ler()</h2>
+<a id="a8511d69d5e120a84efa6d1bbba5488ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8511d69d5e120a84efa6d1bbba5488ec">&#9670;&nbsp;</a></span>ler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structESTADO.html">ESTADO</a> ler </td>
+          <td class="memname"><a class="el" href="structESTADO.html">ESTADO</a>* ler </td>
           <td>(</td>
-          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>jogo</em></td><td>)</td>
           <td></td>
         </tr>
@@ -113,6 +116,58 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>O estado que estava no ficheiro </dd></dl>
+
+</div>
+</div>
+<a id="a438794af5f3ab5e34a2027543889ac58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438794af5f3ab5e34a2027543889ac58">&#9670;&nbsp;</a></span>troca_tipo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structESTADO.html">ESTADO</a>* troca_tipo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>letter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coluna</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicao da funcao que ao receber um char de um casa vai decidir qual o tipo de peca que esta nessa casa. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador do estado </td></tr>
+    <tr><td class="paramname">letter</td><td>caracter que esta a ser lido </td></tr>
+    <tr><td class="paramname">coluna</td><td>Coluna da casa </td></tr>
+    <tr><td class="paramname">linha</td><td>Linha da casa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>O o estado com a casa no tabuleiro atualizada </dd></dl>
 
 </div>
 </div>

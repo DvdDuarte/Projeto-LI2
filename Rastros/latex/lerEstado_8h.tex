@@ -7,19 +7,21 @@ Include dependency graph for ler\+Estado.\+h\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structESTADO}{E\+S\+T\+A\+DO} \hyperlink{lerEstado_8h_aebeefc1665194576367b3f7226b99a34}{ler} (F\+I\+LE $\ast$jogo)
-\begin{DoxyCompactList}\small\item\em Funcao principal para ler o estado atreves de um ficheiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$ \hyperlink{lerEstado_8h_a8511d69d5e120a84efa6d1bbba5488ec}{ler} (char $\ast$jogo)
+\begin{DoxyCompactList}\small\item\em Funcao principal para ler o estado atreves de um ficheiro. \end{DoxyCompactList}\item 
+\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$ \hyperlink{lerEstado_8h_a438794af5f3ab5e34a2027543889ac58}{troca\+\_\+tipo} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, char letter, int coluna, int linha)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que ao receber um char de um casa vai decidir qual o tipo de peca que esta nessa casa. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Definicao da/s funcao/os que le/m um ficheiro e imprime/m o estado 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{lerEstado_8h_aebeefc1665194576367b3f7226b99a34}\label{lerEstado_8h_aebeefc1665194576367b3f7226b99a34}} 
+\mbox{\Hypertarget{lerEstado_8h_a8511d69d5e120a84efa6d1bbba5488ec}\label{lerEstado_8h_a8511d69d5e120a84efa6d1bbba5488ec}} 
 \index{ler\+Estado.\+h@{ler\+Estado.\+h}!ler@{ler}}
 \index{ler@{ler}!ler\+Estado.\+h@{ler\+Estado.\+h}}
 \subsubsection{\texorpdfstring{ler()}{ler()}}
-{\footnotesize\ttfamily \hyperlink{structESTADO}{E\+S\+T\+A\+DO} ler (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{jogo }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{structESTADO}{E\+S\+T\+A\+DO}$\ast$ ler (\begin{DoxyParamCaption}\item[{char $\ast$}]{jogo }\end{DoxyParamCaption})}
 
 
 
@@ -32,4 +34,28 @@ Funcao principal para ler o estado atreves de um ficheiro.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 O estado que estava no ficheiro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lerEstado_8h_a438794af5f3ab5e34a2027543889ac58}\label{lerEstado_8h_a438794af5f3ab5e34a2027543889ac58}} 
+\index{ler\+Estado.\+h@{ler\+Estado.\+h}!troca\+\_\+tipo@{troca\+\_\+tipo}}
+\index{troca\+\_\+tipo@{troca\+\_\+tipo}!ler\+Estado.\+h@{ler\+Estado.\+h}}
+\subsubsection{\texorpdfstring{troca\+\_\+tipo()}{troca\_tipo()}}
+{\footnotesize\ttfamily \hyperlink{structESTADO}{E\+S\+T\+A\+DO}$\ast$ troca\+\_\+tipo (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{char}]{letter,  }\item[{int}]{coluna,  }\item[{int}]{linha }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que ao receber um char de um casa vai decidir qual o tipo de peca que esta nessa casa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador do estado \\
+\hline
+{\em letter} & caracter que esta a ser lido \\
+\hline
+{\em coluna} & Coluna da casa \\
+\hline
+{\em linha} & Linha da casa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O o estado com a casa no tabuleiro atualizada 
 \end{DoxyReturn}
