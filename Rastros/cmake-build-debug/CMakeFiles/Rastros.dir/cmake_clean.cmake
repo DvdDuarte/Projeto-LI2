@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o"
   "CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o"
   "CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o"
+  "CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o"
   "CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o"
   "CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o"
   "CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o"

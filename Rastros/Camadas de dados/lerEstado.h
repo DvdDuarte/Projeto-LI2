@@ -30,10 +30,27 @@ ESTADO *ler (char *jogo);
  */
 ESTADO *troca_tipo (ESTADO *e, char letter, int coluna, int linha);
 
-
+/**
+ \brief Definicao da funcao que le o tabuleiro de um ficheiro
+ * @param jogo Apontador do nome do ficheiro
+ * @param e Apontador do estado
+ */
 void ler_tabuleiro (char *jogo, ESTADO *e);
 
-
+/**
+ \brief Definicao da funcao que le a lista de movimentos de um ficheiro
+ * @param jogo Apontador do nome do ficheiro
+ * @param e Apontador do estado
+ */
 void ler_movimentos (char *jogo, ESTADO *e);
+
+/**
+ \brief Definicao da funcao que le uma linha de movimentos de um ficheiro
+ * @param line A variavel onde a linha lida vai ser guardada
+ * @param e Apontador do estado
+ * @param indice indice da jogada
+ */
+void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice);
+
 
 #endif //RASTROS_LERESTADO_H

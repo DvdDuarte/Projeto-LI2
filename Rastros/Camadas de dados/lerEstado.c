@@ -79,12 +79,6 @@ void ler_movimentos (char *jogo, ESTADO *e){
 
     }
 
-
-
-
-
-
-
 }
 
 void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
@@ -103,7 +97,7 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
         if (idx = 7) cj2 = letter;
         if (idx = 8) lj2 = letter;
 
-        e -> jogadas[idx] = { {cj1, lj1}, {cj2, lj2}};
+        e -> jogadas[indice] = (JOGADA) { {cj1, lj1}, {cj2, lj2}};
 
     }
 

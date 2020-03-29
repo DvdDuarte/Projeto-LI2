@@ -120,6 +120,12 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h">
 			<Option target="Rastros"/>
 		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.h">
+			<Option target="Rastros"/>
+		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c">
 			<Option target="Rastros"/>
 		</Unit>

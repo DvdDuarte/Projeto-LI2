@@ -18,6 +18,7 @@ CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o
  /home/david/Projeto-LI2/Rastros/Camada de interface/interface.c
  /home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o
  /home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c
@@ -36,6 +37,11 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o
  /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c
  /home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
+CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.c
+ /home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o
  /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
