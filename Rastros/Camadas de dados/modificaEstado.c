@@ -33,6 +33,7 @@ ESTADO *inicializar_estado() {
     e -> tab[0][7] = UM;
     e -> tab[7][0] = DOIS;
 
+
     //Inicializar as jogadas
     for (i = 0; i < 32 ; i++) {
         e->jogadas[i].jogador1.coluna = 0;

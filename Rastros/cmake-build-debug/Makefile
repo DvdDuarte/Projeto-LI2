@@ -231,6 +231,33 @@ Camadas_de_dados/VerificaJogada.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.s
 .PHONY : Camadas_de_dados/VerificaJogada.c.s
 
+Camadas_de_dados/buscaPosicao.o: Camadas_de_dados/buscaPosicao.c.o
+
+.PHONY : Camadas_de_dados/buscaPosicao.o
+
+# target to build an object file
+Camadas_de_dados/buscaPosicao.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o
+.PHONY : Camadas_de_dados/buscaPosicao.c.o
+
+Camadas_de_dados/buscaPosicao.i: Camadas_de_dados/buscaPosicao.c.i
+
+.PHONY : Camadas_de_dados/buscaPosicao.i
+
+# target to preprocess a source file
+Camadas_de_dados/buscaPosicao.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.i
+.PHONY : Camadas_de_dados/buscaPosicao.c.i
+
+Camadas_de_dados/buscaPosicao.s: Camadas_de_dados/buscaPosicao.c.s
+
+.PHONY : Camadas_de_dados/buscaPosicao.s
+
+# target to generate assembly for a file
+Camadas_de_dados/buscaPosicao.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.s
+.PHONY : Camadas_de_dados/buscaPosicao.c.s
+
 Camadas_de_dados/estruturasDados.o: Camadas_de_dados/estruturasDados.c.o
 
 .PHONY : Camadas_de_dados/estruturasDados.o
@@ -468,6 +495,9 @@ help:
 	@echo "... Camadas_de_dados/VerificaJogada.o"
 	@echo "... Camadas_de_dados/VerificaJogada.i"
 	@echo "... Camadas_de_dados/VerificaJogada.s"
+	@echo "... Camadas_de_dados/buscaPosicao.o"
+	@echo "... Camadas_de_dados/buscaPosicao.i"
+	@echo "... Camadas_de_dados/buscaPosicao.s"
 	@echo "... Camadas_de_dados/estruturasDados.o"
 	@echo "... Camadas_de_dados/estruturasDados.i"
 	@echo "... Camadas_de_dados/estruturasDados.s"

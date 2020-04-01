@@ -8,19 +8,17 @@
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
-/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c
-stdio.h
--
-lerEstado.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c
 modificaEstado.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
-bits/types/FILE.h
--
 estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
 estruturasDados.h

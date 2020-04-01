@@ -102,6 +102,12 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h">
 			<Option target="Rastros"/>
 		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.h">
+			<Option target="Rastros"/>
+		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c">
 			<Option target="Rastros"/>
 		</Unit>

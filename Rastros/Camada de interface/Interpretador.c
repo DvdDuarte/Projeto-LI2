@@ -8,6 +8,7 @@
 #include "../Lógica do programa/jogar.h"
 #include "interface.h"
 #include "../Camadas de dados/lerEstado.h"
+#include "../Camadas de dados/buscaPosicao.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -20,13 +21,20 @@ int interpretador(ESTADO *e) {
     //int BUF_SIZE = 1024;
     char filename[BUF_SIZE];
     char linha[BUF_SIZE];
-    char col[2], lin[2];
+    char col[2], lin[2],
+    int pos;
+
 
     mostrar_prompt(e, stdout);
 
     if (fgets(linha, BUF_SIZE, stdin) == NULL) {
         return 0;
     }
+
+    if (sscanf(linha, "pos %d\n", pos) == 1) {
+            posicao(pos,e);
+    }
+
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
 
             COORDENADA coord = {*col - 'a', '8' - *lin};

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o"
   "CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o"
   "CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o"
+  "CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o"
   "CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o"
   "CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o"
   "CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o"

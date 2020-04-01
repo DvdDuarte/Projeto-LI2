@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o"
   "/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o"
+  "/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o"
