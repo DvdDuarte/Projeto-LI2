@@ -21,7 +21,7 @@ int interpretador(ESTADO *e) {
     //int BUF_SIZE = 1024;
     char filename[BUF_SIZE];
     char linha[BUF_SIZE];
-    char col[2], lin[2],
+    char col[2], lin[2];
     int pos;
 
 
