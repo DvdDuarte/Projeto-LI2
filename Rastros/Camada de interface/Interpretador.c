@@ -64,9 +64,9 @@ int interpretador(ESTADO *e) {
 
         }
 
-
-        return 1;
     }
+
+    return 1;
 
 }
 //gr "nome do ficheiro" -> serve para gravar o estado do tabuleiro num ficheiro com o nome dado
