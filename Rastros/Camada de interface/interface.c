@@ -77,11 +77,9 @@ void mostrar_prompt(ESTADO *e, FILE *ficheiro) {
     mostrar_tabuleiro(e, ficheiro);
     fputc('\n', ficheiro);
 
-    for (i = 0; e->jogadas[i].jogador1.coluna != 0; i++);
-    for (j = 0; e->jogadas[j].jogador2.coluna != 0; i++);
+    fprintf(ficheiro, "#PL%d (%d) > ", e->jogador_atual, e->num_jogadas);
 
-    soma = i + j + 1;
-    fprintf(ficheiro, "# %d PL%d (%d) > ", soma, e->jogador_atual, e->num_jogadas);
+    //fprintf(ficheiro, "# %d PL%d (%d) > ", soma, e->jogador_atual, e->num_jogadas);
 }
 
 void mostrar_movimentos (ESTADO *e, FILE *ficheiro){

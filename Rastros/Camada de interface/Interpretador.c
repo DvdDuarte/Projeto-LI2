@@ -18,55 +18,57 @@
 
 int interpretador(ESTADO *e) {
 
-    //int BUF_SIZE = 1024;
-    char filename[BUF_SIZE];
-    char linha[BUF_SIZE];
-    char col[2], lin[2];
-    int pos;
+    while (1) {
+        //int BUF_SIZE = 1024;
+        char filename[BUF_SIZE];
+        char linha[BUF_SIZE];
+        char col[2], lin[2];
+        int pos;
 
 
-    mostrar_prompt(e, stdout);
+        mostrar_prompt(e, stdout);
 
-    if (fgets(linha, BUF_SIZE, stdin) == NULL) {
-        return 0;
-    }
+        if (fgets(linha, BUF_SIZE, stdin) == NULL) {
+            return 0;
+        }
 
-    if (sscanf(linha, "pos %d\n", pos) == 1) {
-            posicao(pos,e);
-    }
+        if (sscanf(linha, "pos %d\n", pos) == 1) {
+            posicao(pos, e);
+        }
 
-    if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
+        if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
 
             COORDENADA coord = {*col - 'a', '8' - *lin};
             jogar(e, coord);
 
+        }
+
+        if (strcmp(linha, "Q\n") == 0) return 0;
+
+        if (strcmp(linha, "movs\n") == 0) {
+
+            mostrar_movimentos(e, stdout);
+
+        }
+
+        if (sscanf(linha, "gr %s\n", filename) == 1) {
+
+            gravar(e, filename);
+
+        }
+
+        if (sscanf(linha, "ler %s\n", filename) == 1) {
+
+            e = ler(filename);
+            mostrar_prompt(e, stdout);
+
+        }
+
+
+        return 1;
     }
 
-    if (strcmp(linha,"Q\n")==0) return 0;
-
-    if (strcmp(linha,"movs\n")==0) {
-
-        mostrar_movimentos(e,stdout);
-
-    }
-
-    if(sscanf(linha, "gr %s\n", filename) == 1) {
-
-        gravar(e,filename);
-
-    }
-
-    if(sscanf(linha, "ler %s\n",filename) == 1) {
-
-        e = ler(filename);
-        mostrar_prompt(e, stdout);
-
-    }
-
-
-    return 1;
 }
-
 //gr "nome do ficheiro" -> serve para gravar o estado do tabuleiro num ficheiro com o nome dado
 
 //ler "nome do ficheiro" -> server para ler o estado do tabuleiro a partir do ficheiro

@@ -16,7 +16,7 @@ ESTADO *ler(char *jogo) {
     e = inicializar_estado(e);
     ficheiro = fopen(jogo, "r");
 
-    ler_tabuleiro(jogo, e);
+    ler_tabuleiro(ficheiro, e);
 
     fgets(line, BUF_SIZE, ficheiro);
 
@@ -30,19 +30,16 @@ ESTADO *ler(char *jogo) {
 ESTADO *troca_tipo (ESTADO *e, char letter, int coluna, int linha) {
 
 
-    e -> tab[coluna][linha] = letter;
+    e -> tab[linha][coluna] = letter;
 
     return e;
 
 }
 
-void ler_tabuleiro (char *jogo, ESTADO *e) {
+void ler_tabuleiro (FILE *ficheiro, ESTADO *e) {
 
     int coluna, linha;
     char line[BUF_SIZE];
-    FILE *ficheiro;
-
-    ficheiro = fopen (jogo, "r");
 
     for (coluna = 0; coluna < 8; coluna++) {
 
@@ -76,6 +73,7 @@ void ler_movimentos (FILE *ficheiro, ESTADO *e){
 
     }
 
+    e->num_jogadas = indice;
 
 
 }
@@ -85,20 +83,20 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
     int idx, indicejog;
     char letter, cj1, lj1, cj2, lj2;
 
-    for (idx; line[idx] != '\n'; idx++) {
+
+
+    for (idx = 0; idx < 8; idx++) {
 
         letter = line[idx];
 
-        if (idx = 1) indicejog = letter - 1;
-
-        if (idx = 4) cj1 = letter;
-        if (idx = 5) lj1 = letter;
-        if (idx = 7) cj2 = letter;
-        if (idx = 8) lj2 = letter;
+        if (idx == 4) cj1 = letter;
+        if (idx == 5) lj1 = letter;
+        if (idx == 7) cj2 = letter;
+        if (idx == 8) lj2 = letter;
 
     }
 
-    e -> jogadas[indice] = (JOGADA) { {cj1, lj1}, {cj2, lj2}};
+    e -> jogadas[indice] = (JOGADA) { {cj1 - 'a', '8' - lj1}, {cj2 - 'a', '8' - lj2}};
 
 }
 

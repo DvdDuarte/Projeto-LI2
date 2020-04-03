@@ -35,7 +35,7 @@ ESTADO *troca_tipo (ESTADO *e, char letter, int coluna, int linha);
  * @param jogo Apontador do nome do ficheiro
  * @param e Apontador do estado
  */
-void ler_tabuleiro (char *jogo, ESTADO *e);
+void ler_tabuleiro (FILE *ficheiro, ESTADO *e);
 
 /**
  \brief Definicao da funcao que le a lista de movimentos de um ficheiro
