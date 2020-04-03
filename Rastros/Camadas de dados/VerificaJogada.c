@@ -21,6 +21,9 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
     linha = c.linha;
     flag = -1;
     CASA casa;
+
+    casa = e -> tab[coluna][linha];
+
     if (coluna > 8 || coluna < 0 || linha > 8 || linha < 0) return COORDENADA_INVALIDA;
 
     //5- se o outro jogador nao conseguir jogar mais o jogo acaba
