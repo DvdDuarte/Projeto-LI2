@@ -35,7 +35,7 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
         if (abs(distancia(e, coluna, linha)) <= 1) {
             //o valor abs da distancia entre as novas coordenadas e ass da peca branca for <= 1 entao )
             flag = 1;
-        } else return TUDO_OK;
+        } else return JOGADA_INVALIDA;
 
         if (flag == 1) {
 
