@@ -19,4 +19,5 @@
  * @return 0 quando e possivel gravar
  */
 int gravar (ESTADO *e, char *filename);
+
 #endif //RASTROS_GRAVA_H

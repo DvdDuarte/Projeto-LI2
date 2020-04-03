@@ -42,7 +42,7 @@ void ler_tabuleiro (char *jogo, ESTADO *e);
  * @param jogo Apontador do nome do ficheiro
  * @param e Apontador do estado
  */
-void ler_movimentos (char *jogo, ESTADO *e);
+void ler_movimentos (FILE *ficheiro, ESTADO *e);
 
 /**
  \brief Definicao da funcao que le uma linha de movimentos de um ficheiro

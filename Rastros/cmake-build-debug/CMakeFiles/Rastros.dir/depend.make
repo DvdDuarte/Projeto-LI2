@@ -29,6 +29,7 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dado
 CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o: ../Camadas\ de\ dados/buscaPosicao.c
 CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o: ../Camadas\ de\ dados/buscaPosicao.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o: ../Camadas\ de\ dados/estruturasDados.h
+CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o: ../Camadas\ de\ dados/modificaEstado.h
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o: ../Camadas\ de\ dados/estruturasDados.c
 CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o: ../Camadas\ de\ dados/estruturasDados.h
