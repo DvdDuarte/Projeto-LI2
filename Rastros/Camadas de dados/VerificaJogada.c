@@ -57,7 +57,7 @@ void coloca_peca(ESTADO *e, int coluna, int linha) {//, int i) {
 
     // Esta funcao vai transformar a posicao da peca branca numa peca preta
 
-    int lastplayer, colunanterior, linhanterior;
+    int lastplayer, colunanterior, linhanterior, i;
 
     colunanterior = e->ultima_jogada.coluna;
     linhanterior = e->ultima_jogada.linha;
@@ -69,15 +69,18 @@ void coloca_peca(ESTADO *e, int coluna, int linha) {//, int i) {
     e->ultima_jogada.coluna = coluna;
     e->ultima_jogada.linha = linha;
 
-    /*
+    i = e -> num_jogadas;
+
+
     if (lastplayer == 1) {
         e->jogadas[i].jogador1.coluna = coluna;
         e->jogadas[i].jogador1.linha = linha;
     } else {
         e->jogadas[i].jogador2.coluna = coluna;
         e->jogadas[i].jogador2.linha = linha;
+        e -> num_jogadas = i + 1;
     }
-    */
+
     if (lastplayer == 1) e->jogador_atual = 2;
     else e->jogador_atual = 1;
 
