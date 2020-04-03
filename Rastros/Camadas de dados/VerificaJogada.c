@@ -21,14 +21,11 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
     linha = c.linha;
     flag = -1;
     CASA casa;
-    casa = e->tab[coluna][linha];
-
-//1- ver se nao sai dos limites do tabuleiro
-
     if (coluna > 8 || coluna < 0 || linha > 8 || linha < 0) return COORDENADA_INVALIDA;
 
+    //5- se o outro jogador nao conseguir jogar mais o jogo acaba
 
-//2- se nao tiver fora do tab, ver se a casa recebida esta livre
+    //2- se nao tiver fora do tab, ver se a casa recebida esta livre
     else if (casa == VAZIO || casa == UM || casa == DOIS) {
 
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
@@ -47,8 +44,11 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
         return TUDO_OK;
 
     } else return JOGADA_INVALIDA;
+    casa = e->tab[coluna][linha];
 
-    //5- se o outro jogador nao conseguir jogar mais o jogo acaba
+//1- ver se nao sai dos limites do tabuleiro
+
+
 
 }
 
