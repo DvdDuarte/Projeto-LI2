@@ -62,12 +62,6 @@ void mostrar_tabuleiro(ESTADO *e, FILE *ficheiro) {
 
         }
     }
-
-//    if (ficheiro != stdout) {
-  //      fprintf('\n);
-  //      mostrar_movimentos (e, ficheiro);
-    //}
-
 }
 
 

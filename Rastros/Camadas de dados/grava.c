@@ -19,6 +19,10 @@ int gravar (ESTADO *e, char *filename) {
 
     mostrar_tabuleiro(e,jogo);
     fputc('\n',jogo);
+    //if (ficheiro != stdout) {
+       // fprintf(ficheiro,'\n');
+        mostrar_movimentos (e, jogo);
+    //}
 
     fclose (jogo);
 

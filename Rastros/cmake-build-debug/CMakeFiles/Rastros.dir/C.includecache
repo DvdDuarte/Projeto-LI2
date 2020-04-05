@@ -6,57 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.c
-Interpretador.h
-/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h
-../Camadas de dados/estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-../Camadas de dados/grava.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.h
-../Lógica do programa/jogar.h
-/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
-interface.h
-/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
-../Camadas de dados/lerEstado.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
-../Camadas de dados/buscaPosicao.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.h
+
+/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.c
 stdio.h
 -
-stdlib.h
--
-string.h
--
+listaMovs.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.h
+modificaEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
 
-/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
-bits/types/FILE.h
--
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.h
-estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.h
-estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.h
 bits/types/FILE.h
 -
 estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
-/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
-bits/types/FILE.h
--
-../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
+estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
