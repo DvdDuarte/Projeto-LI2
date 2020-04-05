@@ -36,4 +36,12 @@ void coloca_peca(ESTADO *e, int coluna, int linha);
  * @return A distancia para a funcao que valida a jogada
  */
 float distancia(ESTADO *e, int coluna, int linha);
+
+/**
+ \brief Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar
+ * @param e Apontador do estado
+ * @return A condicao em que o jogo esta
+ */
+VALIDACOES verifica_fim_jogo (ESTADO *e);
+
 #endif //RASTROS_VERIFICAJOGADA_H

@@ -27,7 +27,8 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
     //1- ver se nao sai dos limites do tabuleiro
     if (coluna > 8 || coluna < 0 || linha > 8 || linha < 0) return COORDENADA_INVALIDA;
 
-    //5- se o outro jogador nao conseguir jogar mais o jogo acaba
+
+    // return IMPOSSIVEL_JOGAR;
 
     //2- se nao tiver fora do tab, ver se a casa recebida esta livre
     else if (casa == VAZIO || casa == UM || casa == DOIS) {
@@ -45,8 +46,8 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
         }
 
         return TUDO_OK;
-
-    } else return JOGADA_INVALIDA;
+//5- se o outro jogador nao conseguir jogar mais o jogo acaba
+    } else return (verifica_fim_jogo(e));//JOGADA_INVALIDA;
 
 
 }
@@ -96,4 +97,19 @@ float distancia(ESTADO *e, int coluna, int linha) {
     dist = sqrt(pow((linha - l), 2) + pow((coluna - c), 2));
 
     return dist;
+}
+
+VALIDACOES verifica_fim_jogo (ESTADO *e) {
+
+    int coluna, linha;
+
+    coluna = e -> ultima_jogada.coluna;
+    linha = e -> ultima_jogada.linha;
+
+    if (e -> tab[coluna + 1][linha - 1] == PRETA && e -> tab[coluna + 1][linha] == PRETA && e -> tab[coluna + 1][linha + 1] == PRETA
+       && e -> tab[coluna - 1][linha - 1] == PRETA && e -> tab[coluna - 1][linha] == PRETA && e -> tab[coluna - 1][linha + 1] == PRETA
+       && e -> tab[coluna][linha - 1] == PRETA && e -> tab[coluna][linha + 1] == PRETA)
+        return IMPOSSIVEL_JOGAR;
+    else return JOGADA_INVALIDA;
+
 }

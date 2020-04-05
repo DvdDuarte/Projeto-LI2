@@ -7,6 +7,7 @@
 #include "../Camadas de dados/VerificaJogada.h"
 #include "../Camadas de dados/tipoErros.h"
 #include "../Camada de interface/interface.h"
+#include "../Camadas de dados/modificaEstado.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -28,11 +29,19 @@ int jogar(ESTADO *e, COORDENADA c) {
             coloca_peca(e, c.coluna, c.linha);
             return 0;
 
+        case IMPOSSIVEL_JOGAR:
+            if (obter_jogador_atual(e) == 1) {
+                printf("O Jogador 2 ganhou\n O Jogo Acabou\n");
+            } else printf("O Jogador 1 ganhou\n O Jogo Acabou\n");
+            return 1;
+
         case JOGADOR_1 :
+            coloca_peca(e, c.coluna, c.linha);
             printf("O Jogador 1 ganhou\n O Jogo Acabou\n");
             return 1;
 
         case JOGADOR_2 :
+            coloca_peca(e, c.coluna, c.linha);
             printf("O Jogador 2 ganhou\n O Jogo Acabou\n");
             return 1;
 

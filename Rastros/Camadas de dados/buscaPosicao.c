@@ -8,6 +8,32 @@
 
 ESTADO posicao (int pos, ESTADO *e) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    // ESTADO *estadonovo;
   //  int i;
   //  pos = pos - 1;
