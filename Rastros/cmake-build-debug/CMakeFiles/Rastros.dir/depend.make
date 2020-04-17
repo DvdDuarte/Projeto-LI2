@@ -56,6 +56,13 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas\ de\ dado
 CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o: ../Camadas\ de\ dados/tipoErros.c
 CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o: ../Camadas\ de\ dados/tipoErros.h
 
+CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o: ../Listas\ ligadas/dadosListas.c
+CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o: ../Listas\ ligadas/dadosListas.h
+
+CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Listas\ ligadas/dadosListas.h
+CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Listas\ ligadas/modificaListas.c
+CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Listas\ ligadas/modificaListas.h
+
 CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o: ../Camada\ de\ interface/interface.h
 CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o: ../Camadas\ de\ dados/VerificaJogada.h
 CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o: ../Camadas\ de\ dados/estruturasDados.h

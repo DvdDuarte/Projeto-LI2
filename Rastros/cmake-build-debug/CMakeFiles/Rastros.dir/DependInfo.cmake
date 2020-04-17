@@ -15,6 +15,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o"
   "/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o"
+  "/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o"
+  "/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o"
   "/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o"
   "/home/david/Projeto-LI2/Rastros/main.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o"
   )

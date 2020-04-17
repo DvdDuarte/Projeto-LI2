@@ -144,6 +144,18 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h">
 			<Option target="Rastros"/>
 		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h">
+			<Option target="Rastros"/>
+		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c">
 			<Option target="Rastros"/>
 		</Unit>

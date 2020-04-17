@@ -56,6 +56,13 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o
 CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o
  /home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.c
  /home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
+CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o
+ /home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.c
+ /home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
+CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o
+ /home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
+ /home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c
+ /home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
 CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o
  /home/david/Projeto-LI2/Rastros/Camada de interface/interface.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h

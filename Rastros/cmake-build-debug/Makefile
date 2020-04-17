@@ -420,6 +420,60 @@ Camadas_de_dados/tipoErros.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.s
 .PHONY : Camadas_de_dados/tipoErros.c.s
 
+Listas_ligadas/dadosListas.o: Listas_ligadas/dadosListas.c.o
+
+.PHONY : Listas_ligadas/dadosListas.o
+
+# target to build an object file
+Listas_ligadas/dadosListas.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o
+.PHONY : Listas_ligadas/dadosListas.c.o
+
+Listas_ligadas/dadosListas.i: Listas_ligadas/dadosListas.c.i
+
+.PHONY : Listas_ligadas/dadosListas.i
+
+# target to preprocess a source file
+Listas_ligadas/dadosListas.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.i
+.PHONY : Listas_ligadas/dadosListas.c.i
+
+Listas_ligadas/dadosListas.s: Listas_ligadas/dadosListas.c.s
+
+.PHONY : Listas_ligadas/dadosListas.s
+
+# target to generate assembly for a file
+Listas_ligadas/dadosListas.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.s
+.PHONY : Listas_ligadas/dadosListas.c.s
+
+Listas_ligadas/modificaListas.o: Listas_ligadas/modificaListas.c.o
+
+.PHONY : Listas_ligadas/modificaListas.o
+
+# target to build an object file
+Listas_ligadas/modificaListas.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o
+.PHONY : Listas_ligadas/modificaListas.c.o
+
+Listas_ligadas/modificaListas.i: Listas_ligadas/modificaListas.c.i
+
+.PHONY : Listas_ligadas/modificaListas.i
+
+# target to preprocess a source file
+Listas_ligadas/modificaListas.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.i
+.PHONY : Listas_ligadas/modificaListas.c.i
+
+Listas_ligadas/modificaListas.s: Listas_ligadas/modificaListas.c.s
+
+.PHONY : Listas_ligadas/modificaListas.s
+
+# target to generate assembly for a file
+Listas_ligadas/modificaListas.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.s
+.PHONY : Listas_ligadas/modificaListas.c.s
+
 Lógica_do_programa/jogar.o: Lógica_do_programa/jogar.c.o
 
 .PHONY : Lógica_do_programa/jogar.o
@@ -516,6 +570,12 @@ help:
 	@echo "... Camadas_de_dados/tipoErros.o"
 	@echo "... Camadas_de_dados/tipoErros.i"
 	@echo "... Camadas_de_dados/tipoErros.s"
+	@echo "... Listas_ligadas/dadosListas.o"
+	@echo "... Listas_ligadas/dadosListas.i"
+	@echo "... Listas_ligadas/dadosListas.s"
+	@echo "... Listas_ligadas/modificaListas.o"
+	@echo "... Listas_ligadas/modificaListas.i"
+	@echo "... Listas_ligadas/modificaListas.s"
 	@echo "... Lógica_do_programa/jogar.o"
 	@echo "... Lógica_do_programa/jogar.i"
 	@echo "... Lógica_do_programa/jogar.s"

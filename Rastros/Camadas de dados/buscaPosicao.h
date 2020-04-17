@@ -18,6 +18,6 @@
  * @param e Apontador do estado
  * @return O restado a partir dessa posicao
  */
-ESTADO posicao (int pos, ESTADO *e);
+ESTADO *posicao (int pos, ESTADO *e);
 
 #endif //RASTROS_BUSCAPOSICAO_H
