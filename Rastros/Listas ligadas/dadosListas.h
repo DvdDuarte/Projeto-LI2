@@ -5,8 +5,10 @@
 #ifndef RASTROS_DADOSLISTAS_H
 #define RASTROS_DADOSLISTAS_H
 
+#include "../Camadas de dados/estruturasDados.h"
+
 typedef struct nodo {
-    void *valor;
+    COORDENADA *valor;
     struct nodo *proximo;
 } NODO, *LISTA;
 

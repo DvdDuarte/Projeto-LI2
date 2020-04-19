@@ -6,12 +6,14 @@
 #include "modificaListas.h"
 
 
+
 // Cria uma lista vazia
 LISTA criar_lista(){
 
     LISTA list;
 
     list -> valor = NULL;
+    list -> proximo = NULL;
 
     return list;
 
@@ -30,7 +32,7 @@ LISTA insere_cabeca(LISTA L, void *valor){
 }
 
 // Devolve a cabeça da lista
-void *devolve_cabeca(LISTA L){
+COORDENADA *devolve_cabeca(LISTA L){
 
  return L -> valor;
 
@@ -57,5 +59,15 @@ int lista_esta_vazia(LISTA L){
 
     if (L->valor == NULL) return 1;
     else return 0;
+
+}
+
+
+LISTA acrescenta_elementos (LISTA L, COORDENADA *c) {
+
+    LISTA nova_lista = malloc(sizeof(NODO));
+    nova_lista -> valor = c;
+    nova_lista -> proximo = L;
+    return nova_lista;
 
 }

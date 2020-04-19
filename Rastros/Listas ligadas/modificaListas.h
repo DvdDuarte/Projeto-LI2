@@ -6,6 +6,7 @@
 #define RASTROS_MODIFICALISTAS_H
 
 #include "dadosListas.h"
+#include "../Camadas de dados/estruturasDados.h"
 
 // Cria uma lista vazia
 LISTA criar_lista();
@@ -14,7 +15,7 @@ LISTA criar_lista();
 LISTA insere_cabeca(LISTA L, void *valor);
 
 // Devolve a cabeça da lista
-void *devolve_cabeca(LISTA L);
+COORDENADA *devolve_cabeca(LISTA L);
 
 // Devolve a cauda da lista
 LISTA proximo(LISTA L);
@@ -24,5 +25,8 @@ LISTA remove_cabeca(LISTA L);
 
 // Devolve verdareiro se a lista é vazia
 int lista_esta_vazia(LISTA L);
+
+
+LISTA acrescenta_elementos (LISTA L, COORDENADA *c);
 
 #endif //RASTROS_MODIFICALISTAS_H

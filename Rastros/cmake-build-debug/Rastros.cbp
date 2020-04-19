@@ -27,6 +27,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/david/Projeto-LI2/Rastros/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Rastros">
 				<Option output="/home/david/Projeto-LI2/Rastros/cmake-build-debug/Rastros" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/david/Projeto-LI2/Rastros/cmake-build-debug"/>
@@ -62,16 +72,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 Rastros/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/david/Projeto-LI2/Rastros/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Projeto-LI2/Rastros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -148,6 +148,12 @@
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.h">
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c">

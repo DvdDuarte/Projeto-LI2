@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
 /home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
 /home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c
 stdlib.h
@@ -17,4 +21,6 @@ modificaListas.h
 /home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
 dadosListas.h
 /home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
