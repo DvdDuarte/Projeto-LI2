@@ -8,6 +8,7 @@ CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camadas\ de\ da
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camadas\ de\ dados/estruturasDados.h
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camadas\ de\ dados/grava.h
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camadas\ de\ dados/lerEstado.h
+CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Listas\ ligadas/escolheJogada.h
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Lógica\ do\ programa/jogar.h
 
 CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o: ../Camada\ de\ interface/imprimeCasa.c

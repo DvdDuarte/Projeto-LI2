@@ -9,6 +9,7 @@
 #include "interface.h"
 #include "../Camadas de dados/lerEstado.h"
 #include "../Camadas de dados/buscaPosicao.h"
+#include "../Listas ligadas/escolheJogada.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -53,6 +54,12 @@ int interpretador(ESTADO *e) {
 
         }
 
+        if (strcmp(linha, "jog\n") == 0) {
+
+            jogar_bot (e);
+
+        }
+
         if (sscanf(linha, "gr %s\n", filename) == 1) {
 
             gravar(e, filename);
@@ -65,6 +72,8 @@ int interpretador(ESTADO *e) {
             mostrar_prompt(e, stdout);
 
         }
+
+
 
     }
 

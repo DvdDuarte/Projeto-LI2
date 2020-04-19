@@ -34,7 +34,7 @@ LISTA insere_cabeca(LISTA L, void *valor){
 // Devolve a cabeça da lista
 COORDENADA *devolve_cabeca(LISTA L){
 
- return L -> valor;
+ return /*(void*)*/L -> valor;
 
 }
 
@@ -57,7 +57,7 @@ LISTA remove_cabeca(LISTA L){
 // Devolve verdareiro se a lista é vazia
 int lista_esta_vazia(LISTA L){
 
-    if (L->valor == NULL) return 1;
+    if (L -> valor == NULL) return 1;
     else return 0;
 
 }

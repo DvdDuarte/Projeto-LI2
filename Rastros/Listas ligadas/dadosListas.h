@@ -8,7 +8,7 @@
 #include "../Camadas de dados/estruturasDados.h"
 
 typedef struct nodo {
-    COORDENADA *valor;
+    void *valor;
     struct nodo *proximo;
 } NODO, *LISTA;
 
