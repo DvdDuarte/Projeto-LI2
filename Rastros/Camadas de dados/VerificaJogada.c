@@ -53,7 +53,7 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
 }
 
 // Função auxiliar que coloca a peça branca na coordenada onde se pretende jogar.
-void coloca_peca(ESTADO *e, int coluna, int linha) {//, int i) {
+void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
 
     // Esta funcao vai transformar a posicao da peca branca numa peca preta
 
@@ -69,8 +69,9 @@ void coloca_peca(ESTADO *e, int coluna, int linha) {//, int i) {
     e->ultima_jogada.coluna = coluna;
     e->ultima_jogada.linha = linha;
 
-    i = e -> num_jogadas;
-
+    if (flag == -1) {
+        i = e->num_jogadas;
+    } else i = flag;
 
     if (lastplayer == 1) {
         e->jogadas[i].jogador1.coluna = coluna;
@@ -78,7 +79,9 @@ void coloca_peca(ESTADO *e, int coluna, int linha) {//, int i) {
     } else {
         e->jogadas[i].jogador2.coluna = coluna;
         e->jogadas[i].jogador2.linha = linha;
-        e -> num_jogadas = i + 1;
+        if (flag == -1) {
+            e->num_jogadas = i + 1;
+        }
     }
 
     if (lastplayer == 1) e->jogador_atual = 2;

@@ -25,13 +25,7 @@ ESTADO *inicializar_estado() {
     e -> ultima_jogada.coluna = 4;
     e -> ultima_jogada.linha = 3;
 
-    //Inicializar o tabuleiro
-    for (i= 0; i < 8; i++) {
-        for (j = 0; j < 8; j++) e -> tab[i][j] = VAZIO;
-    }
-    e -> tab[4][3] = BRANCA;
-    e -> tab[0][7] = UM;
-    e -> tab[7][0] = DOIS;
+    inicializar_tab(e);
 
 
     //Inicializar as jogadas
@@ -41,6 +35,21 @@ ESTADO *inicializar_estado() {
         e->jogadas[i].jogador2.coluna = 0;
         e->jogadas[i].jogador2.linha = 0;
     }
+
+    return e;
+}
+
+ESTADO *inicializar_tab (ESTADO *e) {
+//Inicializar o tabuleiro
+    int i, j;
+
+    for (i = 0;i < 8; i++) {
+        for (j = 0;j < 8; j++) e -> tab[i][j] =VAZIO;
+    }
+
+    e -> tab[4][3] =BRANCA;
+    e -> tab[0][7] =UM;
+    e -> tab[7][0] =DOIS;
 
     return e;
 }
@@ -60,3 +69,4 @@ return estado -> num_jogadas;
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
 return e -> tab[c.coluna][c.linha]; 
 }
+

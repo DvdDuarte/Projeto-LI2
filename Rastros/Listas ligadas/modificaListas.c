@@ -32,16 +32,14 @@ LISTA insere_cabeca(LISTA L, void *valor){
 // Devolve a cabeça da lista
 void *devolve_cabeca(LISTA L){
 
- NODO cabeca = L -> valor;
-
- return cabeca;
+ return L -> valor;
 
 }
 
 // Devolve a cauda da lista
 LISTA proximo(LISTA L){
 
-
+    return L->proximo;
 
 }
 
@@ -49,14 +47,15 @@ LISTA proximo(LISTA L){
 LISTA remove_cabeca(LISTA L){
 
     LISTA x = L == NULL ? NULL : L -> proximo;
-
     free(L);
-
     return x;
 
 }
 
 // Devolve verdareiro se a lista é vazia
 int lista_esta_vazia(LISTA L){
+
+    if (L->valor == NULL) return 1;
+    else return 0;
 
 }

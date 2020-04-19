@@ -16,6 +16,13 @@
 ESTADO *inicializar_estado();
 
 /**
+ \brief Funcao que inicializa o tabuleiro
+ * @param e Apontador do estado
+ * @return Estado com o tabuleiro inicializado
+ */
+ESTADO *inicializar_tab (ESTADO *e);
+
+/**
  \brief Funcao que obtem o jogador atual
  * @param estado Apontador do estado
  * @return O numero do jogador atual

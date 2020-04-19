@@ -18,4 +18,13 @@
  * @return 0 quando e feita a jogada
  */
 int jogar(ESTADO *e, COORDENADA c);
+
+/**
+ \brief Funcao que e' utilizada para colocar as pecas quando dado o comando pos
+ * @param e Apontador do estado
+ * @param c Apontador da coordenada
+ * @param i Indice da jogada
+ */
+void jog_pos (ESTADO *e, COORDENADA c, int i);
+
 #endif //RASTROS_JOGAR_H

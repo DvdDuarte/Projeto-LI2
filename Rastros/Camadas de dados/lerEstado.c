@@ -85,7 +85,7 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
 
 
 
-    for (idx = 0; idx < 8; idx++) {
+    for (idx = 0; idx <= 8; idx++) {
 
         letter = line[idx];
 

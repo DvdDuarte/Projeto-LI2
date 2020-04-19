@@ -25,8 +25,9 @@ VALIDACOES jogadavalida (ESTADO *e, COORDENADA c);
  * @param e Apontador para o estado
  * @param coluna A coluna da casa nova
  * @param linha A linha da casa nova
+ * @param flag Flag utilizada para definir qual o indice da jogada a ser utilizado
  */
-void coloca_peca(ESTADO *e, int coluna, int linha);
+void coloca_peca(ESTADO *e, int coluna, int linha, int flag);
 
 /**
  \brief Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas
