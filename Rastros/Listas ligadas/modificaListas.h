@@ -26,7 +26,4 @@ LISTA remove_cabeca(LISTA L);
 // Devolve verdareiro se a lista é vazia
 int lista_esta_vazia(LISTA L);
 
-
-LISTA acrescenta_elementos (LISTA L, COORDENADA *c);
-
 #endif //RASTROS_MODIFICALISTAS_H

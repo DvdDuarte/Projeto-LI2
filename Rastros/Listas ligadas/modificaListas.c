@@ -10,7 +10,7 @@
 // Cria uma lista vazia
 LISTA criar_lista(){
 
-    LISTA list;
+    LISTA list = malloc(sizeof(NODO));
 
     list -> valor = NULL;
     list -> proximo = NULL;
@@ -62,12 +62,3 @@ int lista_esta_vazia(LISTA L){
 
 }
 
-
-LISTA acrescenta_elementos (LISTA L, COORDENADA *c) {
-
-    LISTA nova_lista = malloc(sizeof(NODO));
-    nova_lista -> valor = c;
-    nova_lista -> proximo = L;
-    return nova_lista;
-
-}

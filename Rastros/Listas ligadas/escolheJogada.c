@@ -1,7 +1,7 @@
 //
 // Created by david on 19/04/20.
 //
-
+#include <stdlib.h>
 #include "escolheJogada.h"
 #include "dadosListas.h"
 #include "modificaListas.h"
@@ -12,7 +12,7 @@ void jogar_bot (ESTADO *e) {
 
     int coluna, linha, i, j;
     LISTA posicoes_possiveis;
-    COORDENADA *coord, coordenada_final;
+    COORDENADA *coord = malloc(sizeof(COORDENADA)), coordenada_final;
 
     coluna = e -> ultima_jogada.coluna;
     linha = e -> ultima_jogada.linha;
@@ -23,7 +23,7 @@ void jogar_bot (ESTADO *e) {
         for (j = -1; j<= 1; j++) {
             if (e->tab[coluna + i][linha + j] == VAZIO) {
                 *coord = (COORDENADA) {coluna + i, linha + j};
-                posicoes_possiveis = acrescenta_elementos(posicoes_possiveis, coord);
+                posicoes_possiveis = insere_cabeca(posicoes_possiveis, coord);
             }
 
         }
