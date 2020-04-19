@@ -85,18 +85,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ae6d5cd06a47da1ffc46fac5c4d14696f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tipoErros_8h.html#adb1ce27db49af4588e155676189ad598">VALIDACOES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#ae6d5cd06a47da1ffc46fac5c4d14696f">jogadavalida</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, <a class="el" href="structCOORDENADA.html">COORDENADA</a> c)</td></tr>
 <tr class="memdesc:ae6d5cd06a47da1ffc46fac5c4d14696f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida uma jogada.  <a href="#ae6d5cd06a47da1ffc46fac5c4d14696f">More...</a><br /></td></tr>
 <tr class="separator:ae6d5cd06a47da1ffc46fac5c4d14696f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01529731c7a69df8e5a115fe1df06226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#a01529731c7a69df8e5a115fe1df06226">coloca_peca</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int coluna, int linha)</td></tr>
-<tr class="memdesc:a01529731c7a69df8e5a115fe1df06226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava.  <a href="#a01529731c7a69df8e5a115fe1df06226">More...</a><br /></td></tr>
-<tr class="separator:a01529731c7a69df8e5a115fe1df06226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5b5946113bdc12f3cc6baeb0770578"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#acb5b5946113bdc12f3cc6baeb0770578">coloca_peca</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int coluna, int linha, int flag)</td></tr>
+<tr class="memdesc:acb5b5946113bdc12f3cc6baeb0770578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava.  <a href="#acb5b5946113bdc12f3cc6baeb0770578">More...</a><br /></td></tr>
+<tr class="separator:acb5b5946113bdc12f3cc6baeb0770578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25a19fb5bc585dd18ceef3f11943f5e7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#a25a19fb5bc585dd18ceef3f11943f5e7">distancia</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int coluna, int linha)</td></tr>
 <tr class="memdesc:a25a19fb5bc585dd18ceef3f11943f5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas.  <a href="#a25a19fb5bc585dd18ceef3f11943f5e7">More...</a><br /></td></tr>
 <tr class="separator:a25a19fb5bc585dd18ceef3f11943f5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bcdfb630bbf281eeb07bb9baabe2db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tipoErros_8h.html#adb1ce27db49af4588e155676189ad598">VALIDACOES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#a47bcdfb630bbf281eeb07bb9baabe2db">verifica_fim_jogo</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:a47bcdfb630bbf281eeb07bb9baabe2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar.  <a href="#a47bcdfb630bbf281eeb07bb9baabe2db">More...</a><br /></td></tr>
+<tr class="separator:a47bcdfb630bbf281eeb07bb9baabe2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definicao das funoes que validam uma jogada e a concretiza, se for possivel </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a01529731c7a69df8e5a115fe1df06226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01529731c7a69df8e5a115fe1df06226">&#9670;&nbsp;</a></span>coloca_peca()</h2>
+<a id="acb5b5946113bdc12f3cc6baeb0770578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb5b5946113bdc12f3cc6baeb0770578">&#9670;&nbsp;</a></span>coloca_peca()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,7 +120,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>linha</em>&#160;</td>
+          <td class="paramname"><em>linha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -133,6 +142,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
     <tr><td class="paramname">coluna</td><td>A coluna da casa nova </td></tr>
     <tr><td class="paramname">linha</td><td>A linha da casa nova </td></tr>
+    <tr><td class="paramname">flag</td><td>Flag utilizada para definir qual o indice da jogada a ser utilizado </td></tr>
   </table>
   </dd>
 </dl>
@@ -219,6 +229,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A validacao da jogada </dd></dl>
+
+</div>
+</div>
+<a id="a47bcdfb630bbf281eeb07bb9baabe2db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47bcdfb630bbf281eeb07bb9baabe2db">&#9670;&nbsp;</a></span>verifica_fim_jogo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tipoErros_8h.html#adb1ce27db49af4588e155676189ad598">VALIDACOES</a> verifica_fim_jogo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador do estado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A condicao em que o jogo esta </dd></dl>
 
 </div>
 </div>

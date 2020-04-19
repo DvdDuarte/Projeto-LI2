@@ -9,21 +9,23 @@ Include dependency graph for Verifica\+Jogada.\+h\+:
 \item 
 \hyperlink{tipoErros_8h_adb1ce27db49af4588e155676189ad598}{V\+A\+L\+I\+D\+A\+C\+O\+ES} \hyperlink{VerificaJogada_8h_ae6d5cd06a47da1ffc46fac5c4d14696f}{jogadavalida} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c)
 \begin{DoxyCompactList}\small\item\em Valida uma jogada. \end{DoxyCompactList}\item 
-void \hyperlink{VerificaJogada_8h_a01529731c7a69df8e5a115fe1df06226}{coloca\+\_\+peca} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int coluna, int linha)
+void \hyperlink{VerificaJogada_8h_acb5b5946113bdc12f3cc6baeb0770578}{coloca\+\_\+peca} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int coluna, int linha, int flag)
 \begin{DoxyCompactList}\small\item\em Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava. \end{DoxyCompactList}\item 
 float \hyperlink{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}{distancia} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int coluna, int linha)
-\begin{DoxyCompactList}\small\item\em Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas. \end{DoxyCompactList}\item 
+\hyperlink{tipoErros_8h_adb1ce27db49af4588e155676189ad598}{V\+A\+L\+I\+D\+A\+C\+O\+ES} \hyperlink{VerificaJogada_8h_a47bcdfb630bbf281eeb07bb9baabe2db}{verifica\+\_\+fim\+\_\+jogo} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Definicao das funoes que validam uma jogada e a concretiza, se for possivel 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{VerificaJogada_8h_a01529731c7a69df8e5a115fe1df06226}\label{VerificaJogada_8h_a01529731c7a69df8e5a115fe1df06226}} 
+\mbox{\Hypertarget{VerificaJogada_8h_acb5b5946113bdc12f3cc6baeb0770578}\label{VerificaJogada_8h_acb5b5946113bdc12f3cc6baeb0770578}} 
 \index{Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}!coloca\+\_\+peca@{coloca\+\_\+peca}}
 \index{coloca\+\_\+peca@{coloca\+\_\+peca}!Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}}
 \subsubsection{\texorpdfstring{coloca\+\_\+peca()}{coloca\_peca()}}
-{\footnotesize\ttfamily void coloca\+\_\+peca (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{coluna,  }\item[{int}]{linha }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void coloca\+\_\+peca (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{coluna,  }\item[{int}]{linha,  }\item[{int}]{flag }\end{DoxyParamCaption})}
 
 
 
@@ -36,6 +38,8 @@ Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava.
 {\em coluna} & A coluna da casa nova \\
 \hline
 {\em linha} & A linha da casa nova \\
+\hline
+{\em flag} & Flag utilizada para definir qual o indice da jogada a ser utilizado \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}\label{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}} 
@@ -79,4 +83,22 @@ Valida uma jogada.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A validacao da jogada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VerificaJogada_8h_a47bcdfb630bbf281eeb07bb9baabe2db}\label{VerificaJogada_8h_a47bcdfb630bbf281eeb07bb9baabe2db}} 
+\index{Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}!verifica\+\_\+fim\+\_\+jogo@{verifica\+\_\+fim\+\_\+jogo}}
+\index{verifica\+\_\+fim\+\_\+jogo@{verifica\+\_\+fim\+\_\+jogo}!Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}}
+\subsubsection{\texorpdfstring{verifica\+\_\+fim\+\_\+jogo()}{verifica\_fim\_jogo()}}
+{\footnotesize\ttfamily \hyperlink{tipoErros_8h_adb1ce27db49af4588e155676189ad598}{V\+A\+L\+I\+D\+A\+C\+O\+ES} verifica\+\_\+fim\+\_\+jogo (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador do estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A condicao em que o jogo esta 
 \end{DoxyReturn}

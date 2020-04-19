@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['modificaestado_2eh',['modificaEstado.h',['../modificaEstado_8h.html',1,'']]],
-  ['mostrar_5fmovimentos',['mostrar_movimentos',['../interface_8h.html#aa1347f8d8a0591b9b9744245d12cd519',1,'interface.c']]],
-  ['mostrar_5fprompt',['mostrar_prompt',['../interface_8h.html#a3d8df62a196f60a42b923004ecf03e12',1,'interface.c']]],
-  ['mostrar_5ftabuleiro',['mostrar_tabuleiro',['../interface_8h.html#ae01b0ed404ed74367f2c3d279d94a32e',1,'interface.c']]]
+  ['ler',['ler',['../lerEstado_8h.html#a8511d69d5e120a84efa6d1bbba5488ec',1,'lerEstado.c']]],
+  ['ler_5flinha_5fmovs',['ler_linha_movs',['../lerEstado_8h.html#a12abc2f2a2fa776fe08e6e422178d4af',1,'lerEstado.c']]],
+  ['ler_5fmovimentos',['ler_movimentos',['../lerEstado_8h.html#a5dae91836d89ac6ae1892cbcc8ad3dea',1,'lerEstado.c']]],
+  ['ler_5ftabuleiro',['ler_tabuleiro',['../lerEstado_8h.html#a261b756c803ae426d9e087e5c600bca5',1,'lerEstado.c']]],
+  ['lerestado_2eh',['lerEstado.h',['../lerEstado_8h.html',1,'']]],
+  ['listamovs_2eh',['listaMovs.h',['../listaMovs_8h.html',1,'']]]
 ];

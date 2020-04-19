@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['estado',['ESTADO',['../structESTADO.html',1,'']]],
-  ['estruturasdados_2eh',['estruturasDados.h',['../estruturasDados_8h.html',1,'']]]
+  ['distancia',['distancia',['../VerificaJogada_8h.html#a25a19fb5bc585dd18ceef3f11943f5e7',1,'VerificaJogada.c']]]
 ];

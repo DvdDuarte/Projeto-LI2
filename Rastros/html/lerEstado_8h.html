@@ -88,6 +88,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a438794af5f3ab5e34a2027543889ac58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lerEstado_8h.html#a438794af5f3ab5e34a2027543889ac58">troca_tipo</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, char letter, int coluna, int linha)</td></tr>
 <tr class="memdesc:a438794af5f3ab5e34a2027543889ac58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicao da funcao que ao receber um char de um casa vai decidir qual o tipo de peca que esta nessa casa.  <a href="#a438794af5f3ab5e34a2027543889ac58">More...</a><br /></td></tr>
 <tr class="separator:a438794af5f3ab5e34a2027543889ac58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261b756c803ae426d9e087e5c600bca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lerEstado_8h.html#a261b756c803ae426d9e087e5c600bca5">ler_tabuleiro</a> (FILE *ficheiro, <a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:a261b756c803ae426d9e087e5c600bca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicao da funcao que le o tabuleiro de um ficheiro.  <a href="#a261b756c803ae426d9e087e5c600bca5">More...</a><br /></td></tr>
+<tr class="separator:a261b756c803ae426d9e087e5c600bca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dae91836d89ac6ae1892cbcc8ad3dea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lerEstado_8h.html#a5dae91836d89ac6ae1892cbcc8ad3dea">ler_movimentos</a> (FILE *ficheiro, <a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:a5dae91836d89ac6ae1892cbcc8ad3dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicao da funcao que le a lista de movimentos de um ficheiro.  <a href="#a5dae91836d89ac6ae1892cbcc8ad3dea">More...</a><br /></td></tr>
+<tr class="separator:a5dae91836d89ac6ae1892cbcc8ad3dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12abc2f2a2fa776fe08e6e422178d4af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lerEstado_8h.html#a12abc2f2a2fa776fe08e6e422178d4af">ler_linha_movs</a> (char line[BUF_SIZE], <a class="el" href="structESTADO.html">ESTADO</a> *e, int indice)</td></tr>
+<tr class="memdesc:a12abc2f2a2fa776fe08e6e422178d4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicao da funcao que le uma linha de movimentos de um ficheiro.  <a href="#a12abc2f2a2fa776fe08e6e422178d4af">More...</a><br /></td></tr>
+<tr class="separator:a12abc2f2a2fa776fe08e6e422178d4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definicao da/s funcao/os que le/m um ficheiro e imprime/m o estado </p>
@@ -116,6 +125,124 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>O estado que estava no ficheiro </dd></dl>
+
+</div>
+</div>
+<a id="a12abc2f2a2fa776fe08e6e422178d4af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12abc2f2a2fa776fe08e6e422178d4af">&#9670;&nbsp;</a></span>ler_linha_movs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ler_linha_movs </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>line</em>[BUF_SIZE], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicao da funcao que le uma linha de movimentos de um ficheiro. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>A variavel onde a linha lida vai ser guardada </td></tr>
+    <tr><td class="paramname">e</td><td>Apontador do estado </td></tr>
+    <tr><td class="paramname">indice</td><td>indice da jogada </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5dae91836d89ac6ae1892cbcc8ad3dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dae91836d89ac6ae1892cbcc8ad3dea">&#9670;&nbsp;</a></span>ler_movimentos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ler_movimentos </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>ficheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicao da funcao que le a lista de movimentos de um ficheiro. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jogo</td><td>Apontador do nome do ficheiro </td></tr>
+    <tr><td class="paramname">e</td><td>Apontador do estado </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a261b756c803ae426d9e087e5c600bca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261b756c803ae426d9e087e5c600bca5">&#9670;&nbsp;</a></span>ler_tabuleiro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ler_tabuleiro </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>ficheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicao da funcao que le o tabuleiro de um ficheiro. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jogo</td><td>Apontador do nome do ficheiro </td></tr>
+    <tr><td class="paramname">e</td><td>Apontador do estado </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

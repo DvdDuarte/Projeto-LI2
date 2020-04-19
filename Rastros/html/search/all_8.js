@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['obter_5festado_5fcasa',['obter_estado_casa',['../modificaEstado_8h.html#a6faa68373203923729ed38657aa0f768',1,'modificaEstado.c']]],
-  ['obter_5fjogador_5fatual',['obter_jogador_atual',['../modificaEstado_8h.html#ad6e326e4ffa57ca1ae0c75377ecefc8c',1,'modificaEstado.c']]],
-  ['obter_5fnumero_5fde_5fjogadas',['obter_numero_de_jogadas',['../modificaEstado_8h.html#a6cd0b387bdee9e18003c78852394aa63',1,'modificaEstado.c']]]
+  ['modificaestado_2eh',['modificaEstado.h',['../modificaEstado_8h.html',1,'']]],
+  ['mostrar_5fmovimentos',['mostrar_movimentos',['../interface_8h.html#aa1347f8d8a0591b9b9744245d12cd519',1,'interface.c']]],
+  ['mostrar_5fprompt',['mostrar_prompt',['../interface_8h.html#a3d8df62a196f60a42b923004ecf03e12',1,'interface.c']]],
+  ['mostrar_5ftabuleiro',['mostrar_tabuleiro',['../interface_8h.html#ae01b0ed404ed74367f2c3d279d94a32e',1,'interface.c']]]
 ];
