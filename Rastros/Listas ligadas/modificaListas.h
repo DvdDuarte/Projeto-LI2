@@ -56,4 +56,11 @@ LISTA remove_cabeca(LISTA L);
  */
 int lista_esta_vazia(LISTA L);
 
+
+LISTA posicoes_possiveis (ESTADO *e);
+
+LISTA ordena_lista_posicoes (LISTA L, ESTADO *e);
+
+int tamanho_lista (LISTA L);
+
 #endif //RASTROS_MODIFICALISTAS_H

@@ -101,6 +101,8 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
     e -> ultima_jogada.coluna = cj2 - 'a';
     e -> ultima_jogada.linha = '8' - lj2;
 
+    e -> posicao_jogada = indice;
+
 }
 
 

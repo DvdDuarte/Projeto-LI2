@@ -16,21 +16,20 @@ ESTADO *posicao (int pos, ESTADO *e) {
     if (pos < 0 || pos >= e->num_jogadas) return e;
 
     inicializar_tab(e);
+    inicializar_ultima_jogada(e);
 
     for (i = 0; i <= pos; i++) {
 
         coord1 = (COORDENADA) {e -> jogadas[i].jogador1.coluna, e -> jogadas[i].jogador1.linha};
         coord2 = (COORDENADA) {e -> jogadas[i].jogador2.coluna, e -> jogadas[i].jogador2.linha};
         jog_pos (e, coord1, i);
+        e -> ultima_jogada = coord1;
         jog_pos (e, coord2, i);
+        e -> ultima_jogada = coord2;
     }
 
+    e -> posicao_jogada = pos;
 
-    //Fazer condicao para ver qual foi o ultimo jogador para atualizar a ultima jogada em concordancia
-    //estadonovo -> ultima_jogada.coluna = e -> jogadas.jogador1.coluna;
-   // estadonovo -> ultima_jogada.linha = e -> jogadas.jogador1.linha;
-    e -> ultima_jogada.coluna = e -> jogadas[i].jogador2.coluna;
-    e -> ultima_jogada.linha = e -> jogadas[i].jogador2.linha;
 
     return e;
 

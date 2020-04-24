@@ -20,7 +20,13 @@ ESTADO *inicializar_estado();
  * @param e Apontador do estado
  * @return Estado com o tabuleiro inicializado
  */
-ESTADO *inicializar_tab (ESTADO *e);
+void inicializar_tab (ESTADO *e);
+
+
+void inicializar_ultima_jogada (ESTADO *e);
+
+
+void inicializar_jogadas (ESTADO *e);
 
 /**
  \brief Funcao que obtem o jogador atual

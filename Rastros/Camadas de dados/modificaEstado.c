@@ -21,25 +21,16 @@ ESTADO *inicializar_estado() {
     //Inicializar o numero das jogadas feitas
     e -> num_jogadas = 0;
 
-    //Inicializar a ultima jogada
-    e -> ultima_jogada.coluna = 4;
-    e -> ultima_jogada.linha = 3;
-
     inicializar_tab(e);
 
+    inicializar_ultima_jogada(e);
 
-    //Inicializar as jogadas
-    for (i = 0; i < 32 ; i++) {
-        e->jogadas[i].jogador1.coluna = 0;
-        e->jogadas[i].jogador1.linha = 0;
-        e->jogadas[i].jogador2.coluna = 0;
-        e->jogadas[i].jogador2.linha = 0;
-    }
+   inicializar_jogadas(e);
 
     return e;
 }
 
-ESTADO *inicializar_tab (ESTADO *e) {
+void inicializar_tab (ESTADO *e) {
 //Inicializar o tabuleiro
     int i, j;
 
@@ -51,7 +42,26 @@ ESTADO *inicializar_tab (ESTADO *e) {
     e -> tab[0][7] =UM;
     e -> tab[7][0] =DOIS;
 
-    return e;
+    //return e;
+}
+
+void inicializar_ultima_jogada (ESTADO *e) {
+
+    //Inicializar a ultima jogada
+    e -> ultima_jogada.coluna = 4;
+    e -> ultima_jogada.linha = 3;
+}
+
+void inicializar_jogadas (ESTADO *e) {
+
+    int i;
+    //Inicializar as jogadas
+    for (i = 0; i < 32 ; i++) {
+        e->jogadas[i].jogador1.coluna = 0;
+        e->jogadas[i].jogador1.linha = 0;
+        e->jogadas[i].jogador2.coluna = 0;
+        e->jogadas[i].jogador2.linha = 0;
+    }
 }
 
 // Esta funcao permite obter o numero do jogador atual

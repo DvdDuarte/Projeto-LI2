@@ -8,35 +8,21 @@
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
-/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.c
-stdlib.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c
+stdio.h
 -
-escolheJogada.h
-/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.h
-dadosListas.h
-/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
-modificaListas.h
-/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
-../Lógica do programa/jogar.h
-/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+lerEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
+modificaEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
 
-/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
-dadosListas.h
-/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h
 bits/types/FILE.h
 -
-../Camadas de dados/estruturasDados.h
+estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
+estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 

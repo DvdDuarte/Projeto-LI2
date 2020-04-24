@@ -8,30 +8,33 @@
 #include "../Lógica do programa/jogar.h"
 
 
-void jogar_bot (ESTADO *e) {
+void jogar_automaticamente (ESTADO *e) {
 
-    int coluna, linha, i, j;
-    LISTA posicoes_possiveis;
-    COORDENADA *coord = malloc(sizeof(COORDENADA)), coordenada_final;
+    LISTA posicoes;
+    COORDENADA coordenada_final;
 
-    coluna = e -> ultima_jogada.coluna;
-    linha = e -> ultima_jogada.linha;
+    posicoes = posicoes_possiveis (e);
 
-    posicoes_possiveis = criar_lista();
+    coordenada_final = *devolve_cabeca (posicoes);
 
-    for (i = -1; i <= 1; i++) {
-        for (j = -1; j<= 1; j++) {
-            if (e->tab[coluna + i][linha + j] == VAZIO) {
-                *coord = (COORDENADA) {coluna + i, linha + j};
-                posicoes_possiveis = insere_cabeca(posicoes_possiveis, coord);
-            }
-
-        }
-    }
-
-    coordenada_final = *devolve_cabeca (posicoes_possiveis);
+    free (posicoes);
 
     jogar (e, coordenada_final);
 
-   // return *e;
+
+}
+
+void joga_sozinho (ESTADO *e) {
+
+    int tamanho, i;
+    LISTA posicoes;
+    COORDENADA coordenada_final;
+
+    posicoes = posicoes_possiveis (e);
+
+    tamanho = tamanho_lista(posicoes);
+    for (i = 0; i < tamanho; i++) {
+        posicoes = ordena_lista_posicoes(posicoes, e);
+    }
+
 }

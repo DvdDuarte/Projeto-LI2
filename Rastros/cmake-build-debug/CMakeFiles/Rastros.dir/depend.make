@@ -25,6 +25,7 @@ CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camadas\ de\ dados/
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dados/VerificaJogada.c
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dados/VerificaJogada.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dados/estruturasDados.h
+CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dados/modificaEstado.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dados/tipoErros.h
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o: ../Camadas\ de\ dados/buscaPosicao.c
@@ -69,7 +70,10 @@ CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Listas\ ligadas/esco
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Listas\ ligadas/modificaListas.h
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Lógica\ do\ programa/jogar.h
 
+CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Camadas\ de\ dados/VerificaJogada.h
 CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Camadas\ de\ dados/estruturasDados.h
+CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Camadas\ de\ dados/modificaEstado.h
+CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Camadas\ de\ dados/tipoErros.h
 CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Listas\ ligadas/dadosListas.h
 CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Listas\ ligadas/modificaListas.c
 CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Listas\ ligadas/modificaListas.h

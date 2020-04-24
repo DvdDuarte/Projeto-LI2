@@ -56,7 +56,13 @@ int interpretador(ESTADO *e) {
 
         if (strcmp(linha, "jog\n") == 0) {
 
-            jogar_bot (e);
+            jogar_automaticamente (e);
+
+        }
+
+        if (strcmp(linha, "jog2\n") == 0) {
+
+            joga_sozinho (e);
 
         }
 
@@ -69,7 +75,7 @@ int interpretador(ESTADO *e) {
         if (sscanf(linha, "ler %s\n", filename) == 1) {
 
             e = ler(filename);
-            mostrar_prompt(e, stdout);
+           // mostrar_prompt(e, stdout);
 
         }
 

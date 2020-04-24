@@ -4,6 +4,7 @@
 
 #include "VerificaJogada.h"
 #include "tipoErros.h"
+#include "modificaEstado.h"
 #include <stdlib.h>
 #include <math.h>
 
@@ -34,7 +35,7 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
     else if (casa == VAZIO || casa == UM || casa == DOIS) {
 
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
-        if (abs(distancia(e, coluna, linha)) <= 1) {
+        if (abs(distancia(e, coluna, linha,0)) <= 1) {
             //o valor abs da distancia entre as novas coordenadas e ass da peca branca for <= 1 entao )
             flag = 1;
         } else return JOGADA_INVALIDA;
@@ -57,11 +58,11 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
 
     // Esta funcao vai transformar a posicao da peca branca numa peca preta
 
-    int lastplayer, colunanterior, linhanterior, i;
+    int colunanterior, linhanterior, i;
 
     colunanterior = e->ultima_jogada.coluna;
     linhanterior = e->ultima_jogada.linha;
-    lastplayer = e->jogador_atual;
+
 
     e->tab[colunanterior][linhanterior] = PRETA;
     e->tab[coluna][linha] = BRANCA;
@@ -73,7 +74,7 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
         i = e->num_jogadas;
     } else i = flag;
 
-    if (lastplayer == 1) {
+    if (obter_jogador_atual(e) == 1) {
         e->jogadas[i].jogador1.coluna = coluna;
         e->jogadas[i].jogador1.linha = linha;
     } else {
@@ -84,20 +85,32 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
         }
     }
 
-    if (lastplayer == 1) e->jogador_atual = 2;
+    if (obter_jogador_atual == 1) e->jogador_atual = 2;
     else e->jogador_atual = 1;
 
 }
 
-float distancia(ESTADO *e, int coluna, int linha) {
+float distancia(ESTADO *e, int coluna, int linha, int flag) {
 
     int l, c;
     float dist;
 
-    l = e->ultima_jogada.linha;
-    c = e->ultima_jogada.coluna;
+    switch (flag) {
 
-    dist = sqrt(pow((linha - l), 2) + pow((coluna - c), 2));
+        case 0:
+            l = e->ultima_jogada.linha;
+            c = e->ultima_jogada.coluna;
+
+            dist = sqrt(pow((linha - l), 2) + pow((coluna - c), 2));
+            break;
+        case 1:
+            dist = sqrt(pow((7 - linha), 2) + pow((0 - coluna), 2));
+            break;
+        case 2:
+            dist = sqrt(pow((7 - linha), 2) + pow((0 - coluna), 2));
+            break;
+    }
+
 
     return dist;
 }

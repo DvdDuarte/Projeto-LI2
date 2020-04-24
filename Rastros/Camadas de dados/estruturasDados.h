@@ -53,6 +53,6 @@ typedef struct {
     JOGADAS jogadas;
     int num_jogadas;
     int jogador_atual;
-    int posicao;
+    int posicao_jogada;
 } ESTADO;
 #endif //RASTROS_ESTRUTURASDADOS_H

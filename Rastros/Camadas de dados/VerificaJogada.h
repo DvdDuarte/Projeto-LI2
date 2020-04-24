@@ -36,7 +36,7 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag);
  * @param linha A linha da casa nova
  * @return A distancia para a funcao que valida a jogada
  */
-float distancia(ESTADO *e, int coluna, int linha);
+float distancia(ESTADO *e, int coluna, int linha, int flag);
 
 /**
  \brief Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar
