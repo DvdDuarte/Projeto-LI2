@@ -85,7 +85,7 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
         }
     }
 
-    if (obter_jogador_atual == 1) e->jogador_atual = 2;
+    if (obter_jogador_atual (e) == 1) e->jogador_atual = 2;
     else e->jogador_atual = 1;
 
 }

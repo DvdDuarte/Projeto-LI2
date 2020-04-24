@@ -11,11 +11,11 @@
 void jogar_automaticamente (ESTADO *e) {
 
     LISTA posicoes;
-    COORDENADA coordenada_final;
+    COORDENADA *coordenada_final;
 
     posicoes = posicoes_possiveis (e);
 
-    coordenada_final = *devolve_cabeca (posicoes);
+    coordenada_final = devolve_cabeca (posicoes);
 
     free (posicoes);
 
@@ -26,15 +26,15 @@ void jogar_automaticamente (ESTADO *e) {
 
 void joga_sozinho (ESTADO *e) {
 
-    int tamanho, i;
     LISTA posicoes;
-    COORDENADA coordenada_final;
+    COORDENADA *coordenada_final;
 
     posicoes = posicoes_possiveis (e);
 
-    tamanho = tamanho_lista(posicoes);
-    for (i = 0; i < tamanho; i++) {
-        posicoes = ordena_lista_posicoes(posicoes, e);
-    }
+    coordenada_final = menor (posicoes, e);
+
+    free (posicoes);
+
+    jogar (e, coordenada_final);
 
 }

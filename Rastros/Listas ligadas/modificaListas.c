@@ -67,7 +67,7 @@ LISTA posicoes_possiveis (ESTADO *e) {
 
     int coluna, linha, i, j;
     LISTA posicoes;
-    COORDENADA *coord = malloc(sizeof(COORDENADA));
+
 
     coluna = e -> ultima_jogada.coluna;
     linha = e -> ultima_jogada.linha;
@@ -77,7 +77,7 @@ LISTA posicoes_possiveis (ESTADO *e) {
     for (i = -1; i <= 1; i++) {
         for (j = -1; j <= 1; j++) {
             if (e->tab[coluna + i][linha + j] == VAZIO) {
-
+                COORDENADA *coord = malloc(sizeof(COORDENADA));
                 *coord = (COORDENADA) {coluna + i, linha + j};
                 posicoes = insere_cabeca(posicoes, coord);
 
@@ -89,31 +89,23 @@ LISTA posicoes_possiveis (ESTADO *e) {
     return posicoes;
 }
 
-LISTA ordena_lista_posicoes (LISTA L, ESTADO *e) {
+COORDENADA *menor (LISTA L, ESTADO *e) {
 
     int dist1, dist2;
-    COORDENADA *coord1, *coord2;
-    LISTA lista_final;
+    COORDENADA *menor_elemento, *elemento_comparar;
+    menor_elemento = (COORDENADA *) devolve_cabeca(L);
 
-    if (lista_esta_vazia(L)) return NULL;
+    L = remove_cabeca(L);
 
-    coord1 = (COORDENADA) L->valor;
-    coord2 = (COORDENADA) L->proximo->valor;
+    for(LISTA T = L; !lista_esta_vazia(T); T = proximo(T)) {
 
-    dist1 = distancia (e, coord1->coluna, coord1->linha, obter_jogador_atual(e));
-    dist2 = distancia (e, coord2->coluna, coord2->linha, obter_jogador_atual(e));
+        elemento_comparar = T->valor;
 
-    if (dist1 > dist2) {
-        lista_final -> valor = coord2;
-        lista_final -> proximo -> valor = coord1;
+        dist1 = distancia(e, menor_elemento->coluna, menor_elemento->linha, obter_jogador_atual(e));
+        dist2 = distancia(e, elemento_comparar->coluna, elemento_comparar->linha, obter_jogador_atual(e));
+
+        if (dist1 > dist2 ) menor_elemento = T->valor;
     }
 
-    lista_final -> proximo -> proximo =ordena_lista_posicoes(proximo(L), e);
-
-    return lista_final;
-}
-
-int tamanho_lista (LISTA L) {
-    if(L == NULL) return 0;
-    else return (1 + tamanho_lista(L -> proximo));
+    return menor_elemento;
 }

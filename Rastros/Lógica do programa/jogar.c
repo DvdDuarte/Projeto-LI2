@@ -53,22 +53,7 @@ int jogar(ESTADO *e, COORDENADA c) {
 
 void jog_pos (ESTADO *e, COORDENADA c, int i) {
 
-    switch (c) {
-
-    case (COORDENADA) {0, 7} :
-        coloca_peca(e, c.coluna, c.linha, -1);
-    printf("O Jogador 1 ganhou\n O Jogo Acabou\n");
-            break;
-
-    case (COORDENADA) {7, 0} :
-        coloca_peca(e, c.coluna, c.linha, -1);
-    printf("O Jogador 2 ganhou\n O Jogo Acabou\n");
-    break;
-
-    default:
         coloca_peca(e, c.coluna, c.linha, i);
-
-    }
 
 }
 

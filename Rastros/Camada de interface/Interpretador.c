@@ -23,8 +23,8 @@ int interpretador(ESTADO *e) {
         //int BUF_SIZE = 1024;
         char filename[BUF_SIZE];
         char linha[BUF_SIZE];
-        char col[2], lin[2], pos[2];
-        int flag;
+        char col[2], lin[2];
+        int flag, pos;
 
         flag = -1;
 
@@ -34,15 +34,18 @@ int interpretador(ESTADO *e) {
             return 0;
         }
 
-        if (sscanf(linha, "pos %[1-32]\n", pos) == 1) {
-            posicao(*pos - '1', e);
+        if (sscanf(linha, "pos %d\n", &pos) == 1) {
+            posicao(pos - '1', e);
         }
 
-        if (flag != 1 && strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
+        if (/*flag != 1 && */strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
 
             COORDENADA coord = {*col - 'a', '8' - *lin};
-            jogar(e, coord);
-            flag = jogar(e, coord);
+            //jogar(e, coord);
+            if (jogar(e,coord)) {
+                mostrar_tabuleiro(e, stdout);
+                return 0;
+            }
 
         }
 
