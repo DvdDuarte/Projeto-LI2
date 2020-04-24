@@ -35,7 +35,7 @@ int interpretador(ESTADO *e) {
         }
 
         if (sscanf(linha, "pos %d\n", &pos) == 1) {
-            posicao(pos - '1', e);
+            posicao(pos - 1, e);
         }
 
         if (/*flag != 1 && */strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {

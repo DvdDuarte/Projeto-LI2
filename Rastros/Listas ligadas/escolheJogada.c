@@ -19,7 +19,7 @@ void jogar_automaticamente (ESTADO *e) {
 
     free (posicoes);
 
-    jogar (e, coordenada_final);
+    jogar (e, *coordenada_final);
 
 
 }
@@ -35,6 +35,6 @@ void joga_sozinho (ESTADO *e) {
 
     free (posicoes);
 
-    jogar (e, coordenada_final);
+    jogar (e, *coordenada_final);
 
 }
