@@ -12,6 +12,7 @@
 
 #include "dadosListas.h"
 #include "../Camadas de dados/estruturasDados.h"
+#include "../Camadas de dados/tipoErros.h"
 
 // Cria uma lista vazia
 /**
@@ -66,10 +67,14 @@ int lista_esta_vazia(LISTA L);
  * @param e Apontador do estado
  * @return A lista com as posicoes possiveis a serem jogadas
  */
-LISTA posicoes_possiveis (ESTADO *e);
+LISTA posicoes_possiveis (ESTADO *e, VALIDACOES flag);
 
-LISTA posicoes_impossiveis (ESTADO *e);
 
+/**
+ \brief
+ * @param L Lista com as casas vizinhas da casa da peca branca para as quais e impossivel de jogar
+ * @return O tamanho da lista
+ */
 int length(LISTA L);
 
 /**

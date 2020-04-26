@@ -13,7 +13,7 @@ void jogar_automaticamente (ESTADO *e) {
     LISTA posicoes;
     COORDENADA *coordenada_final;
 
-    posicoes = posicoes_possiveis (e);
+    posicoes = posicoes_possiveis (e, TUDO_OK);
 
     coordenada_final = devolve_cabeca (posicoes);
 
@@ -29,7 +29,7 @@ void joga_sozinho (ESTADO *e) {
     LISTA posicoes;
     COORDENADA *coordenada_final;
 
-    posicoes = posicoes_possiveis (e);
+    posicoes = posicoes_possiveis (e, TUDO_OK);
 
     coordenada_final = menor (posicoes, e);
 

@@ -68,6 +68,7 @@ CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o: ../Listas\ ligadas/dadosL
 CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o: ../Listas\ ligadas/dadosListas.h
 
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Camadas\ de\ dados/estruturasDados.h
+CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Camadas\ de\ dados/tipoErros.h
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Listas\ ligadas/dadosListas.h
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Listas\ ligadas/escolheJogada.c
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Listas\ ligadas/escolheJogada.h

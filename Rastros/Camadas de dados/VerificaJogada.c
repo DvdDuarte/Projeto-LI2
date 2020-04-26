@@ -122,7 +122,7 @@ VALIDACOES verifica_fim_jogo(ESTADO *e) {
     coluna = e->ultima_jogada.coluna;
     linha = e->ultima_jogada.linha;
 
-    if (length(posicoes_impossiveis(e)) >= 5) return  IMPOSSIVEL_JOGAR;
+    if (length(posicoes_possiveis(e, IMPOSSIVEL_JOGAR)) >= 5) return  IMPOSSIVEL_JOGAR;
 
     /*
     if (e->tab[coluna + 1][linha - 1] == PRETA && e->tab[coluna + 1][linha] == PRETA &&

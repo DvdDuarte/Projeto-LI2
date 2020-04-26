@@ -6,30 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c
-VerificaJogada.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h
-tipoErros.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
-modificaEstado.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
-../Listas ligadas/modificaListas.h
-/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
-stdlib.h
--
-stdio.h
--
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h
-estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-tipoErros.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
-estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
 /home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
@@ -38,9 +14,33 @@ estruturasDados.h
 ../Camadas de dados/estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
+/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.c
+stdlib.h
+-
+escolheJogada.h
+/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.h
+dadosListas.h
+/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
+modificaListas.h
+/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
+../Lógica do programa/jogar.h
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+
+/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+
 /home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
 dadosListas.h
 /home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
+../Camadas de dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
+../Camadas de dados/tipoErros.h
+/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
+
+/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h
+bits/types/FILE.h
+-
 ../Camadas de dados/estruturasDados.h
 /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
 
