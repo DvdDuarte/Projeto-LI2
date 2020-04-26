@@ -5,6 +5,7 @@
 #include "VerificaJogada.h"
 #include "tipoErros.h"
 #include "modificaEstado.h"
+#include "../Listas ligadas/modificaListas.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -121,16 +122,17 @@ VALIDACOES verifica_fim_jogo(ESTADO *e) {
     coluna = e->ultima_jogada.coluna;
     linha = e->ultima_jogada.linha;
 
-    if ((coluna - 1 >= 0 && coluna - 1 < 8 && linha - 1 >= 0 && linha - 1 < 8 ||
-         coluna + 1 >= 0 && coluna + 1 < 8 && linha + 1 >= 0 && linha + 1 < 8) &&
-        e->tab[coluna + 1][linha - 1] == PRETA && e->tab[coluna + 1][linha] == PRETA &&
+    if (length(posicoes_impossiveis(e)) >= 5) return  IMPOSSIVEL_JOGAR;
+
+    /*
+    if (e->tab[coluna + 1][linha - 1] == PRETA && e->tab[coluna + 1][linha] == PRETA &&
         e->tab[coluna + 1][linha + 1] == PRETA
         && e->tab[coluna - 1][linha - 1] == PRETA && e->tab[coluna - 1][linha] == PRETA &&
         e->tab[coluna - 1][linha + 1] == PRETA
         && e->tab[coluna][linha - 1] == PRETA && e->tab[coluna][linha + 1] == PRETA)
         return IMPOSSIVEL_JOGAR;
     else return JOGADA_INVALIDA;
-
+*/
 }
 
 void imprime_vencedor(ESTADO *e) {

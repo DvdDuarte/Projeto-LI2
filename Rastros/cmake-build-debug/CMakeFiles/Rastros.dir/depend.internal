@@ -30,6 +30,8 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o
  /home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
  /home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
+ /home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
+ /home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o
  /home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.c
  /home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.h

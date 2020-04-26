@@ -68,6 +68,10 @@ int lista_esta_vazia(LISTA L);
  */
 LISTA posicoes_possiveis (ESTADO *e);
 
+LISTA posicoes_impossiveis (ESTADO *e);
+
+int length(LISTA L);
+
 /**
  \brief Definicao da funcao que percorre uma lista ligada com as posicoes possiveis a serem jogadas e escolhe a posicao com a menor distancia a casa necessaria para o jogador atual ganhar
  * @param L A lista ligada com as posicoes possiveis
