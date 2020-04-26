@@ -91,7 +91,7 @@ LISTA posicoes_possiveis (ESTADO *e) {
 
 COORDENADA *menor (LISTA L, ESTADO *e) {
 
-    int dist1, dist2;
+    int dist1, dist2, linha;
     COORDENADA *menor_elemento, *elemento_comparar;
     menor_elemento = (COORDENADA *) devolve_cabeca(L);
 
@@ -106,6 +106,7 @@ COORDENADA *menor (LISTA L, ESTADO *e) {
 
         if (dist1 > dist2 ) menor_elemento = T->valor;
     }
+
 
     return menor_elemento;
 }

@@ -28,10 +28,8 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
     //1- ver se nao sai dos limites do tabuleiro
     if (coluna > 8 || coluna < 0 || linha > 8 || linha < 0) return COORDENADA_INVALIDA;
 
-
-    // return IMPOSSIVEL_JOGAR;
-
     //2- se nao tiver fora do tab, ver se a casa recebida esta livre
+
     else if (casa == VAZIO || casa == UM || casa == DOIS) {
 
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
@@ -87,6 +85,7 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
 
     if (obter_jogador_atual (e) == 1) e->jogador_atual = 2;
     else e->jogador_atual = 1;
+
 
 }
 

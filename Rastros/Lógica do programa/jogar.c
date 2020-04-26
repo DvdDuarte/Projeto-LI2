@@ -22,7 +22,9 @@ int jogar(ESTADO *e, COORDENADA c) {
     VALIDACOES flag;
 
     printf ("%d %d\n",c.coluna, c.linha);
-    flag = jogadavalida(e, c);
+
+    if (verifica_fim_jogo(e) == IMPOSSIVEL_JOGAR) flag = IMPOSSIVEL_JOGAR;
+    else flag = jogadavalida(e, c);
 
     switch (flag) {
         case TUDO_OK :
