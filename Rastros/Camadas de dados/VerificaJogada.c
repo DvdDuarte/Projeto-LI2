@@ -79,6 +79,8 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
     } else {
         e->jogadas[i].jogador2.coluna = coluna;
         e->jogadas[i].jogador2.linha = linha;
+
+        e->posicao_jogada = i;
         if (flag == -1) {
             e->num_jogadas = i + 1;
         }
@@ -122,7 +124,12 @@ VALIDACOES verifica_fim_jogo(ESTADO *e) {
     coluna = e->ultima_jogada.coluna;
     linha = e->ultima_jogada.linha;
 
-    if (length(posicoes_possiveis(e, IMPOSSIVEL_JOGAR)) >= 5) return  IMPOSSIVEL_JOGAR;
+    if (length(posicoes_possiveis(e, IMPOSSIVEL_JOGAR)) == 5 && (coluna == 0 || coluna == 7 || linha == 0 ||
+        linha == 7))
+        return IMPOSSIVEL_JOGAR;
+    else if (length(posicoes_possiveis(e, IMPOSSIVEL_JOGAR)) == 8) return IMPOSSIVEL_JOGAR;
+
+    else return JOGADA_INVALIDA;
 
     /*
     if (e->tab[coluna + 1][linha - 1] == PRETA && e->tab[coluna + 1][linha] == PRETA &&

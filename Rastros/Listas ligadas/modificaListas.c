@@ -86,36 +86,11 @@ LISTA posicoes_possiveis (ESTADO *e, VALIDACOES flag) {
     return posicoes;
 }
 
-LISTA posicoes_impossiveis (ESTADO *e) {
-
-    int coluna, linha, i, j;
-    LISTA posicoes;
-
-
-    coluna = e -> ultima_jogada.coluna;
-    linha = e -> ultima_jogada.linha;
-
-    posicoes = criar_lista();
-
-    for (i = -1; i <= 1; i++) {
-        for (j = -1; j <= 1; j++) {
-            if (coluna + i >=0 && coluna + i < 8 && linha + j >= 0 && linha + j < 8 && e->tab[coluna + i][linha + j] == PRETA) {
-                COORDENADA *coord = malloc(sizeof(COORDENADA));
-                *coord = (COORDENADA) {coluna + i, linha + j};
-                posicoes = insere_cabeca(posicoes, coord);
-
-            }
-
-        }
-    }
-
-    return posicoes;
-}
 
 int length(LISTA L) {
-    if(L == NULL) return 0;
+    if(lista_esta_vazia(L)) return 0;
     else {
-        remove_cabeca(L);
+        //remove_cabeca(L);
         return (1 + length(L->proximo));
     }
 }

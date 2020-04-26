@@ -71,7 +71,7 @@ void mostrar_prompt(ESTADO *e, FILE *ficheiro) {
     mostrar_tabuleiro(e, ficheiro);
     fputc('\n', ficheiro);
 
-    fprintf(ficheiro, "#PL%d (%d) > ", e->jogador_atual, e->num_jogadas);
+    fprintf(ficheiro, "#PL%d (%d) > ", e->jogador_atual, e->num_jogadas + 1);
 
     //fprintf(ficheiro, "# %d PL%d (%d) > ", soma, e->jogador_atual, e->num_jogadas);
 }
