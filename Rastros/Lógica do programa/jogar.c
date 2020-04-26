@@ -23,28 +23,21 @@ int jogar(ESTADO *e, COORDENADA c) {
 
     printf ("%d %d\n",c.coluna, c.linha);
 
-    if (verifica_fim_jogo(e) == IMPOSSIVEL_JOGAR) flag = IMPOSSIVEL_JOGAR;
-    else flag = jogadavalida(e, c);
+    flag = jogadavalida(e, c);
 
     switch (flag) {
         case TUDO_OK :
             coloca_peca(e, c.coluna, c.linha, -1);
             return 0;
 
-        case IMPOSSIVEL_JOGAR:
-            if (obter_jogador_atual(e) == 1) {
-                printf("O Jogador 2 ganhou\n O Jogo Acabou\n");
-            } else printf("O Jogador 1 ganhou\n O Jogo Acabou\n");
-            return 1;
-
         case JOGADOR_1 :
             coloca_peca(e, c.coluna, c.linha, -1);
-            printf("O Jogador 1 ganhou\n O Jogo Acabou\n");
+            imprime_vencedor(e);
             return 1;
 
         case JOGADOR_2 :
             coloca_peca(e, c.coluna, c.linha, -1);
-            printf("O Jogador 2 ganhou\n O Jogo Acabou\n");
+            imprime_vencedor(e);
             return 1;
 
         default:
@@ -58,6 +51,7 @@ void jog_pos (ESTADO *e, COORDENADA c, int i) {
         coloca_peca(e, c.coluna, c.linha, i);
 
 }
+
 
 
 

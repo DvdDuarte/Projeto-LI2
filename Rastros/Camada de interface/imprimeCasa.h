@@ -9,6 +9,7 @@
  @file imprimeCasa.h
  Definicao da funcao que imprime a casa com uma determinada coordenada
  */
+
 #ifndef RASTROS_IMPRIMECASA_H
 #define RASTROS_IMPRIMECASA_H
 
@@ -20,4 +21,5 @@
  * @param jogo Nome do ficheiro no qual se pretende imprimir a casa
  */
 void imprimeCasa (ESTADO *e, int i, int j, FILE *jogo);
+
 #endif //RASTROS_IMPRIMECASA_H

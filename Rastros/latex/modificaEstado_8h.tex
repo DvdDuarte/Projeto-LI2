@@ -8,8 +8,12 @@ Include dependency graph for modifica\+Estado.\+h\+:
 \item 
 \hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$ \hyperlink{modificaEstado_8h_a7e0c7e26fb685d9ab501e19b05e6954f}{inicializar\+\_\+estado} ()
 \begin{DoxyCompactList}\small\item\em Funcao que inicializa o estado do jogo. \end{DoxyCompactList}\item 
-\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$ \hyperlink{modificaEstado_8h_af96a504a6b58bb4e2037dd4f6e0ed018}{inicializar\+\_\+tab} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+void \hyperlink{modificaEstado_8h_a1c0a78bd9cea38120e85e7385e2c079a}{inicializar\+\_\+tab} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Funcao que inicializa o tabuleiro. \end{DoxyCompactList}\item 
+void \hyperlink{modificaEstado_8h_ae0f58991f028e691d967767f430af929}{inicializar\+\_\+ultima\+\_\+jogada} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Funcao que inicializa a ultima jogada feita antes do jogo comecar. \end{DoxyCompactList}\item 
+void \hyperlink{modificaEstado_8h_a052bd349affda87044fb29cf4862ccb1}{inicializar\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Funcao que incializa a lista de jogadas/movimentos. \end{DoxyCompactList}\item 
 int \hyperlink{modificaEstado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\+\_\+jogador\+\_\+atual} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
 \begin{DoxyCompactList}\small\item\em Funcao que obtem o jogador atual. \end{DoxyCompactList}\item 
 int \hyperlink{modificaEstado_8h_a6cd0b387bdee9e18003c78852394aa63}{obter\+\_\+numero\+\_\+de\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
@@ -35,11 +39,26 @@ Funcao que inicializa o estado do jogo.
 \begin{DoxyReturn}{Returns}
 O estado inicializado 
 \end{DoxyReturn}
-\mbox{\Hypertarget{modificaEstado_8h_af96a504a6b58bb4e2037dd4f6e0ed018}\label{modificaEstado_8h_af96a504a6b58bb4e2037dd4f6e0ed018}} 
+\mbox{\Hypertarget{modificaEstado_8h_a052bd349affda87044fb29cf4862ccb1}\label{modificaEstado_8h_a052bd349affda87044fb29cf4862ccb1}} 
+\index{modifica\+Estado.\+h@{modifica\+Estado.\+h}!inicializar\+\_\+jogadas@{inicializar\+\_\+jogadas}}
+\index{inicializar\+\_\+jogadas@{inicializar\+\_\+jogadas}!modifica\+Estado.\+h@{modifica\+Estado.\+h}}
+\subsubsection{\texorpdfstring{inicializar\+\_\+jogadas()}{inicializar\_jogadas()}}
+{\footnotesize\ttfamily void inicializar\+\_\+jogadas (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Funcao que incializa a lista de jogadas/movimentos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{modificaEstado_8h_a1c0a78bd9cea38120e85e7385e2c079a}\label{modificaEstado_8h_a1c0a78bd9cea38120e85e7385e2c079a}} 
 \index{modifica\+Estado.\+h@{modifica\+Estado.\+h}!inicializar\+\_\+tab@{inicializar\+\_\+tab}}
 \index{inicializar\+\_\+tab@{inicializar\+\_\+tab}!modifica\+Estado.\+h@{modifica\+Estado.\+h}}
 \subsubsection{\texorpdfstring{inicializar\+\_\+tab()}{inicializar\_tab()}}
-{\footnotesize\ttfamily \hyperlink{structESTADO}{E\+S\+T\+A\+DO}$\ast$ inicializar\+\_\+tab (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void inicializar\+\_\+tab (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
 
 
 
@@ -53,6 +72,21 @@ Funcao que inicializa o tabuleiro.
 \begin{DoxyReturn}{Returns}
 Estado com o tabuleiro inicializado 
 \end{DoxyReturn}
+\mbox{\Hypertarget{modificaEstado_8h_ae0f58991f028e691d967767f430af929}\label{modificaEstado_8h_ae0f58991f028e691d967767f430af929}} 
+\index{modifica\+Estado.\+h@{modifica\+Estado.\+h}!inicializar\+\_\+ultima\+\_\+jogada@{inicializar\+\_\+ultima\+\_\+jogada}}
+\index{inicializar\+\_\+ultima\+\_\+jogada@{inicializar\+\_\+ultima\+\_\+jogada}!modifica\+Estado.\+h@{modifica\+Estado.\+h}}
+\subsubsection{\texorpdfstring{inicializar\+\_\+ultima\+\_\+jogada()}{inicializar\_ultima\_jogada()}}
+{\footnotesize\ttfamily void inicializar\+\_\+ultima\+\_\+jogada (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Funcao que inicializa a ultima jogada feita antes do jogo comecar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador do estado \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{modificaEstado_8h_a6faa68373203923729ed38657aa0f768}\label{modificaEstado_8h_a6faa68373203923729ed38657aa0f768}} 
 \index{modifica\+Estado.\+h@{modifica\+Estado.\+h}!obter\+\_\+estado\+\_\+casa@{obter\+\_\+estado\+\_\+casa}}
 \index{obter\+\_\+estado\+\_\+casa@{obter\+\_\+estado\+\_\+casa}!modifica\+Estado.\+h@{modifica\+Estado.\+h}}

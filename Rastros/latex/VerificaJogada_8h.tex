@@ -11,10 +11,12 @@ Include dependency graph for Verifica\+Jogada.\+h\+:
 \begin{DoxyCompactList}\small\item\em Valida uma jogada. \end{DoxyCompactList}\item 
 void \hyperlink{VerificaJogada_8h_acb5b5946113bdc12f3cc6baeb0770578}{coloca\+\_\+peca} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int coluna, int linha, int flag)
 \begin{DoxyCompactList}\small\item\em Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava. \end{DoxyCompactList}\item 
-float \hyperlink{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}{distancia} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int coluna, int linha)
+float \hyperlink{VerificaJogada_8h_a7fcd5e07fc560299ec49f7c66e661a8b}{distancia} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int coluna, int linha, int flag)
 \begin{DoxyCompactList}\small\item\em Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas. \end{DoxyCompactList}\item 
 \hyperlink{tipoErros_8h_adb1ce27db49af4588e155676189ad598}{V\+A\+L\+I\+D\+A\+C\+O\+ES} \hyperlink{VerificaJogada_8h_a47bcdfb630bbf281eeb07bb9baabe2db}{verifica\+\_\+fim\+\_\+jogo} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar. \end{DoxyCompactList}\item 
+void \hyperlink{VerificaJogada_8h_a407f7e942870fb97bba3f49355d2e930}{imprime\+\_\+vencedor} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que diz qual e o vencedor do jogo. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -42,11 +44,11 @@ Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava.
 {\em flag} & Flag utilizada para definir qual o indice da jogada a ser utilizado \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}\label{VerificaJogada_8h_a25a19fb5bc585dd18ceef3f11943f5e7}} 
+\mbox{\Hypertarget{VerificaJogada_8h_a7fcd5e07fc560299ec49f7c66e661a8b}\label{VerificaJogada_8h_a7fcd5e07fc560299ec49f7c66e661a8b}} 
 \index{Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}!distancia@{distancia}}
 \index{distancia@{distancia}!Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}}
 \subsubsection{\texorpdfstring{distancia()}{distancia()}}
-{\footnotesize\ttfamily float distancia (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{coluna,  }\item[{int}]{linha }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float distancia (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{coluna,  }\item[{int}]{linha,  }\item[{int}]{flag }\end{DoxyParamCaption})}
 
 
 
@@ -64,6 +66,21 @@ Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas.
 \begin{DoxyReturn}{Returns}
 A distancia para a funcao que valida a jogada 
 \end{DoxyReturn}
+\mbox{\Hypertarget{VerificaJogada_8h_a407f7e942870fb97bba3f49355d2e930}\label{VerificaJogada_8h_a407f7e942870fb97bba3f49355d2e930}} 
+\index{Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}!imprime\+\_\+vencedor@{imprime\+\_\+vencedor}}
+\index{imprime\+\_\+vencedor@{imprime\+\_\+vencedor}!Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}}
+\subsubsection{\texorpdfstring{imprime\+\_\+vencedor()}{imprime\_vencedor()}}
+{\footnotesize\ttfamily void imprime\+\_\+vencedor (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que diz qual e o vencedor do jogo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador do estado \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{VerificaJogada_8h_ae6d5cd06a47da1ffc46fac5c4d14696f}\label{VerificaJogada_8h_ae6d5cd06a47da1ffc46fac5c4d14696f}} 
 \index{Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}!jogadavalida@{jogadavalida}}
 \index{jogadavalida@{jogadavalida}!Verifica\+Jogada.\+h@{Verifica\+Jogada.\+h}}

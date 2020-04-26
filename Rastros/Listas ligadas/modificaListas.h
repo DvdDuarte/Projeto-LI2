@@ -2,6 +2,11 @@
 // Created by david on 15/04/20.
 //
 
+/**
+ @file modificaListas.h
+ Definicao das funcoes que modificam as listas ligadas
+ */
+
 #ifndef RASTROS_MODIFICALISTAS_H
 #define RASTROS_MODIFICALISTAS_H
 
@@ -56,10 +61,19 @@ LISTA remove_cabeca(LISTA L);
  */
 int lista_esta_vazia(LISTA L);
 
-
+/**
+ \brief Definicao da funcao que percorre as casas vizinhas e disponiveis a casa atual da peca branca e as guarda numa lista ligada
+ * @param e Apontador do estado
+ * @return A lista com as posicoes possiveis a serem jogadas
+ */
 LISTA posicoes_possiveis (ESTADO *e);
 
-
+/**
+ \brief Definicao da funcao que percorre uma lista ligada com as posicoes possiveis a serem jogadas e escolhe a posicao com a menor distancia a casa necessaria para o jogador atual ganhar
+ * @param L A lista ligada com as posicoes possiveis
+ * @param e Apontador do estado
+ * @return A coordenada da casa mais proxima a casa necessaria para o jogador atual vencer
+ */
 COORDENADA *menor (LISTA L , ESTADO *e);
 
 

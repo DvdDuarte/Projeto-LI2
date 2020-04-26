@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['grava_2eh',['grava.h',['../grava_8h.html',1,'']]]
+  ['escolhejogada_2eh',['escolheJogada.h',['../escolheJogada_8h.html',1,'']]],
+  ['estruturasdados_2eh',['estruturasDados.h',['../estruturasDados_8h.html',1,'']]]
 ];

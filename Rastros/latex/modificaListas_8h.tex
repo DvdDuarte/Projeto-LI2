@@ -1,0 +1,174 @@
+\hypertarget{modificaListas_8h}{}\section{Listas ligadas/modifica\+Listas.h File Reference}
+\label{modificaListas_8h}\index{Listas ligadas/modifica\+Listas.\+h@{Listas ligadas/modifica\+Listas.\+h}}
+{\ttfamily \#include \char`\"{}dados\+Listas.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Camadas de dados/estruturas\+Dados.\+h\char`\"{}}\newline
+Include dependency graph for modifica\+Listas.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnodo}{L\+I\+S\+TA} \hyperlink{modificaListas_8h_ae3b99323b6f8f35d80bb69ff1a27985e}{criar\+\_\+lista} ()
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que cria uma lista ligada vazia. \end{DoxyCompactList}\item 
+\hyperlink{structnodo}{L\+I\+S\+TA} \hyperlink{modificaListas_8h_a37ba5fc3cfddb6bc94d4b54b00bc696e}{insere\+\_\+cabeca} (\hyperlink{structnodo}{L\+I\+S\+TA} L, void $\ast$valor)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que insere um valor na cabeca de uma lista ligada. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} $\ast$ \hyperlink{modificaListas_8h_af2a6ad09dc63f02443c3bccc3218f87b}{devolve\+\_\+cabeca} (\hyperlink{structnodo}{L\+I\+S\+TA} L)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que devolve a cabeca da lista ligada. \end{DoxyCompactList}\item 
+\hyperlink{structnodo}{L\+I\+S\+TA} \hyperlink{modificaListas_8h_ad9380152361127432c55c1c6067e05ae}{proximo} (\hyperlink{structnodo}{L\+I\+S\+TA} L)
+\begin{DoxyCompactList}\small\item\em Defionicao da fucnao que devolve a cauda da lista ligada. \end{DoxyCompactList}\item 
+\hyperlink{structnodo}{L\+I\+S\+TA} \hyperlink{modificaListas_8h_a9026a681a68322b5ec7f07137b864cbd}{remove\+\_\+cabeca} (\hyperlink{structnodo}{L\+I\+S\+TA} L)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que remove a cabeda da lista ligada libertando assim o espaco ocupado pela mesma e devolve a cauda. \end{DoxyCompactList}\item 
+int \hyperlink{modificaListas_8h_a4c10928f7acaa4e3de3760cea0dfd9c0}{lista\+\_\+esta\+\_\+vazia} (\hyperlink{structnodo}{L\+I\+S\+TA} L)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que verifica de uma lista ligada esta vazia. \end{DoxyCompactList}\item 
+\hyperlink{structnodo}{L\+I\+S\+TA} \hyperlink{modificaListas_8h_a4d91cd788eb8b5c5f08b2c7dd49b8b99}{posicoes\+\_\+possiveis} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que percorre as casas vizinhas e disponiveis a casa atual da peca branca e as guarda numa lista ligada. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} $\ast$ \hyperlink{modificaListas_8h_af2277e27a369b2b2cf9a667ce398547d}{menor} (\hyperlink{structnodo}{L\+I\+S\+TA} L, \hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Definicao da funcao que percorre uma lista ligada com as posicoes possiveis a serem jogadas e escolhe a posicao com a menor distancia a casa necessaria para o jogador atual ganhar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definicao das funcoes que modificam as listas ligadas 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{modificaListas_8h_ae3b99323b6f8f35d80bb69ff1a27985e}\label{modificaListas_8h_ae3b99323b6f8f35d80bb69ff1a27985e}} 
+\index{modifica\+Listas.\+h@{modifica\+Listas.\+h}!criar\+\_\+lista@{criar\+\_\+lista}}
+\index{criar\+\_\+lista@{criar\+\_\+lista}!modifica\+Listas.\+h@{modifica\+Listas.\+h}}
+\subsubsection{\texorpdfstring{criar\+\_\+lista()}{criar\_lista()}}
+{\footnotesize\ttfamily \hyperlink{structnodo}{L\+I\+S\+TA} criar\+\_\+lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que cria uma lista ligada vazia. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{modificaListas_8h_af2a6ad09dc63f02443c3bccc3218f87b}\label{modificaListas_8h_af2a6ad09dc63f02443c3bccc3218f87b}} 
+\index{modifica\+Listas.\+h@{modifica\+Listas.\+h}!devolve\+\_\+cabeca@{devolve\+\_\+cabeca}}
+\index{devolve\+\_\+cabeca@{devolve\+\_\+cabeca}!modifica\+Listas.\+h@{modifica\+Listas.\+h}}
+\subsubsection{\texorpdfstring{devolve\+\_\+cabeca()}{devolve\_cabeca()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}$\ast$ devolve\+\_\+cabeca (\begin{DoxyParamCaption}\item[{\hyperlink{structnodo}{L\+I\+S\+TA}}]{L }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que devolve a cabeca da lista ligada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L} & Apontador da lista ligada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A cabeca da lista ligada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{modificaListas_8h_a37ba5fc3cfddb6bc94d4b54b00bc696e}\label{modificaListas_8h_a37ba5fc3cfddb6bc94d4b54b00bc696e}} 
+\index{modifica\+Listas.\+h@{modifica\+Listas.\+h}!insere\+\_\+cabeca@{insere\+\_\+cabeca}}
+\index{insere\+\_\+cabeca@{insere\+\_\+cabeca}!modifica\+Listas.\+h@{modifica\+Listas.\+h}}
+\subsubsection{\texorpdfstring{insere\+\_\+cabeca()}{insere\_cabeca()}}
+{\footnotesize\ttfamily \hyperlink{structnodo}{L\+I\+S\+TA} insere\+\_\+cabeca (\begin{DoxyParamCaption}\item[{\hyperlink{structnodo}{L\+I\+S\+TA}}]{L,  }\item[{void $\ast$}]{valor }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que insere um valor na cabeca de uma lista ligada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L} & Apontador da lista ligada \\
+\hline
+{\em valor} & O valor a adicionar na cabeca \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+da lista ligada com o valor na cabeca 
+\end{DoxyReturn}
+\mbox{\Hypertarget{modificaListas_8h_a4c10928f7acaa4e3de3760cea0dfd9c0}\label{modificaListas_8h_a4c10928f7acaa4e3de3760cea0dfd9c0}} 
+\index{modifica\+Listas.\+h@{modifica\+Listas.\+h}!lista\+\_\+esta\+\_\+vazia@{lista\+\_\+esta\+\_\+vazia}}
+\index{lista\+\_\+esta\+\_\+vazia@{lista\+\_\+esta\+\_\+vazia}!modifica\+Listas.\+h@{modifica\+Listas.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+esta\+\_\+vazia()}{lista\_esta\_vazia()}}
+{\footnotesize\ttfamily int lista\+\_\+esta\+\_\+vazia (\begin{DoxyParamCaption}\item[{\hyperlink{structnodo}{L\+I\+S\+TA}}]{L }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que verifica de uma lista ligada esta vazia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L} & Apontador da lista ligada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve 1 caso seja fazia e 0 caso contrario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{modificaListas_8h_af2277e27a369b2b2cf9a667ce398547d}\label{modificaListas_8h_af2277e27a369b2b2cf9a667ce398547d}} 
+\index{modifica\+Listas.\+h@{modifica\+Listas.\+h}!menor@{menor}}
+\index{menor@{menor}!modifica\+Listas.\+h@{modifica\+Listas.\+h}}
+\subsubsection{\texorpdfstring{menor()}{menor()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}$\ast$ menor (\begin{DoxyParamCaption}\item[{\hyperlink{structnodo}{L\+I\+S\+TA}}]{L,  }\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que percorre uma lista ligada com as posicoes possiveis a serem jogadas e escolhe a posicao com a menor distancia a casa necessaria para o jogador atual ganhar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L} & A lista ligada com as posicoes possiveis \\
+\hline
+{\em e} & Apontador do estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A coordenada da casa mais proxima a casa necessaria para o jogador atual vencer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{modificaListas_8h_a4d91cd788eb8b5c5f08b2c7dd49b8b99}\label{modificaListas_8h_a4d91cd788eb8b5c5f08b2c7dd49b8b99}} 
+\index{modifica\+Listas.\+h@{modifica\+Listas.\+h}!posicoes\+\_\+possiveis@{posicoes\+\_\+possiveis}}
+\index{posicoes\+\_\+possiveis@{posicoes\+\_\+possiveis}!modifica\+Listas.\+h@{modifica\+Listas.\+h}}
+\subsubsection{\texorpdfstring{posicoes\+\_\+possiveis()}{posicoes\_possiveis()}}
+{\footnotesize\ttfamily \hyperlink{structnodo}{L\+I\+S\+TA} posicoes\+\_\+possiveis (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que percorre as casas vizinhas e disponiveis a casa atual da peca branca e as guarda numa lista ligada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador do estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A lista com as posicoes possiveis a serem jogadas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{modificaListas_8h_ad9380152361127432c55c1c6067e05ae}\label{modificaListas_8h_ad9380152361127432c55c1c6067e05ae}} 
+\index{modifica\+Listas.\+h@{modifica\+Listas.\+h}!proximo@{proximo}}
+\index{proximo@{proximo}!modifica\+Listas.\+h@{modifica\+Listas.\+h}}
+\subsubsection{\texorpdfstring{proximo()}{proximo()}}
+{\footnotesize\ttfamily \hyperlink{structnodo}{L\+I\+S\+TA} proximo (\begin{DoxyParamCaption}\item[{\hyperlink{structnodo}{L\+I\+S\+TA}}]{L }\end{DoxyParamCaption})}
+
+
+
+Defionicao da fucnao que devolve a cauda da lista ligada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L} & Apontador da lista ligada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A cauda da lista ligada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{modificaListas_8h_a9026a681a68322b5ec7f07137b864cbd}\label{modificaListas_8h_a9026a681a68322b5ec7f07137b864cbd}} 
+\index{modifica\+Listas.\+h@{modifica\+Listas.\+h}!remove\+\_\+cabeca@{remove\+\_\+cabeca}}
+\index{remove\+\_\+cabeca@{remove\+\_\+cabeca}!modifica\+Listas.\+h@{modifica\+Listas.\+h}}
+\subsubsection{\texorpdfstring{remove\+\_\+cabeca()}{remove\_cabeca()}}
+{\footnotesize\ttfamily \hyperlink{structnodo}{L\+I\+S\+TA} remove\+\_\+cabeca (\begin{DoxyParamCaption}\item[{\hyperlink{structnodo}{L\+I\+S\+TA}}]{L }\end{DoxyParamCaption})}
+
+
+
+Definicao da funcao que remove a cabeda da lista ligada libertando assim o espaco ocupado pela mesma e devolve a cauda. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L} & Apontador da lista ligada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A lista ligada sem a cabeca 
+\end{DoxyReturn}

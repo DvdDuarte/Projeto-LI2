@@ -6,7 +6,7 @@
 #include "tipoErros.h"
 #include "modificaEstado.h"
 #include <stdlib.h>
-#include <math.h>
+#include <stdio.h>
 
 
 VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
@@ -33,7 +33,7 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
     else if (casa == VAZIO || casa == UM || casa == DOIS) {
 
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
-        if (abs(distancia(e, coluna, linha,0)) <= 1) {
+        if (abs(distancia(e, coluna, linha,0)) <= 2) {
             //o valor abs da distancia entre as novas coordenadas e ass da peca branca for <= 1 entao )
             flag = 1;
         } else return JOGADA_INVALIDA;
@@ -100,13 +100,13 @@ float distancia(ESTADO *e, int coluna, int linha, int flag) {
             l = e->ultima_jogada.linha;
             c = e->ultima_jogada.coluna;
 
-            dist = sqrt(pow((linha - l), 2) + pow((coluna - c), 2));
+            dist = (linha - l)*(linha - l) + (coluna - c)*(coluna - c);
             break;
         case 1:
-            dist = sqrt(pow((7 - linha), 2) + pow((0 - coluna), 2));
+            dist = (7 - linha)*(7 - linha)+ (0 - coluna)*(0 - coluna);
             break;
         case 2:
-            dist = sqrt(pow((7 - linha), 2) + pow((0 - coluna), 2));
+            dist = (0 - linha)*(0 - linha) + (7 - coluna)*(7 - coluna);
             break;
     }
 
@@ -126,5 +126,13 @@ VALIDACOES verifica_fim_jogo (ESTADO *e) {
        && e -> tab[coluna][linha - 1] == PRETA && e -> tab[coluna][linha + 1] == PRETA)
         return IMPOSSIVEL_JOGAR;
     else return JOGADA_INVALIDA;
+
+}
+
+void imprime_vencedor (ESTADO *e) {
+
+    if (obter_jogador_atual(e) == 1) {
+        printf("O Jogador 2 ganhou\n O Jogo Acabou\n");
+    } else printf("O Jogador 1 ganhou\n O Jogo Acabou\n");
 
 }

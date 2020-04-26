@@ -16,4 +16,5 @@
  * @return 0 quando quiserem sair do jogo, ou quando o jogo acabar
  */
 int interpretador (ESTADO *e);
+
 #endif //RASTROS_INTERPRETADOR_H

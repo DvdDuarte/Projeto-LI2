@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tipoerros_2eh',['tipoErros.h',['../tipoErros_8h.html',1,'']]],
-  ['troca_5ftipo',['troca_tipo',['../lerEstado_8h.html#a438794af5f3ab5e34a2027543889ac58',1,'lerEstado.c']]]
+  ['remove_5fcabeca',['remove_cabeca',['../modificaListas_8h.html#a9026a681a68322b5ec7f07137b864cbd',1,'modificaListas.c']]]
 ];

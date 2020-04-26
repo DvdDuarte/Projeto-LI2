@@ -45,4 +45,10 @@ float distancia(ESTADO *e, int coluna, int linha, int flag);
  */
 VALIDACOES verifica_fim_jogo (ESTADO *e);
 
+/**
+ \brief Definicao da funcao que diz qual e o vencedor do jogo
+ * @param e Apontador do estado
+ */
+void imprime_vencedor (ESTADO *e);
+
 #endif //RASTROS_VERIFICAJOGADA_H

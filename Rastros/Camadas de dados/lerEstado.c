@@ -3,6 +3,7 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 #include "lerEstado.h"
 #include "modificaEstado.h"
 
@@ -67,9 +68,8 @@ void ler_movimentos (FILE *ficheiro, ESTADO *e){
 
     for (indice = 0; !(feof(ficheiro)); indice++) {
 
-        fgets(line, BUF_SIZE, ficheiro);
-
-        ler_linha_movs (line, e, indice);
+        if (fgets(line, BUF_SIZE, ficheiro) != NULL)
+            ler_linha_movs (line, e, indice);
 
     }
 
@@ -80,12 +80,12 @@ void ler_movimentos (FILE *ficheiro, ESTADO *e){
 
 void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
 
-    int idx, indicejog;
+    int idx, indicejog, tamanho_linha;
     char letter, cj1, lj1, cj2, lj2;
 
+    tamanho_linha = strlen(line);
 
-
-    for (idx = 0; idx <= 8; idx++) {
+    for (idx = 0; idx <= tamanho_linha/*8*/; idx++) {
 
         letter = line[idx];
 
@@ -96,11 +96,23 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
 
     }
 
-    e -> jogadas[indice] = (JOGADA) { {cj1 - 'a', '8' - lj1}, {cj2 - 'a', '8' - lj2}};
 
-    e -> ultima_jogada.coluna = cj2 - 'a';
-    e -> ultima_jogada.linha = '8' - lj2;
+    if (tamanho_linha > 8) {
+        e->ultima_jogada.coluna = cj2 - 'a';
+        e->ultima_jogada.linha = '8' - lj2;
 
+        e -> jogadas[indice] = (JOGADA) { {cj1 - 'a', '8' - lj1}, {cj2 - 'a', '8' - lj2}};
+
+        e -> jogador_atual = 1;
+
+    } else {
+        e->ultima_jogada.coluna = cj1 - 'a';
+        e->ultima_jogada.linha = '8' - lj1;
+
+        e -> jogadas[indice] = (JOGADA) { {cj1 - 'a', '8' - lj1}, {-1, -1}};
+
+        e -> jogador_atual = 2;
+    }
     e -> posicao_jogada = indice;
 
 }

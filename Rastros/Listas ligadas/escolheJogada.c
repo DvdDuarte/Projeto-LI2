@@ -33,8 +33,6 @@ void joga_sozinho (ESTADO *e) {
 
     coordenada_final = menor (posicoes, e);
 
-    free (posicoes);
-
     jogar (e, *coordenada_final);
 
 }

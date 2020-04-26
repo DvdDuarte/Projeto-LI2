@@ -55,4 +55,5 @@ typedef struct {
     int jogador_atual;
     int posicao_jogada;
 } ESTADO;
+
 #endif //RASTROS_ESTRUTURASDADOS_H

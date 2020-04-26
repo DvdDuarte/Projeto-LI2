@@ -10,6 +10,7 @@
 #include "../Camadas de dados/lerEstado.h"
 #include "../Camadas de dados/buscaPosicao.h"
 #include "../Listas ligadas/escolheJogada.h"
+#include "../Camadas de dados/VerificaJogada.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -29,6 +30,11 @@ int interpretador(ESTADO *e) {
         flag = -1;
 
         mostrar_prompt(e, stdout);
+       if (verifica_fim_jogo(e) == IMPOSSIVEL_JOGAR) {
+           imprime_vencedor(e);
+           return 0;
+
+       }
 
         if (fgets(linha, BUF_SIZE, stdin) == NULL) {
             return 0;

@@ -23,7 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projeto LI2 -&gt; Rastros
    </div>
-   <div id="projectbrief">Grupo 5 - PL5 - Membros:  &gt;DavidAlexandreFerreiraDuarteA93253;&gt;CarlosManuelCerqueiradeOliveiraA82884;&gt;RodrigoJorgePintoGuimarãesA93236</div>
+   <div id="projectbrief">Grupo 5 - PL5 - Membros: &gt; David Alexandre Ferreira Duarte A93253; &gt; Carlos Manuel Cerqueira de Oliveira A82884; &gt; Rodrigo Jorge Pinto Guimarães A93236</div>
   </td>
  </tr>
  </tbody>
@@ -88,12 +88,15 @@ Functions</h2></td></tr>
 <tr class="memitem:acb5b5946113bdc12f3cc6baeb0770578"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#acb5b5946113bdc12f3cc6baeb0770578">coloca_peca</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int coluna, int linha, int flag)</td></tr>
 <tr class="memdesc:acb5b5946113bdc12f3cc6baeb0770578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava.  <a href="#acb5b5946113bdc12f3cc6baeb0770578">More...</a><br /></td></tr>
 <tr class="separator:acb5b5946113bdc12f3cc6baeb0770578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a19fb5bc585dd18ceef3f11943f5e7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#a25a19fb5bc585dd18ceef3f11943f5e7">distancia</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int coluna, int linha)</td></tr>
-<tr class="memdesc:a25a19fb5bc585dd18ceef3f11943f5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas.  <a href="#a25a19fb5bc585dd18ceef3f11943f5e7">More...</a><br /></td></tr>
-<tr class="separator:a25a19fb5bc585dd18ceef3f11943f5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcd5e07fc560299ec49f7c66e661a8b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#a7fcd5e07fc560299ec49f7c66e661a8b">distancia</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int coluna, int linha, int flag)</td></tr>
+<tr class="memdesc:a7fcd5e07fc560299ec49f7c66e661a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas.  <a href="#a7fcd5e07fc560299ec49f7c66e661a8b">More...</a><br /></td></tr>
+<tr class="separator:a7fcd5e07fc560299ec49f7c66e661a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47bcdfb630bbf281eeb07bb9baabe2db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tipoErros_8h.html#adb1ce27db49af4588e155676189ad598">VALIDACOES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#a47bcdfb630bbf281eeb07bb9baabe2db">verifica_fim_jogo</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
 <tr class="memdesc:a47bcdfb630bbf281eeb07bb9baabe2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar.  <a href="#a47bcdfb630bbf281eeb07bb9baabe2db">More...</a><br /></td></tr>
 <tr class="separator:a47bcdfb630bbf281eeb07bb9baabe2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407f7e942870fb97bba3f49355d2e930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VerificaJogada_8h.html#a407f7e942870fb97bba3f49355d2e930">imprime_vencedor</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:a407f7e942870fb97bba3f49355d2e930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicao da funcao que diz qual e o vencedor do jogo.  <a href="#a407f7e942870fb97bba3f49355d2e930">More...</a><br /></td></tr>
+<tr class="separator:a407f7e942870fb97bba3f49355d2e930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definicao das funoes que validam uma jogada e a concretiza, se for possivel </p>
@@ -149,8 +152,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a25a19fb5bc585dd18ceef3f11943f5e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25a19fb5bc585dd18ceef3f11943f5e7">&#9670;&nbsp;</a></span>distancia()</h2>
+<a id="a7fcd5e07fc560299ec49f7c66e661a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcd5e07fc560299ec49f7c66e661a8b">&#9670;&nbsp;</a></span>distancia()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +174,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>linha</em>&#160;</td>
+          <td class="paramname"><em>linha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -191,6 +200,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A distancia para a funcao que valida a jogada </dd></dl>
+
+</div>
+</div>
+<a id="a407f7e942870fb97bba3f49355d2e930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a407f7e942870fb97bba3f49355d2e930">&#9670;&nbsp;</a></span>imprime_vencedor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imprime_vencedor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicao da funcao que diz qual e o vencedor do jogo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador do estado </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

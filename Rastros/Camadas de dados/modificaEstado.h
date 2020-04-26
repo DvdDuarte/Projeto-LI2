@@ -22,10 +22,16 @@ ESTADO *inicializar_estado();
  */
 void inicializar_tab (ESTADO *e);
 
-
+/**
+ \brief Funcao que inicializa a ultima jogada feita antes do jogo comecar
+ * @param e Apontador do estado
+ */
 void inicializar_ultima_jogada (ESTADO *e);
 
-
+/**
+ \brief Funcao que incializa a lista de jogadas/movimentos
+ * @param e
+ */
 void inicializar_jogadas (ESTADO *e);
 
 /**
@@ -49,4 +55,5 @@ int obter_numero_de_jogadas(ESTADO *estado);
  * @return O estado da casa
  */
 CASA obter_estado_casa(ESTADO *e, COORDENADA c);
+
 #endif //RASTROS_INICIALIZADOR_H
