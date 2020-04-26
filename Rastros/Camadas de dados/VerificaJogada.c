@@ -23,17 +23,17 @@ VALIDACOES jogadavalida(ESTADO *e, COORDENADA c) {
     flag = -1;
     CASA casa;
 
-    casa = e -> tab[coluna][linha];
+    casa = e->tab[coluna][linha];
 
     //1- ver se nao sai dos limites do tabuleiro
     if (coluna > 8 || coluna < 0 || linha > 8 || linha < 0) return COORDENADA_INVALIDA;
 
-    //2- se nao tiver fora do tab, ver se a casa recebida esta livre
+        //2- se nao tiver fora do tab, ver se a casa recebida esta livre
 
     else if (casa == VAZIO || casa == UM || casa == DOIS) {
 
         //3- se estiver livre, ver se e vizinha com a casa da peca branca
-        if (abs(distancia(e, coluna, linha,0)) <= 2) {
+        if (abs(distancia(e, coluna, linha, 0)) <= 2) {
             //o valor abs da distancia entre as novas coordenadas e ass da peca branca for <= 1 entao )
             flag = 1;
         } else return JOGADA_INVALIDA;
@@ -83,7 +83,7 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
         }
     }
 
-    if (obter_jogador_atual (e) == 1) e->jogador_atual = 2;
+    if (obter_jogador_atual(e) == 1) e->jogador_atual = 2;
     else e->jogador_atual = 1;
 
 
@@ -100,13 +100,13 @@ float distancia(ESTADO *e, int coluna, int linha, int flag) {
             l = e->ultima_jogada.linha;
             c = e->ultima_jogada.coluna;
 
-            dist = (linha - l)*(linha - l) + (coluna - c)*(coluna - c);
+            dist = (linha - l) * (linha - l) + (coluna - c) * (coluna - c);
             break;
         case 1:
-            dist = (7 - linha)*(7 - linha)+ (0 - coluna)*(0 - coluna);
+            dist = (7 - linha) * (7 - linha) + (0 - coluna) * (0 - coluna);
             break;
         case 2:
-            dist = (0 - linha)*(0 - linha) + (7 - coluna)*(7 - coluna);
+            dist = (0 - linha) * (0 - linha) + (7 - coluna) * (7 - coluna);
             break;
     }
 
@@ -114,22 +114,26 @@ float distancia(ESTADO *e, int coluna, int linha, int flag) {
     return dist;
 }
 
-VALIDACOES verifica_fim_jogo (ESTADO *e) {
+VALIDACOES verifica_fim_jogo(ESTADO *e) {
 
     int coluna, linha;
 
-    coluna = e -> ultima_jogada.coluna;
-    linha = e -> ultima_jogada.linha;
+    coluna = e->ultima_jogada.coluna;
+    linha = e->ultima_jogada.linha;
 
-    if (e -> tab[coluna + 1][linha - 1] == PRETA && e -> tab[coluna + 1][linha] == PRETA && e -> tab[coluna + 1][linha + 1] == PRETA
-       && e -> tab[coluna - 1][linha - 1] == PRETA && e -> tab[coluna - 1][linha] == PRETA && e -> tab[coluna - 1][linha + 1] == PRETA
-       && e -> tab[coluna][linha - 1] == PRETA && e -> tab[coluna][linha + 1] == PRETA)
+    if ((coluna - 1 >= 0 && coluna - 1 < 8 && linha - 1 >= 0 && linha - 1 < 8 ||
+         coluna + 1 >= 0 && coluna + 1 < 8 && linha + 1 >= 0 && linha + 1 < 8) &&
+        e->tab[coluna + 1][linha - 1] == PRETA && e->tab[coluna + 1][linha] == PRETA &&
+        e->tab[coluna + 1][linha + 1] == PRETA
+        && e->tab[coluna - 1][linha - 1] == PRETA && e->tab[coluna - 1][linha] == PRETA &&
+        e->tab[coluna - 1][linha + 1] == PRETA
+        && e->tab[coluna][linha - 1] == PRETA && e->tab[coluna][linha + 1] == PRETA)
         return IMPOSSIVEL_JOGAR;
     else return JOGADA_INVALIDA;
 
 }
 
-void imprime_vencedor (ESTADO *e) {
+void imprime_vencedor(ESTADO *e) {
 
     if (obter_jogador_atual(e) == 1) {
         printf("O Jogador 2 ganhou\n O Jogo Acabou\n");
