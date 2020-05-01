@@ -4,7 +4,7 @@
 #include "Camadas_de_dados/estruturasDados.h"
 #include "Camadas_de_dados/modificaEstado.h"
 #include "Camada_de_interface/Interpretador.h"
-#include "Lógica_do_programa/jogar.h"
+#include "Logica_do_programa/jogar.h"
 #include "Camada_de_interface/interface.h"
 
 int main() {

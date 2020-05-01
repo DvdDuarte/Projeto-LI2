@@ -96,18 +96,18 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s
 
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o: ../Lógica_do_programa/jogar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o   -c /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.c
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o: ../Logica_do_programa/jogar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o   -c /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c
 
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.c > CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.i
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c > CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.i
 
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.c -o CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c -o CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: CMakeFiles/Rastros.dir/flags.make
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas_de_dados/modificaEstado.c
@@ -270,7 +270,7 @@ Rastros_OBJECTS = \
 "CMakeFiles/Rastros.dir/main.c.o" \
 "CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o" \
 "CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o" \
-"CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o" \
+"CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o" \
 "CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o" \
 "CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o" \
 "CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o" \
@@ -290,7 +290,7 @@ Rastros_EXTERNAL_OBJECTS =
 Rastros: CMakeFiles/Rastros.dir/main.c.o
 Rastros: CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o
 Rastros: CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o
-Rastros: CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o
+Rastros: CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o
 Rastros: CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o
 Rastros: CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o
 Rastros: CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o

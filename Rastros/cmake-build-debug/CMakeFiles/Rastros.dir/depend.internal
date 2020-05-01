@@ -12,7 +12,7 @@ CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/lerEstado.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/tipoErros.h
  /home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.h
- /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.h
+ /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h
 CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o
  /home/david/Projeto-LI2/Rastros/Camada_de_interface/imprimeCasa.c
  /home/david/Projeto-LI2/Rastros/Camada_de_interface/imprimeCasa.h
@@ -35,7 +35,7 @@ CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/buscaPosicao.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.h
- /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.h
+ /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h
 CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.c
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
@@ -71,7 +71,7 @@ CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o
  /home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.c
  /home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.h
  /home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.h
- /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.h
+ /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h
 CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/VerificaJogada.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
@@ -80,18 +80,18 @@ CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o
  /home/david/Projeto-LI2/Rastros/Listas_ligadas/dadosListas.h
  /home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.c
  /home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.h
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o
  /home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/VerificaJogada.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/tipoErros.h
- /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.c
- /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.h
+ /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c
+ /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h
 CMakeFiles/Rastros.dir/main.c.o
  /home/david/Projeto-LI2/Rastros/Camada_de_interface/Interpretador.h
  /home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
  /home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.h
- /home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.h
+ /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h
  /home/david/Projeto-LI2/Rastros/main.c

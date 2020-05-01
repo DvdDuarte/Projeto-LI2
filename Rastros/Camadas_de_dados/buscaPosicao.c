@@ -4,7 +4,7 @@
 
 #include "buscaPosicao.h"
 #include "modificaEstado.h"
-#include "../Lógica_do_programa/jogar.h"
+#include "../Logica_do_programa/jogar.h"
 
 
 ESTADO *posicao (int pos, ESTADO *e) {

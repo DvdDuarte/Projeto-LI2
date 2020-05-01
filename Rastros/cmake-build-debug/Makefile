@@ -501,32 +501,32 @@ Listas_ligadas/modificaListas.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.s
 .PHONY : Listas_ligadas/modificaListas.c.s
 
-Lógica_do_programa/jogar.o: Lógica_do_programa/jogar.c.o
+Logica_do_programa/jogar.o: Logica_do_programa/jogar.c.o
 
-.PHONY : Lógica_do_programa/jogar.o
+.PHONY : Logica_do_programa/jogar.o
 
 # target to build an object file
-Lógica_do_programa/jogar.c.o:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o
-.PHONY : Lógica_do_programa/jogar.c.o
+Logica_do_programa/jogar.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o
+.PHONY : Logica_do_programa/jogar.c.o
 
-Lógica_do_programa/jogar.i: Lógica_do_programa/jogar.c.i
+Logica_do_programa/jogar.i: Logica_do_programa/jogar.c.i
 
-.PHONY : Lógica_do_programa/jogar.i
+.PHONY : Logica_do_programa/jogar.i
 
 # target to preprocess a source file
-Lógica_do_programa/jogar.c.i:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.i
-.PHONY : Lógica_do_programa/jogar.c.i
+Logica_do_programa/jogar.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.i
+.PHONY : Logica_do_programa/jogar.c.i
 
-Lógica_do_programa/jogar.s: Lógica_do_programa/jogar.c.s
+Logica_do_programa/jogar.s: Logica_do_programa/jogar.c.s
 
-.PHONY : Lógica_do_programa/jogar.s
+.PHONY : Logica_do_programa/jogar.s
 
 # target to generate assembly for a file
-Lógica_do_programa/jogar.c.s:
-	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s
-.PHONY : Lógica_do_programa/jogar.c.s
+Logica_do_programa/jogar.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.s
+.PHONY : Logica_do_programa/jogar.c.s
 
 main.o: main.c.o
 
@@ -606,9 +606,9 @@ help:
 	@echo "... Listas_ligadas/modificaListas.o"
 	@echo "... Listas_ligadas/modificaListas.i"
 	@echo "... Listas_ligadas/modificaListas.s"
-	@echo "... Lógica_do_programa/jogar.o"
-	@echo "... Lógica_do_programa/jogar.i"
-	@echo "... Lógica_do_programa/jogar.s"
+	@echo "... Logica_do_programa/jogar.o"
+	@echo "... Logica_do_programa/jogar.i"
+	@echo "... Logica_do_programa/jogar.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

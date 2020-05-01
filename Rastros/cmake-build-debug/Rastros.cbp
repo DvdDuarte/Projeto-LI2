@@ -162,10 +162,10 @@
 		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h">
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/main.c">

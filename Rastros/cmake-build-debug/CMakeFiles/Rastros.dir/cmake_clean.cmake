@@ -13,7 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o"
   "CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o"
   "CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o"
-  "CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o"
+  "CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o"
   "CMakeFiles/Rastros.dir/main.c.o"
   "Rastros"
   "Rastros.pdb"

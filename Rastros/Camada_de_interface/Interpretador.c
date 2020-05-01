@@ -5,7 +5,7 @@
 #include "Interpretador.h"
 #include "../Camadas_de_dados/estruturasDados.h"
 #include "../Camadas_de_dados/grava.h"
-#include "../Lógica_do_programa/jogar.h"
+#include "../Logica_do_programa/jogar.h"
 #include "interface.h"
 #include "../Camadas_de_dados/lerEstado.h"
 #include "../Camadas_de_dados/buscaPosicao.h"
