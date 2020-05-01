@@ -1,0 +1,3 @@
+/home/david/Projeto-LI2/projeto/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/david/Projeto-LI2/projeto/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/david/Projeto-LI2/projeto/cmake-build-debug/CMakeFiles/Rastros.dir
