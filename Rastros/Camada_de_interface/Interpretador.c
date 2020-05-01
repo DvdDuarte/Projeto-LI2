@@ -3,14 +3,13 @@
 //
 
 #include "Interpretador.h"
-#include "../Camadas de dados/estruturasDados.h"
-#include "../Camadas de dados/grava.h"
-#include "../Lógica do programa/jogar.h"
 #include "interface.h"
-#include "../Camadas de dados/lerEstado.h"
-#include "../Camadas de dados/buscaPosicao.h"
-#include "../Listas ligadas/escolheJogada.h"
-#include "../Camadas de dados/VerificaJogada.h"
+#include "../Camadas_de_dados/VerificaJogada.h"
+#include "../Camadas_de_dados/buscaPosicao.h"
+#include "../Logica_do_programa/jogar.h"
+#include "../Listas_ligadas/escolheJogada.h"
+#include "../Camadas_de_dados/grava.h"
+#include "../Camadas_de_dados/lerEstado.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

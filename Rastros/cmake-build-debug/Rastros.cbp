@@ -78,94 +78,94 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada_de_interface/Interpretador.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada_de_interface/Interpretador.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada_de_interface/imprimeCasa.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada_de_interface/imprimeCasa.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada de interface/interface.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/VerificaJogada.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/VerificaJogada.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/buscaPosicao.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/buscaPosicao.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/grava.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/grava.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/lerEstado.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/lerEstado.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/listaMovs.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/listaMovs.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/tipoErros.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Camadas_de_dados/tipoErros.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas_ligadas/dadosListas.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas_ligadas/dadosListas.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.h">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c">
 			<Option target="Rastros"/>
 		</Unit>
-		<Unit filename="/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.h">
+		<Unit filename="/home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h">
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/Rastros/main.c">

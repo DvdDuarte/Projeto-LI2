@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "grava.h"
-#include "../Camada de interface/interface.h"
+#include "../Camada_de_interface/interface.h"
 
 
 int gravar (ESTADO *e, char *filename) {

@@ -5,7 +5,7 @@
 #include "escolheJogada.h"
 #include "dadosListas.h"
 #include "modificaListas.h"
-#include "../Lógica do programa/jogar.h"
+#include "../Logica_do_programa/jogar.h"
 
 
 void jogar_automaticamente (ESTADO *e) {

@@ -11,8 +11,8 @@
 #define RASTROS_MODIFICALISTAS_H
 
 #include "dadosListas.h"
-#include "../Camadas de dados/estruturasDados.h"
-#include "../Camadas de dados/tipoErros.h"
+#include "../Camadas_de_dados/estruturasDados.h"
+#include "../Camadas_de_dados/tipoErros.h"
 
 // Cria uma lista vazia
 /**

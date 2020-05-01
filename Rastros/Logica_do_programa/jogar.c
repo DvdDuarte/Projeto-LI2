@@ -3,11 +3,11 @@
 //
 
 #include "jogar.h"
-#include "../Camadas de dados/estruturasDados.h"
-#include "../Camadas de dados/VerificaJogada.h"
-#include "../Camadas de dados/tipoErros.h"
-#include "../Camada de interface/interface.h"
-#include "../Camadas de dados/modificaEstado.h"
+#include "../Camadas_de_dados/estruturasDados.h"
+#include "../Camadas_de_dados/VerificaJogada.h"
+#include "../Camadas_de_dados/tipoErros.h"
+#include "../Camada_de_interface/interface.h"
+#include "../Camadas_de_dados/modificaEstado.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

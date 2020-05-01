@@ -1,7 +1,8 @@
 //
 // Created by david on 12/03/20.
 //
-#include "../Camadas de dados/estruturasDados.h"
+
+#include "../Camadas_de_dados/estruturasDados.h"
 
 /**
  @file interpretador.h

@@ -10,7 +10,7 @@
 #ifndef RASTROS_ESCOLHEJOGADA_H
 #define RASTROS_ESCOLHEJOGADA_H
 
-#include "../Camadas de dados/estruturasDados.h"
+#include "../Camadas_de_dados/estruturasDados.h"
 
 /**
  \brief Definicao a funcao que joga pelo jogador atraves da aleatoridade das casas vizinha que estejam disponiveis, comando jog

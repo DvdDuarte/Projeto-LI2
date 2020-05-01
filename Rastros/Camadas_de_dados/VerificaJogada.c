@@ -5,7 +5,7 @@
 #include "VerificaJogada.h"
 #include "tipoErros.h"
 #include "modificaEstado.h"
-#include "../Listas ligadas/modificaListas.h"
+#include "../Listas_ligadas/modificaListas.h"
 #include <stdlib.h>
 #include <stdio.h>
 

@@ -4,8 +4,8 @@
 
 #include <stdlib.h>
 #include "modificaListas.h"
-#include "../Camadas de dados/VerificaJogada.h"
-#include "../Camadas de dados/modificaEstado.h"
+#include "../Camadas_de_dados/VerificaJogada.h"
+#include "../Camadas_de_dados/modificaEstado.h"
 
 
 // Cria uma lista vazia

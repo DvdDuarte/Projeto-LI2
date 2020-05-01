@@ -6,43 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c
-VerificaJogada.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h
-tipoErros.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
-modificaEstado.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
-../Listas ligadas/modificaListas.h
-/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
-stdlib.h
+/home/david/Projeto-LI2/Rastros/Camada_de_interface/Interpretador.h
+../Camadas_de_dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.h
+bits/types/FILE.h
 -
+../Camadas_de_dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.h
+estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h
+bits/types/FILE.h
+-
+../Camadas_de_dados/estruturasDados.h
+/home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.h
+
+/home/david/Projeto-LI2/Rastros/main.c
 stdio.h
 -
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.h
-estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-tipoErros.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.h
-estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
-
-/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-
-/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.h
-dadosListas.h
-/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.h
-../Camadas de dados/estruturasDados.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.h
-../Camadas de dados/tipoErros.h
-/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.h
+stdlib.h
+-
+string.h
+-
+Camada_de_interface/Interpretador.h
+/home/david/Projeto-LI2/Rastros/Camada_de_interface/Interpretador.h
+Logica_do_programa/jogar.h
+/home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.h
+Camada_de_interface/interface.h
+/home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.h
+Camadas_de_dados/modificaEstado.h
+/home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.h
 

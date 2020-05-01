@@ -3,10 +3,10 @@
 //
 
 #include "interface.h"
-#include "../Camadas de dados/estruturasDados.h"
+#include "../Camadas_de_dados/estruturasDados.h"
 #include "imprimeCasa.h"
-#include "../Camadas de dados/modificaEstado.h"
-#include "../Camadas de dados/listaMovs.h"
+#include "../Camadas_de_dados/modificaEstado.h"
+#include "../Camadas_de_dados/listaMovs.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -71,206 +71,206 @@ CMakeFiles/Rastros.dir/main.c.s: cmake_force
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/main.c -o CMakeFiles/Rastros.dir/main.c.s
 
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camada\ de\ interface/Interpretador.c
+CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o: ../Camada_de_interface/Interpretador.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o   -c "/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o   -c /home/david/Projeto-LI2/Rastros/Camada_de_interface/Interpretador.c
 
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.c" > CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camada_de_interface/Interpretador.c > CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.i
 
 CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camada de interface/Interpretador.c" -o CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camada_de_interface/Interpretador.c -o CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o: ../Camadas\ de\ dados/estruturasDados.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o: ../Camadas_de_dados/estruturasDados.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o   -c "/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o   -c /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.c
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c" > CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.c > CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.i
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camadas de dados/estruturasDados.c" -o CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/estruturasDados.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.s
 
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o: ../Lógica\ do\ programa/jogar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o   -c "/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c"
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o: ../Logica_do_programa/jogar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o   -c /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c
 
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c" > CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.i
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c > CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.i
 
-CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Lógica do programa/jogar.c" -o CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.s
+CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c -o CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas\ de\ dados/modificaEstado.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o: ../Camadas_de_dados/modificaEstado.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o   -c "/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o   -c /home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.c
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c" > CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.c > CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.i
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camadas de dados/modificaEstado.c" -o CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/modificaEstado.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.s
 
 CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camada\ de\ interface/interface.c
+CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o: ../Camada_de_interface/interface.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o   -c "/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o   -c /home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.c
 
 CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c" > CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.c > CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.i
 
 CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camada de interface/interface.c" -o CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camada_de_interface/interface.c -o CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.s
 
 CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o: ../Camada\ de\ interface/imprimeCasa.c
+CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o: ../Camada_de_interface/imprimeCasa.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o   -c "/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o   -c /home/david/Projeto-LI2/Rastros/Camada_de_interface/imprimeCasa.c
 
 CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c" > CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camada_de_interface/imprimeCasa.c > CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.i
 
 CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camada de interface/imprimeCasa.c" -o CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camada_de_interface/imprimeCasa.c -o CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camadas\ de\ dados/grava.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o: ../Camadas_de_dados/grava.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o   -c "/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.o   -c /home/david/Projeto-LI2/Rastros/Camadas_de_dados/grava.c
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.c" > CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camadas_de_dados/grava.c > CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.i
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camadas de dados/grava.c" -o CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/grava.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/grava.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas\ de\ dados/VerificaJogada.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o: ../Camadas_de_dados/VerificaJogada.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o   -c "/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o   -c /home/david/Projeto-LI2/Rastros/Camadas_de_dados/VerificaJogada.c
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c" > CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camadas_de_dados/VerificaJogada.c > CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.i
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camadas de dados/VerificaJogada.c" -o CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/VerificaJogada.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o: ../Camadas\ de\ dados/tipoErros.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o: ../Camadas_de_dados/tipoErros.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o   -c "/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.o   -c /home/david/Projeto-LI2/Rastros/Camadas_de_dados/tipoErros.c
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.c" > CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camadas_de_dados/tipoErros.c > CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.i
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camadas de dados/tipoErros.c" -o CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/tipoErros.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/tipoErros.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o: ../Camadas\ de\ dados/lerEstado.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o: ../Camadas_de_dados/lerEstado.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o   -c "/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o   -c /home/david/Projeto-LI2/Rastros/Camadas_de_dados/lerEstado.c
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c" > CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camadas_de_dados/lerEstado.c > CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.i
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camadas de dados/lerEstado.c" -o CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/lerEstado.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o: ../Camadas\ de\ dados/listaMovs.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o: ../Camadas_de_dados/listaMovs.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o   -c "/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o   -c /home/david/Projeto-LI2/Rastros/Camadas_de_dados/listaMovs.c
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.c" > CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camadas_de_dados/listaMovs.c > CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.i
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camadas de dados/listaMovs.c" -o CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/listaMovs.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.s
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o: ../Camadas\ de\ dados/buscaPosicao.c
+CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o: ../Camadas_de_dados/buscaPosicao.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o   -c "/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.o   -c /home/david/Projeto-LI2/Rastros/Camadas_de_dados/buscaPosicao.c
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.c" > CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Camadas_de_dados/buscaPosicao.c > CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.i
 
 CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Camadas de dados/buscaPosicao.c" -o CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Camadas_de_dados/buscaPosicao.c -o CMakeFiles/Rastros.dir/Camadas_de_dados/buscaPosicao.c.s
 
 CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o: ../Listas\ ligadas/dadosListas.c
+CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o: ../Listas_ligadas/dadosListas.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o   -c "/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o   -c /home/david/Projeto-LI2/Rastros/Listas_ligadas/dadosListas.c
 
 CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.c" > CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Listas_ligadas/dadosListas.c > CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.i
 
 CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Listas ligadas/dadosListas.c" -o CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Listas_ligadas/dadosListas.c -o CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.s
 
 CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Listas\ ligadas/modificaListas.c
+CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o: ../Listas_ligadas/modificaListas.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o   -c "/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o   -c /home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.c
 
 CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c" > CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.c > CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.i
 
 CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Listas ligadas/modificaListas.c" -o CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.c -o CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.s
 
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: CMakeFiles/Rastros.dir/flags.make
-CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Listas\ ligadas/escolheJogada.c
+CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o: ../Listas_ligadas/escolheJogada.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o   -c "/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.c"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o   -c /home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.c
 
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.c" > CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.c > CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.i
 
 CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/david/Projeto-LI2/Rastros/Listas ligadas/escolheJogada.c" -o CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.c -o CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.s
 
 # Object files for target Rastros
 Rastros_OBJECTS = \
 "CMakeFiles/Rastros.dir/main.c.o" \
 "CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o" \
 "CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o" \
-"CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o" \
+"CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o" \
 "CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o" \
 "CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o" \
 "CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o" \
@@ -290,7 +290,7 @@ Rastros_EXTERNAL_OBJECTS =
 Rastros: CMakeFiles/Rastros.dir/main.c.o
 Rastros: CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o
 Rastros: CMakeFiles/Rastros.dir/Camadas_de_dados/estruturasDados.c.o
-Rastros: CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o
+Rastros: CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o
 Rastros: CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o
 Rastros: CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o
 Rastros: CMakeFiles/Rastros.dir/Camada_de_interface/imprimeCasa.c.o
