@@ -18,7 +18,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/david/Projeto-LI2/Rastros/Listas_ligadas/dadosListas.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Listas_ligadas/dadosListas.c.o"
   "/home/david/Projeto-LI2/Rastros/Listas_ligadas/escolheJogada.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Listas_ligadas/escolheJogada.c.o"
   "/home/david/Projeto-LI2/Rastros/Listas_ligadas/modificaListas.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Listas_ligadas/modificaListas.c.o"
-  "/home/david/Projeto-LI2/Rastros/Logica_do_programa/jogar.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o"
+  "/home/david/Projeto-LI2/Rastros/Lógica_do_programa/jogar.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/Lógica_do_programa/jogar.c.o"
   "/home/david/Projeto-LI2/Rastros/main.c" "/home/david/Projeto-LI2/Rastros/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

@@ -88,17 +88,11 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
     for (idx = 0; idx <= tamanho_linha/*8*/; idx++) {
 
         letter = line[idx];
-        if (tamanho_linha < 10) {
-            if (idx == 4) cj1 = letter;
-            if (idx == 5) lj1 = letter;
-            if (idx == 7) cj2 = letter;
-            if (idx == 8) lj2 = letter;
-        } else {
-            if (idx == 5) cj1 = letter;
-            if (idx == 6) lj1 = letter;
-            if (idx == 8) cj2 = letter;
-            if (idx == 9) lj2 = letter;
-        }
+
+        if (idx == 4) cj1 = letter;
+        if (idx == 5) lj1 = letter;
+        if (idx == 7) cj2 = letter;
+        if (idx == 8) lj2 = letter;
 
     }
 

@@ -12,7 +12,6 @@
 
 #include "dadosListas.h"
 #include "../Camadas_de_dados/estruturasDados.h"
-#include "../Camadas_de_dados/tipoErros.h"
 
 // Cria uma lista vazia
 /**
@@ -67,15 +66,7 @@ int lista_esta_vazia(LISTA L);
  * @param e Apontador do estado
  * @return A lista com as posicoes possiveis a serem jogadas
  */
-LISTA posicoes_possiveis (ESTADO *e, VALIDACOES flag);
-
-
-/**
- \brief
- * @param L Lista com as casas vizinhas da casa da peca branca para as quais e impossivel de jogar
- * @return O tamanho da lista
- */
-int length(LISTA L);
+LISTA posicoes_possiveis (ESTADO *e);
 
 /**
  \brief Definicao da funcao que percorre uma lista ligada com as posicoes possiveis a serem jogadas e escolhe a posicao com a menor distancia a casa necessaria para o jogador atual ganhar

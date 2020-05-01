@@ -57,14 +57,11 @@ int lista_esta_vazia(LISTA L){
 
 }
 
-LISTA posicoes_possiveis (ESTADO *e, VALIDACOES flag) {
+LISTA posicoes_possiveis (ESTADO *e) {
 
     int coluna, linha, i, j;
     LISTA posicoes;
-    CASA tipo_casa;
 
-    if (flag == IMPOSSIVEL_JOGAR) tipo_casa = PRETA;
-    else tipo_casa = VAZIO;
 
     coluna = e -> ultima_jogada.coluna;
     linha = e -> ultima_jogada.linha;
@@ -73,7 +70,7 @@ LISTA posicoes_possiveis (ESTADO *e, VALIDACOES flag) {
 
         for (i = -1; i <= 1; i++) {
             for (j = -1; j <= 1; j++) {
-                if (coluna + i >=0 && coluna + i < 8 && linha + j >= 0 && linha + j < 8 && e->tab[coluna + i][linha + j] == tipo_casa) {
+                if (coluna + i >=0 && coluna + i < 8 && linha + j >= 0 && linha + j < 8 && e->tab[coluna + i][linha + j] == VAZIO) {
                     COORDENADA *coord = malloc(sizeof(COORDENADA));
                     *coord = (COORDENADA) {coluna + i, linha + j};
                     posicoes = insere_cabeca(posicoes, coord);
@@ -87,13 +84,6 @@ LISTA posicoes_possiveis (ESTADO *e, VALIDACOES flag) {
 }
 
 
-int length(LISTA L) {
-    if(lista_esta_vazia(L)) return 0;
-    else {
-        //remove_cabeca(L);
-        return (1 + length(L->proximo));
-    }
-}
 
 
 COORDENADA *menor (LISTA L, ESTADO *e) {

@@ -5,7 +5,7 @@
 #include "escolheJogada.h"
 #include "dadosListas.h"
 #include "modificaListas.h"
-#include "../Logica_do_programa/jogar.h"
+#include "../Lógica_do_programa/jogar.h"
 
 
 void jogar_automaticamente (ESTADO *e) {
@@ -13,7 +13,7 @@ void jogar_automaticamente (ESTADO *e) {
     LISTA posicoes;
     COORDENADA *coordenada_final;
 
-    posicoes = posicoes_possiveis (e, TUDO_OK);
+    posicoes = posicoes_possiveis (e);
 
     coordenada_final = devolve_cabeca (posicoes);
 
@@ -29,7 +29,7 @@ void joga_sozinho (ESTADO *e) {
     LISTA posicoes;
     COORDENADA *coordenada_final;
 
-    posicoes = posicoes_possiveis (e, TUDO_OK);
+    posicoes = posicoes_possiveis (e);
 
     coordenada_final = menor (posicoes, e);
 

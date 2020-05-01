@@ -5,6 +5,4 @@ digraph "Camadas de dados/tipoErros.h"
   Node1 [label="Camadas de dados/tipoErros.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="Camadas de dados/Verifica\lJogada.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$VerificaJogada_8h.html"];
-  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="Listas ligadas/modificaListas.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modificaListas_8h.html"];
 }
