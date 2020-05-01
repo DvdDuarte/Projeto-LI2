@@ -11,7 +11,7 @@ void imprimeMovs (ESTADO *e, FILE *ficheiro) {
 
     int tamanhomovs, i, movimentoj1l, movimentoj2l;
     char movimentoj1c, movimentoj2c;
-    JOGADA *movimentos;
+
 
     tamanhomovs = e -> posicao_jogada + 1;//obter_numero_de_jogadas(e);
 

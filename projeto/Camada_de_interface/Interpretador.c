@@ -25,9 +25,8 @@ int interpretador(ESTADO *e) {
         char filename[BUF_SIZE];
         char linha[BUF_SIZE];
         char col[2], lin[2];
-        int flag, pos;
+        int pos;
 
-        flag = -1;
 
         mostrar_prompt(e, stdout);
        if (verifica_fim_jogo(e) == IMPOSSIVEL_JOGAR) {
@@ -44,10 +43,10 @@ int interpretador(ESTADO *e) {
             posicao(pos - 1, e);
         }
 
-        if (/*flag != 1 && */strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
+        if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
 
             COORDENADA coord = {*col - 'a', '8' - *lin};
-            //jogar(e, coord);
+
             if (jogar(e,coord)) {
                 mostrar_tabuleiro(e, stdout);
                 return 0;
@@ -84,7 +83,7 @@ int interpretador(ESTADO *e) {
         if (sscanf(linha, "ler %s\n", filename) == 1) {
 
             e = ler(filename);
-           // mostrar_prompt(e, stdout);
+
 
         }
 

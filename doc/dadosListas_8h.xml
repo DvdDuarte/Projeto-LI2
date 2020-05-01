@@ -7,6 +7,18 @@
     <includedby refid="escolheJogada_8c" local="yes">Listas_ligadas/escolheJogada.c</includedby>
     <includedby refid="modificaListas_8h" local="yes">Listas_ligadas/modificaListas.h</includedby>
     <incdepgraph>
+      <node id="138">
+        <label>Listas_ligadas/dadosListas.h</label>
+        <link refid="dadosListas_8h"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
       <node id="140">
         <label>Listas_ligadas/dadosListas.h</label>
         <link refid="dadosListas_8h"/>
@@ -14,18 +26,6 @@
         </childnode>
       </node>
       <node id="141">
-        <label>../Camadas_de_dados/estruturasDados.h</label>
-        <link refid="estruturasDados_8h"/>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="142">
-        <label>Listas_ligadas/dadosListas.h</label>
-        <link refid="dadosListas_8h"/>
-        <childnode refid="143" relation="include">
-        </childnode>
-      </node>
-      <node id="143">
         <label>Listas_ligadas/modificaListas.h</label>
         <link refid="modificaListas_8h"/>
       </node>

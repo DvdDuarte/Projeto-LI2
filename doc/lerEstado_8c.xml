@@ -7,18 +7,6 @@
     <includes refid="lerEstado_8h" local="yes">lerEstado.h</includes>
     <includes refid="modificaEstado_8h" local="yes">modificaEstado.h</includes>
     <incdepgraph>
-      <node id="87">
-        <label>modificaEstado.h</label>
-        <link refid="modificaEstado_8h"/>
-        <childnode refid="86" relation="include">
-        </childnode>
-      </node>
-      <node id="85">
-        <label>bits/types/FILE.h</label>
-      </node>
-      <node id="83">
-        <label>string.h</label>
-      </node>
       <node id="81">
         <label>Camadas_de_dados/lerEstado.c</label>
         <link refid="lerEstado_8c"/>
@@ -38,6 +26,18 @@
         </childnode>
         <childnode refid="86" relation="include">
         </childnode>
+      </node>
+      <node id="85">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="87">
+        <label>modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>string.h</label>
       </node>
       <node id="86">
         <label>estruturasDados.h</label>
@@ -251,7 +251,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/lerEstado.c" line="81" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="81" bodyend="118"/>
+        <location file="Camadas_de_dados/lerEstado.c" line="81" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="81" bodyend="121"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -272,15 +272,15 @@
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*ficheiro;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e;</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter,<sp/>line[BUF_SIZE];</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/>coluna;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line[BUF_SIZE];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="modificaEstado_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>(e);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="modificaEstado_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>();</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>ficheiro<sp/>=<sp/>fopen(jogo,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lerEstado_8h_1a261b756c803ae426d9e087e5c600bca5" kindref="member">ler_tabuleiro</ref>(ficheiro,<sp/>e);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>fgets(line,<sp/>BUF_SIZE,<sp/>ficheiro);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fgets(line,<sp/>BUF_SIZE,<sp/>ficheiro)<sp/>==<sp/>NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lerEstado_8h_1a5dae91836d89ac6ae1892cbcc8ad3dea" kindref="member">ler_movimentos</ref>(ficheiro,<sp/>e);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
@@ -305,7 +305,7 @@
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(coluna<sp/>=<sp/>0;<sp/>coluna<sp/>&lt;<sp/>8;<sp/>coluna++)<sp/>{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fgets(line,<sp/>BUF_SIZE,<sp/>ficheiro);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fgets(line,<sp/>BUF_SIZE,<sp/>ficheiro)<sp/>==<sp/>NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(coluna<sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
@@ -324,7 +324,7 @@
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lerEstado_8h_1a5dae91836d89ac6ae1892cbcc8ad3dea" kindref="member">ler_movimentos</ref><sp/>(FILE<sp/>*ficheiro,<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice,<sp/>jogador;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line[BUF_SIZE];</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(indice<sp/>=<sp/>0;<sp/>!(feof(ficheiro));<sp/>indice++)<sp/>{</highlight></codeline>
@@ -341,45 +341,45 @@
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lerEstado_8h_1a12abc2f2a2fa776fe08e6e422178d4af" kindref="member">ler_linha_movs</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line[BUF_SIZE],<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice)<sp/>{</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx,<sp/>indicejog,<sp/>tamanho_linha;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx,<sp/>tamanho_linha;</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter,<sp/>cj1,<sp/>lj1,<sp/>cj2,<sp/>lj2;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>tamanho_linha<sp/>=<sp/>strlen(line);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(idx<sp/>=<sp/>0;<sp/>idx<sp/>&lt;=<sp/>tamanho_linha</highlight><highlight class="comment">/*8*/</highlight><highlight class="normal">;<sp/>idx++)<sp/>{</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>letter<sp/>=<sp/>line[idx];</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>4)<sp/>cj1<sp/>=<sp/>letter;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>5)<sp/>lj1<sp/>=<sp/>letter;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>7)<sp/>cj2<sp/>=<sp/>letter;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>8)<sp/>lj2<sp/>=<sp/>letter;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>lj1<sp/>=<sp/>lj2<sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>cj1<sp/>=<sp/>cj2<sp/>=<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>tamanho_linha<sp/>=<sp/>strlen(line);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(idx<sp/>=<sp/>0;<sp/>idx<sp/>&lt;=<sp/>tamanho_linha</highlight><highlight class="comment">/*8*/</highlight><highlight class="normal">;<sp/>idx++)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>letter<sp/>=<sp/>line[idx];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>4)<sp/>cj1<sp/>=<sp/>letter;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>5)<sp/>lj1<sp/>=<sp/>letter;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>7)<sp/>cj2<sp/>=<sp/>letter;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>8)<sp/>lj2<sp/>=<sp/>letter;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tamanho_linha<sp/>&gt;<sp/>8)<sp/>{</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.coluna<sp/>=<sp/>cj2<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.linha<sp/>=<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj2;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogadas[indice]<sp/>=<sp/>(<ref refid="structJOGADA" kindref="compound">JOGADA</ref>)<sp/>{<sp/>{cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1},<sp/>{cj2<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj2}};</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogador_atual<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.coluna<sp/>=<sp/>cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.linha<sp/>=<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogadas[indice]<sp/>=<sp/>(<ref refid="structJOGADA" kindref="compound">JOGADA</ref>)<sp/>{<sp/>{cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1},<sp/>{-1,<sp/>-1}};</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogador_atual<sp/>=<sp/>2;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>posicao_jogada<sp/>=<sp/>indice;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tamanho_linha<sp/>&gt;<sp/>8)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.coluna<sp/>=<sp/>cj2<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.linha<sp/>=<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj2;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogadas[indice]<sp/>=<sp/>(<ref refid="structJOGADA" kindref="compound">JOGADA</ref>)<sp/>{<sp/>{cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1},<sp/>{cj2<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj2}};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogador_atual<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.coluna<sp/>=<sp/>cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.linha<sp/>=<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogadas[indice]<sp/>=<sp/>(<ref refid="structJOGADA" kindref="compound">JOGADA</ref>)<sp/>{<sp/>{cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1},<sp/>{-1,<sp/>-1}};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogador_atual<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>posicao_jogada<sp/>=<sp/>indice;</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
@@ -395,6 +395,9 @@
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Camadas_de_dados/lerEstado.c"/>
   </compounddef>

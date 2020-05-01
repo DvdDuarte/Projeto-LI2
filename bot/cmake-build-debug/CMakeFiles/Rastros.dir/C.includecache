@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/david/Projeto-LI2/bot/dadosListas.h
+estruturasDados.h
+/home/david/Projeto-LI2/bot/estruturasDados.h
+
+/home/david/Projeto-LI2/bot/escolheJogada.c
+stdlib.h
+-
+escolheJogada.h
+/home/david/Projeto-LI2/bot/escolheJogada.h
+dadosListas.h
+/home/david/Projeto-LI2/bot/dadosListas.h
+modificaListas.h
+/home/david/Projeto-LI2/bot/modificaListas.h
+jogar.h
+/home/david/Projeto-LI2/bot/jogar.h
+
+/home/david/Projeto-LI2/bot/escolheJogada.h
+estruturasDados.h
+/home/david/Projeto-LI2/bot/estruturasDados.h
+
+/home/david/Projeto-LI2/bot/estruturasDados.h
+
+/home/david/Projeto-LI2/bot/jogar.h
+bits/types/FILE.h
+-
+estruturasDados.h
+/home/david/Projeto-LI2/bot/estruturasDados.h
+
+/home/david/Projeto-LI2/bot/modificaListas.h
+dadosListas.h
+/home/david/Projeto-LI2/bot/dadosListas.h
+estruturasDados.h
+/home/david/Projeto-LI2/bot/estruturasDados.h
+

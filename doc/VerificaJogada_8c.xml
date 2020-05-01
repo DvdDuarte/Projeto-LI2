@@ -8,15 +8,6 @@
     <includes local="no">stdlib.h</includes>
     <includes local="no">stdio.h</includes>
     <incdepgraph>
-      <node id="124">
-        <label>modificaEstado.h</label>
-        <link refid="modificaEstado_8h"/>
-        <childnode refid="122" relation="include">
-        </childnode>
-      </node>
-      <node id="125">
-        <label>stdlib.h</label>
-      </node>
       <node id="120">
         <label>Camadas_de_dados/VerificaJogada.c</label>
         <link refid="VerificaJogada_8c"/>
@@ -39,16 +30,25 @@
         <childnode refid="123" relation="include">
         </childnode>
       </node>
+      <node id="125">
+        <label>stdlib.h</label>
+      </node>
+      <node id="124">
+        <label>modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>tipoErros.h</label>
+        <link refid="tipoErros_8h"/>
+      </node>
       <node id="122">
         <label>estruturasDados.h</label>
         <link refid="estruturasDados_8h"/>
       </node>
       <node id="126">
         <label>stdio.h</label>
-      </node>
-      <node id="123">
-        <label>tipoErros.h</label>
-        <link refid="tipoErros_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -197,7 +197,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/VerificaJogada.c" line="92" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="92" bodyend="115"/>
+        <location file="Camadas_de_dados/VerificaJogada.c" line="92" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="92" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="VerificaJogada_8c_1a47bcdfb630bbf281eeb07bb9baabe2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref></type>
@@ -223,7 +223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/VerificaJogada.c" line="117" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="117" bodyend="134"/>
+        <location file="Camadas_de_dados/VerificaJogada.c" line="119" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="119" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="VerificaJogada_8c_1a407f7e942870fb97bba3f49355d2e930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -248,7 +248,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/VerificaJogada.c" line="136" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="136" bodyend="142"/>
+        <location file="Camadas_de_dados/VerificaJogada.c" line="138" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="138" bodyend="144"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -352,52 +352,54 @@
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l,<sp/>c;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dist;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(flag)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/>e-&gt;ultima_jogada.linha;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>e-&gt;ultima_jogada.coluna;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>(linha<sp/>-<sp/>l)<sp/>*<sp/>(linha<sp/>-<sp/>l)<sp/>+<sp/>(coluna<sp/>-<sp/>c)<sp/>*<sp/>(coluna<sp/>-<sp/>c);</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>(7<sp/>-<sp/>linha)<sp/>*<sp/>(7<sp/>-<sp/>linha)<sp/>+<sp/>(0<sp/>-<sp/>coluna)<sp/>*<sp/>(0<sp/>-<sp/>coluna);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>(0<sp/>-<sp/>linha)<sp/>*<sp/>(0<sp/>-<sp/>linha)<sp/>+<sp/>(7<sp/>-<sp/>coluna)<sp/>*<sp/>(7<sp/>-<sp/>coluna);</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref><sp/><ref refid="VerificaJogada_8h_1a47bcdfb630bbf281eeb07bb9baabe2db" kindref="member">verifica_fim_jogo</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(flag)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/>e-&gt;ultima_jogada.linha;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>e-&gt;ultima_jogada.coluna;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>(linha<sp/>-<sp/>l)<sp/>*<sp/>(linha<sp/>-<sp/>l)<sp/>+<sp/>(coluna<sp/>-<sp/>c)<sp/>*<sp/>(coluna<sp/>-<sp/>c);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>(7<sp/>-<sp/>linha)<sp/>*<sp/>(7<sp/>-<sp/>linha)<sp/>+<sp/>(0<sp/>-<sp/>coluna)<sp/>*<sp/>(0<sp/>-<sp/>coluna);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>(0<sp/>-<sp/>linha)<sp/>*<sp/>(0<sp/>-<sp/>linha)<sp/>+<sp/>(7<sp/>-<sp/>coluna)<sp/>*<sp/>(7<sp/>-<sp/>coluna);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/>linha;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref><sp/><ref refid="VerificaJogada_8h_1a47bcdfb630bbf281eeb07bb9baabe2db" kindref="member">verifica_fim_jogo</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>coluna<sp/>=<sp/>e-&gt;ultima_jogada.coluna;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>linha<sp/>=<sp/>e-&gt;ultima_jogada.linha;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((coluna<sp/>-<sp/>1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>coluna<sp/>-<sp/>1<sp/>&lt;<sp/>8<sp/>&amp;&amp;<sp/>linha<sp/>-<sp/>1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>linha<sp/>-<sp/>1<sp/>&lt;<sp/>8<sp/>||</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coluna<sp/>+<sp/>1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>coluna<sp/>+<sp/>1<sp/>&lt;<sp/>8<sp/>&amp;&amp;<sp/>linha<sp/>+<sp/>1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>linha<sp/>+<sp/>1<sp/>&lt;<sp/>8)<sp/>&amp;&amp;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;tab[coluna<sp/>+<sp/>1][linha<sp/>-<sp/>1]<sp/>==<sp/>PRETA<sp/>&amp;&amp;<sp/>e-&gt;tab[coluna<sp/>+<sp/>1][linha]<sp/>==<sp/>PRETA<sp/>&amp;&amp;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;tab[coluna<sp/>+<sp/>1][linha<sp/>+<sp/>1]<sp/>==<sp/>PRETA</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>e-&gt;tab[coluna<sp/>-<sp/>1][linha<sp/>-<sp/>1]<sp/>==<sp/>PRETA<sp/>&amp;&amp;<sp/>e-&gt;tab[coluna<sp/>-<sp/>1][linha]<sp/>==<sp/>PRETA<sp/>&amp;&amp;</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;tab[coluna<sp/>-<sp/>1][linha<sp/>+<sp/>1]<sp/>==<sp/>PRETA</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>e-&gt;tab[coluna][linha<sp/>-<sp/>1]<sp/>==<sp/>PRETA<sp/>&amp;&amp;<sp/>e-&gt;tab[coluna][linha<sp/>+<sp/>1]<sp/>==<sp/>PRETA)</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>IMPOSSIVEL_JOGAR;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>JOGADA_INVALIDA;</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/>linha;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>coluna<sp/>=<sp/>e-&gt;ultima_jogada.coluna;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>linha<sp/>=<sp/>e-&gt;ultima_jogada.linha;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((coluna<sp/>-<sp/>1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>coluna<sp/>-<sp/>1<sp/>&lt;<sp/>8<sp/>&amp;&amp;<sp/>linha<sp/>-<sp/>1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>linha<sp/>-<sp/>1<sp/>&lt;<sp/>8)<sp/>||<sp/>(</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coluna<sp/>+<sp/>1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>coluna<sp/>+<sp/>1<sp/>&lt;<sp/>8<sp/>&amp;&amp;<sp/>linha<sp/>+<sp/>1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>linha<sp/>+<sp/>1<sp/>&lt;<sp/>8))<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;tab[coluna<sp/>+<sp/>1][linha<sp/>-<sp/>1]<sp/>==<sp/>PRETA<sp/>&amp;&amp;<sp/>e-&gt;tab[coluna<sp/>+<sp/>1][linha]<sp/>==<sp/>PRETA<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;tab[coluna<sp/>+<sp/>1][linha<sp/>+<sp/>1]<sp/>==<sp/>PRETA</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>e-&gt;tab[coluna<sp/>-<sp/>1][linha<sp/>-<sp/>1]<sp/>==<sp/>PRETA<sp/>&amp;&amp;<sp/>e-&gt;tab[coluna<sp/>-<sp/>1][linha]<sp/>==<sp/>PRETA<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;tab[coluna<sp/>-<sp/>1][linha<sp/>+<sp/>1]<sp/>==<sp/>PRETA</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>e-&gt;tab[coluna][linha<sp/>-<sp/>1]<sp/>==<sp/>PRETA<sp/>&amp;&amp;<sp/>e-&gt;tab[coluna][linha<sp/>+<sp/>1]<sp/>==<sp/>PRETA)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>IMPOSSIVEL_JOGAR;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>JOGADA_INVALIDA;</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="VerificaJogada_8h_1a407f7e942870fb97bba3f49355d2e930" kindref="member">imprime_vencedor</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="modificaEstado_8h_1ad6e326e4ffa57ca1ae0c75377ecefc8c" kindref="member">obter_jogador_atual</ref>(e)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;O<sp/>Jogador<sp/>2<sp/>ganhou\n<sp/>O<sp/>Jogo<sp/>Acabou\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>printf(</highlight><highlight class="stringliteral">&quot;O<sp/>Jogador<sp/>1<sp/>ganhou\n<sp/>O<sp/>Jogo<sp/>Acabou\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="VerificaJogada_8h_1a407f7e942870fb97bba3f49355d2e930" kindref="member">imprime_vencedor</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="modificaEstado_8h_1ad6e326e4ffa57ca1ae0c75377ecefc8c" kindref="member">obter_jogador_atual</ref>(e)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;O<sp/>Jogador<sp/>2<sp/>ganhou\n<sp/>O<sp/>Jogo<sp/>Acabou\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>printf(</highlight><highlight class="stringliteral">&quot;O<sp/>Jogador<sp/>1<sp/>ganhou\n<sp/>O<sp/>Jogo<sp/>Acabou\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Camadas_de_dados/VerificaJogada.c"/>
   </compounddef>

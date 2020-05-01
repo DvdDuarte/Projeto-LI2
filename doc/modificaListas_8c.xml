@@ -7,56 +7,56 @@
     <includes refid="VerificaJogada_8h" local="yes">../Camadas_de_dados/VerificaJogada.h</includes>
     <includes refid="modificaEstado_8h" local="yes">../Camadas_de_dados/modificaEstado.h</includes>
     <incdepgraph>
-      <node id="163">
-        <label>../Camadas_de_dados/modificaEstado.h</label>
-        <link refid="modificaEstado_8h"/>
+      <node id="159">
+        <label>../Camadas_de_dados/VerificaJogada.h</label>
+        <link refid="VerificaJogada_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
         <childnode refid="160" relation="include">
         </childnode>
       </node>
-      <node id="157">
+      <node id="155">
         <label>stdlib.h</label>
       </node>
       <node id="161">
-        <label>../Camadas_de_dados/VerificaJogada.h</label>
-        <link refid="VerificaJogada_8h"/>
-        <childnode refid="160" relation="include">
-        </childnode>
-        <childnode refid="162" relation="include">
+        <label>../Camadas_de_dados/modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="158" relation="include">
         </childnode>
       </node>
-      <node id="159">
+      <node id="157">
         <label>dadosListas.h</label>
         <link refid="dadosListas_8h"/>
-        <childnode refid="160" relation="include">
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>Listas_ligadas/modificaListas.c</label>
+        <link refid="modificaListas_8c"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
         </childnode>
       </node>
       <node id="156">
-        <label>Listas_ligadas/modificaListas.c</label>
-        <link refid="modificaListas_8c"/>
+        <label>modificaListas.h</label>
+        <link refid="modificaListas_8h"/>
         <childnode refid="157" relation="include">
         </childnode>
         <childnode refid="158" relation="include">
         </childnode>
-        <childnode refid="161" relation="include">
-        </childnode>
-        <childnode refid="163" relation="include">
-        </childnode>
-      </node>
-      <node id="158">
-        <label>modificaListas.h</label>
-        <link refid="modificaListas_8h"/>
-        <childnode refid="159" relation="include">
-        </childnode>
-        <childnode refid="160" relation="include">
-        </childnode>
       </node>
       <node id="160">
-        <label>../Camadas_de_dados/estruturasDados.h</label>
-        <link refid="estruturasDados_8h"/>
-      </node>
-      <node id="162">
         <label>tipoErros.h</label>
         <link refid="tipoErros_8h"/>
+      </node>
+      <node id="158">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">

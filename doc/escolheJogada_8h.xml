@@ -6,13 +6,13 @@
     <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
     <includedby refid="escolheJogada_8c" local="yes">Listas_ligadas/escolheJogada.c</includedby>
     <incdepgraph>
-      <node id="153">
+      <node id="151">
         <label>Listas_ligadas/escolheJogada.h</label>
         <link refid="escolheJogada_8h"/>
-        <childnode refid="154" relation="include">
+        <childnode refid="152" relation="include">
         </childnode>
       </node>
-      <node id="154">
+      <node id="152">
         <label>../Camadas_de_dados/estruturasDados.h</label>
         <link refid="estruturasDados_8h"/>
       </node>

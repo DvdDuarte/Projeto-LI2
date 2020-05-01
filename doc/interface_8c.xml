@@ -11,6 +11,12 @@
     <includes local="no">stdlib.h</includes>
     <includes local="no">string.h</includes>
     <incdepgraph>
+      <node id="10">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="16">
+        <label>stdlib.h</label>
+      </node>
       <node id="8">
         <label>Camada_de_interface/interface.c</label>
         <link refid="interface_8c"/>
@@ -31,14 +37,6 @@
         <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="14">
-        <label>../Camadas_de_dados/listaMovs.h</label>
-        <link refid="listaMovs_8h"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
       <node id="9">
         <label>interface.h</label>
         <link refid="interface_8h"/>
@@ -53,12 +51,6 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="10">
-        <label>bits/types/FILE.h</label>
-      </node>
-      <node id="16">
-        <label>stdlib.h</label>
-      </node>
       <node id="17">
         <label>string.h</label>
       </node>
@@ -66,14 +58,22 @@
         <label>../Camadas_de_dados/estruturasDados.h</label>
         <link refid="estruturasDados_8h"/>
       </node>
-      <node id="12">
-        <label>imprimeCasa.h</label>
-        <link refid="imprimeCasa_8h"/>
+      <node id="14">
+        <label>../Camadas_de_dados/listaMovs.h</label>
+        <link refid="listaMovs_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="15">
         <label>stdio.h</label>
+      </node>
+      <node id="12">
+        <label>imprimeCasa.h</label>
+        <link refid="imprimeCasa_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -147,7 +147,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camada_de_interface/interface.c" line="68" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="68" bodyend="77"/>
+        <location file="Camada_de_interface/interface.c" line="68" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="68" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="interface_8c_1aa1347f8d8a0591b9b9744245d12cd519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -183,7 +183,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camada_de_interface/interface.c" line="79" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="79" bodyend="83"/>
+        <location file="Camada_de_interface/interface.c" line="82" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="82" bodyend="86"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -259,21 +259,24 @@
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a3d8df62a196f60a42b923004ecf03e12" kindref="member">mostrar_prompt</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*ficheiro)<sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j,<sp/>soma;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jogador_atual,<sp/>num_jogadas;</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_8h_1ae01b0ed404ed74367f2c3d279d94a32e" kindref="member">mostrar_tabuleiro</ref>(e,<sp/>ficheiro);</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>fputc(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">,<sp/>ficheiro);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>jogador_atual<sp/>=<sp/><ref refid="modificaEstado_8h_1ad6e326e4ffa57ca1ae0c75377ecefc8c" kindref="member">obter_jogador_atual</ref>(e);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>num_jogadas<sp/>=<sp/><ref refid="modificaEstado_8h_1a6cd0b387bdee9e18003c78852394aa63" kindref="member">obter_numero_de_jogadas</ref>(e);</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(ficheiro,<sp/></highlight><highlight class="stringliteral">&quot;#PL%d<sp/>(%d)<sp/>&gt;<sp/>&quot;</highlight><highlight class="normal">,<sp/>e-&gt;jogador_atual,<sp/>e-&gt;num_jogadas);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//fprintf(ficheiro,<sp/>&quot;#<sp/>%d<sp/>PL%d<sp/>(%d)<sp/>&gt;<sp/>&quot;,<sp/>soma,<sp/>e-&gt;jogador_atual,<sp/>e-&gt;num_jogadas);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_8h_1ae01b0ed404ed74367f2c3d279d94a32e" kindref="member">mostrar_tabuleiro</ref>(e,<sp/>ficheiro);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>fputc(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">,<sp/>ficheiro);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(ficheiro,<sp/></highlight><highlight class="stringliteral">&quot;#PL%d<sp/>(%d)<sp/>&gt;<sp/>&quot;</highlight><highlight class="normal">,<sp/>jogador_atual,<sp/>num_jogadas);</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aa1347f8d8a0591b9b9744245d12cd519" kindref="member">mostrar_movimentos</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*ficheiro){</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="listaMovs_8h_1a47d05fb35d6f7bfa881cf7104a081b11" kindref="member">imprimeMovs</ref>(e,<sp/>ficheiro);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//fprintf(ficheiro,<sp/>&quot;#<sp/>%d<sp/>PL%d<sp/>(%d)<sp/>&gt;<sp/>&quot;,<sp/>soma,<sp/>e-&gt;jogador_atual,<sp/>e-&gt;num_jogadas);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aa1347f8d8a0591b9b9744245d12cd519" kindref="member">mostrar_movimentos</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*ficheiro){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="listaMovs_8h_1a47d05fb35d6f7bfa881cf7104a081b11" kindref="member">imprimeMovs</ref>(e,<sp/>ficheiro);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Camada_de_interface/interface.c"/>
   </compounddef>

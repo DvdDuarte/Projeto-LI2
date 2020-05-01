@@ -131,35 +131,20 @@
     <member refid="VerificaJogada_8h_1a47bcdfb630bbf281eeb07bb9baabe2db" kind="function"><name>verifica_fim_jogo</name></member>
     <member refid="VerificaJogada_8h_1a407f7e942870fb97bba3f49355d2e930" kind="function"><name>imprime_vencedor</name></member>
   </compound>
-  <compound refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c" kind="file"><name>CMakeCCompilerId.c</name>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a07f8e5783674099cd7f5110e22a78cdb" kind="define"><name>C_DIALECT</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
-    <member refid="3_815_83_2CompilerIdC_2CMakeCCompilerId_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c" kind="file"><name>CMakeCCompilerId.c</name>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a07f8e5783674099cd7f5110e22a78cdb" kind="define"><name>C_DIALECT</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
-    <member refid="3_816_85_2CompilerIdC_2CMakeCCompilerId_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  <compound refid="CMakeCCompilerId_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="CMakeCCompilerId_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="CMakeCCompilerId_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="CMakeCCompilerId_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="CMakeCCompilerId_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="CMakeCCompilerId_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="CMakeCCompilerId_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="CMakeCCompilerId_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="CMakeCCompilerId_8c_1a07f8e5783674099cd7f5110e22a78cdb" kind="define"><name>C_DIALECT</name></member>
+    <member refid="CMakeCCompilerId_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="CMakeCCompilerId_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="CMakeCCompilerId_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="CMakeCCompilerId_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="CMakeCCompilerId_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
   <compound refid="dadosListas_8c" kind="file"><name>dadosListas.c</name>
   </compound>
@@ -206,8 +191,6 @@
   <compound refid="main_8c" kind="file"><name>main.c</name>
     <member refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
   </compound>
-  <compound refid="dir_f942a7a73394fda25d4213a70555b3f8" kind="dir"><name>cmake-build-debug/CMakeFiles/3.15.3</name>
-  </compound>
   <compound refid="dir_e1ecdbac78f5041bd527fb40a7fd21eb" kind="dir"><name>cmake-build-debug/CMakeFiles/3.16.5</name>
   </compound>
   <compound refid="dir_594dc54ddaea6b7304806be14d23a0a5" kind="dir"><name>Camada_de_interface</name>
@@ -219,8 +202,6 @@
   <compound refid="dir_f89abcb304c928c7d889aa5625570de5" kind="dir"><name>cmake-build-debug/CMakeFiles</name>
   </compound>
   <compound refid="dir_2942f868a03c41b22a536fdc77b965b5" kind="dir"><name>cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC</name>
-  </compound>
-  <compound refid="dir_44ea9ed243d3740341f2efeb45271ac4" kind="dir"><name>cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC</name>
   </compound>
   <compound refid="dir_27eb203ddcadeb42d898ae7f24cde09c" kind="dir"><name>Listas_ligadas</name>
   </compound>

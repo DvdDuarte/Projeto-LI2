@@ -10,6 +10,9 @@
     <includedby refid="jogar_8c" local="yes">Logica_do_programa/jogar.c</includedby>
     <includedby refid="main_8c" local="yes">main.c</includedby>
     <incdepgraph>
+      <node id="20">
+        <label>bits/types/FILE.h</label>
+      </node>
       <node id="19">
         <label>Camada_de_interface/interface.h</label>
         <link refid="interface_8h"/>
@@ -17,9 +20,6 @@
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-      </node>
-      <node id="20">
-        <label>bits/types/FILE.h</label>
       </node>
       <node id="21">
         <label>../Camadas_de_dados/estruturasDados.h</label>
@@ -97,7 +97,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camada_de_interface/interface.h" line="27" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="68" bodyend="77"/>
+        <location file="Camada_de_interface/interface.h" line="27" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="68" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="interface_8h_1aa1347f8d8a0591b9b9744245d12cd519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -133,7 +133,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camada_de_interface/interface.h" line="34" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="79" bodyend="83"/>
+        <location file="Camada_de_interface/interface.h" line="34" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="82" bodyend="86"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

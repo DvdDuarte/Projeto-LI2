@@ -17,13 +17,13 @@
         <childnode refid="130" relation="include">
         </childnode>
       </node>
-      <node id="129">
-        <label>estruturasDados.h</label>
-        <link refid="estruturasDados_8h"/>
-      </node>
       <node id="130">
         <label>tipoErros.h</label>
         <link refid="tipoErros_8h"/>
+      </node>
+      <node id="129">
+        <label>estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -172,7 +172,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/VerificaJogada.h" line="39" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="92" bodyend="115"/>
+        <location file="Camadas_de_dados/VerificaJogada.h" line="39" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="92" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="VerificaJogada_8h_1a47bcdfb630bbf281eeb07bb9baabe2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref></type>
@@ -198,7 +198,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/VerificaJogada.h" line="46" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="117" bodyend="134"/>
+        <location file="Camadas_de_dados/VerificaJogada.h" line="46" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="119" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="VerificaJogada_8h_1a407f7e942870fb97bba3f49355d2e930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -223,7 +223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/VerificaJogada.h" line="52" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="136" bodyend="142"/>
+        <location file="Camadas_de_dados/VerificaJogada.h" line="52" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="138" bodyend="144"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

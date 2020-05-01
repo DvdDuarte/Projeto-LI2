@@ -9,6 +9,9 @@
         <label>../Camadas_de_dados/estruturasDados.h</label>
         <link refid="estruturasDados_8h"/>
       </node>
+      <node id="1">
+        <label>stdio.h</label>
+      </node>
       <node id="0">
         <label>Camada_de_interface/imprimeCasa.c</label>
         <link refid="imprimeCasa_8c"/>
@@ -22,9 +25,6 @@
         <link refid="imprimeCasa_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="1">
-        <label>stdio.h</label>
       </node>
     </incdepgraph>
       <sectiondef kind="func">

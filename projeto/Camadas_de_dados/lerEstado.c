@@ -11,15 +11,15 @@ ESTADO *ler(char *jogo) {
 
     FILE *ficheiro;
     ESTADO *e;
-    char letter, line[BUF_SIZE];
-    int linha, coluna;
+    char line[BUF_SIZE];
 
-    e = inicializar_estado(e);
+
+    e = inicializar_estado();
     ficheiro = fopen(jogo, "r");
 
     ler_tabuleiro(ficheiro, e);
 
-    fgets(line, BUF_SIZE, ficheiro);
+    if (fgets(line, BUF_SIZE, ficheiro) == NULL) return e;
 
     ler_movimentos(ficheiro, e);
 
@@ -44,7 +44,7 @@ void ler_tabuleiro (FILE *ficheiro, ESTADO *e) {
 
     for (coluna = 0; coluna < 8; coluna++) {
 
-        fgets(line, BUF_SIZE, ficheiro);
+        if (fgets(line, BUF_SIZE, ficheiro) == NULL) return;
 
         if (coluna >= 0) {
 
@@ -63,7 +63,7 @@ void ler_tabuleiro (FILE *ficheiro, ESTADO *e) {
 
 void ler_movimentos (FILE *ficheiro, ESTADO *e){
 
-    int indice, jogador;
+    int indice;
     char line[BUF_SIZE];
 
     for (indice = 0; !(feof(ficheiro)); indice++) {
@@ -80,8 +80,11 @@ void ler_movimentos (FILE *ficheiro, ESTADO *e){
 
 void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
 
-    int idx, indicejog, tamanho_linha;
+    int idx, tamanho_linha;
     char letter, cj1, lj1, cj2, lj2;
+
+    lj1 = lj2 = '0';
+    cj1 = cj2 = 'a';
 
     tamanho_linha = strlen(line);
 

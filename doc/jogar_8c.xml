@@ -12,41 +12,14 @@
     <includes local="no">stdlib.h</includes>
     <includes local="no">string.h</includes>
     <incdepgraph>
-      <node id="175">
-        <label>../Camada_de_interface/interface.h</label>
-        <link refid="interface_8h"/>
-        <childnode refid="171" relation="include">
-        </childnode>
-        <childnode refid="172" relation="include">
-        </childnode>
-      </node>
-      <node id="176">
-        <label>../Camadas_de_dados/modificaEstado.h</label>
-        <link refid="modificaEstado_8h"/>
-        <childnode refid="172" relation="include">
-        </childnode>
-      </node>
-      <node id="171">
-        <label>bits/types/FILE.h</label>
-      </node>
-      <node id="178">
-        <label>stdlib.h</label>
-      </node>
-      <node id="173">
-        <label>../Camadas_de_dados/VerificaJogada.h</label>
-        <link refid="VerificaJogada_8h"/>
-        <childnode refid="172" relation="include">
-        </childnode>
-        <childnode refid="174" relation="include">
-        </childnode>
-      </node>
-      <node id="179">
-        <label>string.h</label>
-      </node>
-      <node id="169">
+      <node id="167">
         <label>Logica_do_programa/jogar.c</label>
         <link refid="jogar_8c"/>
+        <childnode refid="168" relation="include">
+        </childnode>
         <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
         </childnode>
         <childnode refid="172" relation="include">
         </childnode>
@@ -60,29 +33,56 @@
         </childnode>
         <childnode refid="177" relation="include">
         </childnode>
-        <childnode refid="178" relation="include">
-        </childnode>
-        <childnode refid="179" relation="include">
-        </childnode>
       </node>
-      <node id="170">
+      <node id="168">
         <label>jogar.h</label>
         <link refid="jogar_8h"/>
-        <childnode refid="171" relation="include">
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="171">
+        <label>../Camadas_de_dados/VerificaJogada.h</label>
+        <link refid="VerificaJogada_8h"/>
+        <childnode refid="170" relation="include">
         </childnode>
         <childnode refid="172" relation="include">
         </childnode>
       </node>
+      <node id="176">
+        <label>stdlib.h</label>
+      </node>
+      <node id="173">
+        <label>../Camada_de_interface/interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>../Camadas_de_dados/modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>string.h</label>
+      </node>
       <node id="172">
+        <label>tipoErros.h</label>
+        <link refid="tipoErros_8h"/>
+      </node>
+      <node id="170">
         <label>../Camadas_de_dados/estruturasDados.h</label>
         <link refid="estruturasDados_8h"/>
       </node>
-      <node id="177">
+      <node id="175">
         <label>stdio.h</label>
-      </node>
-      <node id="174">
-        <label>tipoErros.h</label>
-        <link refid="tipoErros_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
