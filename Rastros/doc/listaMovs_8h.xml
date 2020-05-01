@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="listaMovs_8h" kind="file" language="C++">
+    <compoundname>listaMovs.h</compoundname>
+    <includes local="no">bits/types/FILE.h</includes>
+    <includes refid="estruturasDados_8h" local="yes">estruturasDados.h</includes>
+    <includedby refid="interface_8c" local="yes">Camada_de_interface/interface.c</includedby>
+    <includedby refid="listaMovs_8c" local="yes">Camadas_de_dados/listaMovs.c</includedby>
+    <incdepgraph>
+      <node id="100">
+        <label>Camadas_de_dados/listaMovs.h</label>
+        <link refid="listaMovs_8h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="102">
+        <label>estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="listaMovs_8h_1a47d05fb35d6f7bfa881cf7104a081b11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imprimeMovs</definition>
+        <argsstring>(ESTADO *e, FILE *ficheiro)</argsstring>
+        <name>imprimeMovs</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <briefdescription>
+<para>Definicao que vai ao estado e imprime a lista de movimentos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ficheiro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do nome do ficheiro </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/listaMovs.h" line="21" column="1" bodyfile="Camadas_de_dados/listaMovs.c" bodystart="10" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao da(s) funcao(oes) que imprime(m) a lista de movimentos feitos </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>29/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&lt;bits/types/FILE.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="estruturasDados_8h" kindref="compound">estruturasDados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RASTROS_LISTAMOVS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_LISTAMOVS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="listaMovs_8h_1a47d05fb35d6f7bfa881cf7104a081b11" kindref="member">imprimeMovs</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*ficheiro);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_LISTAMOVS_H</highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/listaMovs.h"/>
+  </compounddef>
+</doxygen>

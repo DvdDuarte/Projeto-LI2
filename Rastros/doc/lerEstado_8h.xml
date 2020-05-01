@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="lerEstado_8h" kind="file" language="C++">
+    <compoundname>lerEstado.h</compoundname>
+    <includes local="no">bits/types/FILE.h</includes>
+    <includes refid="estruturasDados_8h" local="yes">estruturasDados.h</includes>
+    <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
+    <includedby refid="lerEstado_8c" local="yes">Camadas_de_dados/lerEstado.c</includedby>
+    <incdepgraph>
+      <node id="90">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="89">
+        <label>Camadas_de_dados/lerEstado.h</label>
+        <link refid="lerEstado_8h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lerEstado_8h_1a8511d69d5e120a84efa6d1bbba5488ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* ler</definition>
+        <argsstring>(char *jogo)</argsstring>
+        <name>ler</name>
+        <param>
+          <type>char *</type>
+          <declname>jogo</declname>
+        </param>
+        <briefdescription>
+<para>Funcao principal para ler o estado atreves de um ficheiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o nome do ficheiro </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O estado que estava no ficheiro </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.h" line="21" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="10" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="lerEstado_8h_1a438794af5f3ab5e34a2027543889ac58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* troca_tipo</definition>
+        <argsstring>(ESTADO *e, char letter, int coluna, int linha)</argsstring>
+        <name>troca_tipo</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>letter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coluna</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que ao receber um char de um casa vai decidir qual o tipo de peca que esta nessa casa. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>caracter que esta a ser lido </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coluna da casa </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linha da casa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O o estado com a casa no tabuleiro atualizada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.h" line="31" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="31" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="lerEstado_8h_1a261b756c803ae426d9e087e5c600bca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_tabuleiro</definition>
+        <argsstring>(FILE *ficheiro, ESTADO *e)</argsstring>
+        <name>ler_tabuleiro</name>
+        <param>
+          <type>FILE *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que le o tabuleiro de um ficheiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do nome do ficheiro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.h" line="38" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="40" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="lerEstado_8h_1a5dae91836d89ac6ae1892cbcc8ad3dea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_movimentos</definition>
+        <argsstring>(FILE *ficheiro, ESTADO *e)</argsstring>
+        <name>ler_movimentos</name>
+        <param>
+          <type>FILE *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que le a lista de movimentos de um ficheiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do nome do ficheiro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.h" line="45" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="64" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="lerEstado_8h_1a12abc2f2a2fa776fe08e6e422178d4af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_linha_movs</definition>
+        <argsstring>(char line[BUF_SIZE], ESTADO *e, int indice)</argsstring>
+        <name>ler_linha_movs</name>
+        <param>
+          <type>char</type>
+          <declname>line</declname>
+          <array>[BUF_SIZE]</array>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que le uma linha de movimentos de um ficheiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A variavel onde a linha lida vai ser guardada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indice da jogada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.h" line="53" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="81" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao da/s funcao/os que le/m um ficheiro e imprime/m o estado </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>22/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bits/types/FILE.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="estruturasDados_8h" kindref="compound">estruturasDados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>RASTROS_LERESTADO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_LERESTADO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*<ref refid="lerEstado_8h_1a8511d69d5e120a84efa6d1bbba5488ec" kindref="member">ler</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*jogo);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*<ref refid="lerEstado_8h_1a438794af5f3ab5e34a2027543889ac58" kindref="member">troca_tipo</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lerEstado_8h_1a261b756c803ae426d9e087e5c600bca5" kindref="member">ler_tabuleiro</ref><sp/>(FILE<sp/>*ficheiro,<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lerEstado_8h_1a5dae91836d89ac6ae1892cbcc8ad3dea" kindref="member">ler_movimentos</ref><sp/>(FILE<sp/>*ficheiro,<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lerEstado_8h_1a12abc2f2a2fa776fe08e6e422178d4af" kindref="member">ler_linha_movs</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line[BUF_SIZE],<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_LERESTADO_H</highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/lerEstado.h"/>
+  </compounddef>
+</doxygen>

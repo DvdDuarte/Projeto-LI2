@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dadosListas_8c" kind="file" language="C++">
+    <compoundname>dadosListas.c</compoundname>
+    <includes refid="dadosListas_8h" local="yes">dadosListas.h</includes>
+    <incdepgraph>
+      <node id="136">
+        <label>Listas_ligadas/dadosListas.c</label>
+        <link refid="dadosListas_8c"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>dadosListas.h</label>
+        <link refid="dadosListas_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>15/04/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dadosListas_8h" kindref="compound">dadosListas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Listas_ligadas/dadosListas.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="estruturasDados_8h" kind="file" language="C++">
+    <compoundname>estruturasDados.h</compoundname>
+    <includedby refid="imprimeCasa_8h" local="yes">Camada_de_interface/imprimeCasa.h</includedby>
+    <includedby refid="interface_8h" local="yes">Camada_de_interface/interface.h</includedby>
+    <includedby refid="interface_8c" local="yes">Camada_de_interface/interface.c</includedby>
+    <includedby refid="modificaEstado_8h" local="yes">Camadas_de_dados/modificaEstado.h</includedby>
+    <includedby refid="listaMovs_8h" local="yes">Camadas_de_dados/listaMovs.h</includedby>
+    <includedby refid="Interpretador_8h" local="yes">Camada_de_interface/Interpretador.h</includedby>
+    <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
+    <includedby refid="grava_8h" local="yes">Camadas_de_dados/grava.h</includedby>
+    <includedby refid="jogar_8h" local="yes">Logica_do_programa/jogar.h</includedby>
+    <includedby refid="lerEstado_8h" local="yes">Camadas_de_dados/lerEstado.h</includedby>
+    <includedby refid="buscaPosicao_8h" local="yes">Camadas_de_dados/buscaPosicao.h</includedby>
+    <includedby refid="escolheJogada_8h" local="yes">Listas_ligadas/escolheJogada.h</includedby>
+    <includedby refid="VerificaJogada_8h" local="yes">Camadas_de_dados/VerificaJogada.h</includedby>
+    <includedby refid="estruturasDados_8c" local="yes">Camadas_de_dados/estruturasDados.c</includedby>
+    <includedby refid="modificaEstado_8c" local="yes">Camadas_de_dados/modificaEstado.c</includedby>
+    <includedby refid="dadosListas_8h" local="yes">Listas_ligadas/dadosListas.h</includedby>
+    <includedby refid="modificaListas_8h" local="yes">Listas_ligadas/modificaListas.h</includedby>
+    <includedby refid="jogar_8c" local="yes">Logica_do_programa/jogar.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <invincdepgraph>
+      <node id="60">
+        <label>Camadas_de_dados/listaMovs.h</label>
+        <link refid="listaMovs_8h"/>
+      </node>
+      <node id="58">
+        <label>Camada_de_interface/interface.h</label>
+        <link refid="interface_8h"/>
+      </node>
+      <node id="59">
+        <label>Camadas_de_dados/modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+      </node>
+      <node id="62">
+        <label>Camadas_de_dados/grava.h</label>
+        <link refid="grava_8h"/>
+      </node>
+      <node id="67">
+        <label>Camadas_de_dados/VerificaJogada.h</label>
+        <link refid="VerificaJogada_8h"/>
+      </node>
+      <node id="66">
+        <label>Listas_ligadas/escolheJogada.h</label>
+        <link refid="escolheJogada_8h"/>
+      </node>
+      <node id="61">
+        <label>Camada_de_interface/Interpretador.h</label>
+        <link refid="Interpretador_8h_source"/>
+      </node>
+      <node id="65">
+        <label>Camadas_de_dados/buscaPosicao.h</label>
+        <link refid="buscaPosicao_8h"/>
+      </node>
+      <node id="68">
+        <label>Listas_ligadas/dadosListas.h</label>
+        <link refid="dadosListas_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Camadas_de_dados/lerEstado.h</label>
+        <link refid="lerEstado_8h"/>
+      </node>
+      <node id="69">
+        <label>Listas_ligadas/modificaListas.h</label>
+        <link refid="modificaListas_8h"/>
+      </node>
+      <node id="63">
+        <label>Logica_do_programa/jogar.h</label>
+        <link refid="jogar_8h"/>
+      </node>
+      <node id="56">
+        <label>Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Camada_de_interface/imprimeCasa.h</label>
+        <link refid="imprimeCasa_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCOORDENADA" prot="public">COORDENADA</innerclass>
+    <innerclass refid="structJOGADA" prot="public">JOGADA</innerclass>
+    <innerclass refid="structESTADO" prot="public">ESTADO</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="estruturasDados_8h_1a6821bafc3c88dfb2e433a095df9940c6" prot="public" static="no">
+        <name>BUF_SIZE</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/estruturasDados.h" line="13" column="9" bodyfile="Camadas_de_dados/estruturasDados.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039" prot="public" static="no">
+        <name>CASA</name>
+        <enumvalue id="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039ab620e38b0268bee43c7e9a88bd6e73fa" prot="public">
+          <name>UM</name>
+          <initializer>= &apos;1&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039a2bf153109d0c8b96e61bc18d5be7c5da" prot="public">
+          <name>DOIS</name>
+          <initializer>= &apos;2&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039abc711f491a56ec7af7a688be508c5113" prot="public">
+          <name>VAZIO</name>
+          <initializer>= &apos;.&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039ad24485fddec75419fd4a0cc9edda0ca5" prot="public">
+          <name>BRANCA</name>
+          <initializer>= &apos;*&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039a007278eb3827d19891b47cdd3ac8846d" prot="public">
+          <name>PRETA</name>
+          <initializer>= &apos;#&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Tipo de dados para as casas do tabuleiro. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/estruturasDados.h" line="18" column="1" bodyfile="Camadas_de_dados/estruturasDados.h" bodystart="18" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="estruturasDados_8h_1a94c221d29a1760f008b7834093259b7d" prot="public" static="no">
+        <type><ref refid="structJOGADA" kindref="compound">JOGADA</ref></type>
+        <definition>typedef JOGADA JOGADAS[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>JOGADAS</name>
+        <briefdescription>
+<para>Tipo de dados para as jogadas. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/estruturasDados.h" line="45" column="1" bodyfile="Camadas_de_dados/estruturasDados.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao dos estados principais para o jogo </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>12/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>RASTROS_ESTRUTURASDADOS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_ESTRUTURASDADOS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUF_SIZE<sp/>1024</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>UM<sp/>=<sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>DOIS<sp/>=<sp/></highlight><highlight class="charliteral">&apos;2&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>VAZIO<sp/>=<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>BRANCA<sp/>=<sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>PRETA<sp/>=<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structCOORDENADA" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structJOGADA" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>jogador1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>jogador2;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/><ref refid="structJOGADA" kindref="compound">JOGADA</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="estruturasDados_8h_1a94c221d29a1760f008b7834093259b7d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structJOGADA" kindref="compound">JOGADA</ref><sp/><ref refid="estruturasDados_8h_1a94c221d29a1760f008b7834093259b7d" kindref="member">JOGADAS</ref>[32];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structESTADO" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/>tab[8][8];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>ultima_jogada;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="estruturasDados_8h_1a94c221d29a1760f008b7834093259b7d" kindref="member">JOGADAS</ref><sp/>jogadas;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_jogadas;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jogador_atual;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posicao_jogada;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_ESTRUTURASDADOS_H</highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/estruturasDados.h"/>
+  </compounddef>
+</doxygen>

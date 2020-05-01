@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="VerificaJogada_8h" kind="file" language="C++">
+    <compoundname>VerificaJogada.h</compoundname>
+    <includes refid="estruturasDados_8h" local="yes">estruturasDados.h</includes>
+    <includes refid="tipoErros_8h" local="yes">tipoErros.h</includes>
+    <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
+    <includedby refid="VerificaJogada_8c" local="yes">Camadas_de_dados/VerificaJogada.c</includedby>
+    <includedby refid="modificaListas_8c" local="yes">Listas_ligadas/modificaListas.c</includedby>
+    <includedby refid="jogar_8c" local="yes">Logica_do_programa/jogar.c</includedby>
+    <incdepgraph>
+      <node id="128">
+        <label>Camadas_de_dados/VerificaJogada.h</label>
+        <link refid="VerificaJogada_8h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+      <node id="130">
+        <label>tipoErros.h</label>
+        <link refid="tipoErros_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="VerificaJogada_8h_1ae6d5cd06a47da1ffc46fac5c4d14696f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref></type>
+        <definition>VALIDACOES jogadavalida</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>jogadavalida</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Valida uma jogada. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A coordenada a verificar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A validacao da jogada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/VerificaJogada.h" line="21" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="12" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="VerificaJogada_8h_1acb5b5946113bdc12f3cc6baeb0770578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void coloca_peca</definition>
+        <argsstring>(ESTADO *e, int coluna, int linha, int flag)</argsstring>
+        <name>coloca_peca</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coluna</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Coloca a peca na coordenada desejada e coloca a peca preta na casa onde estava. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A coluna da casa nova </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A linha da casa nova </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag utilizada para definir qual o indice da jogada a ser utilizado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/VerificaJogada.h" line="30" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="55" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="VerificaJogada_8h_1a7fcd5e07fc560299ec49f7c66e661a8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float distancia</definition>
+        <argsstring>(ESTADO *e, int coluna, int linha, int flag)</argsstring>
+        <name>distancia</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coluna</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Calcula a distancia entre a casa nova e a casa atual para saber se sao vizinhas. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A coluna da casa nova </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A linha da casa nova </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A distancia para a funcao que valida a jogada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/VerificaJogada.h" line="39" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="92" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="VerificaJogada_8h_1a47bcdfb630bbf281eeb07bb9baabe2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref></type>
+        <definition>VALIDACOES verifica_fim_jogo</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>verifica_fim_jogo</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que verifica se o jogo acabou por impossibilidade de jogar. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A condicao em que o jogo esta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/VerificaJogada.h" line="46" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="117" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="VerificaJogada_8h_1a407f7e942870fb97bba3f49355d2e930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imprime_vencedor</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>imprime_vencedor</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que diz qual e o vencedor do jogo. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/VerificaJogada.h" line="52" column="1" bodyfile="Camadas_de_dados/VerificaJogada.c" bodystart="136" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao das funoes que validam uma jogada e a concretiza, se for possivel </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>20/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="estruturasDados_8h" kindref="compound">estruturasDados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tipoErros_8h" kindref="compound">tipoErros.h</ref>&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>RASTROS_VERIFICAJOGADA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_VERIFICAJOGADA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref><sp/><ref refid="VerificaJogada_8h_1ae6d5cd06a47da1ffc46fac5c4d14696f" kindref="member">jogadavalida</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="VerificaJogada_8h_1acb5b5946113bdc12f3cc6baeb0770578" kindref="member">coloca_peca</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="VerificaJogada_8h_1a7fcd5e07fc560299ec49f7c66e661a8b" kindref="member">distancia</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref><sp/><ref refid="VerificaJogada_8h_1a47bcdfb630bbf281eeb07bb9baabe2db" kindref="member">verifica_fim_jogo</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="VerificaJogada_8h_1a407f7e942870fb97bba3f49355d2e930" kindref="member">imprime_vencedor</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_VERIFICAJOGADA_H</highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/VerificaJogada.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="modificaListas_8c" kind="file" language="C++">
+    <compoundname>modificaListas.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="modificaListas_8h" local="yes">modificaListas.h</includes>
+    <includes refid="VerificaJogada_8h" local="yes">../Camadas_de_dados/VerificaJogada.h</includes>
+    <includes refid="modificaEstado_8h" local="yes">../Camadas_de_dados/modificaEstado.h</includes>
+    <incdepgraph>
+      <node id="163">
+        <label>../Camadas_de_dados/modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>stdlib.h</label>
+      </node>
+      <node id="161">
+        <label>../Camadas_de_dados/VerificaJogada.h</label>
+        <link refid="VerificaJogada_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>dadosListas.h</label>
+        <link refid="dadosListas_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>Listas_ligadas/modificaListas.c</label>
+        <link refid="modificaListas_8c"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>modificaListas.h</label>
+        <link refid="modificaListas_8h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+      <node id="162">
+        <label>tipoErros.h</label>
+        <link refid="tipoErros_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="modificaListas_8c_1ae3b99323b6f8f35d80bb69ff1a27985e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+        <definition>LISTA criar_lista</definition>
+        <argsstring>()</argsstring>
+        <name>criar_lista</name>
+        <briefdescription>
+<para>Definicao da funcao que cria uma lista ligada vazia. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/modificaListas.c" line="12" column="1" bodyfile="Listas_ligadas/modificaListas.c" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaListas_8c_1a37ba5fc3cfddb6bc94d4b54b00bc696e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+        <definition>LISTA insere_cabeca</definition>
+        <argsstring>(LISTA L, void *valor)</argsstring>
+        <name>insere_cabeca</name>
+        <param>
+          <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que insere um valor na cabeca de uma lista ligada. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador da lista ligada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>O valor a adicionar na cabeca </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>da lista ligada com o valor na cabeca </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/modificaListas.c" line="19" column="1" bodyfile="Listas_ligadas/modificaListas.c" bodystart="19" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaListas_8c_1af2a6ad09dc63f02443c3bccc3218f87b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref> *</type>
+        <definition>COORDENADA* devolve_cabeca</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>devolve_cabeca</name>
+        <param>
+          <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que devolve a cabeca da lista ligada. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador da lista ligada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A cabeca da lista ligada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/modificaListas.c" line="31" column="1" bodyfile="Listas_ligadas/modificaListas.c" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaListas_8c_1ad9380152361127432c55c1c6067e05ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+        <definition>LISTA proximo</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>proximo</name>
+        <param>
+          <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Defionicao da fucnao que devolve a cauda da lista ligada. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador da lista ligada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A cauda da lista ligada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/modificaListas.c" line="38" column="1" bodyfile="Listas_ligadas/modificaListas.c" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaListas_8c_1a9026a681a68322b5ec7f07137b864cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+        <definition>LISTA remove_cabeca</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>remove_cabeca</name>
+        <param>
+          <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que remove a cabeda da lista ligada libertando assim o espaco ocupado pela mesma e devolve a cauda. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador da lista ligada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A lista ligada sem a cabeca </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/modificaListas.c" line="45" column="1" bodyfile="Listas_ligadas/modificaListas.c" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaListas_8c_1a4c10928f7acaa4e3de3760cea0dfd9c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lista_esta_vazia</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>lista_esta_vazia</name>
+        <param>
+          <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que verifica de uma lista ligada esta vazia. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador da lista ligada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devolve 1 caso seja fazia e 0 caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/modificaListas.c" line="54" column="1" bodyfile="Listas_ligadas/modificaListas.c" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaListas_8c_1a4d91cd788eb8b5c5f08b2c7dd49b8b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+        <definition>LISTA posicoes_possiveis</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>posicoes_possiveis</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que percorre as casas vizinhas e disponiveis a casa atual da peca branca e as guarda numa lista ligada. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A lista com as posicoes possiveis a serem jogadas </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/modificaListas.c" line="60" column="1" bodyfile="Listas_ligadas/modificaListas.c" bodystart="60" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaListas_8c_1af2277e27a369b2b2cf9a667ce398547d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref> *</type>
+        <definition>COORDENADA* menor</definition>
+        <argsstring>(LISTA L, ESTADO *e)</argsstring>
+        <name>menor</name>
+        <param>
+          <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que percorre uma lista ligada com as posicoes possiveis a serem jogadas e escolhe a posicao com a menor distancia a casa necessaria para o jogador atual ganhar. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A lista ligada com as posicoes possiveis </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A coordenada da casa mais proxima a casa necessaria para o jogador atual vencer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/modificaListas.c" line="89" column="1" bodyfile="Listas_ligadas/modificaListas.c" bodystart="89" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>15/04/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="modificaListas_8h" kindref="compound">modificaListas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/VerificaJogada.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/modificaEstado.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Cria<sp/>uma<sp/>lista<sp/>vazia</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="modificaListas_8h_1ae3b99323b6f8f35d80bb69ff1a27985e" kindref="member">criar_lista</ref>(){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Insere<sp/>um<sp/>valor<sp/>na<sp/>cabeça<sp/>da<sp/>lista</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="modificaListas_8h_1a37ba5fc3cfddb6bc94d4b54b00bc696e" kindref="member">insere_cabeca</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*valor){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>novo<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structnodo" kindref="compound">NODO</ref>));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>novo<sp/>-&gt;<sp/>valor<sp/>=<sp/>valor;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>novo<sp/>-&gt;<sp/><ref refid="modificaListas_8h_1ad9380152361127432c55c1c6067e05ae" kindref="member">proximo</ref><sp/>=<sp/>L;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>novo;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Devolve<sp/>a<sp/>cabeça<sp/>da<sp/>lista</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>*<ref refid="modificaListas_8h_1af2a6ad09dc63f02443c3bccc3218f87b" kindref="member">devolve_cabeca</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>L<sp/>-&gt;<sp/>valor;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Devolve<sp/>a<sp/>cauda<sp/>da<sp/>lista</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="modificaListas_8h_1ad9380152361127432c55c1c6067e05ae" kindref="member">proximo</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>L-&gt;proximo;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Remove<sp/>a<sp/>cabeça<sp/>da<sp/>lista<sp/>(libertando<sp/>o<sp/>espaço<sp/>ocupado)<sp/>e<sp/>devolve<sp/>a<sp/>cauda</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="modificaListas_8h_1a9026a681a68322b5ec7f07137b864cbd" kindref="member">remove_cabeca</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>x<sp/>=<sp/>L<sp/>==<sp/>NULL<sp/>?<sp/>NULL<sp/>:<sp/>L<sp/>-&gt;<sp/><ref refid="modificaListas_8h_1ad9380152361127432c55c1c6067e05ae" kindref="member">proximo</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>free(L);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Devolve<sp/>verdareiro<sp/>se<sp/>a<sp/>lista<sp/>é<sp/>vazia</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="modificaListas_8h_1a4c10928f7acaa4e3de3760cea0dfd9c0" kindref="member">lista_esta_vazia</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(L<sp/>==<sp/>NULL);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="modificaListas_8h_1a4d91cd788eb8b5c5f08b2c7dd49b8b99" kindref="member">posicoes_possiveis</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/>linha,<sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>posicoes;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>coluna<sp/>=<sp/>e<sp/>-&gt;<sp/>ultima_jogada.coluna;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>linha<sp/>=<sp/>e<sp/>-&gt;<sp/>ultima_jogada.linha;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>posicoes<sp/>=<sp/><ref refid="modificaListas_8h_1ae3b99323b6f8f35d80bb69ff1a27985e" kindref="member">criar_lista</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>-1;<sp/>i<sp/>&lt;=<sp/>1;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>-1;<sp/>j<sp/>&lt;=<sp/>1;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(coluna<sp/>+<sp/>i<sp/>&gt;=0<sp/>&amp;&amp;<sp/>coluna<sp/>+<sp/>i<sp/>&lt;<sp/>8<sp/>&amp;&amp;<sp/>linha<sp/>+<sp/>j<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>linha<sp/>+<sp/>j<sp/>&lt;<sp/>8<sp/>&amp;&amp;<sp/>e-&gt;tab[coluna<sp/>+<sp/>i][linha<sp/>+<sp/>j]<sp/>==<sp/>VAZIO)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>*coord<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*coord<sp/>=<sp/>(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>)<sp/>{coluna<sp/>+<sp/>i,<sp/>linha<sp/>+<sp/>j};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>posicoes<sp/>=<sp/><ref refid="modificaListas_8h_1a37ba5fc3cfddb6bc94d4b54b00bc696e" kindref="member">insere_cabeca</ref>(posicoes,<sp/>coord);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>posicoes;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>*<ref refid="modificaListas_8h_1af2277e27a369b2b2cf9a667ce398547d" kindref="member">menor</ref><sp/>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L,<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distmenor,<sp/>dist_comparar;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>*menor_elemento,<sp/>*elemento_comparar;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>menor_elemento<sp/>=<sp/>(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>*)<sp/><ref refid="modificaListas_8h_1af2a6ad09dc63f02443c3bccc3218f87b" kindref="member">devolve_cabeca</ref>(L);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>distmenor<sp/>=<sp/><ref refid="VerificaJogada_8h_1a7fcd5e07fc560299ec49f7c66e661a8b" kindref="member">distancia</ref>(e,<sp/>menor_elemento-&gt;coluna,<sp/>menor_elemento-&gt;linha,<sp/><ref refid="modificaEstado_8h_1ad6e326e4ffa57ca1ae0c75377ecefc8c" kindref="member">obter_jogador_atual</ref>(e));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>L<sp/>=<sp/><ref refid="modificaListas_8h_1a9026a681a68322b5ec7f07137b864cbd" kindref="member">remove_cabeca</ref>(L);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>T<sp/>=<sp/>L;<sp/>!<ref refid="modificaListas_8h_1a4c10928f7acaa4e3de3760cea0dfd9c0" kindref="member">lista_esta_vazia</ref>(T);<sp/>T<sp/>=<sp/><ref refid="modificaListas_8h_1a9026a681a68322b5ec7f07137b864cbd" kindref="member">remove_cabeca</ref>(T))<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elemento_comparar<sp/>=<sp/><ref refid="modificaListas_8h_1af2a6ad09dc63f02443c3bccc3218f87b" kindref="member">devolve_cabeca</ref>(T);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist_comparar<sp/>=<sp/><ref refid="VerificaJogada_8h_1a7fcd5e07fc560299ec49f7c66e661a8b" kindref="member">distancia</ref>(e,<sp/>elemento_comparar-&gt;coluna,<sp/>elemento_comparar-&gt;linha,<sp/><ref refid="modificaEstado_8h_1ad6e326e4ffa57ca1ae0c75377ecefc8c" kindref="member">obter_jogador_atual</ref>(e));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(distmenor<sp/>&gt;<sp/>dist_comparar<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>distmenor<sp/>=<sp/>dist_comparar;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>menor_elemento<sp/>=<sp/>elemento_comparar;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>menor_elemento;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Listas_ligadas/modificaListas.c"/>
+  </compounddef>
+</doxygen>

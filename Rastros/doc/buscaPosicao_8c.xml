@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="buscaPosicao_8c" kind="file" language="C++">
+    <compoundname>buscaPosicao.c</compoundname>
+    <includes refid="buscaPosicao_8h" local="yes">buscaPosicao.h</includes>
+    <includes refid="modificaEstado_8h" local="yes">modificaEstado.h</includes>
+    <includes refid="jogar_8h" local="yes">../Logica_do_programa/jogar.h</includes>
+    <incdepgraph>
+      <node id="45">
+        <label>modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="42">
+        <label>Camadas_de_dados/buscaPosicao.c</label>
+        <link refid="buscaPosicao_8c"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>buscaPosicao.h</label>
+        <link refid="buscaPosicao_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>../Logica_do_programa/jogar.h</label>
+        <link refid="jogar_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="buscaPosicao_8c_1a46733694eb552086393490ffce85bec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* posicao</definition>
+        <argsstring>(int pos, ESTADO *e)</argsstring>
+        <name>posicao</name>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que vai a posicao indicada para retomar o jogo a partir da mesma. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A posicao pretendida </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O restado a partir dessa posicao </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/buscaPosicao.c" line="10" column="1" bodyfile="Camadas_de_dados/buscaPosicao.c" bodystart="10" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>01/04/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="buscaPosicao_8h" kindref="compound">buscaPosicao.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="modificaEstado_8h" kindref="compound">modificaEstado.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Logica_do_programa/jogar.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*<ref refid="buscaPosicao_8h_1a46733694eb552086393490ffce85bec7" kindref="member">posicao</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos,<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>coord1,<sp/>coord2;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos<sp/>&lt;<sp/>0<sp/>||<sp/>pos<sp/>&gt;=<sp/>e-&gt;num_jogadas)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="modificaEstado_8h_1a1c0a78bd9cea38120e85e7385e2c079a" kindref="member">inicializar_tab</ref>(e);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="modificaEstado_8h_1ae0f58991f028e691d967767f430af929" kindref="member">inicializar_ultima_jogada</ref>(e);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;=<sp/>pos;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coord1<sp/>=<sp/>(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>)<sp/>{e<sp/>-&gt;<sp/>jogadas[i].jogador1.coluna,<sp/>e<sp/>-&gt;<sp/>jogadas[i].jogador1.linha};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coord2<sp/>=<sp/>(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>)<sp/>{e<sp/>-&gt;<sp/>jogadas[i].jogador2.coluna,<sp/>e<sp/>-&gt;<sp/>jogadas[i].jogador2.linha};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="jogar_8h_1a1e129710b541630152769c54b8a0be11" kindref="member">jog_pos</ref><sp/>(e,<sp/>coord1,<sp/>i);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>ultima_jogada<sp/>=<sp/>coord1;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="jogar_8h_1a1e129710b541630152769c54b8a0be11" kindref="member">jog_pos</ref><sp/>(e,<sp/>coord2,<sp/>i);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>ultima_jogada<sp/>=<sp/>coord2;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>posicao_jogada<sp/>=<sp/>pos;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/buscaPosicao.c"/>
+  </compounddef>
+</doxygen>

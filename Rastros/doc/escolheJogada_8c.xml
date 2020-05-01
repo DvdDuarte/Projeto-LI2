@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="escolheJogada_8c" kind="file" language="C++">
+    <compoundname>escolheJogada.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="escolheJogada_8h" local="yes">escolheJogada.h</includes>
+    <includes refid="dadosListas_8h" local="yes">dadosListas.h</includes>
+    <includes refid="modificaListas_8h" local="yes">modificaListas.h</includes>
+    <includes refid="jogar_8h" local="yes">../Logica_do_programa/jogar.h</includes>
+    <incdepgraph>
+      <node id="151">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="145">
+        <label>stdlib.h</label>
+      </node>
+      <node id="144">
+        <label>Listas_ligadas/escolheJogada.c</label>
+        <link refid="escolheJogada_8c"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>escolheJogada.h</label>
+        <link refid="escolheJogada_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>dadosListas.h</label>
+        <link refid="dadosListas_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>modificaListas.h</label>
+        <link refid="modificaListas_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>../Logica_do_programa/jogar.h</label>
+        <link refid="jogar_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="escolheJogada_8c_1a73221dc9d4e3a2e82afb44c60a7575d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jogar_automaticamente</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>jogar_automaticamente</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao a funcao que joga pelo jogador atraves da aleatoridade das casas vizinha que estejam disponiveis, comando jog. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/escolheJogada.c" line="11" column="1" bodyfile="Listas_ligadas/escolheJogada.c" bodystart="11" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="escolheJogada_8c_1a90006a97943fd74b824f0652b8bffb6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void joga_sozinho</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>joga_sozinho</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao a funcao que joga pelo jogador atraves da menor distancia a casa necessaria para o jogador atual ganhar, comando jog2. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/escolheJogada.c" line="27" column="1" bodyfile="Listas_ligadas/escolheJogada.c" bodystart="27" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>19/04/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="escolheJogada_8h" kindref="compound">escolheJogada.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dadosListas_8h" kindref="compound">dadosListas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="modificaListas_8h" kindref="compound">modificaListas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Logica_do_programa/jogar.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="escolheJogada_8h_1a73221dc9d4e3a2e82afb44c60a7575d9" kindref="member">jogar_automaticamente</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>posicoes;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>*coordenada_final;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>posicoes<sp/>=<sp/><ref refid="modificaListas_8h_1a4d91cd788eb8b5c5f08b2c7dd49b8b99" kindref="member">posicoes_possiveis</ref><sp/>(e);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>coordenada_final<sp/>=<sp/><ref refid="modificaListas_8h_1af2a6ad09dc63f02443c3bccc3218f87b" kindref="member">devolve_cabeca</ref><sp/>(posicoes);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>free<sp/>(posicoes);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="jogar_8h_1ac313d7e553b1e2b5f266acb9bfff8141" kindref="member">jogar</ref><sp/>(e,<sp/>*coordenada_final);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="escolheJogada_8h_1a90006a97943fd74b824f0652b8bffb6d" kindref="member">joga_sozinho</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>posicoes;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>*coordenada_final;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>posicoes<sp/>=<sp/><ref refid="modificaListas_8h_1a4d91cd788eb8b5c5f08b2c7dd49b8b99" kindref="member">posicoes_possiveis</ref><sp/>(e);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>coordenada_final<sp/>=<sp/><ref refid="modificaListas_8h_1af2277e27a369b2b2cf9a667ce398547d" kindref="member">menor</ref><sp/>(posicoes,<sp/>e);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="jogar_8h_1ac313d7e553b1e2b5f266acb9bfff8141" kindref="member">jogar</ref><sp/>(e,<sp/>*coordenada_final);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Listas_ligadas/escolheJogada.c"/>
+  </compounddef>
+</doxygen>

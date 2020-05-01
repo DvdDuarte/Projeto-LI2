@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="escolheJogada_8h" kind="file" language="C++">
+    <compoundname>escolheJogada.h</compoundname>
+    <includes refid="estruturasDados_8h" local="yes">../Camadas_de_dados/estruturasDados.h</includes>
+    <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
+    <includedby refid="escolheJogada_8c" local="yes">Listas_ligadas/escolheJogada.c</includedby>
+    <incdepgraph>
+      <node id="153">
+        <label>Listas_ligadas/escolheJogada.h</label>
+        <link refid="escolheJogada_8h"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="escolheJogada_8h_1a73221dc9d4e3a2e82afb44c60a7575d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jogar_automaticamente</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>jogar_automaticamente</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao a funcao que joga pelo jogador atraves da aleatoridade das casas vizinha que estejam disponiveis, comando jog. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/escolheJogada.h" line="19" column="1" bodyfile="Listas_ligadas/escolheJogada.c" bodystart="11" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="escolheJogada_8h_1a90006a97943fd74b824f0652b8bffb6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void joga_sozinho</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>joga_sozinho</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao a funcao que joga pelo jogador atraves da menor distancia a casa necessaria para o jogador atual ganhar, comando jog2. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/escolheJogada.h" line="25" column="1" bodyfile="Listas_ligadas/escolheJogada.c" bodystart="27" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao das funcoes que jogam pelo jogador </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>19/04/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>RASTROS_ESCOLHEJOGADA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_ESCOLHEJOGADA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/estruturasDados.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="escolheJogada_8h_1a73221dc9d4e3a2e82afb44c60a7575d9" kindref="member">jogar_automaticamente</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="escolheJogada_8h_1a90006a97943fd74b824f0652b8bffb6d" kindref="member">joga_sozinho</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_ESCOLHEJOGADA_H</highlight></codeline>
+    </programlisting>
+    <location file="Listas_ligadas/escolheJogada.h"/>
+  </compounddef>
+</doxygen>

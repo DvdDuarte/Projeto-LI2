@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="jogar_8h" kind="file" language="C++">
+    <compoundname>jogar.h</compoundname>
+    <includes local="no">bits/types/FILE.h</includes>
+    <includes refid="estruturasDados_8h" local="yes">../Camadas_de_dados/estruturasDados.h</includes>
+    <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
+    <includedby refid="buscaPosicao_8c" local="yes">Camadas_de_dados/buscaPosicao.c</includedby>
+    <includedby refid="escolheJogada_8c" local="yes">Listas_ligadas/escolheJogada.c</includedby>
+    <includedby refid="jogar_8c" local="yes">Logica_do_programa/jogar.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <incdepgraph>
+      <node id="182">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="181">
+        <label>Logica_do_programa/jogar.h</label>
+        <link refid="jogar_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="jogar_8h_1ac313d7e553b1e2b5f266acb9bfff8141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int jogar</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>jogar</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que vai chamar a funcao que atualiza o estado e a de imprimir o tabuleiro para se ver as mudancas jogadas. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada da casa a jogar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 quando e feita a jogada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logica_do_programa/jogar.h" line="20" column="1" bodyfile="Logica_do_programa/jogar.c" bodystart="20" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="jogar_8h_1a1e129710b541630152769c54b8a0be11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jog_pos</definition>
+        <argsstring>(ESTADO *e, COORDENADA c, int i)</argsstring>
+        <name>jog_pos</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que e&apos; utilizada para colocar as pecas quando dado o comando pos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador da coordenada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice da jogada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logica_do_programa/jogar.h" line="28" column="1" bodyfile="Logica_do_programa/jogar.c" bodystart="49" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao da funcao que permite a um jogador escolher a casa na qual pretende jogar </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>12/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bits/types/FILE.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/estruturasDados.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>RASTROS_JOGAR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_JOGAR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="jogar_8h_1ac313d7e553b1e2b5f266acb9bfff8141" kindref="member">jogar</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="jogar_8h_1a1e129710b541630152769c54b8a0be11" kindref="member">jog_pos</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_JOGAR_H</highlight></codeline>
+    </programlisting>
+    <location file="Logica_do_programa/jogar.h"/>
+  </compounddef>
+</doxygen>

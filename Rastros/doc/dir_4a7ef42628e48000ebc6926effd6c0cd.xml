@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_4a7ef42628e48000ebc6926effd6c0cd" kind="dir">
+    <compoundname>Logica_do_programa</compoundname>
+    <innerfile refid="jogar_8c">jogar.c</innerfile>
+    <innerfile refid="jogar_8h">jogar.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Logica_do_programa/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dadosListas_8h" kind="file" language="C++">
+    <compoundname>dadosListas.h</compoundname>
+    <includes refid="estruturasDados_8h" local="yes">../Camadas_de_dados/estruturasDados.h</includes>
+    <includedby refid="dadosListas_8c" local="yes">Listas_ligadas/dadosListas.c</includedby>
+    <includedby refid="escolheJogada_8c" local="yes">Listas_ligadas/escolheJogada.c</includedby>
+    <includedby refid="modificaListas_8h" local="yes">Listas_ligadas/modificaListas.h</includedby>
+    <incdepgraph>
+      <node id="140">
+        <label>Listas_ligadas/dadosListas.h</label>
+        <link refid="dadosListas_8h"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="142">
+        <label>Listas_ligadas/dadosListas.h</label>
+        <link refid="dadosListas_8h"/>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>Listas_ligadas/modificaListas.h</label>
+        <link refid="modificaListas_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnodo" prot="public">nodo</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dadosListas_8h_1ab74c40cea97ab9b24f68471bb1ded1a2" prot="public" static="no">
+        <type>struct <ref refid="structnodo" kindref="compound">nodo</ref></type>
+        <definition>typedef struct nodo  NODO</definition>
+        <argsstring></argsstring>
+        <name>NODO</name>
+        <briefdescription>
+<para>Tipo de dados para as listas ligadas. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/dadosListas.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dadosListas_8h_1a2ed03b19209dd10718380b31b09a69f5" prot="public" static="no">
+        <type>struct <ref refid="structnodo" kindref="compound">nodo</ref> *</type>
+        <definition>typedef struct nodo * LISTA</definition>
+        <argsstring></argsstring>
+        <name>LISTA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Listas_ligadas/dadosListas.h" line="20" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao da estrutura das listas ligadas </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>15/04/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>RASTROS_DADOSLISTAS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_DADOSLISTAS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/estruturasDados.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structnodo" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnodo" kindref="compound">nodo</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*valor;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnodo" kindref="compound">nodo</ref><sp/>*proximo;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/><ref refid="dadosListas_8h_1ab74c40cea97ab9b24f68471bb1ded1a2" kindref="member">NODO</ref>,<sp/>*<ref refid="structnodo" kindref="compound">LISTA</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_DADOSLISTAS_H</highlight></codeline>
+    </programlisting>
+    <location file="Listas_ligadas/dadosListas.h"/>
+  </compounddef>
+</doxygen>

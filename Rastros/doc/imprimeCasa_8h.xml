@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="imprimeCasa_8h" kind="file" language="C++">
+    <compoundname>imprimeCasa.h</compoundname>
+    <includes refid="estruturasDados_8h" local="yes">../Camadas_de_dados/estruturasDados.h</includes>
+    <includedby refid="imprimeCasa_8c" local="yes">Camada_de_interface/imprimeCasa.c</includedby>
+    <includedby refid="interface_8c" local="yes">Camada_de_interface/interface.c</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+      <node id="5">
+        <label>Camada_de_interface/imprimeCasa.h</label>
+        <link refid="imprimeCasa_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="imprimeCasa_8h_1a6ded6029322fc81d15fa2475a8bb5e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imprimeCasa</definition>
+        <argsstring>(ESTADO *e, int i, int j, FILE *jogo)</argsstring>
+        <name>imprimeCasa</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>jogo</declname>
+        </param>
+        <briefdescription>
+<para>Definicap da funcao que dado um estado a coordenada imprime a casa do tabuleiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero da coluna da casa </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero da linha da casa </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome do ficheiro no qual se pretende imprimir a casa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camada_de_interface/imprimeCasa.h" line="23" column="1" bodyfile="Camada_de_interface/imprimeCasa.c" bodystart="8" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao da funcao que imprime a casa com uma determinada coordenada </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>oliveira<sp/>on<sp/>13/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/estruturasDados.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>RASTROS_IMPRIMECASA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_IMPRIMECASA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="imprimeCasa_8h_1a6ded6029322fc81d15fa2475a8bb5e24" kindref="member">imprimeCasa</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>FILE<sp/>*jogo);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_IMPRIMECASA_H</highlight></codeline>
+    </programlisting>
+    <location file="Camada_de_interface/imprimeCasa.h"/>
+  </compounddef>
+</doxygen>

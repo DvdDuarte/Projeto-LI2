@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="modificaEstado_8c" kind="file" language="C++">
+    <compoundname>modificaEstado.c</compoundname>
+    <includes refid="modificaEstado_8h" local="yes">modificaEstado.h</includes>
+    <includes refid="estruturasDados_8h" local="yes">estruturasDados.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="104">
+        <label>Camadas_de_dados/modificaEstado.c</label>
+        <link refid="modificaEstado_8c"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>stdlib.h</label>
+      </node>
+      <node id="109">
+        <label>string.h</label>
+      </node>
+      <node id="106">
+        <label>estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+      <node id="107">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="modificaEstado_8c_1a7e0c7e26fb685d9ab501e19b05e6954f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* inicializar_estado</definition>
+        <argsstring>()</argsstring>
+        <name>inicializar_estado</name>
+        <briefdescription>
+<para>Funcao que inicializa o estado do jogo. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>O estado inicializado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/modificaEstado.c" line="13" column="1" bodyfile="Camadas_de_dados/modificaEstado.c" bodystart="13" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaEstado_8c_1a1c0a78bd9cea38120e85e7385e2c079a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void inicializar_tab</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>inicializar_tab</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que inicializa o tabuleiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado com o tabuleiro inicializado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/modificaEstado.c" line="33" column="1" bodyfile="Camadas_de_dados/modificaEstado.c" bodystart="33" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaEstado_8c_1ae0f58991f028e691d967767f430af929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void inicializar_ultima_jogada</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>inicializar_ultima_jogada</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que inicializa a ultima jogada feita antes do jogo comecar. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/modificaEstado.c" line="48" column="1" bodyfile="Camadas_de_dados/modificaEstado.c" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaEstado_8c_1a052bd349affda87044fb29cf4862ccb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void inicializar_jogadas</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>inicializar_jogadas</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que incializa a lista de jogadas/movimentos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/modificaEstado.c" line="55" column="1" bodyfile="Camadas_de_dados/modificaEstado.c" bodystart="55" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaEstado_8c_1ad6e326e4ffa57ca1ae0c75377ecefc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_jogador_atual</definition>
+        <argsstring>(ESTADO *estado)</argsstring>
+        <name>obter_jogador_atual</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>estado</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que obtem o jogador atual. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>estado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O numero do jogador atual </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/modificaEstado.c" line="68" column="1" bodyfile="Camadas_de_dados/modificaEstado.c" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaEstado_8c_1a6cd0b387bdee9e18003c78852394aa63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_numero_de_jogadas</definition>
+        <argsstring>(ESTADO *estado)</argsstring>
+        <name>obter_numero_de_jogadas</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>estado</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que obtem o numero das jogadas feitas. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>estado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O numero de jogadas feitas </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/modificaEstado.c" line="74" column="1" bodyfile="Camadas_de_dados/modificaEstado.c" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="modificaEstado_8c_1a6faa68373203923729ed38657aa0f768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
+        <definition>CASA obter_estado_casa</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>obter_estado_casa</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que obtem o estado de uma casa. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A coordenada da casa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O estado da casa </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/modificaEstado.c" line="79" column="1" bodyfile="Camadas_de_dados/modificaEstado.c" bodystart="79" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>12/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="modificaEstado_8h" kindref="compound">modificaEstado.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="estruturasDados_8h" kindref="compound">estruturasDados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Funcao<sp/>que<sp/>deve<sp/>ser<sp/>completada<sp/>e<sp/>colocada<sp/>na<sp/>camada<sp/>de<sp/>dados</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Esta<sp/>funcao<sp/>devera<sp/>criar<sp/>um<sp/>estado<sp/>vazio<sp/>(com<sp/>o<sp/>tabuleiro<sp/>inicializado)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*<ref refid="modificaEstado_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e<sp/>=<sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structESTADO" kindref="compound">ESTADO</ref>));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Inicializar<sp/>o<sp/>jogador</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogador_atual<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Inicializar<sp/>o<sp/>numero<sp/>das<sp/>jogadas<sp/>feitas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>num_jogadas<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="modificaEstado_8h_1a1c0a78bd9cea38120e85e7385e2c079a" kindref="member">inicializar_tab</ref>(e);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="modificaEstado_8h_1ae0f58991f028e691d967767f430af929" kindref="member">inicializar_ultima_jogada</ref>(e);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><ref refid="modificaEstado_8h_1a052bd349affda87044fb29cf4862ccb1" kindref="member">inicializar_jogadas</ref>(e);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="modificaEstado_8h_1a1c0a78bd9cea38120e85e7385e2c079a" kindref="member">inicializar_tab</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//Inicializar<sp/>o<sp/>tabuleiro</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>8;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>8;<sp/>j++)<sp/>e<sp/>-&gt;<sp/>tab[i][j]<sp/>=VAZIO;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>tab[4][3]<sp/>=BRANCA;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>tab[0][7]<sp/>=UM;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>tab[7][0]<sp/>=DOIS;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>e;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="modificaEstado_8h_1ae0f58991f028e691d967767f430af929" kindref="member">inicializar_ultima_jogada</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Inicializar<sp/>a<sp/>ultima<sp/>jogada</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>ultima_jogada.coluna<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>ultima_jogada.linha<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="modificaEstado_8h_1a052bd349affda87044fb29cf4862ccb1" kindref="member">inicializar_jogadas</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Inicializar<sp/>as<sp/>jogadas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>32<sp/>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;jogadas[i].jogador1.coluna<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;jogadas[i].jogador1.linha<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;jogadas[i].jogador2.coluna<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;jogadas[i].jogador2.linha<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Esta<sp/>funcao<sp/>permite<sp/>obter<sp/>o<sp/>numero<sp/>do<sp/>jogador<sp/>atual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="modificaEstado_8h_1ad6e326e4ffa57ca1ae0c75377ecefc8c" kindref="member">obter_jogador_atual</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estado<sp/>-&gt;<sp/>jogador_atual;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Esta<sp/>funcao<sp/>permite<sp/>obter<sp/>quantas<sp/>jogadas<sp/>foram<sp/>efetuadas<sp/>(cada<sp/>jogada<sp/>tem<sp/>o<sp/>movimento<sp/>de<sp/>2<sp/>jogadores)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="modificaEstado_8h_1a6cd0b387bdee9e18003c78852394aa63" kindref="member">obter_numero_de_jogadas</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estado<sp/>-&gt;<sp/>num_jogadas;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Esta<sp/>funcao<sp/>permite<sp/>obter<sp/>o<sp/>estado<sp/>atual<sp/>da<sp/>casa</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/><ref refid="modificaEstado_8h_1a6faa68373203923729ed38657aa0f768" kindref="member">obter_estado_casa</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e<sp/>-&gt;<sp/>tab[c.coluna][c.linha];<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/modificaEstado.c"/>
+  </compounddef>
+</doxygen>

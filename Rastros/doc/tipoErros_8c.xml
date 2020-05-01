@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="tipoErros_8c" kind="file" language="C++">
+    <compoundname>tipoErros.c</compoundname>
+    <includes refid="tipoErros_8h" local="yes">tipoErros.h</includes>
+    <incdepgraph>
+      <node id="114">
+        <label>Camadas_de_dados/tipoErros.c</label>
+        <link refid="tipoErros_8c"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>tipoErros.h</label>
+        <link refid="tipoErros_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>20/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tipoErros_8h" kindref="compound">tipoErros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/tipoErros.c"/>
+  </compounddef>
+</doxygen>

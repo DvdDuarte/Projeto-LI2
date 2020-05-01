@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="jogar_8c" kind="file" language="C++">
+    <compoundname>jogar.c</compoundname>
+    <includes refid="jogar_8h" local="yes">jogar.h</includes>
+    <includes refid="estruturasDados_8h" local="yes">../Camadas_de_dados/estruturasDados.h</includes>
+    <includes refid="VerificaJogada_8h" local="yes">../Camadas_de_dados/VerificaJogada.h</includes>
+    <includes refid="tipoErros_8h" local="yes">../Camadas_de_dados/tipoErros.h</includes>
+    <includes refid="interface_8h" local="yes">../Camada_de_interface/interface.h</includes>
+    <includes refid="modificaEstado_8h" local="yes">../Camadas_de_dados/modificaEstado.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="175">
+        <label>../Camada_de_interface/interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>../Camadas_de_dados/modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="178">
+        <label>stdlib.h</label>
+      </node>
+      <node id="173">
+        <label>../Camadas_de_dados/VerificaJogada.h</label>
+        <link refid="VerificaJogada_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>string.h</label>
+      </node>
+      <node id="169">
+        <label>Logica_do_programa/jogar.c</label>
+        <link refid="jogar_8c"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>jogar.h</label>
+        <link refid="jogar_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+      <node id="177">
+        <label>stdio.h</label>
+      </node>
+      <node id="174">
+        <label>tipoErros.h</label>
+        <link refid="tipoErros_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="jogar_8c_1ac313d7e553b1e2b5f266acb9bfff8141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int jogar</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>jogar</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que vai chamar a funcao que atualiza o estado e a de imprimir o tabuleiro para se ver as mudancas jogadas. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada da casa a jogar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 quando e feita a jogada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logica_do_programa/jogar.c" line="20" column="1" bodyfile="Logica_do_programa/jogar.c" bodystart="20" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="jogar_8c_1a1e129710b541630152769c54b8a0be11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jog_pos</definition>
+        <argsstring>(ESTADO *e, COORDENADA c, int i)</argsstring>
+        <name>jog_pos</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que e&apos; utilizada para colocar as pecas quando dado o comando pos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador da coordenada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice da jogada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logica_do_programa/jogar.c" line="49" column="1" bodyfile="Logica_do_programa/jogar.c" bodystart="49" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>12/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="jogar_8h" kindref="compound">jogar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/estruturasDados.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/VerificaJogada.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/tipoErros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camada_de_interface/interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/modificaEstado.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//Funcao<sp/>que<sp/>deve<sp/>ser<sp/>completada<sp/>e<sp/>colocada<sp/>na<sp/>camada<sp/>logica<sp/>do<sp/>programa</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Esta<sp/>funcao<sp/>devera<sp/>receber<sp/>o<sp/>estado<sp/>atual<sp/>e<sp/>uma<sp/>coordenada<sp/>e<sp/>modificar<sp/>o<sp/>estado<sp/>ao<sp/>jogar<sp/>na<sp/>casa<sp/>correta<sp/>se<sp/>a<sp/>jogada<sp/>for<sp/>válida.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>função<sp/>devolve<sp/>verdadeiro(valor<sp/>diferente<sp/>de<sp/>zero)<sp/>se<sp/>for<sp/>possível<sp/>jogar<sp/>e<sp/>falso(zero)<sp/>caso<sp/>não<sp/>seja<sp/>possível.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="jogar_8h_1ac313d7e553b1e2b5f266acb9bfff8141" kindref="member">jogar</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref><sp/>flag;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;%d<sp/>%d\n&quot;</highlight><highlight class="normal">,c.coluna,<sp/>c.linha);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/><ref refid="VerificaJogada_8h_1ae6d5cd06a47da1ffc46fac5c4d14696f" kindref="member">jogadavalida</ref>(e,<sp/>c);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(flag)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TUDO_OK<sp/>:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="VerificaJogada_8h_1acb5b5946113bdc12f3cc6baeb0770578" kindref="member">coloca_peca</ref>(e,<sp/>c.coluna,<sp/>c.linha,<sp/>-1);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>JOGADOR_1<sp/>:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="VerificaJogada_8h_1acb5b5946113bdc12f3cc6baeb0770578" kindref="member">coloca_peca</ref>(e,<sp/>c.coluna,<sp/>c.linha,<sp/>-1);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="VerificaJogada_8h_1a407f7e942870fb97bba3f49355d2e930" kindref="member">imprime_vencedor</ref>(e);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>JOGADOR_2<sp/>:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="VerificaJogada_8h_1acb5b5946113bdc12f3cc6baeb0770578" kindref="member">coloca_peca</ref>(e,<sp/>c.coluna,<sp/>c.linha,<sp/>-1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="VerificaJogada_8h_1a407f7e942870fb97bba3f49355d2e930" kindref="member">imprime_vencedor</ref>(e);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="jogar_8h_1a1e129710b541630152769c54b8a0be11" kindref="member">jog_pos</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="VerificaJogada_8h_1acb5b5946113bdc12f3cc6baeb0770578" kindref="member">coloca_peca</ref>(e,<sp/>c.coluna,<sp/>c.linha,<sp/>i);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ao<sp/>receber<sp/>a<sp/>coordenada<sp/>da<sp/>coluna,<sp/>quando<sp/>for<sp/>para<sp/>gravar<sp/>a<sp/>nova<sp/>informacao,<sp/>colocar<sp/>isto<sp/>-<sp/>&apos;a&apos;<sp/>+<sp/>1</highlight></codeline>
+    </programlisting>
+    <location file="Logica_do_programa/jogar.c"/>
+  </compounddef>
+</doxygen>

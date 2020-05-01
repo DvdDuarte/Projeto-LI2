@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="interface_8h" kind="file" language="C++">
+    <compoundname>interface.h</compoundname>
+    <includes local="no">bits/types/FILE.h</includes>
+    <includes refid="estruturasDados_8h" local="yes">../Camadas_de_dados/estruturasDados.h</includes>
+    <includedby refid="interface_8c" local="yes">Camada_de_interface/interface.c</includedby>
+    <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
+    <includedby refid="grava_8c" local="yes">Camadas_de_dados/grava.c</includedby>
+    <includedby refid="jogar_8c" local="yes">Logica_do_programa/jogar.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <incdepgraph>
+      <node id="19">
+        <label>Camada_de_interface/interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="21">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="interface_8h_1ae01b0ed404ed74367f2c3d279d94a32e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mostrar_tabuleiro</definition>
+        <argsstring>(ESTADO *e, FILE *ficheiro)</argsstring>
+        <name>mostrar_tabuleiro</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que imprime o tabuleiro de acordo com o estado e as coordenadas lateralmente para ajudar os jogadores. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ficheiro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome do ficheiro para o qual se imprime o tabuleiro </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camada_de_interface/interface.h" line="20" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="16" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a3d8df62a196f60a42b923004ecf03e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mostrar_prompt</definition>
+        <argsstring>(ESTADO *e, FILE *ficheiro)</argsstring>
+        <name>mostrar_prompt</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que cria a prompt, com o numero do jogador atual, da jogada e o numero dos movimentos feitos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ficheiro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome do ficheiro no qual se pretende mostrar a prompt </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camada_de_interface/interface.h" line="27" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="68" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1aa1347f8d8a0591b9b9744245d12cd519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mostrar_movimentos</definition>
+        <argsstring>(ESTADO *e, FILE *ficheiro)</argsstring>
+        <name>mostrar_movimentos</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que imprime a lista de movimentos do jogo de acordo com o estado. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ficheiro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome do ficheiro para o qual se imprime a lista </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camada_de_interface/interface.h" line="34" column="1" bodyfile="Camada_de_interface/interface.c" bodystart="79" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao das funcoes principais que vao criar a interface do jogo </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>oliveira<sp/>on<sp/>13/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bits/types/FILE.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Camadas_de_dados/estruturasDados.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>RASTROS_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1ae01b0ed404ed74367f2c3d279d94a32e" kindref="member">mostrar_tabuleiro</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*ficheiro);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a3d8df62a196f60a42b923004ecf03e12" kindref="member">mostrar_prompt</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*ficheiro);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aa1347f8d8a0591b9b9744245d12cd519" kindref="member">mostrar_movimentos</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*ficheiro);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_INTERFACE_H</highlight></codeline>
+    </programlisting>
+    <location file="Camada_de_interface/interface.h"/>
+  </compounddef>
+</doxygen>

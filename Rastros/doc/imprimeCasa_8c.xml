@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="imprimeCasa_8c" kind="file" language="C++">
+    <compoundname>imprimeCasa.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes refid="imprimeCasa_8h" local="yes">imprimeCasa.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>../Camadas_de_dados/estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+      <node id="0">
+        <label>Camada_de_interface/imprimeCasa.c</label>
+        <link refid="imprimeCasa_8c"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>imprimeCasa.h</label>
+        <link refid="imprimeCasa_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="imprimeCasa_8c_1a68f4ebe9fcb208f04fac87ea72c1f465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imprimeCasa</definition>
+        <argsstring>(ESTADO *e, int coluna, int linha, FILE *jogo)</argsstring>
+        <name>imprimeCasa</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+          <defname>coluna</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+          <defname>linha</defname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>jogo</declname>
+        </param>
+        <briefdescription>
+<para>Definicap da funcao que dado um estado a coordenada imprime a casa do tabuleiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero da coluna da casa </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero da linha da casa </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome do ficheiro no qual se pretende imprimir a casa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camada_de_interface/imprimeCasa.c" line="8" column="1" bodyfile="Camada_de_interface/imprimeCasa.c" bodystart="8" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>oliveira<sp/>on<sp/>13/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="imprimeCasa_8h" kindref="compound">imprimeCasa.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="imprimeCasa_8h_1a6ded6029322fc81d15fa2475a8bb5e24" kindref="member">imprimeCasa</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/>FILE<sp/>*jogo)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="estruturasDados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/>peca;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>peca<sp/>=<sp/>e<sp/>-&gt;<sp/>tab[coluna][linha];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>fputc<sp/>(peca,<sp/>jogo);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jogo<sp/>==<sp/>stdout)<sp/>fputc<sp/>(</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/>jogo);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Camada_de_interface/imprimeCasa.c"/>
+  </compounddef>
+</doxygen>

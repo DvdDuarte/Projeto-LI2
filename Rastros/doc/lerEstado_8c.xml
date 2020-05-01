@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="lerEstado_8c" kind="file" language="C++">
+    <compoundname>lerEstado.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="lerEstado_8h" local="yes">lerEstado.h</includes>
+    <includes refid="modificaEstado_8h" local="yes">modificaEstado.h</includes>
+    <incdepgraph>
+      <node id="87">
+        <label>modificaEstado.h</label>
+        <link refid="modificaEstado_8h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>bits/types/FILE.h</label>
+      </node>
+      <node id="83">
+        <label>string.h</label>
+      </node>
+      <node id="81">
+        <label>Camadas_de_dados/lerEstado.c</label>
+        <link refid="lerEstado_8c"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>lerEstado.h</label>
+        <link refid="lerEstado_8h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>estruturasDados.h</label>
+        <link refid="estruturasDados_8h"/>
+      </node>
+      <node id="82">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lerEstado_8c_1a8511d69d5e120a84efa6d1bbba5488ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* ler</definition>
+        <argsstring>(char *jogo)</argsstring>
+        <name>ler</name>
+        <param>
+          <type>char *</type>
+          <declname>jogo</declname>
+        </param>
+        <briefdescription>
+<para>Funcao principal para ler o estado atreves de um ficheiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o nome do ficheiro </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O estado que estava no ficheiro </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.c" line="10" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="10" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="lerEstado_8c_1a438794af5f3ab5e34a2027543889ac58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* troca_tipo</definition>
+        <argsstring>(ESTADO *e, char letter, int coluna, int linha)</argsstring>
+        <name>troca_tipo</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>letter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coluna</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que ao receber um char de um casa vai decidir qual o tipo de peca que esta nessa casa. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>caracter que esta a ser lido </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coluna da casa </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linha da casa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>O o estado com a casa no tabuleiro atualizada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.c" line="31" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="31" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="lerEstado_8c_1a261b756c803ae426d9e087e5c600bca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_tabuleiro</definition>
+        <argsstring>(FILE *ficheiro, ESTADO *e)</argsstring>
+        <name>ler_tabuleiro</name>
+        <param>
+          <type>FILE *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que le o tabuleiro de um ficheiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do nome do ficheiro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.c" line="40" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="40" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="lerEstado_8c_1a5dae91836d89ac6ae1892cbcc8ad3dea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_movimentos</definition>
+        <argsstring>(FILE *ficheiro, ESTADO *e)</argsstring>
+        <name>ler_movimentos</name>
+        <param>
+          <type>FILE *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que le a lista de movimentos de um ficheiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do nome do ficheiro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.c" line="64" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="64" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="lerEstado_8c_1a12abc2f2a2fa776fe08e6e422178d4af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_linha_movs</definition>
+        <argsstring>(char line[BUF_SIZE], ESTADO *e, int indice)</argsstring>
+        <name>ler_linha_movs</name>
+        <param>
+          <type>char</type>
+          <declname>line</declname>
+          <array>[BUF_SIZE]</array>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Definicao da funcao que le uma linha de movimentos de um ficheiro. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A variavel onde a linha lida vai ser guardada </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador do estado </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indice da jogada </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/lerEstado.c" line="81" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="81" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>22/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lerEstado_8h" kindref="compound">lerEstado.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="modificaEstado_8h" kindref="compound">modificaEstado.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*<ref refid="lerEstado_8h_1a8511d69d5e120a84efa6d1bbba5488ec" kindref="member">ler</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*jogo)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*ficheiro;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter,<sp/>line[BUF_SIZE];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/>coluna;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="modificaEstado_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>(e);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>ficheiro<sp/>=<sp/>fopen(jogo,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lerEstado_8h_1a261b756c803ae426d9e087e5c600bca5" kindref="member">ler_tabuleiro</ref>(ficheiro,<sp/>e);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>fgets(line,<sp/>BUF_SIZE,<sp/>ficheiro);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lerEstado_8h_1a5dae91836d89ac6ae1892cbcc8ad3dea" kindref="member">ler_movimentos</ref>(ficheiro,<sp/>e);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(ficheiro);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*<ref refid="lerEstado_8h_1a438794af5f3ab5e34a2027543889ac58" kindref="member">troca_tipo</ref><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>tab[linha][coluna]<sp/>=<sp/>letter;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lerEstado_8h_1a261b756c803ae426d9e087e5c600bca5" kindref="member">ler_tabuleiro</ref><sp/>(FILE<sp/>*ficheiro,<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/>linha;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line[BUF_SIZE];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(coluna<sp/>=<sp/>0;<sp/>coluna<sp/>&lt;<sp/>8;<sp/>coluna++)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fgets(line,<sp/>BUF_SIZE,<sp/>ficheiro);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(coluna<sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(linha<sp/>=<sp/>0;<sp/>linha<sp/>&lt;<sp/>8;<sp/>linha++)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lerEstado_8h_1a438794af5f3ab5e34a2027543889ac58" kindref="member">troca_tipo</ref>(e,<sp/>line[linha],<sp/>coluna,<sp/>linha);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lerEstado_8h_1a5dae91836d89ac6ae1892cbcc8ad3dea" kindref="member">ler_movimentos</ref><sp/>(FILE<sp/>*ficheiro,<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice,<sp/>jogador;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line[BUF_SIZE];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(indice<sp/>=<sp/>0;<sp/>!(feof(ficheiro));<sp/>indice++)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fgets(line,<sp/>BUF_SIZE,<sp/>ficheiro)<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lerEstado_8h_1a12abc2f2a2fa776fe08e6e422178d4af" kindref="member">ler_linha_movs</ref><sp/>(line,<sp/>e,<sp/>indice);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;num_jogadas<sp/>=<sp/>indice;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lerEstado_8h_1a12abc2f2a2fa776fe08e6e422178d4af" kindref="member">ler_linha_movs</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line[BUF_SIZE],<sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx,<sp/>indicejog,<sp/>tamanho_linha;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter,<sp/>cj1,<sp/>lj1,<sp/>cj2,<sp/>lj2;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>tamanho_linha<sp/>=<sp/>strlen(line);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(idx<sp/>=<sp/>0;<sp/>idx<sp/>&lt;=<sp/>tamanho_linha</highlight><highlight class="comment">/*8*/</highlight><highlight class="normal">;<sp/>idx++)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>letter<sp/>=<sp/>line[idx];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>4)<sp/>cj1<sp/>=<sp/>letter;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>5)<sp/>lj1<sp/>=<sp/>letter;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>7)<sp/>cj2<sp/>=<sp/>letter;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>8)<sp/>lj2<sp/>=<sp/>letter;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tamanho_linha<sp/>&gt;<sp/>8)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.coluna<sp/>=<sp/>cj2<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.linha<sp/>=<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj2;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogadas[indice]<sp/>=<sp/>(<ref refid="structJOGADA" kindref="compound">JOGADA</ref>)<sp/>{<sp/>{cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1},<sp/>{cj2<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj2}};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogador_atual<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.coluna<sp/>=<sp/>cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultima_jogada.linha<sp/>=<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogadas[indice]<sp/>=<sp/>(<ref refid="structJOGADA" kindref="compound">JOGADA</ref>)<sp/>{<sp/>{cj1<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal"><sp/>-<sp/>lj1},<sp/>{-1,<sp/>-1}};</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>jogador_atual<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>posicao_jogada<sp/>=<sp/>indice;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/lerEstado.c"/>
+  </compounddef>
+</doxygen>

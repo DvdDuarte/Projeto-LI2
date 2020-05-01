@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_be18bbc8a9367d681e1972dc4b96bd65" kind="dir">
+    <compoundname>Camadas_de_dados</compoundname>
+    <innerfile refid="buscaPosicao_8c">buscaPosicao.c</innerfile>
+    <innerfile refid="buscaPosicao_8h">buscaPosicao.h</innerfile>
+    <innerfile refid="estruturasDados_8c">estruturasDados.c</innerfile>
+    <innerfile refid="estruturasDados_8h">estruturasDados.h</innerfile>
+    <innerfile refid="grava_8c">grava.c</innerfile>
+    <innerfile refid="grava_8h">grava.h</innerfile>
+    <innerfile refid="lerEstado_8c">lerEstado.c</innerfile>
+    <innerfile refid="lerEstado_8h">lerEstado.h</innerfile>
+    <innerfile refid="listaMovs_8c">listaMovs.c</innerfile>
+    <innerfile refid="listaMovs_8h">listaMovs.h</innerfile>
+    <innerfile refid="modificaEstado_8c">modificaEstado.c</innerfile>
+    <innerfile refid="modificaEstado_8h">modificaEstado.h</innerfile>
+    <innerfile refid="tipoErros_8c">tipoErros.c</innerfile>
+    <innerfile refid="tipoErros_8h">tipoErros.h</innerfile>
+    <innerfile refid="VerificaJogada_8c">VerificaJogada.c</innerfile>
+    <innerfile refid="VerificaJogada_8h">VerificaJogada.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Camadas_de_dados/"/>
+  </compounddef>
+</doxygen>

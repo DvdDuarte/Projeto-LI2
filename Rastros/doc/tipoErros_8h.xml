@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="tipoErros_8h" kind="file" language="C++">
+    <compoundname>tipoErros.h</compoundname>
+    <includedby refid="VerificaJogada_8h" local="yes">Camadas_de_dados/VerificaJogada.h</includedby>
+    <includedby refid="tipoErros_8c" local="yes">Camadas_de_dados/tipoErros.c</includedby>
+    <includedby refid="VerificaJogada_8c" local="yes">Camadas_de_dados/VerificaJogada.c</includedby>
+    <includedby refid="jogar_8c" local="yes">Logica_do_programa/jogar.c</includedby>
+    <invincdepgraph>
+      <node id="119">
+        <label>Camadas_de_dados/VerificaJogada.h</label>
+        <link refid="VerificaJogada_8h"/>
+      </node>
+      <node id="118">
+        <label>Camadas_de_dados/tipoErros.h</label>
+        <link refid="tipoErros_8h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" prot="public" static="no">
+        <name>VALIDACOES</name>
+        <enumvalue id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598aa46dbe91301642bcdd7d6292e731fce6" prot="public">
+          <name>TUDO_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598aa59cee8db020202e0f0f0290985b4c3b" prot="public">
+          <name>JOGADOR_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598ad724ad437805542a85be6ea0a6c6eb9e" prot="public">
+          <name>JOGADOR_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598a79ebb08f197afde2120c3a89f2528890" prot="public">
+          <name>COORDENADA_INVALIDA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598a402a7096ff471024cb93e6034b6008e2" prot="public">
+          <name>JOGADA_INVALIDA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598a72ae6cb38f7e0beffa09be3a89283f68" prot="public">
+          <name>IMPOSSIVEL_JOGAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598aa11c2bf2a8de9395382caef85ccdeb59" prot="public">
+          <name>ERRO_LER_TAB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tipoErros_8h_1adb1ce27db49af4588e155676189ad598ac2135f62387f11d7f60a020e2f828e66" prot="public">
+          <name>ERRO_ABRIR_FICHEIRO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>definicao do tipo VALIDACOES que contem as respetivas validacoes assim como alguns erros (que sao tambem validacoes) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camadas_de_dados/tipoErros.h" line="15" column="1" bodyfile="Camadas_de_dados/tipoErros.h" bodystart="15" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definicao dos tipos de erros assim como as suas validacoes </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>david<sp/>on<sp/>20/03/20.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>RASTROS_TIPOERROS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_TIPOERROS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>TUDO_OK,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>JOGADOR_1,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>JOGADOR_2,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>COORDENADA_INVALIDA,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>JOGADA_INVALIDA,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>IMPOSSIVEL_JOGAR,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>ERRO_LER_TAB,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>ERRO_ABRIR_FICHEIRO</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_TIPOERROS_H</highlight></codeline>
+    </programlisting>
+    <location file="Camadas_de_dados/tipoErros.h"/>
+  </compounddef>
+</doxygen>
