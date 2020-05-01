@@ -1,0 +1,14 @@
+digraph "Camadas_de_dados" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_be18bbc8a9367d681e1972dc4b96bd65 [shape=box, label="Camadas_de_dados", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_be18bbc8a9367d681e1972dc4b96bd65.html"];
+  dir_594dc54ddaea6b7304806be14d23a0a5 [shape=box label="Camada_de_interface" URL="dir_594dc54ddaea6b7304806be14d23a0a5.html"];
+  dir_4a7ef42628e48000ebc6926effd6c0cd [shape=box label="Logica_do_programa" URL="dir_4a7ef42628e48000ebc6926effd6c0cd.html"];
+  dir_be18bbc8a9367d681e1972dc4b96bd65->dir_594dc54ddaea6b7304806be14d23a0a5 [headlabel="1", labeldistance=1.5 headhref="dir_000001_000000.html"];
+  dir_be18bbc8a9367d681e1972dc4b96bd65->dir_4a7ef42628e48000ebc6926effd6c0cd [headlabel="1", labeldistance=1.5 headhref="dir_000001_000009.html"];
+  dir_594dc54ddaea6b7304806be14d23a0a5->dir_be18bbc8a9367d681e1972dc4b96bd65 [headlabel="11", labeldistance=1.5 headhref="dir_000000_000001.html"];
+  dir_594dc54ddaea6b7304806be14d23a0a5->dir_4a7ef42628e48000ebc6926effd6c0cd [headlabel="1", labeldistance=1.5 headhref="dir_000000_000009.html"];
+  dir_4a7ef42628e48000ebc6926effd6c0cd->dir_be18bbc8a9367d681e1972dc4b96bd65 [headlabel="5", labeldistance=1.5 headhref="dir_000009_000001.html"];
+  dir_4a7ef42628e48000ebc6926effd6c0cd->dir_594dc54ddaea6b7304806be14d23a0a5 [headlabel="1", labeldistance=1.5 headhref="dir_000009_000000.html"];
+}
