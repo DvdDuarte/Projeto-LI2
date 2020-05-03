@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="bot" targetName="Rastros" />
       <config projectName="bot" targetName="bot" />
     </generated>
   </component>
@@ -12,161 +13,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1e63d7-1154-4d70-a61c-68f738559b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/bot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VerificaJogada.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VerificaJogada.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buscaPosicao.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buscaPosicao.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/VerificaJogada.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/buscaPosicao.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/dadosListas.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/escolheJogada.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/estruturasDados.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/jogar.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/modificaEstado.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/modificaListas.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/tipoErros.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/C.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/main.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Rastros" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/bot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/bot.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dadosListas.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dadosListas.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escolheJogada.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escolheJogada.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estruturasDados.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estruturasDados.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jogar.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jogar.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modificaEstado.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modificaEstado.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modificaListas.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modificaListas.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tipoErros.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tipoErros.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/VerificaJogada.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/buscaPosicao.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/estruturasDados.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/grava.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/lerEstado.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/listaMovs.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/modificaEstado.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/tipoErros.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Listas_ligadas/dadosListas.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Listas_ligadas/escolheJogada.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Listas_ligadas/modificaListas.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/Logica_do_programa/jogar.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto/main.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/VerificaJogada.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/VerificaJogada.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/buscaPosicao.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/buscaPosicao.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/dadosListas.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/dadosListas.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/escolheJogada.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/escolheJogada.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/estruturasDados.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/estruturasDados.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/grava.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/grava.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/jogar.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/jogar.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/lerEstado.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/lerEstado.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/listaMovs.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/listaMovs.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/modificaEstado.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/modificaEstado.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/modificaListas.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/modificaListas.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/tipoErros.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s/tipoErros.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/3_815_83_2CompilerIdC_2CMakeCCompilerId_8c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/3_816_85_2CompilerIdC_2CMakeCCompilerId_8c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/Interpretador_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/Interpretador_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/Interpretador_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/Interpretador_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/VerificaJogada_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/VerificaJogada_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/VerificaJogada_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/VerificaJogada_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/buscaPosicao_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/buscaPosicao_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/dadosListas_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/dadosListas_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/dadosListas_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/dadosListas_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/dir_2942f868a03c41b22a536fdc77b965b5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/dir_2942f868a03c41b22a536fdc77b965b5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/dir_44ea9ed243d3740341f2efeb45271ac4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/dir_f89abcb304c928c7d889aa5625570de5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/dir_f89abcb304c928c7d889aa5625570de5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/dir_f942a7a73394fda25d4213a70555b3f8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/escolheJogada_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/escolheJogada_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/escolheJogada_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/escolheJogada_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/estruturasDados_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/estruturasDados_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/grava_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/grava_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/imprimeCasa_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/imprimeCasa_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/interface_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/interface_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/interface_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/interface_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/jogar_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/jogar_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/jogar_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/jogar_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/lerEstado_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/lerEstado_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/lerEstado_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/lerEstado_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/listaMovs_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/listaMovs_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/listaMovs_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/listaMovs_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/main_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/main_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/modificaEstado_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/modificaEstado_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/modificaListas_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/modificaListas_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/modificaListas_8h.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/modificaListas_8h.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/Camada_de_interface/Interpretador.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camada_de_interface/Interpretador.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/Camada_de_interface/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camada_de_interface/interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/Camada_de_interface/interface.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camada_de_interface/interface.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/Camadas_de_dados/VerificaJogada.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/VerificaJogada.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/Camadas_de_dados/lerEstado.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/lerEstado.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projeto/Camadas_de_dados/listaMovs.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/listaMovs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/Camadas_de_dados/modificaEstado.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/modificaEstado.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camada_de_interface/Interpretador.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camada_de_interface/interface.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/Rastros" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/Rastros" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,9 +56,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/CLionProjects/Tarefa2/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.bot">
+    <configuration name="Rastros" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="bot" RUN_TARGET_NAME="Rastros" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$USER_HOME$/CLionProjects/Tarefa2/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -203,6 +74,10 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="CMake Application.bot" />
+      <item itemvalue="CMake Application.Rastros" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -214,7 +89,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588324956987</updated>
-      <workItem from="1588324958611" duration="1020000" />
+      <workItem from="1588324958611" duration="1532000" />
+      <workItem from="1588357888312" duration="105000" />
+      <workItem from="1588503051760" duration="1363000" />
+      <workItem from="1588504506665" duration="152000" />
     </task>
     <servers />
   </component>
@@ -226,6 +104,10 @@
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
     <state x="1411" y="691" width="582" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588325339092" />
+    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl" timestamp="1588504414270">
+      <screen x="1024" y="512" width="1366" height="768" />
+    </state>
+    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588504414270" />
     <state width="1366" height="170" key="GridCell.Tab.0.bottom" timestamp="1588325361646">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>

@@ -8,17 +8,15 @@
 
 /home/david/Projeto-LI2/projeto/Camadas_de_dados/estruturasDados.h
 
-/home/david/Projeto-LI2/projeto/Camadas_de_dados/lerEstado.c
+/home/david/Projeto-LI2/projeto/Camadas_de_dados/listaMovs.c
 stdio.h
 -
-string.h
--
-lerEstado.h
-/home/david/Projeto-LI2/projeto/Camadas_de_dados/lerEstado.h
+listaMovs.h
+/home/david/Projeto-LI2/projeto/Camadas_de_dados/listaMovs.h
 modificaEstado.h
 /home/david/Projeto-LI2/projeto/Camadas_de_dados/modificaEstado.h
 
-/home/david/Projeto-LI2/projeto/Camadas_de_dados/lerEstado.h
+/home/david/Projeto-LI2/projeto/Camadas_de_dados/listaMovs.h
 bits/types/FILE.h
 -
 estruturasDados.h
