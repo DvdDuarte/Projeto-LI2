@@ -27,6 +27,22 @@ CMakeFiles/Rastros.dir/escolheJogada.c.o: ../modificaListas.h
 CMakeFiles/Rastros.dir/estruturasDados.c.o: ../estruturasDados.c
 CMakeFiles/Rastros.dir/estruturasDados.c.o: ../estruturasDados.h
 
+CMakeFiles/Rastros.dir/grava.c.o: ../estruturasDados.h
+CMakeFiles/Rastros.dir/grava.c.o: ../grava.c
+CMakeFiles/Rastros.dir/grava.c.o: ../grava.h
+CMakeFiles/Rastros.dir/grava.c.o: ../interface.h
+
+CMakeFiles/Rastros.dir/imprimeCasa.c.o: ../estruturasDados.h
+CMakeFiles/Rastros.dir/imprimeCasa.c.o: ../imprimeCasa.c
+CMakeFiles/Rastros.dir/imprimeCasa.c.o: ../imprimeCasa.h
+
+CMakeFiles/Rastros.dir/interface.c.o: ../estruturasDados.h
+CMakeFiles/Rastros.dir/interface.c.o: ../imprimeCasa.h
+CMakeFiles/Rastros.dir/interface.c.o: ../interface.c
+CMakeFiles/Rastros.dir/interface.c.o: ../interface.h
+CMakeFiles/Rastros.dir/interface.c.o: ../listaMovs.h
+CMakeFiles/Rastros.dir/interface.c.o: ../modificaEstado.h
+
 CMakeFiles/Rastros.dir/jogar.c.o: ../VerificaJogada.h
 CMakeFiles/Rastros.dir/jogar.c.o: ../estruturasDados.h
 CMakeFiles/Rastros.dir/jogar.c.o: ../jogar.c
@@ -34,8 +50,21 @@ CMakeFiles/Rastros.dir/jogar.c.o: ../jogar.h
 CMakeFiles/Rastros.dir/jogar.c.o: ../modificaEstado.h
 CMakeFiles/Rastros.dir/jogar.c.o: ../tipoErros.h
 
+CMakeFiles/Rastros.dir/lerEstado.c.o: ../estruturasDados.h
+CMakeFiles/Rastros.dir/lerEstado.c.o: ../lerEstado.c
+CMakeFiles/Rastros.dir/lerEstado.c.o: ../lerEstado.h
+CMakeFiles/Rastros.dir/lerEstado.c.o: ../modificaEstado.h
+
+CMakeFiles/Rastros.dir/listaMovs.c.o: ../estruturasDados.h
+CMakeFiles/Rastros.dir/listaMovs.c.o: ../listaMovs.c
+CMakeFiles/Rastros.dir/listaMovs.c.o: ../listaMovs.h
+CMakeFiles/Rastros.dir/listaMovs.c.o: ../modificaEstado.h
+
+CMakeFiles/Rastros.dir/main.c.o: ../escolheJogada.h
 CMakeFiles/Rastros.dir/main.c.o: ../estruturasDados.h
+CMakeFiles/Rastros.dir/main.c.o: ../grava.h
 CMakeFiles/Rastros.dir/main.c.o: ../jogar.h
+CMakeFiles/Rastros.dir/main.c.o: ../lerEstado.h
 CMakeFiles/Rastros.dir/main.c.o: ../main.c
 CMakeFiles/Rastros.dir/main.c.o: ../modificaEstado.h
 

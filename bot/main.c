@@ -14,12 +14,13 @@ int main(int argc, char *argv[]) {
 
     ESTADO *e;
 
-    e = ler (argv[1]);
+    if (argc == 3) {
+        e = ler(argv[1]);
 
-    joga_sozinho(e);
+        joga_sozinho(e);
 
-    gravar (e, argv[2]);
-    
+        gravar(e, argv[2]);
+    }
 
 
     return 0;

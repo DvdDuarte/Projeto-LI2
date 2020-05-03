@@ -14,17 +14,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5f1e63d7-1154-4d70-a61c-68f738559b3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bot.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bot.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grava.c" beforeDir="false" afterPath="$PROJECT_DIR$/grava.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Rastros" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Rastros" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imprimeCasa.h" beforeDir="false" afterPath="$PROJECT_DIR$/imprimeCasa.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug/bot" />
   </component>
   <component name="RunManager" selected="CMake Application.bot">
     <configuration name="Rastros" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="bot" RUN_TARGET_NAME="Rastros" EXPLICIT_BUILD_TARGET_NAME="all">
@@ -60,7 +58,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="bot" RUN_TARGET_NAME="bot" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration name="bot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/cmake-build-debug/bot" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -83,7 +81,7 @@
       <workItem from="1588324958611" duration="1532000" />
       <workItem from="1588357888312" duration="105000" />
       <workItem from="1588503051760" duration="1363000" />
-      <workItem from="1588504506665" duration="353000" />
+      <workItem from="1588504506665" duration="815000" />
     </task>
     <servers />
   </component>
@@ -91,29 +89,33 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1369" y="598" width="666" height="581" key="#bot" timestamp="1588505279587">
+      <screen x="1024" y="512" width="1366" height="768" />
+    </state>
+    <state x="1369" y="598" width="666" height="581" key="#bot/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505279587" />
     <state x="1411" y="691" width="582" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588325339092">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
     <state x="1411" y="691" width="582" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588325339092" />
-    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl" timestamp="1588504414270">
+    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl" timestamp="1588505275948">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588504414270" />
-    <state width="1366" height="170" key="GridCell.Tab.0.bottom" timestamp="1588325361646">
+    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505275948" />
+    <state width="1366" height="170" key="GridCell.Tab.0.bottom" timestamp="1588505320897">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state width="1366" height="170" key="GridCell.Tab.0.bottom/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588325361646" />
-    <state width="1366" height="170" key="GridCell.Tab.0.center" timestamp="1588325361646">
+    <state width="1366" height="170" key="GridCell.Tab.0.bottom/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505320897" />
+    <state width="1366" height="170" key="GridCell.Tab.0.center" timestamp="1588505320897">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state width="1366" height="170" key="GridCell.Tab.0.center/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588325361646" />
-    <state width="1366" height="170" key="GridCell.Tab.0.left" timestamp="1588325361645">
+    <state width="1366" height="170" key="GridCell.Tab.0.center/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505320897" />
+    <state width="1366" height="170" key="GridCell.Tab.0.left" timestamp="1588505320896">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state width="1366" height="170" key="GridCell.Tab.0.left/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588325361645" />
-    <state width="1366" height="170" key="GridCell.Tab.0.right" timestamp="1588325361646">
+    <state width="1366" height="170" key="GridCell.Tab.0.left/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505320896" />
+    <state width="1366" height="170" key="GridCell.Tab.0.right" timestamp="1588505320897">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state width="1366" height="170" key="GridCell.Tab.0.right/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588325361646" />
+    <state width="1366" height="170" key="GridCell.Tab.0.right/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505320897" />
   </component>
 </project>

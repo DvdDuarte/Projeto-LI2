@@ -58,7 +58,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/listaMovs.h" line="21" column="1" bodyfile="Camadas_de_dados/listaMovs.c" bodystart="10" bodyend="34"/>
+        <location file="Camadas_de_dados/listaMovs.h" line="21" column="1" bodyfile="Camadas_de_dados/listaMovs.c" bodystart="10" bodyend="42"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
