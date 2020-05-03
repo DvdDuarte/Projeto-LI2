@@ -20,6 +20,7 @@
 
 int interpretador(ESTADO *e) {
 
+
     while (1) {
         //int BUF_SIZE = 1024;
         char filename[BUF_SIZE];
@@ -29,11 +30,11 @@ int interpretador(ESTADO *e) {
 
 
         mostrar_prompt(e, stdout);
-       if (verifica_fim_jogo(e) == IMPOSSIVEL_JOGAR) {
-           imprime_vencedor(e);
-           return 0;
+        if (verifica_fim_jogo(e) == IMPOSSIVEL_JOGAR) {
+            imprime_vencedor(e);
+            return 0;
 
-       }
+        }
 
         if (fgets(linha, BUF_SIZE, stdin) == NULL) {
             return 0;
@@ -47,7 +48,7 @@ int interpretador(ESTADO *e) {
 
             COORDENADA coord = {*col - 'a', '8' - *lin};
 
-            if (jogar(e,coord)) {
+            if (jogar(e, coord)) {
                 mostrar_tabuleiro(e, stdout);
                 return 0;
             }
@@ -64,13 +65,13 @@ int interpretador(ESTADO *e) {
 
         if (strcmp(linha, "jog\n") == 0) {
 
-            jogar_automaticamente (e);
+            jogar_automaticamente(e);
 
         }
 
         if (strcmp(linha, "jog2\n") == 0) {
 
-            joga_sozinho (e);
+            joga_sozinho(e);
 
         }
 
@@ -86,7 +87,6 @@ int interpretador(ESTADO *e) {
 
 
         }
-
 
 
     }
