@@ -14,10 +14,11 @@ int main(int argc, char *argv[]) {
 
     ESTADO *e;
 
+    e = ler (argv[1]);
 
     joga_sozinho(e);
 
-
+    gravar (e, argv[2]);
     
 
 

@@ -258,6 +258,87 @@ estruturasDados.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/estruturasDados.c.s
 .PHONY : estruturasDados.c.s
 
+grava.o: grava.c.o
+
+.PHONY : grava.o
+
+# target to build an object file
+grava.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/grava.c.o
+.PHONY : grava.c.o
+
+grava.i: grava.c.i
+
+.PHONY : grava.i
+
+# target to preprocess a source file
+grava.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/grava.c.i
+.PHONY : grava.c.i
+
+grava.s: grava.c.s
+
+.PHONY : grava.s
+
+# target to generate assembly for a file
+grava.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/grava.c.s
+.PHONY : grava.c.s
+
+imprimeCasa.o: imprimeCasa.c.o
+
+.PHONY : imprimeCasa.o
+
+# target to build an object file
+imprimeCasa.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/imprimeCasa.c.o
+.PHONY : imprimeCasa.c.o
+
+imprimeCasa.i: imprimeCasa.c.i
+
+.PHONY : imprimeCasa.i
+
+# target to preprocess a source file
+imprimeCasa.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/imprimeCasa.c.i
+.PHONY : imprimeCasa.c.i
+
+imprimeCasa.s: imprimeCasa.c.s
+
+.PHONY : imprimeCasa.s
+
+# target to generate assembly for a file
+imprimeCasa.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/imprimeCasa.c.s
+.PHONY : imprimeCasa.c.s
+
+interface.o: interface.c.o
+
+.PHONY : interface.o
+
+# target to build an object file
+interface.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.o
+.PHONY : interface.c.o
+
+interface.i: interface.c.i
+
+.PHONY : interface.i
+
+# target to preprocess a source file
+interface.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.i
+.PHONY : interface.c.i
+
+interface.s: interface.c.s
+
+.PHONY : interface.s
+
+# target to generate assembly for a file
+interface.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/interface.c.s
+.PHONY : interface.c.s
+
 jogar.o: jogar.c.o
 
 .PHONY : jogar.o
@@ -284,6 +365,60 @@ jogar.s: jogar.c.s
 jogar.c.s:
 	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/jogar.c.s
 .PHONY : jogar.c.s
+
+lerEstado.o: lerEstado.c.o
+
+.PHONY : lerEstado.o
+
+# target to build an object file
+lerEstado.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/lerEstado.c.o
+.PHONY : lerEstado.c.o
+
+lerEstado.i: lerEstado.c.i
+
+.PHONY : lerEstado.i
+
+# target to preprocess a source file
+lerEstado.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/lerEstado.c.i
+.PHONY : lerEstado.c.i
+
+lerEstado.s: lerEstado.c.s
+
+.PHONY : lerEstado.s
+
+# target to generate assembly for a file
+lerEstado.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/lerEstado.c.s
+.PHONY : lerEstado.c.s
+
+listaMovs.o: listaMovs.c.o
+
+.PHONY : listaMovs.o
+
+# target to build an object file
+listaMovs.c.o:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/listaMovs.c.o
+.PHONY : listaMovs.c.o
+
+listaMovs.i: listaMovs.c.i
+
+.PHONY : listaMovs.i
+
+# target to preprocess a source file
+listaMovs.c.i:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/listaMovs.c.i
+.PHONY : listaMovs.c.i
+
+listaMovs.s: listaMovs.c.s
+
+.PHONY : listaMovs.s
+
+# target to generate assembly for a file
+listaMovs.c.s:
+	$(MAKE) -f CMakeFiles/Rastros.dir/build.make CMakeFiles/Rastros.dir/listaMovs.c.s
+.PHONY : listaMovs.c.s
 
 main.o: main.c.o
 
@@ -417,9 +552,24 @@ help:
 	@echo "... estruturasDados.o"
 	@echo "... estruturasDados.i"
 	@echo "... estruturasDados.s"
+	@echo "... grava.o"
+	@echo "... grava.i"
+	@echo "... grava.s"
+	@echo "... imprimeCasa.o"
+	@echo "... imprimeCasa.i"
+	@echo "... imprimeCasa.s"
+	@echo "... interface.o"
+	@echo "... interface.i"
+	@echo "... interface.s"
 	@echo "... jogar.o"
 	@echo "... jogar.i"
 	@echo "... jogar.s"
+	@echo "... lerEstado.o"
+	@echo "... lerEstado.i"
+	@echo "... lerEstado.s"
+	@echo "... listaMovs.o"
+	@echo "... listaMovs.i"
+	@echo "... listaMovs.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

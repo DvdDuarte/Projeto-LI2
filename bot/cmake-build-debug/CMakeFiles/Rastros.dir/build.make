@@ -187,6 +187,71 @@ CMakeFiles/Rastros.dir/escolheJogada.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/escolheJogada.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/bot/escolheJogada.c -o CMakeFiles/Rastros.dir/escolheJogada.c.s
 
+CMakeFiles/Rastros.dir/grava.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/grava.c.o: ../grava.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Rastros.dir/grava.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/grava.c.o   -c /home/david/Projeto-LI2/bot/grava.c
+
+CMakeFiles/Rastros.dir/grava.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/grava.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/bot/grava.c > CMakeFiles/Rastros.dir/grava.c.i
+
+CMakeFiles/Rastros.dir/grava.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/grava.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/bot/grava.c -o CMakeFiles/Rastros.dir/grava.c.s
+
+CMakeFiles/Rastros.dir/lerEstado.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/lerEstado.c.o: ../lerEstado.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Rastros.dir/lerEstado.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/lerEstado.c.o   -c /home/david/Projeto-LI2/bot/lerEstado.c
+
+CMakeFiles/Rastros.dir/lerEstado.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/lerEstado.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/bot/lerEstado.c > CMakeFiles/Rastros.dir/lerEstado.c.i
+
+CMakeFiles/Rastros.dir/lerEstado.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/lerEstado.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/bot/lerEstado.c -o CMakeFiles/Rastros.dir/lerEstado.c.s
+
+CMakeFiles/Rastros.dir/listaMovs.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/listaMovs.c.o: ../listaMovs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Rastros.dir/listaMovs.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/listaMovs.c.o   -c /home/david/Projeto-LI2/bot/listaMovs.c
+
+CMakeFiles/Rastros.dir/listaMovs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/listaMovs.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/bot/listaMovs.c > CMakeFiles/Rastros.dir/listaMovs.c.i
+
+CMakeFiles/Rastros.dir/listaMovs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/listaMovs.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/bot/listaMovs.c -o CMakeFiles/Rastros.dir/listaMovs.c.s
+
+CMakeFiles/Rastros.dir/interface.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/interface.c.o: ../interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Rastros.dir/interface.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/interface.c.o   -c /home/david/Projeto-LI2/bot/interface.c
+
+CMakeFiles/Rastros.dir/interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/interface.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/bot/interface.c > CMakeFiles/Rastros.dir/interface.c.i
+
+CMakeFiles/Rastros.dir/interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/interface.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/bot/interface.c -o CMakeFiles/Rastros.dir/interface.c.s
+
+CMakeFiles/Rastros.dir/imprimeCasa.c.o: CMakeFiles/Rastros.dir/flags.make
+CMakeFiles/Rastros.dir/imprimeCasa.c.o: ../imprimeCasa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Projeto-LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Rastros.dir/imprimeCasa.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Rastros.dir/imprimeCasa.c.o   -c /home/david/Projeto-LI2/bot/imprimeCasa.c
+
+CMakeFiles/Rastros.dir/imprimeCasa.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Rastros.dir/imprimeCasa.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/david/Projeto-LI2/bot/imprimeCasa.c > CMakeFiles/Rastros.dir/imprimeCasa.c.i
+
+CMakeFiles/Rastros.dir/imprimeCasa.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Rastros.dir/imprimeCasa.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/david/Projeto-LI2/bot/imprimeCasa.c -o CMakeFiles/Rastros.dir/imprimeCasa.c.s
+
 # Object files for target Rastros
 Rastros_OBJECTS = \
 "CMakeFiles/Rastros.dir/main.c.o" \
@@ -198,7 +263,12 @@ Rastros_OBJECTS = \
 "CMakeFiles/Rastros.dir/buscaPosicao.c.o" \
 "CMakeFiles/Rastros.dir/dadosListas.c.o" \
 "CMakeFiles/Rastros.dir/modificaListas.c.o" \
-"CMakeFiles/Rastros.dir/escolheJogada.c.o"
+"CMakeFiles/Rastros.dir/escolheJogada.c.o" \
+"CMakeFiles/Rastros.dir/grava.c.o" \
+"CMakeFiles/Rastros.dir/lerEstado.c.o" \
+"CMakeFiles/Rastros.dir/listaMovs.c.o" \
+"CMakeFiles/Rastros.dir/interface.c.o" \
+"CMakeFiles/Rastros.dir/imprimeCasa.c.o"
 
 # External object files for target Rastros
 Rastros_EXTERNAL_OBJECTS =
@@ -213,9 +283,14 @@ Rastros: CMakeFiles/Rastros.dir/buscaPosicao.c.o
 Rastros: CMakeFiles/Rastros.dir/dadosListas.c.o
 Rastros: CMakeFiles/Rastros.dir/modificaListas.c.o
 Rastros: CMakeFiles/Rastros.dir/escolheJogada.c.o
+Rastros: CMakeFiles/Rastros.dir/grava.c.o
+Rastros: CMakeFiles/Rastros.dir/lerEstado.c.o
+Rastros: CMakeFiles/Rastros.dir/listaMovs.c.o
+Rastros: CMakeFiles/Rastros.dir/interface.c.o
+Rastros: CMakeFiles/Rastros.dir/imprimeCasa.c.o
 Rastros: CMakeFiles/Rastros.dir/build.make
 Rastros: CMakeFiles/Rastros.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Projeto-LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Rastros"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Projeto-LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable Rastros"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Rastros.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

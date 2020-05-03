@@ -14,26 +14,17 @@
   <component name="ChangeListManager">
     <list default="true" id="5f1e63d7-1154-4d70-a61c-68f738559b3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/Camadas_de_dados/listaMovs.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/listaMovs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/listaMovs.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/modificaEstado.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/Rastros" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/Rastros" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bot.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bot.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grava.c" beforeDir="false" afterPath="$PROJECT_DIR$/grava.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +83,7 @@
       <workItem from="1588324958611" duration="1532000" />
       <workItem from="1588357888312" duration="105000" />
       <workItem from="1588503051760" duration="1363000" />
-      <workItem from="1588504506665" duration="152000" />
+      <workItem from="1588504506665" duration="353000" />
     </task>
     <servers />
   </component>

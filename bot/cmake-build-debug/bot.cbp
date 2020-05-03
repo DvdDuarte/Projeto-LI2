@@ -108,10 +108,40 @@
 		<Unit filename="/home/david/Projeto-LI2/bot/estruturasDados.h">
 			<Option target="Rastros"/>
 		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/grava.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/grava.h">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/imprimeCasa.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/imprimeCasa.h">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/interface.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/interface.h">
+			<Option target="Rastros"/>
+		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/bot/jogar.c">
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/bot/jogar.h">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/lerEstado.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/lerEstado.h">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/listaMovs.c">
+			<Option target="Rastros"/>
+		</Unit>
+		<Unit filename="/home/david/Projeto-LI2/bot/listaMovs.h">
 			<Option target="Rastros"/>
 		</Unit>
 		<Unit filename="/home/david/Projeto-LI2/bot/main.c">
