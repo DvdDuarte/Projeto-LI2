@@ -6,6 +6,8 @@
 #include "dadosListas.h"
 #include "modificaListas.h"
 #include "jogar.h"
+#include "VerificaJogada.h"
+#include "modificaEstado.h"
 
 
 void jogar_automaticamente (ESTADO *e) {

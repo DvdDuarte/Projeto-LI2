@@ -12,6 +12,10 @@ estruturasDados.h
 tipoErros.h
 /home/david/Projeto-LI2/bot/tipoErros.h
 
+/home/david/Projeto-LI2/bot/dadosListas.h
+estruturasDados.h
+/home/david/Projeto-LI2/bot/estruturasDados.h
+
 /home/david/Projeto-LI2/bot/escolheJogada.h
 estruturasDados.h
 /home/david/Projeto-LI2/bot/estruturasDados.h
@@ -57,6 +61,8 @@ lerEstado.h
 /home/david/Projeto-LI2/bot/lerEstado.h
 grava.h
 /home/david/Projeto-LI2/bot/grava.h
+modificaListas.h
+/home/david/Projeto-LI2/bot/modificaListas.h
 jogar.h
 /home/david/Projeto-LI2/bot/jogar.h
 VerificaJogada.h
@@ -65,6 +71,12 @@ interface.h
 /home/david/Projeto-LI2/bot/interface.h
 
 /home/david/Projeto-LI2/bot/modificaEstado.h
+estruturasDados.h
+/home/david/Projeto-LI2/bot/estruturasDados.h
+
+/home/david/Projeto-LI2/bot/modificaListas.h
+dadosListas.h
+/home/david/Projeto-LI2/bot/dadosListas.h
 estruturasDados.h
 /home/david/Projeto-LI2/bot/estruturasDados.h
 

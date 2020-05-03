@@ -17,12 +17,15 @@ CMakeFiles/Rastros.dir/dadosListas.c.o: ../dadosListas.c
 CMakeFiles/Rastros.dir/dadosListas.c.o: ../dadosListas.h
 CMakeFiles/Rastros.dir/dadosListas.c.o: ../estruturasDados.h
 
+CMakeFiles/Rastros.dir/escolheJogada.c.o: ../VerificaJogada.h
 CMakeFiles/Rastros.dir/escolheJogada.c.o: ../dadosListas.h
 CMakeFiles/Rastros.dir/escolheJogada.c.o: ../escolheJogada.c
 CMakeFiles/Rastros.dir/escolheJogada.c.o: ../escolheJogada.h
 CMakeFiles/Rastros.dir/escolheJogada.c.o: ../estruturasDados.h
 CMakeFiles/Rastros.dir/escolheJogada.c.o: ../jogar.h
+CMakeFiles/Rastros.dir/escolheJogada.c.o: ../modificaEstado.h
 CMakeFiles/Rastros.dir/escolheJogada.c.o: ../modificaListas.h
+CMakeFiles/Rastros.dir/escolheJogada.c.o: ../tipoErros.h
 
 CMakeFiles/Rastros.dir/estruturasDados.c.o: ../estruturasDados.c
 CMakeFiles/Rastros.dir/estruturasDados.c.o: ../estruturasDados.h
@@ -63,6 +66,7 @@ CMakeFiles/Rastros.dir/listaMovs.c.o: ../listaMovs.h
 CMakeFiles/Rastros.dir/listaMovs.c.o: ../modificaEstado.h
 
 CMakeFiles/Rastros.dir/main.c.o: ../VerificaJogada.h
+CMakeFiles/Rastros.dir/main.c.o: ../dadosListas.h
 CMakeFiles/Rastros.dir/main.c.o: ../escolheJogada.h
 CMakeFiles/Rastros.dir/main.c.o: ../estruturasDados.h
 CMakeFiles/Rastros.dir/main.c.o: ../grava.h
@@ -71,6 +75,7 @@ CMakeFiles/Rastros.dir/main.c.o: ../jogar.h
 CMakeFiles/Rastros.dir/main.c.o: ../lerEstado.h
 CMakeFiles/Rastros.dir/main.c.o: ../main.c
 CMakeFiles/Rastros.dir/main.c.o: ../modificaEstado.h
+CMakeFiles/Rastros.dir/main.c.o: ../modificaListas.h
 CMakeFiles/Rastros.dir/main.c.o: ../tipoErros.h
 
 CMakeFiles/Rastros.dir/modificaEstado.c.o: ../estruturasDados.h

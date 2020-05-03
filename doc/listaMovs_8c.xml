@@ -76,7 +76,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/listaMovs.c" line="10" column="1" bodyfile="Camadas_de_dados/listaMovs.c" bodystart="10" bodyend="42"/>
+        <location file="Camadas_de_dados/listaMovs.c" line="10" column="1" bodyfile="Camadas_de_dados/listaMovs.c" bodystart="10" bodyend="43"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -98,34 +98,35 @@
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tamanhomovs,<sp/>i,<sp/>movimentoj1l,<sp/>movimentoj2l;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>movimentoj1c,<sp/>movimentoj2c;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>tamanhomovs<sp/>=<sp/><ref refid="modificaEstado_8h_1a6cd0b387bdee9e18003c78852394aa63" kindref="member">obter_numero_de_jogadas</ref>(e)<sp/>-<sp/>1;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//tamanhomovs<sp/>=<sp/>sizeof(movimentos)/<sp/>sizeof(movimentos[0]);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>tamanhomovs<sp/>=<sp/><ref refid="modificaEstado_8h_1a6cd0b387bdee9e18003c78852394aa63" kindref="member">obter_numero_de_jogadas</ref>(e);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tamanhomovs<sp/>!=<sp/>1)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tamanhomovs<sp/>=<sp/>tamanhomovs<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//tamanhomovs<sp/>=<sp/>sizeof(movimentos)/<sp/>sizeof(movimentos[0]);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tamanhomovs;<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e-&gt;jogadas[i].jogador2.coluna<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/>e-&gt;jogadas[i].jogador2.linha<sp/>!=<sp/>-1)<sp/>{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj1c<sp/>=<sp/>e-&gt;jogadas[i].jogador1.coluna<sp/>+<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj1l<sp/>=<sp/>8<sp/>-<sp/>e-&gt;jogadas[i].jogador1.linha;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj2c<sp/>=<sp/>e-&gt;jogadas[i].jogador2.coluna<sp/>+<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj2l<sp/>=<sp/>8<sp/>-<sp/>e-&gt;jogadas[i].jogador2.linha;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(ficheiro,<sp/></highlight><highlight class="stringliteral">&quot;0%d:<sp/>%c%d<sp/>%c%d&quot;</highlight><highlight class="normal">,<sp/>i<sp/>+<sp/>1,<sp/>movimentoj1c,<sp/>movimentoj1l,<sp/>movimentoj2c,<sp/>movimentoj2l);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj1c<sp/>=<sp/>e-&gt;jogadas[i].jogador1.coluna<sp/>+<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj1l<sp/>=<sp/>8<sp/>-<sp/>e-&gt;jogadas[i].jogador1.linha;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(ficheiro,<sp/></highlight><highlight class="stringliteral">&quot;0%d:<sp/>%c%d&quot;</highlight><highlight class="normal">,<sp/>i<sp/>+<sp/>1,<sp/>movimentoj1c,<sp/>movimentoj1l);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tamanhomovs;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e-&gt;jogadas[i].jogador2.coluna<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/>e-&gt;jogadas[i].jogador2.linha<sp/>!=<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj1c<sp/>=<sp/>e-&gt;jogadas[i].jogador1.coluna<sp/>+<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj1l<sp/>=<sp/>8<sp/>-<sp/>e-&gt;jogadas[i].jogador1.linha;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj2c<sp/>=<sp/>e-&gt;jogadas[i].jogador2.coluna<sp/>+<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj2l<sp/>=<sp/>8<sp/>-<sp/>e-&gt;jogadas[i].jogador2.linha;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(ficheiro,<sp/></highlight><highlight class="stringliteral">&quot;0%d:<sp/>%c%d<sp/>%c%d&quot;</highlight><highlight class="normal">,<sp/>i<sp/>+<sp/>1,<sp/>movimentoj1c,<sp/>movimentoj1l,<sp/>movimentoj2c,<sp/>movimentoj2l);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj1c<sp/>=<sp/>e-&gt;jogadas[i].jogador1.coluna<sp/>+<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movimentoj1l<sp/>=<sp/>8<sp/>-<sp/>e-&gt;jogadas[i].jogador1.linha;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(ficheiro,<sp/></highlight><highlight class="stringliteral">&quot;0%d:<sp/>%c%d&quot;</highlight><highlight class="normal">,<sp/>i<sp/>+<sp/>1,<sp/>movimentoj1c,<sp/>movimentoj1l);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//completar<sp/>a<sp/>impressao<sp/>da<sp/>lista<sp/>de<sp/>movimentos<sp/>que<sp/>se<sp/>encontra<sp/>no<sp/>array<sp/>jogadas</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(ficheiro,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//completar<sp/>a<sp/>impressao<sp/>da<sp/>lista<sp/>de<sp/>movimentos<sp/>que<sp/>se<sp/>encontra<sp/>no<sp/>array<sp/>jogadas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(ficheiro,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Camadas_de_dados/listaMovs.c"/>
   </compounddef>

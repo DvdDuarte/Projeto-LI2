@@ -18,12 +18,15 @@ CMakeFiles/Rastros.dir/dadosListas.c.o
  /home/david/Projeto-LI2/bot/dadosListas.h
  /home/david/Projeto-LI2/bot/estruturasDados.h
 CMakeFiles/Rastros.dir/escolheJogada.c.o
+ /home/david/Projeto-LI2/bot/VerificaJogada.h
  /home/david/Projeto-LI2/bot/dadosListas.h
  /home/david/Projeto-LI2/bot/escolheJogada.c
  /home/david/Projeto-LI2/bot/escolheJogada.h
  /home/david/Projeto-LI2/bot/estruturasDados.h
  /home/david/Projeto-LI2/bot/jogar.h
+ /home/david/Projeto-LI2/bot/modificaEstado.h
  /home/david/Projeto-LI2/bot/modificaListas.h
+ /home/david/Projeto-LI2/bot/tipoErros.h
 CMakeFiles/Rastros.dir/estruturasDados.c.o
  /home/david/Projeto-LI2/bot/estruturasDados.c
  /home/david/Projeto-LI2/bot/estruturasDados.h
@@ -64,6 +67,7 @@ CMakeFiles/Rastros.dir/listaMovs.c.o
  /home/david/Projeto-LI2/bot/modificaEstado.h
 CMakeFiles/Rastros.dir/main.c.o
  /home/david/Projeto-LI2/bot/VerificaJogada.h
+ /home/david/Projeto-LI2/bot/dadosListas.h
  /home/david/Projeto-LI2/bot/escolheJogada.h
  /home/david/Projeto-LI2/bot/estruturasDados.h
  /home/david/Projeto-LI2/bot/grava.h
@@ -72,6 +76,7 @@ CMakeFiles/Rastros.dir/main.c.o
  /home/david/Projeto-LI2/bot/lerEstado.h
  /home/david/Projeto-LI2/bot/main.c
  /home/david/Projeto-LI2/bot/modificaEstado.h
+ /home/david/Projeto-LI2/bot/modificaListas.h
  /home/david/Projeto-LI2/bot/tipoErros.h
 CMakeFiles/Rastros.dir/modificaEstado.c.o
  /home/david/Projeto-LI2/bot/estruturasDados.h

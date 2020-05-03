@@ -15,6 +15,8 @@ void imprimeMovs (ESTADO *e, FILE *ficheiro) {
 
     tamanhomovs = obter_numero_de_jogadas(e);
 
+    if (tamanhomovs != 1)
+        tamanhomovs = tamanhomovs - 1;
 
 
    //tamanhomovs = sizeof(movimentos)/ sizeof(movimentos[0]);
