@@ -15,7 +15,7 @@ ESTADO *ler(char *jogo) {
 
 
     e = inicializar_estado();
-    ficheiro = fopen(jogo, "r");
+    if (ficheiro = fopen(jogo, "r") ==
 
     ler_tabuleiro(ficheiro, e);
 
@@ -73,7 +73,10 @@ void ler_movimentos (FILE *ficheiro, ESTADO *e){
 
     }
 
-    e->num_jogadas = indice;
+    if (obter_jogador_atual(e) == 2)
+        e->num_jogadas = indice - 1;
+    else e->num_jogadas = indice;
+
 
 
 }
@@ -83,8 +86,8 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
     int idx, tamanho_linha;
     char letter, cj1, lj1, cj2, lj2;
 
-    lj1 = lj2 = '0';
-    cj1 = cj2 = 'a';
+    lj1 = lj2 = -1;
+    cj1 = cj2 = -1;
 
     tamanho_linha = strlen(line);
 
@@ -92,11 +95,26 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
 
         letter = line[idx];
 
-        if (idx == 4) cj1 = letter;
-        if (idx == 5) lj1 = letter;
-        if (idx == 7) cj2 = letter;
-        if (idx == 8) lj2 = letter;
-
+        if (tamanho_linha <= 10) {
+             if (tamanho_linha == 8) {
+                if (idx == 5) cj1 = letter;
+                if (idx == 6) lj1 = letter;
+            } else {
+                if (idx == 4) cj1 = letter;
+                if (idx == 5) lj1 = letter;
+                if (tamanho_linha > 7) {
+                    if (idx == 7) cj2 = letter;
+                    if (idx == 8) lj2 = letter;
+                }
+            }
+        } else {
+            if (idx == 5) cj1 = letter;
+            if (idx == 6) lj1 = letter;
+            if (tamanho_linha > 8) {
+                if (idx == 8) cj2 = letter;
+                if (idx == 9) lj2 = letter;
+            }
+        }
     }
 
 
@@ -116,8 +134,8 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
 
         e -> jogador_atual = 2;
     }
-    e -> posicao_jogada = indice;
 
+    e -> posicao_jogada = indice;
 }
 
 

@@ -20,7 +20,7 @@ int jogar(ESTADO *e, COORDENADA c) {
 
     VALIDACOES flag;
 
-    printf ("%d %d\n",c.coluna, c.linha);
+   // printf ("%d %d\n",c.coluna, c.linha);
 
     flag = jogadavalida(e, c);
 

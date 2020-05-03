@@ -6,6 +6,9 @@
 #include "Camada_de_interface/Interpretador.h"
 #include "Logica_do_programa/jogar.h"
 #include "Camada_de_interface/interface.h"
+#include "Camadas_de_dados/lerEstado.h"
+#include "Listas_ligadas/escolheJogada.h"
+#include "Camadas_de_dados/grava.h"
 
 int main() {
 

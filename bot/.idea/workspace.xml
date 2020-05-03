@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="bot" targetName="Rastros" />
       <config projectName="bot" targetName="bot" />
+      <config projectName="bot" targetName="Rastros" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -13,16 +13,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1e63d7-1154-4d70-a61c-68f738559b3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RELATORIO.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Rastros" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Rastros" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imprimeCasa.h" beforeDir="false" afterPath="$PROJECT_DIR$/imprimeCasa.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/VerificaJogada.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/buscaPosicao.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/dadosListas.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/escolheJogada.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/estruturasDados.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/grava.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/imprimeCasa.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/interface.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/jogar.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/lerEstado.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/listaMovs.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/modificaEstado.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/modificaListas.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rastros.dir/tipoErros.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Rastros" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bot.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jogar.c" beforeDir="false" afterPath="$PROJECT_DIR$/jogar.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/Camadas_de_dados/VerificaJogada.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/VerificaJogada.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/Camadas_de_dados/lerEstado.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/lerEstado.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/Camadas_de_dados/modificaEstado.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Camadas_de_dados/modificaEstado.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/Logica_do_programa/jogar.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/Logica_do_programa/jogar.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/VerificaJogada.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/Camadas_de_dados/lerEstado.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/CMakeFiles/Rastros.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/cmake-build-debug/Rastros" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/cmake-build-debug/Rastros" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +106,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug/bot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projeto" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunManager" selected="CMake Application.bot">
     <configuration name="Rastros" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="bot" RUN_TARGET_NAME="Rastros" EXPLICIT_BUILD_TARGET_NAME="all">
@@ -82,6 +144,7 @@
       <workItem from="1588357888312" duration="105000" />
       <workItem from="1588503051760" duration="1363000" />
       <workItem from="1588504506665" duration="815000" />
+      <workItem from="1588505485579" duration="4720000" />
     </task>
     <servers />
   </component>
@@ -93,29 +156,53 @@
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
     <state x="1369" y="598" width="666" height="581" key="#bot/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505279587" />
-    <state x="1411" y="691" width="582" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588325339092">
+    <state x="1165" y="547" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588508455288">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state x="1411" y="691" width="582" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588325339092" />
-    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl" timestamp="1588505275948">
+    <state x="1165" y="547" key="#com.intellij.execution.impl.EditConfigurationsDialog/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588508455288" />
+    <state x="1411" y="691" width="582" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588508133062">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505275948" />
-    <state width="1366" height="170" key="GridCell.Tab.0.bottom" timestamp="1588505320897">
+    <state x="1411" y="691" width="582" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588508133062" />
+    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl" timestamp="1588510102735">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state width="1366" height="170" key="GridCell.Tab.0.bottom/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505320897" />
-    <state width="1366" height="170" key="GridCell.Tab.0.center" timestamp="1588505320897">
+    <state x="1490" y="647" width="424" height="484" key="FileChooserDialogImpl/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588510102735" />
+    <state width="1366" height="150" key="GridCell.Tab.0.bottom" timestamp="1588510048030">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state width="1366" height="170" key="GridCell.Tab.0.center/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505320897" />
-    <state width="1366" height="170" key="GridCell.Tab.0.left" timestamp="1588505320896">
+    <state width="1366" height="150" key="GridCell.Tab.0.bottom/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588510048030" />
+    <state width="1366" height="150" key="GridCell.Tab.0.center" timestamp="1588510048030">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state width="1366" height="170" key="GridCell.Tab.0.left/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505320896" />
-    <state width="1366" height="170" key="GridCell.Tab.0.right" timestamp="1588505320897">
+    <state width="1366" height="150" key="GridCell.Tab.0.center/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588510048030" />
+    <state width="1366" height="150" key="GridCell.Tab.0.left" timestamp="1588510048029">
       <screen x="1024" y="512" width="1366" height="768" />
     </state>
-    <state width="1366" height="170" key="GridCell.Tab.0.right/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588505320897" />
+    <state width="1366" height="150" key="GridCell.Tab.0.left/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588510048029" />
+    <state width="1366" height="150" key="GridCell.Tab.0.right" timestamp="1588510048030">
+      <screen x="1024" y="512" width="1366" height="768" />
+    </state>
+    <state width="1366" height="150" key="GridCell.Tab.0.right/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588510048030" />
+    <state width="1366" height="212" key="GridCell.Tab.1.bottom" timestamp="1588506953157">
+      <screen x="1024" y="512" width="1366" height="768" />
+    </state>
+    <state width="1366" height="212" key="GridCell.Tab.1.bottom/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588506953157" />
+    <state width="1366" height="212" key="GridCell.Tab.1.center" timestamp="1588506953157">
+      <screen x="1024" y="512" width="1366" height="768" />
+    </state>
+    <state width="1366" height="212" key="GridCell.Tab.1.center/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588506953157" />
+    <state width="1366" height="212" key="GridCell.Tab.1.left" timestamp="1588506953156">
+      <screen x="1024" y="512" width="1366" height="768" />
+    </state>
+    <state width="1366" height="212" key="GridCell.Tab.1.left/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588506953156" />
+    <state width="1366" height="212" key="GridCell.Tab.1.right" timestamp="1588506953157">
+      <screen x="1024" y="512" width="1366" height="768" />
+    </state>
+    <state width="1366" height="212" key="GridCell.Tab.1.right/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588506953157" />
+    <state x="2" y="539" width="1012" height="730" key="SettingsEditor" timestamp="1588508314733">
+      <screen x="0" y="539" width="1024" height="702" />
+    </state>
+    <state x="2" y="539" width="1012" height="730" key="SettingsEditor/1024.512.1366.768/0.539.1024.702@1024.512.1366.768" timestamp="1588508314733" />
   </component>
 </project>

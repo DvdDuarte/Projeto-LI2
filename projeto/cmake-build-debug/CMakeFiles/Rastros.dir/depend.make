@@ -91,7 +91,10 @@ CMakeFiles/Rastros.dir/Logica_do_programa/jogar.c.o: ../Logica_do_programa/jogar
 CMakeFiles/Rastros.dir/main.c.o: ../Camada_de_interface/Interpretador.h
 CMakeFiles/Rastros.dir/main.c.o: ../Camada_de_interface/interface.h
 CMakeFiles/Rastros.dir/main.c.o: ../Camadas_de_dados/estruturasDados.h
+CMakeFiles/Rastros.dir/main.c.o: ../Camadas_de_dados/grava.h
+CMakeFiles/Rastros.dir/main.c.o: ../Camadas_de_dados/lerEstado.h
 CMakeFiles/Rastros.dir/main.c.o: ../Camadas_de_dados/modificaEstado.h
+CMakeFiles/Rastros.dir/main.c.o: ../Listas_ligadas/escolheJogada.h
 CMakeFiles/Rastros.dir/main.c.o: ../Logica_do_programa/jogar.h
 CMakeFiles/Rastros.dir/main.c.o: ../main.c
 

@@ -25,7 +25,7 @@ ESTADO *inicializar_estado() {
 
     inicializar_ultima_jogada(e);
 
-   inicializar_jogadas(e);
+    inicializar_jogadas(e);
 
     return e;
 }
