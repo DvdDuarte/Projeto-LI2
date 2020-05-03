@@ -199,7 +199,7 @@
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tipoErros_8h_1adb1ce27db49af4588e155676189ad598" kindref="member">VALIDACOES</ref><sp/>flag;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;%d<sp/>%d\n&quot;</highlight><highlight class="normal">,c.coluna,<sp/>c.linha);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf<sp/>(&quot;%d<sp/>%d\n&quot;,c.coluna,<sp/>c.linha);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/><ref refid="VerificaJogada_8h_1ae6d5cd06a47da1ffc46fac5c4d14696f" kindref="member">jogadavalida</ref>(e,<sp/>c);</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>

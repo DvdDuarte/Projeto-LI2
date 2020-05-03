@@ -13,7 +13,7 @@ void imprimeMovs (ESTADO *e, FILE *ficheiro) {
     char movimentoj1c, movimentoj2c;
 
 
-    tamanhomovs = e -> posicao_jogada + 1;//obter_numero_de_jogadas(e);
+    tamanhomovs = obter_numero_de_jogadas(e) - 1;
 
    //tamanhomovs = sizeof(movimentos)/ sizeof(movimentos[0]);
 

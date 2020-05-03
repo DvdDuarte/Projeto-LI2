@@ -32,6 +32,7 @@ CMakeFiles/Rastros.dir/grava.c.o
  /home/david/Projeto-LI2/bot/grava.c
  /home/david/Projeto-LI2/bot/grava.h
  /home/david/Projeto-LI2/bot/interface.h
+ /home/david/Projeto-LI2/bot/listaMovs.h
 CMakeFiles/Rastros.dir/imprimeCasa.c.o
  /home/david/Projeto-LI2/bot/estruturasDados.h
  /home/david/Projeto-LI2/bot/imprimeCasa.c
@@ -46,6 +47,7 @@ CMakeFiles/Rastros.dir/interface.c.o
 CMakeFiles/Rastros.dir/jogar.c.o
  /home/david/Projeto-LI2/bot/VerificaJogada.h
  /home/david/Projeto-LI2/bot/estruturasDados.h
+ /home/david/Projeto-LI2/bot/interface.h
  /home/david/Projeto-LI2/bot/jogar.c
  /home/david/Projeto-LI2/bot/jogar.h
  /home/david/Projeto-LI2/bot/modificaEstado.h
@@ -61,13 +63,16 @@ CMakeFiles/Rastros.dir/listaMovs.c.o
  /home/david/Projeto-LI2/bot/listaMovs.h
  /home/david/Projeto-LI2/bot/modificaEstado.h
 CMakeFiles/Rastros.dir/main.c.o
+ /home/david/Projeto-LI2/bot/VerificaJogada.h
  /home/david/Projeto-LI2/bot/escolheJogada.h
  /home/david/Projeto-LI2/bot/estruturasDados.h
  /home/david/Projeto-LI2/bot/grava.h
+ /home/david/Projeto-LI2/bot/interface.h
  /home/david/Projeto-LI2/bot/jogar.h
  /home/david/Projeto-LI2/bot/lerEstado.h
  /home/david/Projeto-LI2/bot/main.c
  /home/david/Projeto-LI2/bot/modificaEstado.h
+ /home/david/Projeto-LI2/bot/tipoErros.h
 CMakeFiles/Rastros.dir/modificaEstado.c.o
  /home/david/Projeto-LI2/bot/estruturasDados.h
  /home/david/Projeto-LI2/bot/modificaEstado.c

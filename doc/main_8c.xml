@@ -10,10 +10,21 @@
     <includes refid="Interpretador_8h" local="yes">Camada_de_interface/Interpretador.h</includes>
     <includes refid="jogar_8h" local="yes">Logica_do_programa/jogar.h</includes>
     <includes refid="interface_8h" local="yes">Camada_de_interface/interface.h</includes>
+    <includes refid="lerEstado_8h" local="yes">Camadas_de_dados/lerEstado.h</includes>
+    <includes refid="escolheJogada_8h" local="yes">Listas_ligadas/escolheJogada.h</includes>
+    <includes refid="grava_8h" local="yes">Camadas_de_dados/grava.h</includes>
     <incdepgraph>
       <node id="190">
         <label>Logica_do_programa/jogar.h</label>
         <link refid="jogar_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>Camadas_de_dados/lerEstado.h</label>
+        <link refid="lerEstado_8h"/>
         <childnode refid="191" relation="include">
         </childnode>
         <childnode refid="187" relation="include">
@@ -24,6 +35,18 @@
       </node>
       <node id="185">
         <label>stdlib.h</label>
+      </node>
+      <node id="194">
+        <label>Listas_ligadas/escolheJogada.h</label>
+        <link refid="escolheJogada_8h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>Camadas_de_dados/grava.h</label>
+        <link refid="grava_8h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
       </node>
       <node id="192">
         <label>Camada_de_interface/interface.h</label>
@@ -61,6 +84,12 @@
         </childnode>
         <childnode refid="192" relation="include">
         </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
       </node>
       <node id="189">
         <label>Camada_de_interface/Interpretador.h</label>
@@ -88,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="main.c" line="10" column="1" bodyfile="main.c" bodystart="10" bodyend="18"/>
+        <location file="main.c" line="13" column="1" bodyfile="main.c" bodystart="13" bodyend="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -104,16 +133,19 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camada_de_interface/Interpretador.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="jogar_8h" kindref="compound">Logica_do_programa/jogar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="interface_8h" kindref="compound">Camada_de_interface/interface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e<sp/>=<sp/><ref refid="modificaEstado_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>();</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>interpretador(e);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lerEstado_8h" kindref="compound">Camadas_de_dados/lerEstado.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="escolheJogada_8h" kindref="compound">Listas_ligadas/escolheJogada.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="grava_8h" kindref="compound">Camadas_de_dados/grava.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e<sp/>=<sp/><ref refid="modificaEstado_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>interpretador(e);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="main.c"/>
   </compounddef>

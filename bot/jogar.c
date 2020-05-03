@@ -6,6 +6,7 @@
 #include "estruturasDados.h"
 #include "VerificaJogada.h"
 #include "tipoErros.h"
+#include "interface.h"
 #include "modificaEstado.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,7 +21,7 @@ int jogar(ESTADO *e, COORDENADA c) {
 
     VALIDACOES flag;
 
-   // printf ("%d %d\n",c.coluna, c.linha);
+    //printf ("%d %d\n",c.coluna, c.linha);
 
     flag = jogadavalida(e, c);
 

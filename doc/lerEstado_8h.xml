@@ -6,6 +6,7 @@
     <includes refid="estruturasDados_8h" local="yes">estruturasDados.h</includes>
     <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
     <includedby refid="lerEstado_8c" local="yes">Camadas_de_dados/lerEstado.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
     <incdepgraph>
       <node id="89">
         <label>Camadas_de_dados/lerEstado.h</label>
@@ -179,7 +180,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/lerEstado.h" line="45" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="64" bodyend="79"/>
+        <location file="Camadas_de_dados/lerEstado.h" line="45" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="64" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="lerEstado_8h_1a12abc2f2a2fa776fe08e6e422178d4af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -227,7 +228,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Camadas_de_dados/lerEstado.h" line="53" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="81" bodyend="121"/>
+        <location file="Camadas_de_dados/lerEstado.h" line="53" column="1" bodyfile="Camadas_de_dados/lerEstado.c" bodystart="84" bodyend="139"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -99,7 +99,7 @@
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>movimentoj1c,<sp/>movimentoj2c;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>tamanhomovs<sp/>=<sp/>e<sp/>-&gt;<sp/>posicao_jogada<sp/>+<sp/>1;</highlight><highlight class="comment">//obter_numero_de_jogadas(e);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>tamanhomovs<sp/>=<sp/><ref refid="modificaEstado_8h_1a6cd0b387bdee9e18003c78852394aa63" kindref="member">obter_numero_de_jogadas</ref>(e)<sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//tamanhomovs<sp/>=<sp/>sizeof(movimentos)/<sp/>sizeof(movimentos[0]);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>

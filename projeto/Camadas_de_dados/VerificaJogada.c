@@ -69,7 +69,7 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
     e->ultima_jogada.linha = linha;
 
     if (flag == -1) {
-        i = e->num_jogadas;
+        i = e->posicao_jogada;
     } else i = flag;
 
     if (obter_jogador_atual(e) == 1) {
@@ -79,8 +79,8 @@ void coloca_peca(ESTADO *e, int coluna, int linha, int flag) {//, int i) {
         e->jogadas[i].jogador2.coluna = coluna;
         e->jogadas[i].jogador2.linha = linha;
         if (flag == -1) {
-            e -> num_jogadas = i + 1;
-            e -> posicao_jogada = e -> num_jogadas;
+            e -> posicao_jogada = i + 1;
+            e -> num_jogadas = e -> posicao_jogada;
         }
     }
 

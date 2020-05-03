@@ -5,6 +5,7 @@
     <includes refid="estruturasDados_8h" local="yes">../Camadas_de_dados/estruturasDados.h</includes>
     <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
     <includedby refid="escolheJogada_8c" local="yes">Listas_ligadas/escolheJogada.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
     <incdepgraph>
       <node id="151">
         <label>Listas_ligadas/escolheJogada.h</label>

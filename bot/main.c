@@ -8,6 +8,8 @@
 #include "grava.h"
 
 #include "jogar.h"
+#include "VerificaJogada.h"
+#include "interface.h"
 
 
 int main(int argc, char *argv[]) {
@@ -17,9 +19,11 @@ int main(int argc, char *argv[]) {
     if (argc == 3) {
         e = ler(argv[1]);
 
-        joga_sozinho(e);
+        if (verifica_fim_jogo(e) != IMPOSSIVEL_JOGAR) {
+            joga_sozinho(e);
 
-        gravar(e, argv[2]);
+            gravar(e, argv[2]);
+        }
     }
 
 

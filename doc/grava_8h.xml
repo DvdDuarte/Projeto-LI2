@@ -5,6 +5,7 @@
     <includes refid="estruturasDados_8h" local="yes">estruturasDados.h</includes>
     <includedby refid="Interpretador_8c" local="yes">Camada_de_interface/Interpretador.c</includedby>
     <includedby refid="grava_8c" local="yes">Camadas_de_dados/grava.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
     <incdepgraph>
       <node id="78">
         <label>Camadas_de_dados/grava.h</label>

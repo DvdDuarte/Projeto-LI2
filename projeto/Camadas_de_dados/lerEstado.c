@@ -15,7 +15,7 @@ ESTADO *ler(char *jogo) {
 
 
     e = inicializar_estado();
-    if (ficheiro = fopen(jogo, "r") ==
+    ficheiro = fopen(jogo, "r");
 
     ler_tabuleiro(ficheiro, e);
 
@@ -73,9 +73,9 @@ void ler_movimentos (FILE *ficheiro, ESTADO *e){
 
     }
 
-    if (obter_jogador_atual(e) == 2)
-        e->num_jogadas = indice - 1;
-    else e->num_jogadas = indice;
+    //if (obter_jogador_atual(e) == 2)
+      //  e->num_jogadas = indice - 1;
+    /*else*/ e->num_jogadas = indice;
 
 
 
@@ -135,7 +135,7 @@ void ler_linha_movs (char line[BUF_SIZE], ESTADO *e, int indice) {
         e -> jogador_atual = 2;
     }
 
-    e -> posicao_jogada = indice;
+    e -> posicao_jogada = indice + 1;
 }
 
 

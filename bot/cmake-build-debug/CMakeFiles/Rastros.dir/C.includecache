@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/david/Projeto-LI2/bot/VerificaJogada.h
+estruturasDados.h
+/home/david/Projeto-LI2/bot/estruturasDados.h
+tipoErros.h
+/home/david/Projeto-LI2/bot/tipoErros.h
+
 /home/david/Projeto-LI2/bot/escolheJogada.h
 estruturasDados.h
 /home/david/Projeto-LI2/bot/estruturasDados.h
@@ -13,6 +19,12 @@ estruturasDados.h
 /home/david/Projeto-LI2/bot/estruturasDados.h
 
 /home/david/Projeto-LI2/bot/grava.h
+estruturasDados.h
+/home/david/Projeto-LI2/bot/estruturasDados.h
+
+/home/david/Projeto-LI2/bot/interface.h
+bits/types/FILE.h
+-
 estruturasDados.h
 /home/david/Projeto-LI2/bot/estruturasDados.h
 
@@ -47,8 +59,14 @@ grava.h
 /home/david/Projeto-LI2/bot/grava.h
 jogar.h
 /home/david/Projeto-LI2/bot/jogar.h
+VerificaJogada.h
+/home/david/Projeto-LI2/bot/VerificaJogada.h
+interface.h
+/home/david/Projeto-LI2/bot/interface.h
 
 /home/david/Projeto-LI2/bot/modificaEstado.h
 estruturasDados.h
 /home/david/Projeto-LI2/bot/estruturasDados.h
+
+/home/david/Projeto-LI2/bot/tipoErros.h
 

@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include "grava.h"
 #include "interface.h"
+#include "listaMovs.h"
 
 
 int gravar (ESTADO *e, char *filename) {
@@ -20,8 +21,8 @@ int gravar (ESTADO *e, char *filename) {
     mostrar_tabuleiro(e,jogo);
     fputc('\n',jogo);
     //if (ficheiro != stdout) {
-       // fprintf(ficheiro,'\n');i
-    mostrar_movimentos (e, jogo);
+       // fprintf(ficheiro,'\n');
+    mostrar_movimentos(e, jogo);
     //}
 
     fclose (jogo);
